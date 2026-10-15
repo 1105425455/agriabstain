@@ -1,0 +1,22 @@
+PASS  1  RELEASE_MANIFEST 正向：每个记录文件哈希与大小一致                 全部一致
+PASS  2  RELEASE_MANIFEST 反向：磁盘无清单外文件                      多余 0，缺失 0
+PASS  3  benchmark 标注哈希与 path_audit                        27 个标注全部一致
+PASS  4  匿名性：姓名/项目名/环境名/私有路径/RL 残留                         无命中
+PASS  5  清洁度：缓存/空文件/空目录                                    缓存0 pyc0 空文件0 空目录0
+PASS  6  无未声明的字节级重复内容                                      无未声明重复（3 组已声明复用）
+PASS  7  无孤儿产物文件（每个产物都有 md 覆盖）                             全部有文档覆盖
+PASS  8  .md 中无失效路径引用                                      全部可达
+PASS  9  图像引用 100% 被源图清单或派生图重建覆盖                           66,036 条引用，0 条未覆盖
+PASS  10 requirements 覆盖代码全部三方 import                      全部覆盖
+PASS  11 环境记录与训练时日志交叉一致                                    4 字段 + 8 卡全部一致
+PASS  12 全部 Python 文件可编译                                   91 个文件全部通过
+FAIL  13 无中文残留（md / json / py / sh）                        25 个文件含中文: ['evaluation/eval_qwen3vl_3reason.py', 'experiments/evidence_judge/extract_representations.py', 'experiments/evidence_judge/train_probes.py']
+PASS  14 §6 环境变量名全部存在于对应启动脚本                               全部匹配
+PASS  15 论文数字复算：Table 3 ReGate 行                           retention=0.976 FCA=0.132 (论文 0.976 / 0.132)
+PASS  16 论文数字复算：margin+KL 两行共 14 个数                        0/14 不符
+PASS  17 论文数字复算：evidence judge L2/L3 共 13 个数               0/13 不符
+PASS  18 论文数字复算：matched-retention 操作点                      阈值与 4 个保留率全部一致
+
+==============================================================================
+闭式检查 18 项：通过 17，失败 1
+==============================================================================

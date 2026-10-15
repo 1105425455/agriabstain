@@ -1,0 +1,545 @@
+[runner] variant=prompt_reward_norms probes=['L1_discrim', 'L2_evidence', 'L3_dose', 'test_full', 'ood_refcocog', 'ood_plantvillage']
+[runner] 纯LM模式(无--dual-head), prompt前80字: You are a vision-language assistant for HIGH-STAKES plant disease d...
+W0709 00:27:23.230000 79 site-packages/torch/distributed/run.py:774] 
+W0709 00:27:23.230000 79 site-packages/torch/distributed/run.py:774] *****************************************
+W0709 00:27:23.230000 79 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0709 00:27:23.230000 79 site-packages/torch/distributed/run.py:774] *****************************************
+[Gloo] Rank 0 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 1 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 6 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 2 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank [Gloo] Rank 4 is connected to 37 peer ranks.  is connected to Expected number of connected peer ranks is : 77 peer ranks. 
+Expected number of connected peer ranks is : 7
+[Gloo] Rank 5 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 7 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[eval r0] ⚠️ 指纹变化(模型/数据已更新) → 清空 8 个过期 shard
+[eval r0]    旧: base=<USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct@1782039040 | adapter=<REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444@1783518467 | data=new_reason/outputs/eval_probes/test_L1_discrim.jsonl | data_mtime=1783355375 | world=8 | limit=30 | backend=hf
+[eval r0]    新: base=<USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct@1782039040 | adapter=<REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444@1783518467 | data=new_reason/outputs/eval_probes/test_L1_discrim.jsonl | data_mtime=1783355375 | world=8 | limit=None | backend=hf
+[eval r0] device=cuda:0 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] device=cuda:3 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r4] device=cuda:4 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r7] device=cuda:7 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r6] device=cuda:6 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r5] device=cuda:5 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] device=cuda:2 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] device=cuda:1 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.26s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.10s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.27s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.17s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.24s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.23s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.26s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.34s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.21s/it]
+
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.25s/it]
+[eval r0] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r6] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r3] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r5] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r4] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r7] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r1] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r2] loading LoRA adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r0] model loaded on cuda:0, running 6 probe(s) 
+[eval r0] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r0] [hf probe#0] total=410 mine=52 done=0 todo=52 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r7] model loaded on cuda:7, running 6 probe(s) 
+[eval r7] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r7] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r4] model loaded on cuda:4, running 6 probe(s) 
+[eval r4] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r3] model loaded on cuda:3, running 6 probe(s) 
+[eval r3] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r6] model loaded on cuda:6, running 6 probe(s) 
+[eval r6] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r4] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r5] model loaded on cuda:5, running 6 probe(s) 
+[eval r5] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r2] model loaded on cuda:2, running 6 probe(s) 
+[eval r2] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r3] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r6] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r1] model loaded on cuda:1, running 6 probe(s) 
+[eval r1] === probe 1/6: new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim (tag=L1_discrim) ===
+[eval r2] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r5] [hf probe#0] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r1] [hf probe#0] total=410 mine=52 done=0 todo=52 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r5] probe#0 50/51 (0.54 it/s)
+[eval r5] probe#0 shard done in 92.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r5] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r5] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r7] probe#0 50/51 (0.52 it/s)
+[eval r3] probe#0 50/51 (0.51 it/s)
+[eval r3] probe#0 shard done in 98.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r3] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r3] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r7] probe#0 shard done in 99.1s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r7] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r7] [hf probe#1] total=790 mine=98 done=0 todo=98 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r1] probe#0 50/52 (0.48 it/s)
+[eval r1] probe#0 shard done in 108.6s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r1] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r1] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r6] probe#0 50/51 (0.44 it/s)
+[eval r2] probe#0 50/51 (0.44 it/s)
+[eval r0] probe#0 50/52 (0.44 it/s)
+[eval r4] probe#0 50/51 (0.44 it/s)
+[eval r6] probe#0 shard done in 114.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r6] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r6] [hf probe#1] total=790 mine=98 done=0 todo=98 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r2] probe#0 shard done in 115.8s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r2] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r2] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r4] probe#0 shard done in 116.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r4] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r4] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r0] probe#0 shard done in 118.7s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r0] === probe 2/6: new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence (tag=L2_evidence) ===
+[eval r0] [hf probe#1] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r5] probe#1 50/99 (0.80 it/s)
+[eval r7] probe#1 50/98 (0.80 it/s)
+[eval r3] probe#1 50/99 (0.79 it/s)
+[eval r1] probe#1 50/99 (0.76 it/s)
+[eval r2] probe#1 50/99 (0.51 it/s)
+[eval r4] probe#1 50/99 (0.51 it/s)
+[eval r6] probe#1 50/98 (0.50 it/s)
+[eval r0] probe#1 50/99 (0.51 it/s)
+[eval r5] probe#1 shard done in 133.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r5] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r5] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank5of8.jsonl
+[eval r7] probe#1 shard done in 128.6s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r7] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r7] [hf probe#2] total=750 mine=93 done=0 todo=93 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank7of8.jsonl
+[eval r3] probe#1 shard done in 131.2s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r3] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r3] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank3of8.jsonl
+[eval r1] probe#1 shard done in 134.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r1] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r1] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank1of8.jsonl
+[eval r2] probe#1 shard done in 188.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r2] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r2] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank2of8.jsonl
+[eval r6] probe#1 shard done in 189.6s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r6] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r6] [hf probe#2] total=750 mine=93 done=0 todo=93 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank6of8.jsonl
+[eval r4] probe#1 shard done in 187.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r4] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r4] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank4of8.jsonl
+[eval r0] probe#1 shard done in 190.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r0] === probe 3/6: new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose (tag=L3_dose) ===
+[eval r0] [hf probe#2] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank0of8.jsonl
+[eval r7] probe#2 50/93 (0.56 it/s)
+[eval r5] probe#2 50/94 (0.54 it/s)
+[eval r3] probe#2 50/94 (0.55 it/s)
+[eval r1] probe#2 50/94 (0.52 it/s)
+[eval r7] probe#2 shard done in 143.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank7of8.jsonl
+[eval r7] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r7] [hf probe#3] total=2646 mine=330 done=0 todo=330 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank7of8.jsonl
+[eval r5] probe#2 shard done in 150.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank5of8.jsonl
+[eval r5] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r5] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank5of8.jsonl
+[eval r3] probe#2 shard done in 151.8s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank3of8.jsonl
+[eval r3] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r3] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank3of8.jsonl
+[eval r6] probe#2 50/93 (0.54 it/s)
+[eval r4] probe#2 50/94 (0.54 it/s)
+[eval r1] probe#2 shard done in 154.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank1of8.jsonl
+[eval r1] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r1] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank1of8.jsonl
+[eval r2] probe#2 50/94 (0.53 it/s)
+[eval r0] probe#2 50/94 (0.52 it/s)
+[eval r6] probe#2 shard done in 146.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank6of8.jsonl
+[eval r6] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r6] [hf probe#3] total=2646 mine=330 done=0 todo=330 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank6of8.jsonl
+[eval r4] probe#2 shard done in 148.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank4of8.jsonl
+[eval r4] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r4] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank4of8.jsonl
+[eval r2] probe#2 shard done in 149.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank2of8.jsonl
+[eval r2] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r2] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank2of8.jsonl
+[eval r0] probe#2 shard done in 148.8s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/shards/preds.rank0of8.jsonl
+[eval r0] === probe 4/6: new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full (tag=test_full) ===
+[eval r0] [hf probe#3] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank0of8.jsonl
+[eval r7] probe#3 50/330 (0.52 it/s)
+[eval r5] probe#3 50/331 (0.51 it/s)
+[eval r3] probe#3 50/331 (0.54 it/s)
+[eval r1] probe#3 50/331 (0.48 it/s)
+[eval r6] probe#3 50/330 (0.54 it/s)
+[eval r4] probe#3 50/331 (0.51 it/s)
+[eval r2] probe#3 50/331 (0.49 it/s)
+[eval r0] probe#3 50/331 (0.49 it/s)
+[eval r7] probe#3 100/330 (0.52 it/s)
+[eval r5] probe#3 100/331 (0.51 it/s)
+[eval r3] probe#3 100/331 (0.51 it/s)
+[eval r1] probe#3 100/331 (0.49 it/s)
+[eval r6] probe#3 100/330 (0.53 it/s)
+[eval r4] probe#3 100/331 (0.51 it/s)
+[eval r2] probe#3 100/331 (0.51 it/s)
+[eval r0] probe#3 100/331 (0.51 it/s)
+[eval r7] probe#3 150/330 (0.51 it/s)
+[eval r5] probe#3 150/331 (0.50 it/s)
+[eval r3] probe#3 150/331 (0.51 it/s)
+[eval r1] probe#3 150/331 (0.48 it/s)
+[eval r6] probe#3 150/330 (0.53 it/s)
+[eval r2] probe#3 150/331 (0.51 it/s)
+[eval r4] probe#3 150/331 (0.51 it/s)
+[eval r7] probe#3 200/330 (0.53 it/s)
+[eval r0] probe#3 150/331 (0.50 it/s)
+[eval r5] probe#3 200/331 (0.52 it/s)
+[eval r3] probe#3 200/331 (0.52 it/s)
+[eval r1] probe#3 200/331 (0.50 it/s)
+[eval r7] probe#3 250/330 (0.58 it/s)
+[eval r5] probe#3 250/331 (0.57 it/s)
+[eval r3] probe#3 250/331 (0.57 it/s)
+[eval r6] probe#3 200/330 (0.54 it/s)
+[eval r2] probe#3 200/331 (0.52 it/s)
+[eval r4] probe#3 200/331 (0.52 it/s)
+[eval r0] probe#3 200/331 (0.51 it/s)
+[eval r1] probe#3 250/331 (0.55 it/s)
+[eval r7] probe#3 300/330 (0.63 it/s)
+[eval r5] probe#3 300/331 (0.61 it/s)
+[eval r3] probe#3 300/331 (0.61 it/s)
+[eval r6] probe#3 250/330 (0.59 it/s)
+[eval r7] probe#3 shard done in 508.1s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank7of8.jsonl
+[eval r7] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r7] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank7of8.jsonl
+[eval r2] probe#3 250/331 (0.58 it/s)
+[eval r4] probe#3 250/331 (0.57 it/s)
+[eval r5] probe#3 shard done in 523.0s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank5of8.jsonl
+[eval r5] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r5] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank5of8.jsonl
+[eval r0] probe#3 250/331 (0.57 it/s)
+[eval r3] probe#3 shard done in 519.7s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank3of8.jsonl
+[eval r3] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r3] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank3of8.jsonl
+[eval r1] probe#3 300/331 (0.60 it/s)
+[eval r6] probe#3 300/330 (0.63 it/s)
+[eval r1] probe#3 shard done in 535.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank1of8.jsonl
+[eval r1] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r1] [hf probe#4] total=362 mine=46 done=0 todo=46 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank1of8.jsonl
+[eval r2] probe#3 300/331 (0.62 it/s)
+[eval r4] probe#3 300/331 (0.62 it/s)
+[eval r7] probe#4 shard done in 69.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank7of8.jsonl
+[eval r7] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r7] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank7of8.jsonl
+[eval r0] probe#3 300/331 (0.61 it/s)
+[eval r6] probe#3 shard done in 502.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank6of8.jsonl
+[eval r6] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r6] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank6of8.jsonl
+[eval r3] probe#4 shard done in 65.5s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank3of8.jsonl
+[eval r3] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r3] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank3of8.jsonl
+[eval r2] probe#3 shard done in 513.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank2of8.jsonl
+[eval r2] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r2] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank2of8.jsonl
+[eval r4] probe#3 shard done in 519.2s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank4of8.jsonl
+[eval r4] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r4] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank4of8.jsonl
+[eval r5] probe#4 shard done in 73.5s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank5of8.jsonl
+[eval r5] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r5] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank5of8.jsonl
+[eval r0] probe#3 shard done in 524.9s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/shards/preds.rank0of8.jsonl
+[eval r0] === probe 5/6: new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog (tag=ood_refcocog) ===
+[eval r0] [hf probe#4] total=362 mine=46 done=0 todo=46 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank0of8.jsonl
+[eval r7] probe#5 shard done in 39.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank7of8.jsonl
+[eval r1] probe#4 shard done in 68.7s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank1of8.jsonl
+[eval r1] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r1] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank1of8.jsonl
+[eval r3] probe#5 shard done in 38.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank3of8.jsonl
+[eval r5] probe#5 shard done in 40.3s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank5of8.jsonl
+[eval r6] probe#4 shard done in 67.1s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank6of8.jsonl
+[eval r6] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r6] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank6of8.jsonl
+[eval r2] probe#4 shard done in 68.1s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank2of8.jsonl
+[eval r2] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r2] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank2of8.jsonl
+[eval r4] probe#4 shard done in 71.0s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank4of8.jsonl
+[eval r4] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r4] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank4of8.jsonl
+[eval r1] probe#5 shard done in 41.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank1of8.jsonl
+[eval r0] probe#4 shard done in 65.2s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/shards/preds.rank0of8.jsonl
+[eval r0] === probe 6/6: new_reason/outputs/eval_probes/ood_plantvillage.jsonl -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage (tag=ood_plantvillage) ===
+[eval r0] [hf probe#5] total=240 mine=30 done=0 todo=30 -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank0of8.jsonl
+[eval r6] probe#5 shard done in 39.2s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank6of8.jsonl
+[eval r2] probe#5 shard done in 43.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank2of8.jsonl
+[eval r0] probe#5 shard done in 39.6s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank0of8.jsonl
+[eval r4] probe#5 shard done in 46.4s -> <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/shards/preds.rank4of8.jsonl
+[eval r0] === merge probe 1/6: L1_discrim ===
+=== ReGate eval [L1_discrim] ===
+data: new_reason/outputs/eval_probes/test_L1_discrim.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=410
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.5463  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.6829
+HOR_FCA (lower better)   = 0.0000  (n=0)
+MTS_micro                = 0.5317
+MTS_macro                = 0.5317
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0585
+U_Abs (higher better)    = 0.3171
+AAC (higher better)      = 0.7659
+MCC                      = 0.3310
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6815
+A_Ground_c          = 0.8519
+U_Reason↑           = 0.2976
+U_Reason_c          = 0.9385
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 157, 'FP': 36, 'FN': 12, 'TN': 65, 'AU': 140, 'INVALID': 0}
+
+--- MTS per relation ---
+  L1_mismatch      0.2976  (61/205)
+  L1_real          0.7659  (157/205)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L1_discrim/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 2/6: L2_evidence ===
+=== ReGate eval [L2_evidence] ===
+data: new_reason/outputs/eval_probes/test_L2_evidence.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=790
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.7215  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.2962
+HOR_FCA (lower better)   = 0.2962  (n=395)
+MTS_micro                = 0.6772
+MTS_macro                = 0.6772
+
+--- Safeguard ---
+A_FU (lower better)      = 0.2000
+U_Abs (higher better)    = 0.7038
+AAC (higher better)      = 0.6582
+MCC                      = 0.5061
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.5766
+A_Ground_c          = 0.7777
+U_Reason↑           = 0.6962
+U_Reason_c          = 0.9892
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 260, 'FP': 56, 'FN': 79, 'TN': 278, 'AU': 117, 'INVALID': 0}
+
+--- MTS per relation ---
+  L2_cropout       0.6962  (275/395)
+  L2_keep          0.6582  (260/395)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L2_evidence/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 3/6: L3_dose ===
+=== ReGate eval [L3_dose] ===
+data: new_reason/outputs/eval_probes/test_L3_dose.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=750
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 0.4413  (>= 0.95 ?)
+decision_accuracy = 0.3507  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.0203
+HOR_FCA (lower better)   = 0.0203  (n=148)
+MTS_micro                = 0.7885
+MTS_macro                = 0.7885
+
+--- Safeguard ---
+A_FU (lower better)      = 0.2022
+U_Abs (higher better)    = 0.9797
+AAC (higher better)      = 0.6339
+MCC                      = 0.7771
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.5660
+A_Ground_c          = 0.8716
+U_Reason↑           = 0.9797
+U_Reason_c          = 1.0000
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 116, 'FP': 30, 'FN': 37, 'TN': 145, 'AU': 3, 'INVALID': 0}
+
+--- MTS per relation ---
+  L3_ladder        0.7885  (261/331)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/L3_dose/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 4/6: test_full ===
+=== ReGate eval [test_full] ===
+data: new_reason/outputs/sft_3reason/sft_test.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=2646
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.7751  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.1255
+HOR_FCA (lower better)   = 0.0161  (n=1118)
+MTS_micro                = 0.7582
+MTS_macro                = 0.7415
+
+--- Safeguard ---
+A_FU (lower better)      = 0.1799
+U_Abs (higher better)    = 0.8745
+AAC (higher better)      = 0.6402
+MCC                      = 0.6957
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.5628
+A_Ground_c          = 0.8257
+U_Reason↑           = 0.8670
+U_Reason_c          = 0.9914
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 847, 'FP': 238, 'FN': 238, 'TN': 1157, 'AU': 166, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.6695  (158/236)
+  T2               0.6891  (82/119)
+  T2_occluded      0.9500  (76/80)
+  T3               0.7154  (93/130)
+  T3_occluded      0.9625  (77/80)
+  T4_control       0.6562  (105/160)
+  T5               0.9844  (630/640)
+  T6               0.2585  (53/205)
+  T7_include       0.6250  (70/112)
+  T7_ladder        0.6693  (340/508)
+  base_occluded    0.9765  (166/170)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/test_full/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 5/6: ood_refcocog ===
+=== ReGate eval [ood_refcocog] ===
+data: new_reason/outputs/eval_probes/ood_refcocog.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=362
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6271  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.0387
+HOR_FCA (lower better)   = 0.0387  (n=181)
+MTS_micro                = 0.6243
+MTS_macro                = 0.6243
+
+--- Safeguard ---
+A_FU (lower better)      = 0.2044
+U_Abs (higher better)    = 0.9613
+AAC (higher better)      = 0.2873
+MCC                      = 0.7675
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.2615
+A_Ground_c          = 0.8875
+U_Reason↑           = 0.9613
+U_Reason_c          = 1.0000
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 52, 'FP': 92, 'FN': 37, 'TN': 174, 'AU': 7, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9613  (174/181)
+  OOD_answer       0.2873  (52/181)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_refcocog/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 6/6: ood_plantvillage ===
+=== ReGate eval [ood_plantvillage] ===
+data: new_reason/outputs/eval_probes/ood_plantvillage.jsonl
+adapter: <REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=240
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6667  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.3083
+HOR_FCA (lower better)   = 0.0227  (n=132)
+MTS_micro                = 0.6667
+MTS_macro                = 0.6338
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0000
+U_Abs (higher better)    = 0.6917
+AAC (higher better)      = 0.0000
+MCC                      = 0.0000
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.0000
+A_Ground_c          = 0.0000
+U_Reason↑           = 0.6667
+U_Reason_c          = 0.9639
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 0, 'FP': 0, 'FN': 0, 'TN': 166, 'AU': 74, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9621  (127/132)
+  OOD_confusion    0.3056  (33/108)
+[eval] written: <REPO_ROOT>/new_reason/baselines/prompt_cot/outputs/prompt_reward_norms/ood_plantvillage/metrics.json , predictions.jsonl , summary.txt

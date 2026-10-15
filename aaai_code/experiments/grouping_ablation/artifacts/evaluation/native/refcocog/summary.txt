@@ -1,0 +1,36 @@
+=== AgriAbstain eval [refcocog] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=362
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8812  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0387
+HOR_FCA (高危子集↓)  = 0.0387  (n=181)
+MTS_micro           = 0.8757
+MTS_macro           = 0.8757
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0387
+U_Abs (拒对↑)       = 0.9613
+AAC (答对↑)         = 0.7901
+MCC                 = 0.9227
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7256
+E2E_mIoU_c           = 0.9007
+A_Ground (depr.)     = 0.7256
+A_Ground_c (depr.)   = 0.9007
+U_Reason↑            = 0.9613
+U_Reason_c           = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 143, 'FP': 31, 'FN': 7, 'TN': 174, 'AU': 7, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9613  (174/181)
+  OOD_answer       0.7901  (143/181)

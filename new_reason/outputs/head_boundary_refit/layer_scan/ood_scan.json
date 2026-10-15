@@ -1,0 +1,1242 @@
+{
+  "train_npz": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/features_alllayers/hidden_train.npz",
+  "ood_npz": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/features_alllayers/hidden_plantwild.npz",
+  "n_layers": 36,
+  "dev_split_seed": 42,
+  "note": "npz_index=layer, transformer_layer=layer+1, 基准第27层=npz index 26",
+  "results": [
+    {
+      "layer": 23,
+      "npz_index": 23,
+      "transformer_layer": 24,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.625,
+      "answer_fa": 0.3472,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          94,
+          38,
+          12
+        ],
+        [
+          30,
+          75,
+          15
+        ],
+        [
+          2,
+          2,
+          140
+        ]
+      ],
+      "min_score": 0.625,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.66
+    },
+    {
+      "layer": 25,
+      "npz_index": 25,
+      "transformer_layer": 26,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.6333,
+      "answer_fa": 0.375,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          90,
+          42,
+          12
+        ],
+        [
+          29,
+          76,
+          15
+        ],
+        [
+          1,
+          3,
+          140
+        ]
+      ],
+      "min_score": 0.625,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.39
+    },
+    {
+      "layer": 22,
+      "npz_index": 22,
+      "transformer_layer": 23,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.6167,
+      "answer_fa": 0.3472,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          94,
+          38,
+          12
+        ],
+        [
+          31,
+          74,
+          15
+        ],
+        [
+          2,
+          1,
+          141
+        ]
+      ],
+      "min_score": 0.6167,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.67
+    },
+    {
+      "layer": 34,
+      "npz_index": 34,
+      "transformer_layer": 35,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.6,
+      "answer_fa": 0.3264,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          97,
+          33,
+          14
+        ],
+        [
+          31,
+          72,
+          17
+        ],
+        [
+          2,
+          2,
+          140
+        ]
+      ],
+      "min_score": 0.6,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.53
+    },
+    {
+      "layer": 21,
+      "npz_index": 21,
+      "transformer_layer": 22,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.6083,
+      "answer_fa": 0.4028,
+      "nt_accuracy": 0.9653,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          86,
+          46,
+          12
+        ],
+        [
+          32,
+          73,
+          15
+        ],
+        [
+          3,
+          2,
+          139
+        ]
+      ],
+      "min_score": 0.5972,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 1.85
+    },
+    {
+      "layer": 24,
+      "npz_index": 24,
+      "transformer_layer": 25,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5833,
+      "answer_fa": 0.3472,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          94,
+          37,
+          13
+        ],
+        [
+          34,
+          70,
+          16
+        ],
+        [
+          1,
+          3,
+          140
+        ]
+      ],
+      "min_score": 0.5833,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.39
+    },
+    {
+      "layer": 35,
+      "npz_index": 35,
+      "transformer_layer": 36,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.5833,
+      "answer_fa": 0.3264,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          97,
+          34,
+          13
+        ],
+        [
+          34,
+          70,
+          16
+        ],
+        [
+          3,
+          1,
+          140
+        ]
+      ],
+      "min_score": 0.5833,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.62
+    },
+    {
+      "layer": 27,
+      "npz_index": 27,
+      "transformer_layer": 28,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.575,
+      "answer_fa": 0.3194,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          98,
+          31,
+          15
+        ],
+        [
+          30,
+          69,
+          21
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.575,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.11
+    },
+    {
+      "layer": 28,
+      "npz_index": 28,
+      "transformer_layer": 29,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.575,
+      "answer_fa": 0.3333,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          96,
+          34,
+          14
+        ],
+        [
+          31,
+          69,
+          20
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.575,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.91
+    },
+    {
+      "layer": 19,
+      "npz_index": 19,
+      "transformer_layer": 20,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5583,
+      "answer_fa": 0.375,
+      "nt_accuracy": 0.9722,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          90,
+          41,
+          13
+        ],
+        [
+          38,
+          67,
+          15
+        ],
+        [
+          3,
+          1,
+          140
+        ]
+      ],
+      "min_score": 0.5583,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.13
+    },
+    {
+      "layer": 20,
+      "npz_index": 20,
+      "transformer_layer": 21,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.55,
+      "answer_fa": 0.3194,
+      "nt_accuracy": 0.9653,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          98,
+          34,
+          12
+        ],
+        [
+          37,
+          66,
+          17
+        ],
+        [
+          4,
+          1,
+          139
+        ]
+      ],
+      "min_score": 0.55,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.02
+    },
+    {
+      "layer": 26,
+      "npz_index": 26,
+      "transformer_layer": 27,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5417,
+      "answer_fa": 0.3403,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          95,
+          35,
+          14
+        ],
+        [
+          32,
+          65,
+          23
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5417,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.05
+    },
+    {
+      "layer": 31,
+      "npz_index": 31,
+      "transformer_layer": 32,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5417,
+      "answer_fa": 0.3125,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          99,
+          31,
+          14
+        ],
+        [
+          34,
+          65,
+          21
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5417,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.76
+    },
+    {
+      "layer": 33,
+      "npz_index": 33,
+      "transformer_layer": 34,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5417,
+      "answer_fa": 0.3056,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          100,
+          30,
+          14
+        ],
+        [
+          33,
+          65,
+          22
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5417,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.11
+    },
+    {
+      "layer": 29,
+      "npz_index": 29,
+      "transformer_layer": 30,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5333,
+      "answer_fa": 0.3264,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          97,
+          29,
+          18
+        ],
+        [
+          33,
+          64,
+          23
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5333,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.7
+    },
+    {
+      "layer": 30,
+      "npz_index": 30,
+      "transformer_layer": 31,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5333,
+      "answer_fa": 0.3056,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          100,
+          28,
+          16
+        ],
+        [
+          35,
+          64,
+          21
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5333,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.98
+    },
+    {
+      "layer": 18,
+      "npz_index": 18,
+      "transformer_layer": 19,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.5167,
+      "answer_fa": 0.3194,
+      "nt_accuracy": 0.9444,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          98,
+          35,
+          11
+        ],
+        [
+          43,
+          62,
+          15
+        ],
+        [
+          5,
+          3,
+          136
+        ]
+      ],
+      "min_score": 0.5167,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 4.25
+    },
+    {
+      "layer": 32,
+      "npz_index": 32,
+      "transformer_layer": 33,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.5167,
+      "answer_fa": 0.3125,
+      "nt_accuracy": 0.9792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          99,
+          30,
+          15
+        ],
+        [
+          37,
+          62,
+          21
+        ],
+        [
+          1,
+          2,
+          141
+        ]
+      ],
+      "min_score": 0.5167,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 2.99
+    },
+    {
+      "layer": 16,
+      "npz_index": 16,
+      "transformer_layer": 17,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.475,
+      "answer_fa": 0.3403,
+      "nt_accuracy": 0.9236,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          95,
+          36,
+          13
+        ],
+        [
+          46,
+          57,
+          17
+        ],
+        [
+          6,
+          5,
+          133
+        ]
+      ],
+      "min_score": 0.475,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 4.3
+    },
+    {
+      "layer": 17,
+      "npz_index": 17,
+      "transformer_layer": 18,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.4167,
+      "answer_fa": 0.2847,
+      "nt_accuracy": 0.9028,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          103,
+          28,
+          13
+        ],
+        [
+          51,
+          50,
+          19
+        ],
+        [
+          8,
+          6,
+          130
+        ]
+      ],
+      "min_score": 0.4167,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 3.64
+    },
+    {
+      "layer": 15,
+      "npz_index": 15,
+      "transformer_layer": 16,
+      "classifier": "logistic",
+      "best_C": 1.0,
+      "wo_recall": 0.4083,
+      "answer_fa": 0.4861,
+      "nt_accuracy": 0.9375,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          74,
+          46,
+          24
+        ],
+        [
+          38,
+          49,
+          33
+        ],
+        [
+          4,
+          5,
+          135
+        ]
+      ],
+      "min_score": 0.4083,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 5.32
+    },
+    {
+      "layer": 14,
+      "npz_index": 14,
+      "transformer_layer": 15,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.375,
+      "answer_fa": 0.5208,
+      "nt_accuracy": 0.9375,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          69,
+          47,
+          28
+        ],
+        [
+          39,
+          45,
+          36
+        ],
+        [
+          3,
+          6,
+          135
+        ]
+      ],
+      "min_score": 0.375,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 5.88
+    },
+    {
+      "layer": 12,
+      "npz_index": 12,
+      "transformer_layer": 13,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.3333,
+      "answer_fa": 0.5208,
+      "nt_accuracy": 0.8264,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          69,
+          45,
+          30
+        ],
+        [
+          53,
+          40,
+          27
+        ],
+        [
+          17,
+          8,
+          119
+        ]
+      ],
+      "min_score": 0.3333,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 8.85
+    },
+    {
+      "layer": 5,
+      "npz_index": 5,
+      "transformer_layer": 6,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.3083,
+      "answer_fa": 0.4236,
+      "nt_accuracy": 0.6458,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          83,
+          38,
+          23
+        ],
+        [
+          67,
+          37,
+          16
+        ],
+        [
+          37,
+          14,
+          93
+        ]
+      ],
+      "min_score": 0.3083,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.83
+    },
+    {
+      "layer": 13,
+      "npz_index": 13,
+      "transformer_layer": 14,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.2917,
+      "answer_fa": 0.4792,
+      "nt_accuracy": 0.8403,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          75,
+          38,
+          31
+        ],
+        [
+          53,
+          35,
+          32
+        ],
+        [
+          17,
+          6,
+          121
+        ]
+      ],
+      "min_score": 0.2917,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 8.7
+    },
+    {
+      "layer": 8,
+      "npz_index": 8,
+      "transformer_layer": 9,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.2833,
+      "answer_fa": 0.4444,
+      "nt_accuracy": 0.4792,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          80,
+          40,
+          24
+        ],
+        [
+          65,
+          34,
+          21
+        ],
+        [
+          36,
+          39,
+          69
+        ]
+      ],
+      "min_score": 0.2833,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.25
+    },
+    {
+      "layer": 9,
+      "npz_index": 9,
+      "transformer_layer": 10,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.2833,
+      "answer_fa": 0.4861,
+      "nt_accuracy": 0.6181,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          74,
+          37,
+          33
+        ],
+        [
+          56,
+          34,
+          30
+        ],
+        [
+          34,
+          21,
+          89
+        ]
+      ],
+      "min_score": 0.2833,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.9
+    },
+    {
+      "layer": 11,
+      "npz_index": 11,
+      "transformer_layer": 12,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.25,
+      "answer_fa": 0.5694,
+      "nt_accuracy": 0.8056,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          62,
+          36,
+          46
+        ],
+        [
+          46,
+          30,
+          44
+        ],
+        [
+          16,
+          12,
+          116
+        ]
+      ],
+      "min_score": 0.25,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.86
+    },
+    {
+      "layer": 10,
+      "npz_index": 10,
+      "transformer_layer": 11,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.225,
+      "answer_fa": 0.5556,
+      "nt_accuracy": 0.7708,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          64,
+          31,
+          49
+        ],
+        [
+          51,
+          27,
+          42
+        ],
+        [
+          25,
+          8,
+          111
+        ]
+      ],
+      "min_score": 0.225,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.29
+    },
+    {
+      "layer": 6,
+      "npz_index": 6,
+      "transformer_layer": 7,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.2,
+      "answer_fa": 0.5625,
+      "nt_accuracy": 0.8819,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          63,
+          26,
+          55
+        ],
+        [
+          56,
+          24,
+          40
+        ],
+        [
+          12,
+          5,
+          127
+        ]
+      ],
+      "min_score": 0.2,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 12.6
+    },
+    {
+      "layer": 7,
+      "npz_index": 7,
+      "transformer_layer": 8,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.1583,
+      "answer_fa": 0.3472,
+      "nt_accuracy": 0.6806,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          94,
+          24,
+          26
+        ],
+        [
+          77,
+          19,
+          24
+        ],
+        [
+          36,
+          10,
+          98
+        ]
+      ],
+      "min_score": 0.1583,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 12.5
+    },
+    {
+      "layer": 4,
+      "npz_index": 4,
+      "transformer_layer": 5,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.0833,
+      "answer_fa": 0.2778,
+      "nt_accuracy": 0.6181,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          104,
+          15,
+          25
+        ],
+        [
+          95,
+          10,
+          15
+        ],
+        [
+          49,
+          6,
+          89
+        ]
+      ],
+      "min_score": 0.0833,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 11.69
+    },
+    {
+      "layer": 3,
+      "npz_index": 3,
+      "transformer_layer": 4,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.05,
+      "answer_fa": 0.2222,
+      "nt_accuracy": 0.4444,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          112,
+          5,
+          27
+        ],
+        [
+          90,
+          6,
+          24
+        ],
+        [
+          76,
+          4,
+          64
+        ]
+      ],
+      "min_score": 0.05,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 8.78
+    },
+    {
+      "layer": 1,
+      "npz_index": 1,
+      "transformer_layer": 2,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "wo_recall": 0.0417,
+      "answer_fa": 0.7292,
+      "nt_accuracy": 0.7847,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          39,
+          9,
+          96
+        ],
+        [
+          38,
+          5,
+          77
+        ],
+        [
+          27,
+          4,
+          113
+        ]
+      ],
+      "min_score": 0.0417,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 12.38
+    },
+    {
+      "layer": 2,
+      "npz_index": 2,
+      "transformer_layer": 3,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "wo_recall": 0.0417,
+      "answer_fa": 0.2569,
+      "nt_accuracy": 0.3264,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          107,
+          3,
+          34
+        ],
+        [
+          92,
+          5,
+          23
+        ],
+        [
+          93,
+          4,
+          47
+        ]
+      ],
+      "min_score": 0.0417,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 10.59
+    },
+    {
+      "layer": 0,
+      "npz_index": 0,
+      "transformer_layer": 1,
+      "classifier": "logistic",
+      "best_C": 1.0,
+      "wo_recall": 0.0,
+      "answer_fa": 0.6458,
+      "nt_accuracy": 0.7569,
+      "n_wo": 120,
+      "n_answer": 144,
+      "n_nt": 144,
+      "confusion_matrix": [
+        [
+          51,
+          0,
+          93
+        ],
+        [
+          52,
+          0,
+          68
+        ],
+        [
+          32,
+          3,
+          109
+        ]
+      ],
+      "min_score": 0.0,
+      "n_train": 1736,
+      "n_ood": 408,
+      "time_sec": 15.0
+    }
+  ],
+  "best_layer": {
+    "layer": 23,
+    "npz_index": 23,
+    "transformer_layer": 24,
+    "min_score": 0.625,
+    "wo_recall": 0.625,
+    "answer_fa": 0.3472,
+    "nt_accuracy": 0.9722
+  }
+}

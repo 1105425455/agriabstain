@@ -1,0 +1,51 @@
+{
+  "total_records": 444,
+  "unique_images": 156,
+  "by_probe": {
+    "answerable": 156,
+    "absent": 156,
+    "confusion": 132
+  },
+  "by_relation": {
+    "OOD_answer": 156,
+    "OOD_absent": 156,
+    "OOD_confusion": 132
+  },
+  "by_decision": {
+    "answer": 156,
+    "abstain": 288
+  },
+  "by_reason": {
+    "None": 156,
+    "no_target": 156,
+    "wrong_object": 132
+  },
+  "answer_by_true_label": {
+    "apple rust leaf": 12,
+    "apple scab leaf": 12,
+    "corn gray leaf spot": 12,
+    "corn leaf blight": 12,
+    "corn rust leaf": 12,
+    "potato leaf late blight": 12,
+    "squash powdery mildew leaf": 12,
+    "tomato early blight leaf": 12,
+    "tomato leaf bacterial spot": 12,
+    "tomato leaf late blight": 12,
+    "tomato leaf yellow virus": 12,
+    "tomato mold leaf": 12,
+    "tomato septoria leaf spot": 12
+  },
+  "expected_answer": 156,
+  "expected_absent": 156,
+  "expected_confusion": 132,
+  "expected_total": 444,
+  "confusion_crops": [
+    "apple",
+    "corn",
+    "tomato"
+  ],
+  "non_confusion_crops": [
+    "potato",
+    "squash"
+  ]
+}

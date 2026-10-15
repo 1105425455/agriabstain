@@ -1,0 +1,89 @@
+{
+  "tag": "L1_discrim",
+  "data": "new_reason/outputs/eval_probes/test_L1_discrim.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "n_samples": 410,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.7293,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 189,
+      "FP": 0,
+      "FN": 16,
+      "TN": 110,
+      "AU": 95,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 410,
+      "answerable": 205,
+      "unanswerable": 205,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.4634146341463415,
+      "HOR_FCA": 0.0,
+      "HOR_count": {
+        "high_occlusion_au": 0,
+        "high_occlusion_unanswerable": 0
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.07804878048780488,
+      "U_Abs": 0.5365853658536586,
+      "AAC": 0.9219512195121952,
+      "MCC": 0.4969164924281817
+    },
+    "grounding_reason": {
+      "A_Ground": 0.810333283165365,
+      "A_Ground_c": 0.8789329261846552,
+      "U_Reason": 0.5365853658536586,
+      "U_Reason_c": 1.0
+    },
+    "comparison": {
+      "UAC": 0.5365853658536586,
+      "AR": 0.3073170731707317
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.7292682926829268,
+    "MTS_macro": 0.7292682926829268,
+    "per_relation": {
+      "L1_mismatch": 0.5365853658536586,
+      "L1_real": 0.9219512195121952
+    },
+    "per_relation_counts": {
+      "L1_mismatch": {
+        "pass": 110,
+        "total": 205
+      },
+      "L1_real": {
+        "pass": 189,
+        "total": 205
+      }
+    }
+  },
+  "within_image": {
+    "n_paired_images": 75,
+    "n_samples": 410,
+    "MCC": 0.4969164924281817,
+    "AAC": 0.9219512195121952,
+    "FCA": 0.4634146341463415,
+    "confusion_matrix": {
+      "TP": 189,
+      "FP": 0,
+      "FN": 16,
+      "TN": 110,
+      "AU": 95,
+      "INVALID": 0
+    }
+  }
+}

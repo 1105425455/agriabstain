@@ -1,0 +1,237 @@
+{
+  "audit_name": "PlantDoc pre-split capability-gate audit",
+  "version": "1.0",
+  "selection_timing": "Model-informed label-space curation was performed on the complete pre-split PlantDoc base-record pool before source-image assignment to benchmark train/dev/test.",
+  "scope_note": "The `train` token in source sample IDs denotes the upstream PlantDoc directory; it is not the later leakage-safe benchmark train split.",
+  "model": "Qwen3-VL-8B-Instruct (raw base, no task adapter)",
+  "relation_filter": [
+    "base"
+  ],
+  "num_instances": 768,
+  "observed_label_count": 24,
+  "thresholds": {
+    "correct_rate": 0.4,
+    "iou": 0.5
+  },
+  "match": "case-insensitive after underscore/whitespace normalization",
+  "capability_excluded_labels": [
+    "bell_pepper_leaf_spot",
+    "blueberry_leaf",
+    "tomato_leaf",
+    "tomato_leaf_mosaic_virus"
+  ],
+  "capability_retained_labels": [
+    "apple_leaf",
+    "apple_rust_leaf",
+    "apple_scab_leaf",
+    "bell_pepper_leaf",
+    "cherry_leaf",
+    "corn_gray_leaf_spot",
+    "corn_leaf_blight",
+    "corn_rust_leaf",
+    "grape_leaf",
+    "peach_leaf",
+    "potato_leaf_late_blight",
+    "raspberry_leaf",
+    "soybean_leaf",
+    "squash_powdery_mildew_leaf",
+    "strawberry_leaf",
+    "tomato_early_blight_leaf",
+    "tomato_leaf_bacterial_spot",
+    "tomato_leaf_late_blight",
+    "tomato_mold_leaf",
+    "tomato_septoria_leaf_spot"
+  ],
+  "capability_retained_label_count": 20,
+  "additional_config_exclusion": {
+    "label": "plantdoc_unverified_class_14",
+    "reason": "unverified placeholder class; absent from the calibration pool"
+  },
+  "configured_but_unobserved_label": "tomato_leaf_yellow_virus",
+  "final_observed_agricultural_label_count": 20,
+  "per_label": {
+    "apple_leaf": {
+      "n": 38,
+      "answer_rate": 0.9210526315789473,
+      "label_match_rate": 0.9210526315789473,
+      "correct_rate": 0.9210526315789473,
+      "mean_iou_on_answered": 0.824359851132309
+    },
+    "apple_rust_leaf": {
+      "n": 42,
+      "answer_rate": 0.8571428571428571,
+      "label_match_rate": 0.8571428571428571,
+      "correct_rate": 0.7857142857142857,
+      "mean_iou_on_answered": 0.8063252235714251
+    },
+    "apple_scab_leaf": {
+      "n": 43,
+      "answer_rate": 0.9302325581395349,
+      "label_match_rate": 0.9302325581395349,
+      "correct_rate": 0.9302325581395349,
+      "mean_iou_on_answered": 0.877537030782358
+    },
+    "bell_pepper_leaf": {
+      "n": 10,
+      "answer_rate": 0.6,
+      "label_match_rate": 0.6,
+      "correct_rate": 0.5,
+      "mean_iou_on_answered": 0.7126016574432644
+    },
+    "bell_pepper_leaf_spot": {
+      "n": 17,
+      "answer_rate": 0.35294117647058826,
+      "label_match_rate": 0.35294117647058826,
+      "correct_rate": 0.35294117647058826,
+      "mean_iou_on_answered": 0.8682330712666081
+    },
+    "blueberry_leaf": {
+      "n": 9,
+      "answer_rate": 0.4444444444444444,
+      "label_match_rate": 0.4444444444444444,
+      "correct_rate": 0.3333333333333333,
+      "mean_iou_on_answered": 0.6232166970768542
+    },
+    "cherry_leaf": {
+      "n": 4,
+      "answer_rate": 1.0,
+      "label_match_rate": 1.0,
+      "correct_rate": 1.0,
+      "mean_iou_on_answered": 0.7856973944181536
+    },
+    "corn_gray_leaf_spot": {
+      "n": 52,
+      "answer_rate": 0.75,
+      "label_match_rate": 0.6923076923076923,
+      "correct_rate": 0.5961538461538461,
+      "mean_iou_on_answered": 0.8158331216149934
+    },
+    "corn_leaf_blight": {
+      "n": 97,
+      "answer_rate": 0.8350515463917526,
+      "label_match_rate": 0.8247422680412371,
+      "correct_rate": 0.6804123711340206,
+      "mean_iou_on_answered": 0.7629040139910546
+    },
+    "corn_rust_leaf": {
+      "n": 75,
+      "answer_rate": 0.88,
+      "label_match_rate": 0.88,
+      "correct_rate": 0.8666666666666667,
+      "mean_iou_on_answered": 0.897145109289329
+    },
+    "grape_leaf": {
+      "n": 18,
+      "answer_rate": 1.0,
+      "label_match_rate": 1.0,
+      "correct_rate": 1.0,
+      "mean_iou_on_answered": 0.8574581729364251
+    },
+    "peach_leaf": {
+      "n": 9,
+      "answer_rate": 0.8888888888888888,
+      "label_match_rate": 0.8888888888888888,
+      "correct_rate": 0.8888888888888888,
+      "mean_iou_on_answered": 0.879916669120705
+    },
+    "potato_leaf_late_blight": {
+      "n": 37,
+      "answer_rate": 0.7297297297297297,
+      "label_match_rate": 0.7027027027027027,
+      "correct_rate": 0.4864864864864865,
+      "mean_iou_on_answered": 0.6693916207355328
+    },
+    "raspberry_leaf": {
+      "n": 12,
+      "answer_rate": 1.0,
+      "label_match_rate": 1.0,
+      "correct_rate": 0.75,
+      "mean_iou_on_answered": 0.7116702189760099
+    },
+    "soybean_leaf": {
+      "n": 8,
+      "answer_rate": 0.875,
+      "label_match_rate": 0.875,
+      "correct_rate": 0.75,
+      "mean_iou_on_answered": 0.8138183942950875
+    },
+    "squash_powdery_mildew_leaf": {
+      "n": 64,
+      "answer_rate": 0.828125,
+      "label_match_rate": 0.828125,
+      "correct_rate": 0.828125,
+      "mean_iou_on_answered": 0.9213122761665207
+    },
+    "strawberry_leaf": {
+      "n": 4,
+      "answer_rate": 1.0,
+      "label_match_rate": 1.0,
+      "correct_rate": 1.0,
+      "mean_iou_on_answered": 0.9025853027312185
+    },
+    "tomato_early_blight_leaf": {
+      "n": 42,
+      "answer_rate": 0.8333333333333334,
+      "label_match_rate": 0.7857142857142857,
+      "correct_rate": 0.7380952380952381,
+      "mean_iou_on_answered": 0.7855837459990692
+    },
+    "tomato_leaf": {
+      "n": 9,
+      "answer_rate": 0.6666666666666666,
+      "label_match_rate": 0.6666666666666666,
+      "correct_rate": 0.2222222222222222,
+      "mean_iou_on_answered": 0.33636946862497447
+    },
+    "tomato_leaf_bacterial_spot": {
+      "n": 45,
+      "answer_rate": 0.7555555555555555,
+      "label_match_rate": 0.7555555555555555,
+      "correct_rate": 0.6222222222222222,
+      "mean_iou_on_answered": 0.7564446862466543
+    },
+    "tomato_leaf_late_blight": {
+      "n": 53,
+      "answer_rate": 0.6415094339622641,
+      "label_match_rate": 0.6415094339622641,
+      "correct_rate": 0.4339622641509434,
+      "mean_iou_on_answered": 0.6448608760626624
+    },
+    "tomato_leaf_mosaic_virus": {
+      "n": 7,
+      "answer_rate": 0.0,
+      "label_match_rate": 0.0,
+      "correct_rate": 0.0,
+      "mean_iou_on_answered": 0.0
+    },
+    "tomato_mold_leaf": {
+      "n": 34,
+      "answer_rate": 0.6470588235294118,
+      "label_match_rate": 0.6470588235294118,
+      "correct_rate": 0.6176470588235294,
+      "mean_iou_on_answered": 0.8744513935356114
+    },
+    "tomato_septoria_leaf_spot": {
+      "n": 39,
+      "answer_rate": 0.8461538461538461,
+      "label_match_rate": 0.8461538461538461,
+      "correct_rate": 0.8461538461538461,
+      "mean_iou_on_answered": 0.8857351912643435
+    }
+  },
+  "provenance": {
+    "calibration_records": {
+      "path": "outputs/benchmarks/sampled/calibration/plantdoc_answerable_calibration.jsonl",
+      "sha256": "1a8e6b6381b6604b08adcdcc6da956537eff2fde0113480ae6c42ba1f3b3df41"
+    },
+    "base_predictions": {
+      "path": "outputs/evals/qwen3vl8b_raw/plantdoc_answerable_predictions.jsonl",
+      "sha256": "3fbf2fbd4faeb099f02bb22c9d85087fac6f658e33fda4e543a9ad7264f5174d"
+    },
+    "historical_gate_summary": {
+      "path": "outputs/evals/qwen3vl8b_raw/plantdoc_capability_gate.json",
+      "sha256": "cd6cafeafbd3203667ef2513f36f3b1d8b97b02c51fbdd257663a90ad9e62208"
+    }
+  },
+  "limitation": "Because the capability filter precedes benchmark splitting and uses base-model predictions, the agricultural label space is capability-controlled rather than a model-independent sample of all PlantDoc classes."
+}

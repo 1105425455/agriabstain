@@ -1,0 +1,16 @@
+{
+  "fingerprint": "base=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct@4096_1782039040 | adapter_model=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors@109572070_1783513071 | calibrated_head=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt@8955629_1783514612 | data=/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/eval/dev_L3_dose.jsonl@981276_1784364095 | world=4 | limit=None | max_pixels=262144 | variant_set=all | derived_root=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images | batch_size=1",
+  "n_rows": 677,
+  "n_variants": 4739,
+  "error_count": 0,
+  "model_paths": {
+    "base": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+    "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+    "calibrated_head": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt"
+  },
+  "data_path": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/eval/dev_L3_dose.jsonl",
+  "variant_set": "all",
+  "batch_size": 1,
+  "world_size": 4,
+  "output": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/evidence/L3/dev_variants/head_probabilities.jsonl"
+}

@@ -1,0 +1,316 @@
+........................................................................ [ 30%]
+FFFFFFFF.F.F............................................................ [ 61%]
+....................ss.................................................. [ 91%]
+....................                                                     [100%]
+=================================== FAILURES ===================================
+___________________ test_copy_matches_canonical_fixed_points ___________________
+
+    def test_copy_matches_canonical_fixed_points() -> None:
+        text = _copy_text()
+        rows = _rows(ANALYSIS_DIR / "native_comparison.csv")
+    
+        expected = {
+            "comprehensive": {
+                "fca": (0.211, 0.094, 0.132),
+                "retention": (0.833, 0.851, 0.976),
+                "strict3": (0.660, 0.819, 0.856),
+                "e2e": (0.656, 0.705, 0.701),
+            },
+            "plantwild": {
+                "fca": (0.360, 0.155, 0.269),
+                "retention": (0.792, 0.764, 0.854),
+                "strict3": (0.375, 0.647, 0.694),
+            },
+            "refcocog": {
+                "fca": (0.044, 0.044, 0.083),
+                "retention": (0.983, 0.901, 1.000),
+                "strict3": (0.762, 0.834, 0.820),
+                "e2e": (0.525, 0.645, 0.645),
+            },
+        }
+        methods = ("Base_native", "SFT_native_observed", "ReGate")
+        fields = {
+            "fca": "unsupported_hallucination_rate",
+            "retention": "supported_query_retention",
+            "strict3": "strict_3_accuracy",
+            "e2e": "a_ground_mean_iou_over_supported",
+        }
+        for dataset, metrics in expected.items():
+            for metric, displayed in metrics.items():
+                actual = tuple(
+                    round(float(rows[(dataset, method)][fields[metric]]), 3) for method in methods
+                )
+                assert actual == displayed
+    
+        assert "from $0.525$ to $0.645$" in text
+>       assert "improves comprehensive E2E-mIoU from $0.656$ to $0.705$" in text
+E       AssertionError: assert 'improves comprehensive E2E-mIoU from $0.656$ to $0.705$' in '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+
+experiments/base_native_regate/test_paper_metric_consistency.py:167: AssertionError
+________________ test_copy_matches_comprehensive_gpt_comparison ________________
+
+    def test_copy_matches_comprehensive_gpt_comparison() -> None:
+        text = _copy_text()
+        comparison = json.loads(
+            (GPT_DIR / "test_full" / "analysis" / "comparison.json").read_text(encoding="utf-8")
+        )
+        gpt = comparison["gpt56_sol"]["metrics"]
+        regate = comparison["regate_reference"]["metrics"]
+        values = (
+            gpt["headline"]["FCA"],
+            gpt["safeguard"]["A_FU"],
+            gpt["safeguard"]["MCC"],
+            gpt["semantic"]["Strict_3"],
+            gpt["grounding_reason"]["E2E_mIoU"],
+            regate["headline"]["FCA"],
+            regate["safeguard"]["A_FU"],
+            regate["safeguard"]["MCC"],
+            regate["semantic"]["Strict_3"],
+            regate["grounding_reason"]["E2E_mIoU"],
+        )
+        rounded = tuple(round(value, 3) for value in values)
+        assert rounded == (0.302, 0.076, 0.639, 0.664, 0.625, 0.132, 0.024, 0.849, 0.856, 0.701)
+>       assert "GPT-5.6 Sol & 0.302 & 0.076 & 0.639 & 0.664 & 0.625" in text
+E       AssertionError: assert 'GPT-5.6 Sol & 0.302 & 0.076 & 0.639 & 0.664 & 0.625' in '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+
+experiments/base_native_regate/test_paper_metric_consistency.py:194: AssertionError
+____________ test_copy_fixed_point_table_matches_canonical_analysis ____________
+
+    def test_copy_fixed_point_table_matches_canonical_analysis() -> None:
+        text = _copy_text()
+>       block = _table_block(text, "tab:fixed_point_comparison")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:201: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+label = 'tab:fixed_point_comparison'
+
+    def _table_block(text: str, label: str) -> str:
+        """The whole float carrying ``label``.
+    
+        The label may sit either before the tabular body or after the caption, so the
+        block is taken from the enclosing ``\\begin{table}`` to its ``\\end{table}``.
+        """
+>       anchor = text.index(f"\\label{{{label}}}")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: substring not found
+
+experiments/base_native_regate/test_paper_metric_consistency.py:106: ValueError
+__________________ test_copy_gpt_tables_match_all_comparisons __________________
+
+    def test_copy_gpt_tables_match_all_comparisons() -> None:
+        text = _copy_text()
+        full_block = _table_block(text, "tab:gpt56_full")
+        probes = {
+            "Comprehensive": "test_full",
+            "L1 Discrimination": "L1_discrim",
+            "L2 Evidence removal": "L2_evidence",
+            "L3 Visibility endpoints": "L3_dose",
+            "RefCOCOg": "ood_refcocog",
+            "PlantWild": "plantwild_real_closed12_v1",
+        }
+        fields = (
+            ("headline", "FCA"),
+            ("safeguard", "A_FU"),
+            ("safeguard", "MCC"),
+            ("semantic", "Strict_3"),
+        )
+        for label, probe in probes.items():
+            comparison = _comparison(probe)
+            regate = comparison["regate_reference"]["metrics"]
+            gpt = comparison["gpt56_sol"]["metrics"]
+            expected: list[float] = []
+            for section, key in fields:
+                expected.extend((round(regate[section][key], 3), round(gpt[section][key], 3)))
+            if label != "PlantWild":
+                expected.extend(
+                    (
+                        round(regate["grounding_reason"]["E2E_mIoU"], 3),
+                        round(gpt["grounding_reason"]["E2E_mIoU"], 3),
+                    )
+                )
+>           assert _row_values(full_block, label) == tuple(expected)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:257: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+block = '\\begin{table}[t]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{1mm}\n\\begin{tabular*}{\\columnwidth}{@{\\extracol.../GPT-5.6 Sol comparison; cells follow this order. S3 and E2E denote Strict-3 and E2E-mIoU.}\n\\label{tab:gpt56_full}\n'
+label = 'Comprehensive'
+
+    def _row_values(block: str, label: str) -> tuple[float, ...]:
+        match = re.search(rf"(?m)^{re.escape(label)}\s*&(.+?)\\\\", block, flags=re.DOTALL)
+>       assert match is not None, f"missing table row: {label}"
+E       AssertionError: missing table row: Comprehensive
+E       assert None is not None
+
+experiments/base_native_regate/test_paper_metric_consistency.py:114: AssertionError
+_____________ test_copy_prompt_interface_table_matches_raw_metrics _____________
+
+    def test_copy_prompt_interface_table_matches_raw_metrics() -> None:
+        text = _copy_text()
+>       block = _table_block(text, "tab:comparison_mcc")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:279: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+label = 'tab:comparison_mcc'
+
+    def _table_block(text: str, label: str) -> str:
+        """The whole float carrying ``label``.
+    
+        The label may sit either before the tabular body or after the caption, so the
+        block is taken from the enclosing ``\\begin{table}`` to its ``\\end{table}``.
+        """
+>       anchor = text.index(f"\\label{{{label}}}")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: substring not found
+
+experiments/base_native_regate/test_paper_metric_consistency.py:106: ValueError
+____________ test_copy_grouping_ablation_matches_canonical_artifact ____________
+
+    def test_copy_grouping_ablation_matches_canonical_artifact() -> None:
+        text = _copy_text()
+        artifact = json.loads(GROUPING_ABLATION_ARTIFACT.read_text(encoding="utf-8"))
+        assert artifact["primary_mts"] == "MTS_macro"
+        assert all(artifact["data_control"]["checks"].values())
+        rows = {(row["interface"], row["dataset"]): row for row in artifact["rows"]}
+    
+>       main_block = _table_block(text, "tab:grouping_ablation_main")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:319: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+label = 'tab:grouping_ablation_main'
+
+    def _table_block(text: str, label: str) -> str:
+        """The whole float carrying ``label``.
+    
+        The label may sit either before the tabular body or after the caption, so the
+        block is taken from the enclosing ``\\begin{table}`` to its ``\\end{table}``.
+        """
+>       anchor = text.index(f"\\label{{{label}}}")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: substring not found
+
+experiments/base_native_regate/test_paper_metric_consistency.py:106: ValueError
+________ test_copy_representation_and_evidence_metrics_match_artifacts _________
+
+    def test_copy_representation_and_evidence_metrics_match_artifacts() -> None:
+        text = _copy_text()
+>       block = _table_block(text, "tab:representation_probe")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:388: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+label = 'tab:representation_probe'
+
+    def _table_block(text: str, label: str) -> str:
+        """The whole float carrying ``label``.
+    
+        The label may sit either before the tabular body or after the caption, so the
+        block is taken from the enclosing ``\\begin{table}`` to its ``\\end{table}``.
+        """
+>       anchor = text.index(f"\\label{{{label}}}")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: substring not found
+
+experiments/base_native_regate/test_paper_metric_consistency.py:106: ValueError
+____ test_copy_relation_layer_and_matched_retention_metrics_match_artifacts ____
+
+    def test_copy_relation_layer_and_matched_retention_metrics_match_artifacts() -> None:
+        text = _copy_text()
+>       relation_block = _table_block(text, "tab:per_relation_pass")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:451: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+label = 'tab:per_relation_pass'
+
+    def _table_block(text: str, label: str) -> str:
+        """The whole float carrying ``label``.
+    
+        The label may sit either before the tabular body or after the caption, so the
+        block is taken from the enclosing ``\\begin{table}`` to its ``\\end{table}``.
+        """
+>       anchor = text.index(f"\\label{{{label}}}")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: substring not found
+
+experiments/base_native_regate/test_paper_metric_consistency.py:106: ValueError
+_________ test_copy_dataset_counts_and_capability_table_match_package __________
+
+    def test_copy_dataset_counts_and_capability_table_match_package() -> None:
+        text = _copy_text()
+        sft_records = json.loads(SFT_TRAIN.read_text(encoding="utf-8"))
+        state_counts = Counter(record["head_label"] for record in sft_records)
+        assert len(sft_records) == 7072
+        assert state_counts == Counter({0: 2703, 1: 1500, 2: 2869})
+        distinct = len(
+            {json.dumps(record, sort_keys=True, separators=(",", ":")) for record in sft_records}
+        )
+        assert distinct == 6138
+        split = json.loads(SPLIT_MANIFEST.read_text(encoding="utf-8"))
+        assembled = len(sft_records) - (state_counts[1] - split["train"]["t6_count"])
+        assert assembled == 6545
+>       assert "contains $6{,}545$ assembled training instances" in text
+E       AssertionError: assert 'contains $6{,}545$ assembled training instances' in '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+
+experiments/base_native_regate/test_paper_metric_consistency.py:566: AssertionError
+_________ test_copy_formulas_match_metric_and_training_implementations _________
+
+    def test_copy_formulas_match_metric_and_training_implementations() -> None:
+        text = _copy_text()
+    
+>       assert r"\mathbf{1}\!\left[d(o_i)\neq\textsc{Answer}\right]" in text
+E       AssertionError: assert '\\mathbf{1}\\!\\left[d(o_i)\\neq\\textsc{Answer}\\right]' in '%File: main.tex\n% ReGate: Reason-Attributed Selective Grounding\n% AAAI 2027 Submission\n\\documentclass[letterpaper...on. After reasoning, output the final decision as the LAST line, ONLY as JSON.\n\\par\n\\endgroup\n\n\\end{document}\n'
+
+experiments/base_native_regate/test_paper_metric_consistency.py:728: AssertionError
+=============================== warnings summary ===============================
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+    a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+    return fun(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_matches_canonical_fixed_points
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_matches_comprehensive_gpt_comparison
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_fixed_point_table_matches_canonical_analysis
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_gpt_tables_match_all_comparisons
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_prompt_interface_table_matches_raw_metrics
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_grouping_ablation_matches_canonical_artifact
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_representation_and_evidence_metrics_match_artifacts
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_relation_layer_and_matched_retention_metrics_match_artifacts
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_dataset_counts_and_capability_table_match_package
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_formulas_match_metric_and_training_implementations
+10 failed, 224 passed, 2 skipped, 18 warnings in 165.16s (0:02:45)

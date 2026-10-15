@@ -1,0 +1,288 @@
+{
+  "benchmark_name": "ReGate Benchmark Subset",
+  "version": "1.0",
+  "description": "Annotation-only subset accompanying the anonymous supplement: source-ID, state, relation and split manifests, SFT records, evaluation probes, and audits. Images are NOT included; IMAGE_MANIFEST.json lists their file names and SHA-256 so that copies obtained from the original public sources can be verified. Construction, training, evaluation and analysis code ARE included (configs/, scripts/, reason_abstain/, training/, evaluation/, experiments/). See REVIEWER_README.md for the reproduction path.",
+  "image_counts": {
+    "source_plantdoc": {
+      "total": 726,
+      "expected": 726,
+      "match": true,
+      "by_split": {
+        "train": 502,
+        "dev": 110,
+        "test": 114
+      }
+    },
+    "source_coco": {
+      "total": 203,
+      "expected": 203,
+      "match": true,
+      "by_split": {
+        "train": 142,
+        "dev": 30,
+        "test": 31
+      }
+    },
+    "ood_refcocog": {
+      "total": 181,
+      "expected": 181,
+      "match": true
+    },
+    "ood_plantwild_closed12": {
+      "total": 144,
+      "expected": 144,
+      "match": true
+    }
+  },
+  "annotation_counts": {
+    "sft_train": {
+      "actual": 7072,
+      "expected": 7072,
+      "match": true
+    },
+    "sft_dev": {
+      "actual": 2408,
+      "expected": 2408,
+      "match": true
+    },
+    "sft_test": {
+      "actual": 2646,
+      "expected": 2646,
+      "match": true
+    },
+    "closed12": {
+      "actual": 408,
+      "expected": 408,
+      "match": true
+    },
+    "refcocog": {
+      "actual": 362,
+      "expected": 362,
+      "match": true
+    }
+  },
+  "annotations": [
+    {
+      "path": "annotations/splits/train.jsonl",
+      "format": "jsonl",
+      "sha256": "9592cedeef8ff8c3429b81466fb95763ce4a0769c2bfdf40c80493d36320c530",
+      "bytes": 11791658,
+      "records": 14701
+    },
+    {
+      "path": "annotations/splits/dev.jsonl",
+      "format": "jsonl",
+      "sha256": "dba7ed433cdf6e1e2584f04ff86868cf7bcff9329258f33d214c9150ab111042",
+      "bytes": 1929457,
+      "records": 2408
+    },
+    {
+      "path": "annotations/splits/test.jsonl",
+      "format": "jsonl",
+      "sha256": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4",
+      "bytes": 2172337,
+      "records": 2646
+    },
+    {
+      "path": "annotations/splits/dose_pool.jsonl",
+      "format": "jsonl",
+      "sha256": "93534f3267196144d91fb9f63d58ab6c29260d91d2fd3b1626096abe61b0179b",
+      "bytes": 8393009,
+      "records": 9128
+    },
+    {
+      "path": "annotations/splits/split_manifest.json",
+      "format": "json",
+      "sha256": "d0435dc768f1289b5f65c405d3658c38d3540eb0b5156a5aa3ede1a89de0c986",
+      "bytes": 4796,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/splits/SPLIT_METADATA_FIX_AUDIT.json",
+      "format": "json",
+      "sha256": "de5e5e82923eac594afac1b2102c73b4361769481b8d905f79d6a244609f3069",
+      "bytes": 2176,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/sft/sft_train.json",
+      "format": "json",
+      "sha256": "5c6b18abbbd3273378c8ae74b41d940401b0e546feecd3afbe0e75abdcf9fd99",
+      "bytes": 7273109,
+      "records": 7072
+    },
+    {
+      "path": "annotations/sft/sft_train_with_source.json",
+      "format": "json",
+      "sha256": "57c7bd74c1127b1529bbe03d6f44dec2b93257498e18ee7ad4896c91fbf704e2",
+      "bytes": 7805664,
+      "records": 7072
+    },
+    {
+      "path": "annotations/sft/sft_dev.json",
+      "format": "json",
+      "sha256": "b0fdbc5a66e59b54ed7449cdc6c3e4a0a90661ba9c36f85ad0e7dbdd65d5e23c",
+      "bytes": 2466935,
+      "records": 2408
+    },
+    {
+      "path": "annotations/sft/sft_test.jsonl",
+      "format": "jsonl",
+      "sha256": "ae6e5e46fcbfaf3613e37299ac143e45d501f1030398cded911b94d74b50a9b2",
+      "bytes": 3026001,
+      "records": 2646
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.jsonl",
+      "format": "jsonl",
+      "sha256": "76aff96a8472533927525b6d2fe8b70e9348f247d980a196f4de519dcdd8ee5b",
+      "bytes": 18212085,
+      "records": 20131
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.summary.json",
+      "format": "json",
+      "sha256": "ed716e35b210f431ff3ff5c7ad73561a69bd4c037111d641827c0d87df0b2ffb",
+      "bytes": 1861,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.config.snapshot.yaml",
+      "format": "yaml",
+      "sha256": "9e0fcda4fb43c043c2a6a6809316f7a6ad2bfc8336bb5ac0c51ca8ecb877bf42",
+      "bytes": 2571
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.jsonl",
+      "format": "jsonl",
+      "sha256": "1128c5aef89234e08091344d394a002117c4bf6b38ed492f08f441f488b663cd",
+      "bytes": 7079468,
+      "records": 9999
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.summary.json",
+      "format": "json",
+      "sha256": "97260baa94aa8d809a174210d43246c6c10d733caaab3c9d20d8f57bb5d31bb4",
+      "bytes": 1232,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.config.snapshot.yaml",
+      "format": "yaml",
+      "sha256": "b20d2d843508087ae9369bb48488422162e16e3a74e1f3e48af29ac78f830e97",
+      "bytes": 525
+    },
+    {
+      "path": "annotations/eval/dev_L1_discrim.jsonl",
+      "format": "jsonl",
+      "sha256": "b324a31b03d44e9b7df40b025f1f5f6109464d6c96f118a2627f26fc3a417f17",
+      "bytes": 607853,
+      "records": 410
+    },
+    {
+      "path": "annotations/eval/dev_L2_evidence.jsonl",
+      "format": "jsonl",
+      "sha256": "62c2feeb8277e7d71ec19dacf1ed64d5f2b8ac36362db2e164f8db6a0c814aad",
+      "bytes": 777864,
+      "records": 570
+    },
+    {
+      "path": "annotations/eval/dev_L3_dose.jsonl",
+      "format": "jsonl",
+      "sha256": "ac89122c659f43c2302b0274e8f53f49f3ea307fc4dcaec67654a9a2a4580713",
+      "bytes": 972475,
+      "records": 677
+    },
+    {
+      "path": "annotations/eval/test_L1_discrim.jsonl",
+      "format": "jsonl",
+      "sha256": "c2299b2dd7884493c4fb52618537245e0dbe069dfd81cc4984991a56fe28a4a7",
+      "bytes": 624559,
+      "records": 410
+    },
+    {
+      "path": "annotations/eval/test_L2_evidence.jsonl",
+      "format": "jsonl",
+      "sha256": "6c048013532cc8ff379d792fdb8cdefdb97b33f360f3facc7f2afd3387fb0cbb",
+      "bytes": 1080417,
+      "records": 790
+    },
+    {
+      "path": "annotations/eval/test_L3_dose.jsonl",
+      "format": "jsonl",
+      "sha256": "9551a5daf498e6d578f16136ae7e1c26db21a1ff6766f204146f64f2f1fa47c9",
+      "bytes": 1082083,
+      "records": 750
+    },
+    {
+      "path": "annotations/eval/ood_refcocog.jsonl",
+      "format": "jsonl",
+      "sha256": "6a634b52c8ff518f53474532b06b7564cde390ccc8813bec9784e73433a0e045",
+      "bytes": 527217,
+      "records": 362
+    },
+    {
+      "path": "annotations/eval/REFCOCOG_IMAGE_ID_ISOLATION_AUDIT.json",
+      "format": "json",
+      "sha256": "97bd0e0a456bcecec210b8e6854994c5d6652fea01ee4e5d7e60804219a60844",
+      "bytes": 1834,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/eval/plantwild_real_closed12_paired_408.jsonl",
+      "format": "jsonl",
+      "sha256": "404bfa8fa515cbeb70ff5207053b11e18d8192abaecc289ff7d5cdcb72f3d6d3",
+      "bytes": 597458,
+      "records": 408
+    },
+    {
+      "path": "annotations/eval/BUILD_AUDIT.json",
+      "format": "json",
+      "sha256": "49ba87a94883395f9984178d8e9c4f69164f9a0aafd454075e7c112191c5d0f6",
+      "bytes": 48165,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/audits/PLANTDOC_CAPABILITY_GATE_AUDIT.json",
+      "format": "json",
+      "sha256": "cba0fbb3bb04fcc67ace00034876a9022871f3a76b0f517d81a6e2fc42d6aa0e",
+      "bytes": 7391,
+      "records": "N/A (dict)"
+    }
+  ],
+  "path_audit": {
+    "old_prefix_occurrences": {},
+    "old_prefix_occurrences_total": 0,
+    "missing_image_refs": {},
+    "missing_image_refs_total": 0,
+    "derived_image_refs_count": 50867,
+    "derived_image_refs": [
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-gaussian_blur.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-mean_replace.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-pixelate.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-include.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-100.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-075.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-050.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-include.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-100.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-075.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-050.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-gaussian_blur.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-mean_replace.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-pixelate.jpg"
+    ]
+  },
+  "image_manifest": "IMAGE_MANIFEST.json",
+  "supplement_scope": {
+    "images_included": false,
+    "code_included": true,
+    "image_acquisition": "REVIEWER_README.md, section 'Obtaining the images'"
+  }
+}

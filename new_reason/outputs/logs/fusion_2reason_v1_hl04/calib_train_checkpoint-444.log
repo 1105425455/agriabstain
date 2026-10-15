@@ -1,0 +1,43 @@
+[calibrate_head_2reason pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head_2reason r0] 合并 shard
+[calibrate_head_2reason r0] train: (7072, 4096), answer=2703 abstain=4369
+[calibrate_head_2reason r0] dev:   (100, 4096),  answer=34 abstain=66
+[calibrate_head_2reason r0] mu: (4096,), sd: (4096,)
+[calibrate_head_2reason r0] 训练 MLP(4096→512→256→2) 二分类
+[calibrate_head_2reason r0]   epoch 50/1000, train_loss=0.0229, dev_loss=0.6186, dev_MCC=0.7513, per_class_acc={'answer': '79.41%', 'abstain': '93.94%'}
+[calibrate_head_2reason r0]     → 新最佳 dev loss: 0.6186 (epoch 50)
+[calibrate_head_2reason r0]   epoch 100/1000, train_loss=0.0037, dev_loss=0.8123, dev_MCC=0.7513, per_class_acc={'answer': '79.41%', 'abstain': '93.94%'}
+[calibrate_head_2reason r0]     → patience 1/5
+[calibrate_head_2reason r0]   epoch 150/1000, train_loss=0.0102, dev_loss=0.5046, dev_MCC=0.7509, per_class_acc={'answer': '76.47%', 'abstain': '95.45%'}
+[calibrate_head_2reason r0]     → 新最佳 dev loss: 0.5046 (epoch 150)
+[calibrate_head_2reason r0]   epoch 200/1000, train_loss=0.0024, dev_loss=0.6474, dev_MCC=0.7739, per_class_acc={'answer': '79.41%', 'abstain': '95.45%'}
+[calibrate_head_2reason r0]     → patience 1/5
+[calibrate_head_2reason r0]   epoch 250/1000, train_loss=0.0025, dev_loss=0.6964, dev_MCC=0.7513, per_class_acc={'answer': '79.41%', 'abstain': '93.94%'}
+[calibrate_head_2reason r0]     → patience 2/5
+[calibrate_head_2reason r0]   epoch 300/1000, train_loss=0.0017, dev_loss=0.7010, dev_MCC=0.7974, per_class_acc={'answer': '79.41%', 'abstain': '96.97%'}
+[calibrate_head_2reason r0]     → patience 3/5
+[calibrate_head_2reason r0]   epoch 350/1000, train_loss=0.0018, dev_loss=0.7031, dev_MCC=0.7974, per_class_acc={'answer': '79.41%', 'abstain': '96.97%'}
+[calibrate_head_2reason r0]     → patience 4/5
+[calibrate_head_2reason r0]   epoch 400/1000, train_loss=0.0199, dev_loss=0.5097, dev_MCC=0.7278, per_class_acc={'answer': '76.47%', 'abstain': '93.94%'}
+[calibrate_head_2reason r0]     → patience 5/5
+[calibrate_head_2reason r0]   早停于 epoch 400，最佳 dev loss: 0.5046
+[calibrate_head_2reason r0] 已恢复最佳权重（最佳 dev loss: 0.5046）
+[calibrate_head_2reason r0] train MCC (binary): 0.9979
+[calibrate_head_2reason r0] dev   MCC (binary): 0.7509
+[calibrate_head_2reason r0] 
+=== dev classification_report ===
+              precision    recall  f1-score   support
+
+   answer(0)     0.8966    0.7647    0.8254        34
+  abstain(1)     0.8873    0.9545    0.9197        66
+
+    accuracy                         0.8900       100
+   macro avg     0.8919    0.8596    0.8726       100
+weighted avg     0.8905    0.8900    0.8876       100
+
+[calibrate_head_2reason r0]   answer(0) acc: 0.7647 (34 样本)
+[calibrate_head_2reason r0]   abstain(1) acc: 0.9545 (66 样本)
+[calibrate_head_2reason r0] 写 discrim_head_calibrated.pt（二分类）
+[calibrate_head_2reason r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_2reason/fusion_2reason_v1_hl04/checkpoint-444/discrim_head_calibrated.pt
+[calibrate_head_2reason r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head_2reason r0] mu: (4096,), sd: (4096,)

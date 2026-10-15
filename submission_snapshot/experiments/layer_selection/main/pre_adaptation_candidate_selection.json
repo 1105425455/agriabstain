@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "protocol": "pre_adaptation_frozen_base_candidate_comparison_v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "adapter": null,
+  "readout": "pre_response_prompt_token",
+  "candidate_policy": "compare_fixed_api_indices_9_18_27",
+  "selection_metric": "maximum minimum per-state development accuracy",
+  "split": {
+    "group_disjoint": true,
+    "seed": 42,
+    "extracted_records": 1736,
+    "probe_fit_records": 1599,
+    "probe_development_records": 137
+  },
+  "candidates": [
+    {
+      "api_index": 9,
+      "npz_index": 8,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "answer_accuracy": 0.7021,
+      "visual_contradiction_accuracy": 0.7385,
+      "target_unavailable_accuracy": 0.8,
+      "min_per_state_accuracy": 0.7021
+    },
+    {
+      "api_index": 18,
+      "npz_index": 17,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "answer_accuracy": 0.766,
+      "visual_contradiction_accuracy": 0.7385,
+      "target_unavailable_accuracy": 0.8,
+      "min_per_state_accuracy": 0.7385
+    },
+    {
+      "api_index": 27,
+      "npz_index": 26,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "answer_accuracy": 0.766,
+      "visual_contradiction_accuracy": 0.8769,
+      "target_unavailable_accuracy": 0.84,
+      "min_per_state_accuracy": 0.766
+    }
+  ],
+  "selected_api_index": 27,
+  "selected_min_per_state_accuracy": 0.766,
+  "index_mapping": "API index L is hidden_states[L]; API index 27 is block-26 output",
+  "source_provenance": {
+    "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad"
+  }
+}

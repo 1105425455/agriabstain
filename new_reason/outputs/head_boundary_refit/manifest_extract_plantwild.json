@@ -1,0 +1,15 @@
+{
+  "base": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "input": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl",
+  "input_sha256": "3c80d1ff171a6f4ec76d141d1c7197512961726a1fce32ba9aad766f469d52ca",
+  "max_pixels": 262144,
+  "n_layers": 36,
+  "n_samples": 408,
+  "world_size": 1,
+  "script": "/user/huangyongbin/newrepo/agriabstain/new_reason/scripts/head_boundary_refit/extract_hidden_plantwild.py",
+  "script_sha256": "dfe5eab98bb182ac10f1443fdcaee53bbc6ee55d984ddbdd268d2eee8bfe74bf",
+  "date": "2026-07-15 18:10:06",
+  "extract_all_layers": true,
+  "dataset": "plantwild_closed12"
+}

@@ -1,0 +1,43 @@
+=== AgriAbstain eval [prompt_basic / plantwild_real_closed12_v1] ===
+n=408  n_ambiguous_skipped=0  unique_images=144
+
+--- Integer breakdown ---
+TP=79  FP=29  FN=36  TN=221  AU=43  INVALID=0
+answerable=144  unanswerable=264
+answer_coverage = 108/144  (unique images with any answer-prediction)
+strict_TP       = 79/144  (TP among answerable-paired unique images)
+
+--- Probe-level breakdown ---
+NT (no_target): decision_correct=142/144  reason_correct=135/144  AU=2/144
+WO (wrong_object): decision_correct=79/120  reason_correct=67/120  AU=41/120
+
+--- GATE ---
+format_valid_rate = 1.0000
+decision_accuracy = 0.6887
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.162879
+HOR_FCA (高危子集↓)  = 0.013889  (n=144)
+MTS_micro           = 0.688725
+MTS_macro           = 0.681481
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.250000
+U_Abs (拒对↑)       = 0.837121
+AAC (答对↑)         = 0.548611
+MCC                 = 0.581107
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.000000
+A_Ground_c          = 0.000000
+U_Reason↑           = 0.765152
+U_Reason_c          = 0.914027
+
+invalid_rate        = 0.000000
+confusion_matrix    = {'TP': 79, 'FP': 29, 'FN': 36, 'TN': 221, 'AU': 43, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent           0.937500  (135/144)
+  OOD_answer           0.548611  (79/144)
+  OOD_confusion        0.558333  (67/120)

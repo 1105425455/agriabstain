@@ -1,0 +1,195 @@
+{
+  "internal_exact_dedup": {
+    "excluded": [
+      {
+        "kept": "tomato early blight/google_0177.jpg",
+        "excluded": "tomato septoria leaf spot/google_0081.jpg",
+        "md5": "be78dab7a402de0c1ef3b56214365f7a"
+      }
+    ],
+    "groups": []
+  },
+  "internal_perceptual_dedup": {
+    "excluded": [],
+    "near_duplicate_groups": []
+  },
+  "copy_files_excluded": [
+    "apple rust/26 - Copy (2).jpg",
+    "corn gray leaf spot/2 - Copy (3).jpg",
+    "corn northern leaf blight/86 - Copy.jpg",
+    "corn northern leaf blight/1 - Copy (3).jpg",
+    "potato late blight/30 - Copy.jpg",
+    "potato late blight/google_0240 - Copy.jpg",
+    "potato late blight/80 - Copy.jpg",
+    "potato late blight/google_0039 - Copy (3).jpg",
+    "potato late blight/google_0110 - Copy.jpg",
+    "potato late blight/34 - Copy.jpg",
+    "potato late blight/google_0303 - Copy (2).jpg",
+    "potato late blight/70 - Copy (3).jpg",
+    "tomato leaf mold/google_0063 - Copy.jpg",
+    "tomato leaf mold/google_0308 - Copy (2).jpg",
+    "tomato leaf mold/58 - Copy.jpg",
+    "tomato septoria leaf spot/google_0266 - Copy.jpg",
+    "tomato septoria leaf spot/google_0140 - Copy.jpg",
+    "tomato yellow leaf curl virus/google_0072 - Copy.jpg"
+  ],
+  "manual_quality_excluded": [
+    {
+      "entry": "apple scab/71.jpg",
+      "cls": "apple scab",
+      "original_fname": "71.jpg",
+      "reason": "Apple fruit photograph carrying a BIGSTOCK watermark; not a leaf-disease scene."
+    },
+    {
+      "entry": "corn rust/google_0181.jpg",
+      "cls": "corn rust",
+      "original_fname": "google_0181.jpg",
+      "reason": "Four-panel severity-grading figure taken from a paper, with overlaid text and a scale bar; not a natural leaf-disease photograph."
+    }
+  ],
+  "plantdoc_cross_dedup": {
+    "excluded": [
+      {
+        "file": "apple rust/google_0064.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "corn gray leaf spot/google_0074.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "corn gray leaf spot/google_0140.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "corn northern leaf blight/google_0075.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "corn northern leaf blight/google_0126.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "corn northern leaf blight/google_0045.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "corn rust/google_0009.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "corn rust/74.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "corn rust/google_0105.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "potato late blight/google_0271.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "potato late blight/google_0225.jpg",
+        "min_hamming": 1
+      },
+      {
+        "file": "squash powdery mildew/google_0008.jpg",
+        "min_hamming": 3
+      },
+      {
+        "file": "squash powdery mildew/google_0304.jpg",
+        "min_hamming": 5
+      },
+      {
+        "file": "squash powdery mildew/google_0378.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato bacterial leaf spot/google_0099.jpg",
+        "min_hamming": 1
+      },
+      {
+        "file": "tomato bacterial leaf spot/google_0070.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato bacterial leaf spot/45.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato early blight/google_0177.jpg",
+        "min_hamming": 1
+      },
+      {
+        "file": "tomato early blight/google_0347.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "tomato late blight/google_0016.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato late blight/google_0263.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato late blight/google_0262.jpg",
+        "min_hamming": 2
+      },
+      {
+        "file": "tomato late blight/google_0091.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato septoria leaf spot/google_0226.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato septoria leaf spot/google_0063.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato septoria leaf spot/google_0020.jpg",
+        "min_hamming": 0
+      },
+      {
+        "file": "tomato septoria leaf spot/google_0223.jpg",
+        "min_hamming": 1
+      }
+    ],
+    "suspicious_6_8": []
+  },
+  "plantdoc_images_loaded": 2567,
+  "candidates_internal_dedup": 310,
+  "candidates_after_cross_dedup": {
+    "apple rust": 28,
+    "apple scab": 28,
+    "corn gray leaf spot": 18,
+    "corn northern leaf blight": 17,
+    "corn rust": 19,
+    "potato late blight": 14,
+    "squash powdery mildew": 25,
+    "tomato bacterial leaf spot": 25,
+    "tomato early blight": 32,
+    "tomato late blight": 25,
+    "tomato leaf mold": 21,
+    "tomato septoria leaf spot": 15,
+    "tomato yellow leaf curl virus": 16
+  },
+  "final_sampled": {
+    "apple rust": 12,
+    "apple scab": 12,
+    "corn gray leaf spot": 12,
+    "corn northern leaf blight": 12,
+    "corn rust": 12,
+    "potato late blight": 12,
+    "squash powdery mildew": 12,
+    "tomato bacterial leaf spot": 12,
+    "tomato early blight": 12,
+    "tomato late blight": 12,
+    "tomato leaf mold": 12,
+    "tomato septoria leaf spot": 12,
+    "tomato yellow leaf curl virus": 12
+  }
+}

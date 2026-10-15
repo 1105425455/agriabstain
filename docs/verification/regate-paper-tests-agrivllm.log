@@ -1,0 +1,417 @@
+........................................................................ [ 30%]
+FFFFFFFFFFFF............................................................ [ 61%]
+....................ss.................................................. [ 91%]
+....................                                                     [100%]
+=================================== FAILURES ===================================
+___________________ test_copy_matches_canonical_fixed_points ___________________
+
+    def test_copy_matches_canonical_fixed_points() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________ test_copy_matches_comprehensive_gpt_comparison ________________
+
+    def test_copy_matches_comprehensive_gpt_comparison() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:174: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+____________ test_copy_fixed_point_table_matches_canonical_analysis ____________
+
+    def test_copy_fixed_point_table_matches_canonical_analysis() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+__________________ test_copy_gpt_tables_match_all_comparisons __________________
+
+    def test_copy_gpt_tables_match_all_comparisons() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:227: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________ test_copy_prompt_interface_table_matches_raw_metrics _____________
+
+    def test_copy_prompt_interface_table_matches_raw_metrics() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:278: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+____________ test_copy_grouping_ablation_matches_canonical_artifact ____________
+
+    def test_copy_grouping_ablation_matches_canonical_artifact() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:313: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________ test_copy_representation_and_evidence_metrics_match_artifacts _________
+
+    def test_copy_representation_and_evidence_metrics_match_artifacts() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+____ test_copy_relation_layer_and_matched_retention_metrics_match_artifacts ____
+
+    def test_copy_relation_layer_and_matched_retention_metrics_match_artifacts() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:450: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________ test_copy_margin_kl_table_matches_raw_metrics _________________
+
+    def test_copy_margin_kl_table_matches_raw_metrics() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:501: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_________ test_copy_dataset_counts_and_capability_table_match_package __________
+
+    def test_copy_dataset_counts_and_capability_table_match_package() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:554: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+___________ test_copy_construction_appendix_matches_build_artifacts ____________
+
+    def test_copy_construction_appendix_matches_build_artifacts() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:649: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_________ test_copy_formulas_match_metric_and_training_implementations _________
+
+    def test_copy_formulas_match_metric_and_training_implementations() -> None:
+>       text = _copy_text()
+               ^^^^^^^^^^^^
+
+experiments/base_native_regate/test_paper_metric_consistency.py:726: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/base_native_regate/test_paper_metric_consistency.py:94: in _copy_text
+    COPY_TEX.read_text(encoding="utf-8")
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1058: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/user/huangyongbin/newrepo/agriabstain-paper-repo/paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_ (1)/main.tex'
+
+../../../miniconda3/envs/agrivllm/lib/python3.11/pathlib.py:1044: FileNotFoundError
+=============================== warnings summary ===============================
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+    a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+    return fun(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_matches_canonical_fixed_points
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_matches_comprehensive_gpt_comparison
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_fixed_point_table_matches_canonical_analysis
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_gpt_tables_match_all_comparisons
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_prompt_interface_table_matches_raw_metrics
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_grouping_ablation_matches_canonical_artifact
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_representation_and_evidence_metrics_match_artifacts
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_relation_layer_and_matched_retention_metrics_match_artifacts
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_margin_kl_table_matches_raw_metrics
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_dataset_counts_and_capability_table_match_package
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_construction_appendix_matches_build_artifacts
+FAILED experiments/base_native_regate/test_paper_metric_consistency.py::test_copy_formulas_match_metric_and_training_implementations
+12 failed, 222 passed, 2 skipped, 18 warnings in 165.44s (0:02:45)

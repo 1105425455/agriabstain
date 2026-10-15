@@ -1,0 +1,7 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["experiments/grouping_ablation/artifacts"]
+
+[tool.ruff.lint]
+ignore = ["E501"]

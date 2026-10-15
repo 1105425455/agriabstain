@@ -1,0 +1,31 @@
+{
+  "scalar_delta": {
+    "feasible_nonempty": false,
+    "feasible_interval_width": 0.0,
+    "feasible_delta_range": null,
+    "is_continuous": false
+  },
+  "per_class_bias": {
+    "feasible_nonempty": false,
+    "feasible_area_estimate": 0.0,
+    "n_feasible_points": 0,
+    "n_total_points": 960
+  },
+  "dev_operating_point": {
+    "status": "待 Part A dev 选点后填写",
+    "falls_in_holdout_interval": null
+  },
+  "bootstrap_fa_ci": {
+    "fa_baseline": 0.0099,
+    "fa_ci_upper_absolute": 0.0297,
+    "fa_increment_ci_upper": 0.0198,
+    "n_resamples": 1000
+  },
+  "advice": {
+    "decision": "NEED_SHAPE_CHANGE",
+    "reason": "标量平移和 per-class bias 均不可行，需形状改变（重训 head 或更复杂方法）。",
+    "next_steps": "考虑重训 head（refit_head.py 增加自由度）或引入样本级自适应门控。"
+  },
+  "sealed": true,
+  "description": "封存结果：仅含存在性+宽度，不含逐点 holdout 明细。明细见 _sealed_holdout_curve.json (SEALED，不得用于选参)"
+}

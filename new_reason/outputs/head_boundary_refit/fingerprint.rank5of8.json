@@ -1,0 +1,40 @@
+{
+  "input_sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+  "base_identity": {
+    "config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "index_sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+    "shard_files": [
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "size": 4902275944,
+        "mtime": 1782029123
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "size": 4915962496,
+        "mtime": 1782029088
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "size": 4999831048,
+        "mtime": 1782029314
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "size": 2716270024,
+        "mtime": 1782040778
+      }
+    ],
+    "n_shards": 4
+  },
+  "adapter_model_sha256": "c673ddd753b86ad60edb9a09d22470519c1f2951f8c42cd5f1dabe92f57f4c60",
+  "calibrated_head_sha256": "cd2b2df7c6778fb94d5378dbff28ab48c91b2ad9205be979030da4a07070a5f3",
+  "script_sha256": "2e05e546403305f0bd8abdc0b510d78cdccb35acbce601af783b4975b418e566",
+  "max_pixels": 262144,
+  "rl_samples_sha256": "5628894105b718282edb6c85003cab436317192eae7c69f11315c06c529e4e29",
+  "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad",
+  "sharding": {
+    "mode": "torchrun",
+    "world": 8
+  }
+}

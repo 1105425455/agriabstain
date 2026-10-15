@@ -1,0 +1,89 @@
+{
+  "tag": "L1_discrim",
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-333",
+  "n_samples": 410,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.6537,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 185,
+      "FP": 8,
+      "FN": 12,
+      "TN": 84,
+      "AU": 121,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 410,
+      "answerable": 205,
+      "unanswerable": 205,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.5902439024390244,
+      "HOR_FCA": 0.0,
+      "HOR_count": {
+        "high_occlusion_au": 0,
+        "high_occlusion_unanswerable": 0
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.05853658536585366,
+      "U_Abs": 0.4097560975609756,
+      "AAC": 0.9024390243902439,
+      "MCC": 0.4146981098256822
+    },
+    "grounding_reason": {
+      "A_Ground": 0.7993182845451895,
+      "A_Ground_c": 0.8490168307345277,
+      "U_Reason": 0.40487804878048783,
+      "U_Reason_c": 0.9880952380952381
+    },
+    "comparison": {
+      "UAC": 0.4097560975609756,
+      "AR": 0.23414634146341465
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.6536585365853659,
+    "MTS_macro": 0.6536585365853659,
+    "per_relation": {
+      "L1_mismatch": 0.40487804878048783,
+      "L1_real": 0.9024390243902439
+    },
+    "per_relation_counts": {
+      "L1_mismatch": {
+        "pass": 83,
+        "total": 205
+      },
+      "L1_real": {
+        "pass": 185,
+        "total": 205
+      }
+    }
+  },
+  "within_image": {
+    "n_paired_images": 75,
+    "n_samples": 410,
+    "MCC": 0.4146981098256822,
+    "AAC": 0.9024390243902439,
+    "FCA": 0.5902439024390244,
+    "confusion_matrix": {
+      "TP": 185,
+      "FP": 8,
+      "FN": 12,
+      "TN": 84,
+      "AU": 121,
+      "INVALID": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[dump-ood] load base+adapter max_pixels=1048576
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.70s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.39s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:13<00:04,  4.91s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.82s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.99s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[dump-ood] calibrated head loaded, sd_range=[0.539,9.688]
+[dump-ood] 362 rows
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[dump-ood] 50/362 ok=50 2.71 it/s
+[dump-ood] 100/362 ok=100 3.63 it/s
+[dump-ood] 150/362 ok=150 4.13 it/s
+[dump-ood] 200/362 ok=200 4.47 it/s
+[dump-ood] 250/362 ok=250 4.71 it/s
+[dump-ood] 300/362 ok=300 4.93 it/s
+[dump-ood] 350/362 ok=350 5.07 it/s
+[dump-ood] done 362/362 in 71.0s -> new_reason/outputs/preflight/ood_refcocog_dump_1m.jsonl

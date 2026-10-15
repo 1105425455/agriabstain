@@ -1,0 +1,26 @@
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (5857, 4096), pos=2403 neg=3454
+[calibrate_head r0] dev:   (100, 4096),  pos=50 neg=50
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→2)
+[calibrate_head r0]   epoch 50/1000, train_loss=0.1102, dev_loss=0.5306, dev_MCC=0.7294
+[calibrate_head r0]     → 新最佳 dev loss: 0.5306 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0583, dev_loss=0.7727, dev_MCC=0.7655
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0363, dev_loss=0.8804, dev_MCC=0.7474
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0396, dev_loss=1.1010, dev_MCC=0.8026
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0066, dev_loss=1.1938, dev_MCC=0.8058
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.2132, dev_loss=0.6587, dev_MCC=0.6250
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.5306
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.5306）
+[calibrate_head r0] train MCC: 0.9086
+[calibrate_head r0] dev   MCC: 0.7294
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion/fusion_hl05/checkpoint-184/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)

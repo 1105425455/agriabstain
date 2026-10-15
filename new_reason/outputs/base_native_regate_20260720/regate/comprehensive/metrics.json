@@ -1,0 +1,135 @@
+{
+  "tag": "comprehensive",
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/base_native_regate_20260720/inputs/comprehensive_resolved.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "n_samples": 2646,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.856,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": true
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 1051,
+      "FP": 240,
+      "FN": 32,
+      "TN": 1148,
+      "AU": 175,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 2646,
+      "answerable": 1323,
+      "unanswerable": 1323,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 1291,
+      "FP": 175,
+      "FN": 32,
+      "TN": 1148
+    },
+    "headline": {
+      "FCA": 0.13227513227513227,
+      "HOR_FCA": 0.07871198568872988,
+      "HOR_count": {
+        "high_occlusion_au": 88,
+        "high_occlusion_unanswerable": 1118
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.02418745275888133,
+      "Supported_Retention": 0.9758125472411187,
+      "U_Abs": 0.8677248677248677,
+      "AAC": 0.7944066515495087,
+      "MCC": 0.8485085166883631
+    },
+    "semantic": {
+      "Strict_3": 0.8560090702947846
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.7011410786557658,
+      "E2E_mIoU_c": 0.7185202533397197,
+      "A_Ground": 0.7011410786557658,
+      "A_Ground_c": 0.7185202533397197,
+      "U_Reason": 0.8654572940287226,
+      "U_Reason_c": 0.9973867595818815
+    },
+    "comparison": {
+      "UAC": 0.8677248677248677,
+      "AR": 0.4459561602418745
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.8299180327868853,
+    "MTS_macro": 0.8195042768467142,
+    "per_relation": {
+      "T1": 0.8177966101694916,
+      "T2": 0.7983193277310925,
+      "T2_occluded": 0.9375,
+      "T3": 0.8076923076923077,
+      "T3_occluded": 0.9125,
+      "T4_control": 0.83125,
+      "T5": 0.9484375,
+      "T6": 0.5707317073170731,
+      "T7_include": 0.75,
+      "T7_ladder": 0.781496062992126,
+      "base_occluded": 0.8588235294117647
+    },
+    "per_relation_counts": {
+      "T1": {
+        "pass": 193,
+        "total": 236
+      },
+      "T2": {
+        "pass": 95,
+        "total": 119
+      },
+      "T2_occluded": {
+        "pass": 75,
+        "total": 80
+      },
+      "T3": {
+        "pass": 105,
+        "total": 130
+      },
+      "T3_occluded": {
+        "pass": 73,
+        "total": 80
+      },
+      "T4_control": {
+        "pass": 133,
+        "total": 160
+      },
+      "T5": {
+        "pass": 607,
+        "total": 640
+      },
+      "T6": {
+        "pass": 117,
+        "total": 205
+      },
+      "T7_include": {
+        "pass": 84,
+        "total": 112
+      },
+      "T7_ladder": {
+        "pass": 397,
+        "total": 508
+      },
+      "base_occluded": {
+        "pass": 146,
+        "total": 170
+      }
+    }
+  },
+  "within_image": null
+}

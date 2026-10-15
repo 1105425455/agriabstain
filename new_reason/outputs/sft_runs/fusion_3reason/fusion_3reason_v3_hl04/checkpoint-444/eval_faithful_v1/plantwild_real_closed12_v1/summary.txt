@@ -1,0 +1,43 @@
+=== AgriAbstain eval [ours_fusion_3reason_v3_hl04 / plantwild_real_closed12_v1] ===
+n=408  n_ambiguous_skipped=0  unique_images=144
+
+--- Integer breakdown ---
+TP=108  FP=15  FN=21  TN=193  AU=71  INVALID=0
+answerable=144  unanswerable=264
+answer_coverage = 123/144  (unique images with any answer-prediction)
+strict_TP       = 108/144  (TP among answerable-paired unique images)
+
+--- Probe-level breakdown ---
+NT (no_target): decision_correct=137/144  reason_correct=137/144  AU=7/144
+WO (wrong_object): decision_correct=56/120  reason_correct=38/120  AU=64/120
+
+--- GATE ---
+format_valid_rate = 1.0000
+decision_accuracy = 0.6936
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.268939
+HOR_FCA (高危子集↓)  = 0.048611  (n=144)
+MTS_micro           = 0.693627
+MTS_macro           = 0.672685
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.145833
+U_Abs (拒对↑)       = 0.731061
+AAC (答对↑)         = 0.750000
+MCC                 = 0.560015
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.000000
+A_Ground_c          = 0.000000
+U_Reason↑           = 0.662879
+U_Reason_c          = 0.906736
+
+invalid_rate        = 0.000000
+confusion_matrix    = {'TP': 108, 'FP': 15, 'FN': 21, 'TN': 193, 'AU': 71, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent           0.951389  (137/144)
+  OOD_answer           0.750000  (108/144)
+  OOD_confusion        0.316667  (38/120)

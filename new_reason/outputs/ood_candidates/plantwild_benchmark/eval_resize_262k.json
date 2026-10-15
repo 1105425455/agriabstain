@@ -1,0 +1,2665 @@
+{
+  "max_pixels": 262144,
+  "total_images": 156,
+  "resized_count": 106,
+  "copied_count": 50,
+  "max_new_pixels": 262086,
+  "max_new_size": [
+    627,
+    418
+  ],
+  "records": [
+    {
+      "file": "pw_apple_rust_0.jpg",
+      "original_size": [
+        600,
+        453
+      ],
+      "new_size": [
+        589,
+        444
+      ],
+      "original_pixels": 271800,
+      "new_pixels": 261516,
+      "aspect_ratio_error": 0.001565,
+      "resized": true,
+      "original_sha256": "e9025e04e5bc3255cd055b7245b51661f266000a796103a89af3d713e5f8ab40",
+      "new_sha256": "350abc430c2378e4034930b90afb485e77a34de9c99b16f1c8db420d631b6661"
+    },
+    {
+      "file": "pw_apple_rust_1.jpg",
+      "original_size": [
+        608,
+        456
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 277248,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "f06e60f8d17274da9aa9338c666c9349fe5d9bd863dd8837908e261f1210eca2",
+      "new_sha256": "fb6e76eefe77e4f928c13b7268e4ff505880ef86df7d13786d08d3099fe2b921"
+    },
+    {
+      "file": "pw_apple_rust_10.jpg",
+      "original_size": [
+        320,
+        213
+      ],
+      "new_size": [
+        320,
+        213
+      ],
+      "original_pixels": 68160,
+      "new_pixels": 68160,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "879e8d545094220dba38bd3322d10b7293b84066d1c6c021e6bd498168b9c0a9",
+      "new_sha256": "0fffd13bc347fabeddf6f35fb6d357b26907d0c6ca747d43cdcea698159ee1ea"
+    },
+    {
+      "file": "pw_apple_rust_11.jpg",
+      "original_size": [
+        643,
+        500
+      ],
+      "new_size": [
+        580,
+        451
+      ],
+      "original_pixels": 321500,
+      "new_pixels": 261580,
+      "aspect_ratio_error": 2.4e-05,
+      "resized": true,
+      "original_sha256": "668c965fb8c48cf9d495ffe19c133f66857db15e1e9f08442513049bbcd64132",
+      "new_sha256": "c1fb1c4b7c70205ec9dea77ccf1c2b8a97afcc85a53e60997c35f1aa7726b0e2"
+    },
+    {
+      "file": "pw_apple_rust_2.jpg",
+      "original_size": [
+        614,
+        819
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 502866,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000157,
+      "resized": true,
+      "original_sha256": "0f4b6545ee62a4d904c8e3f478d05edf5a6ee303d5caf100022729d52cc8c141",
+      "new_sha256": "a3d01c95ae1b957d5ee77da7407c2dc5c91a54653ff59571c17cd6c308a6ebe2"
+    },
+    {
+      "file": "pw_apple_rust_3.jpg",
+      "original_size": [
+        423,
+        428
+      ],
+      "new_size": [
+        423,
+        428
+      ],
+      "original_pixels": 181044,
+      "new_pixels": 181044,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "8e2b0ef6874217f7f86ffcda04bb302db1d170e4296606c2876c34e8410b074c",
+      "new_sha256": "46b4ca8a51051441f8dcb3d660706988c9cea788a5e1b75c0b7b6ff724d8b442"
+    },
+    {
+      "file": "pw_apple_rust_4.jpg",
+      "original_size": [
+        240,
+        203
+      ],
+      "new_size": [
+        240,
+        203
+      ],
+      "original_pixels": 48720,
+      "new_pixels": 48720,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "17166a07d3285cb188e0a3e4087c92debfc410d005e8051767dc7526b70c7001",
+      "new_sha256": "603e2e6f3272dd314bffc716a18ec3364ce7682363de2ebb22f4787871c20a9d"
+    },
+    {
+      "file": "pw_apple_rust_5.jpg",
+      "original_size": [
+        1000,
+        750
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 750000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "5ce31138462d4a81bfd6687a81eda2949a1460df9c32c8fceb974ddeb6d3f17e",
+      "new_sha256": "0def4eb6b8ff10dd63cb67ffc8384d88e52bace0afd5c8a3ae6641a854553cec"
+    },
+    {
+      "file": "pw_apple_rust_6.jpg",
+      "original_size": [
+        1080,
+        1010
+      ],
+      "new_size": [
+        504,
+        476
+      ],
+      "original_pixels": 1090800,
+      "new_pixels": 239904,
+      "aspect_ratio_error": 0.009804,
+      "resized": true,
+      "original_sha256": "0bd6ff2b1dda235d5fe5b8c7353b0f3ec635c46d17bb3b5a4cb7974029790529",
+      "new_sha256": "8a38e2161066022f2cf5d0cd29b618553a31dd08709f41fef9d928157d1be956"
+    },
+    {
+      "file": "pw_apple_rust_7.jpg",
+      "original_size": [
+        740,
+        493
+      ],
+      "new_size": [
+        627,
+        417
+      ],
+      "original_pixels": 364820,
+      "new_pixels": 261459,
+      "aspect_ratio_error": 0.001721,
+      "resized": true,
+      "original_sha256": "bd7541cb6c8b25d17c13560145d9693733b3b5554e2b7c13aad6d0c6f8b72ed2",
+      "new_sha256": "c242d14dd6a7234c9c1310a429364968e59ac2cc92bb7b1997dc8d94d364c1cb"
+    },
+    {
+      "file": "pw_apple_rust_8.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "7eab78fb22643c7387924f575dc3d7c21bb1e8b0dee0c56a621b58e4d2096c86",
+      "new_sha256": "04561778ef150968c0d22592ec908d4975191b63804467e35e93b61215435b4b"
+    },
+    {
+      "file": "pw_apple_rust_9.jpg",
+      "original_size": [
+        848,
+        636
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 539328,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "0d6e6dfa574041f44d241c851d8b7d7e7422af6f1ff1c53d1b25cad23f2ec910",
+      "new_sha256": "ae332a379b8727615a5b9bee1ff2d1bd43065ea0d23afdbb467266c9f3415adb"
+    },
+    {
+      "file": "pw_apple_scab_0.jpg",
+      "original_size": [
+        1500,
+        1120
+      ],
+      "new_size": [
+        592,
+        442
+      ],
+      "original_pixels": 1680000,
+      "new_pixels": 261664,
+      "aspect_ratio_error": 6e-05,
+      "resized": true,
+      "original_sha256": "cdc59ee812a4984e61981ee5718b2ba9da3f85892ed43f8652c4610ab91d9904",
+      "new_sha256": "f42d5e39863724664516116af18be40baefbbd322782e12b9d1bf14fe29bd6f9"
+    },
+    {
+      "file": "pw_apple_scab_1.jpg",
+      "original_size": [
+        400,
+        288
+      ],
+      "new_size": [
+        392,
+        280
+      ],
+      "original_pixels": 115200,
+      "new_pixels": 109760,
+      "aspect_ratio_error": 0.008,
+      "resized": true,
+      "original_sha256": "5c84fa25e592e4e892ce07a950289503f0078ccdc9b8930e0518e9b22bcc7998",
+      "new_sha256": "fc1118f6644123dc1a2ecddd839e8b7b94b2a3cd3849059e0e8c13be72890d39"
+    },
+    {
+      "file": "pw_apple_scab_10.jpg",
+      "original_size": [
+        800,
+        662
+      ],
+      "new_size": [
+        562,
+        465
+      ],
+      "original_pixels": 529600,
+      "new_pixels": 261330,
+      "aspect_ratio_error": 0.000118,
+      "resized": true,
+      "original_sha256": "0101d489c566e19338174e0ecef98acc4fee7bb0e9b1b1db7a3da0d3eedf3c04",
+      "new_sha256": "7be6c51d7516a6ba553db5b9aeb4748ff6b94ab17cfeef5965de25c0f40f8d0e"
+    },
+    {
+      "file": "pw_apple_scab_11.jpg",
+      "original_size": [
+        207,
+        262
+      ],
+      "new_size": [
+        207,
+        262
+      ],
+      "original_pixels": 54234,
+      "new_pixels": 54234,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "1bbd99bcf60f1d6218754ee600d22ecbb8e777ebb2f0e70854bed627e353bcb8",
+      "new_sha256": "517c33255e436f94271e8d74d5fb40196ca74c0f6badfacc916523b2fff0df37"
+    },
+    {
+      "file": "pw_apple_scab_2.jpg",
+      "original_size": [
+        1080,
+        450
+      ],
+      "new_size": [
+        793,
+        330
+      ],
+      "original_pixels": 486000,
+      "new_pixels": 261690,
+      "aspect_ratio_error": 0.001263,
+      "resized": true,
+      "original_sha256": "dc17d8ed28be2a8f198644f5ad7275de9f11280ce315cb0982913ffdf96a9930",
+      "new_sha256": "da8a959b0ef012973962e97648de4d7a678e449f369780530ea480d4bbe9f6db"
+    },
+    {
+      "file": "pw_apple_scab_3.jpg",
+      "original_size": [
+        650,
+        1409
+      ],
+      "new_size": [
+        336,
+        728
+      ],
+      "original_pixels": 915850,
+      "new_pixels": 244608,
+      "aspect_ratio_error": 0.000473,
+      "resized": true,
+      "original_sha256": "47e7e34e083395944a3dab6cb5122563012f95bef674c7935f320da7fac6ab50",
+      "new_sha256": "967b618b7417fa915692c179e3b511617b4c2de8f8ae841851688f110af2e0e1"
+    },
+    {
+      "file": "pw_apple_scab_4.jpg",
+      "original_size": [
+        500,
+        309
+      ],
+      "new_size": [
+        500,
+        309
+      ],
+      "original_pixels": 154500,
+      "new_pixels": 154500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "fbe82be28380e716fa99ccf89b04ac62c68274051ad48d2d90cdcbc9d3f75287",
+      "new_sha256": "b69da1a9bee5204369b0507b287be728e197e3d3a586633f01643b0b7e7db443"
+    },
+    {
+      "file": "pw_apple_scab_5.jpg",
+      "original_size": [
+        685,
+        456
+      ],
+      "new_size": [
+        627,
+        417
+      ],
+      "original_pixels": 312360,
+      "new_pixels": 261459,
+      "aspect_ratio_error": 0.000935,
+      "resized": true,
+      "original_sha256": "90c7c5b7019d18081cc7bd298a35538e38e001977201d41f7d457072fe553d9f",
+      "new_sha256": "58af69acbf982a5975f9352eb76539325cb53ec149069fbab112b3a0b3426bce"
+    },
+    {
+      "file": "pw_apple_scab_6.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "b3b2a1bf3232cb8c2aca805e2339e170704a91abac55721bc095b2e24f768efb",
+      "new_sha256": "bd85d4850667090b5c29d377ed641194893642e6f01f1afa24d678a35465bc45"
+    },
+    {
+      "file": "pw_apple_scab_7.jpg",
+      "original_size": [
+        230,
+        202
+      ],
+      "new_size": [
+        224,
+        196
+      ],
+      "original_pixels": 46460,
+      "new_pixels": 43904,
+      "aspect_ratio_error": 0.003727,
+      "resized": true,
+      "original_sha256": "51b9f345f5ca2a2b0c6422b90d66b157e34fc29d4fcd63e7458118fc075af8a7",
+      "new_sha256": "315050a304efe6bbe2b5c76d61ed3f97306613dc155a9943210ad79f9957a2ce"
+    },
+    {
+      "file": "pw_apple_scab_8.jpg",
+      "original_size": [
+        141,
+        200
+      ],
+      "new_size": [
+        141,
+        200
+      ],
+      "original_pixels": 28200,
+      "new_pixels": 28200,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "bcc5731ec79b41d8d75f8003859fe1cb403ab2f55bed06fe39dde56691e4997b",
+      "new_sha256": "b18ed322069ca528f626f210fac9846c81ec89e166294d84b5cf56dbf886d454"
+    },
+    {
+      "file": "pw_apple_scab_9.jpg",
+      "original_size": [
+        1000,
+        750
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 750000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "9969657d3b8c4560cb863e17e9a0a444e0899e8621d381a56748d2ef2f9f4731",
+      "new_sha256": "7278291ea3d9ff51aeea4ff1df98b8a8ee1e8b8bfe03ed26ca548e2a7a9160cb"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_0.jpg",
+      "original_size": [
+        752,
+        500
+      ],
+      "new_size": [
+        627,
+        417
+      ],
+      "original_pixels": 376000,
+      "new_pixels": 261459,
+      "aspect_ratio_error": 0.000268,
+      "resized": true,
+      "original_sha256": "fd3da1969896ffcdd3ec715ab0f9633db29e6e0876c906468e7752b5147727e1",
+      "new_sha256": "66969d0a41d2c449e29d6618c576496bb9c897c7b5ac341051ec717153733b3e"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_1.jpg",
+      "original_size": [
+        800,
+        1368
+      ],
+      "new_size": [
+        391,
+        669
+      ],
+      "original_pixels": 1094400,
+      "new_pixels": 261579,
+      "aspect_ratio_error": 0.000583,
+      "resized": true,
+      "original_sha256": "75d6230b26eda93933a53c5f65107b23371d03fc510f94c2b3306d957840bb1b",
+      "new_sha256": "0287b142019819093aca1cb19a55a15ac20d9a721c3ce180cd5d8e66d942a61e"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_10.jpg",
+      "original_size": [
+        1536,
+        2048
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 3145728,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "d466956774b3793776318436b6814181b2c3fa4e812d69ef64a54857dd582c53",
+      "new_sha256": "d12e01d4eb6c4d76df39dbe5f637320ccc38471a520a47555de61bab78a726af"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_11.jpg",
+      "original_size": [
+        960,
+        1280
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 1228800,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "f7acc16400f264d42206d5288e351da61c2a805eebe06601431cba22a75fc58a",
+      "new_sha256": "a8fadc647017d94f2c354dc2e451be50aeb6aa467290559280e4dd3ed76c82a8"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_2.jpg",
+      "original_size": [
+        945,
+        525
+      ],
+      "new_size": [
+        686,
+        381
+      ],
+      "original_pixels": 496125,
+      "new_pixels": 261366,
+      "aspect_ratio_error": 0.000292,
+      "resized": true,
+      "original_sha256": "718c60f7129be093e55c771680de33e27d90b36ac3e6486322553f3df2c48477",
+      "new_sha256": "b2f38c8c62c548665d18f771bd7fbc87e58cb9b859cd66cf23e643b8e770bc9a"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_3.jpg",
+      "original_size": [
+        300,
+        400
+      ],
+      "new_size": [
+        300,
+        400
+      ],
+      "original_pixels": 120000,
+      "new_pixels": 120000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "3bdeabe42c1531d324e676a40d1065e60ebfc2cc6988251228f3ea70857f2911",
+      "new_sha256": "6ac8152fe7712ced1830960dc9b6e56ae4a8adbfba1627a1474892b9fac99752"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_4.jpg",
+      "original_size": [
+        700,
+        394
+      ],
+      "new_size": [
+        682,
+        384
+      ],
+      "original_pixels": 275800,
+      "new_pixels": 261888,
+      "aspect_ratio_error": 0.000342,
+      "resized": true,
+      "original_sha256": "b7b6f8d8254a72dffc27d8bc31123797026f8fadcde1d268ed8ff1f299773921",
+      "new_sha256": "50749ae0616d5a5215ae167a0ed9f221473c95509019559ade3e87ad97bb964e"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_5.jpg",
+      "original_size": [
+        546,
+        725
+      ],
+      "new_size": [
+        444,
+        589
+      ],
+      "original_pixels": 395850,
+      "new_pixels": 261516,
+      "aspect_ratio_error": 0.000952,
+      "resized": true,
+      "original_sha256": "a6b52e6efd7bfef6ab63084dab969df69bf8d07d27e26f9ac59ccc5819bede00",
+      "new_sha256": "6b6e6c431f26188081432b2666424836b2243b887d49dafa4ef5e3de3e796b35"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_6.jpg",
+      "original_size": [
+        812,
+        561
+      ],
+      "new_size": [
+        615,
+        425
+      ],
+      "original_pixels": 455532,
+      "new_pixels": 261375,
+      "aspect_ratio_error": 0.000246,
+      "resized": true,
+      "original_sha256": "2a0f883361361ae05f411616fc414a37fef7b8a04d4d49c76a98b78f48d5cac0",
+      "new_sha256": "9a9e593117318616d2d85b18dcff7c6f528b27f04b32c9c8b4339452c2b1799f"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_7.jpg",
+      "original_size": [
+        372,
+        719
+      ],
+      "new_size": [
+        364,
+        700
+      ],
+      "original_pixels": 267468,
+      "new_pixels": 254800,
+      "aspect_ratio_error": 0.005054,
+      "resized": true,
+      "original_sha256": "a93263e42c7c14286bde2c81f4a8dc7cd71491a4f43f6740316c3d80e157e2af",
+      "new_sha256": "18efefb1c6cf790d712658852527a1d94b1cd8a257809a7d6fe4532c4786f10f"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_8.jpg",
+      "original_size": [
+        1000,
+        563
+      ],
+      "new_size": [
+        682,
+        384
+      ],
+      "original_pixels": 563000,
+      "new_pixels": 261888,
+      "aspect_ratio_error": 8.9e-05,
+      "resized": true,
+      "original_sha256": "2dad614753598efd4a07f398dd40389cf3a8abcff8e3ee3ff218c4930e50de00",
+      "new_sha256": "252b1b42afe204137088db37bd83294f024eb9e42dfb575d410103b4f22a4f86"
+    },
+    {
+      "file": "pw_corn_gray_leaf_spot_9.jpg",
+      "original_size": [
+        500,
+        337
+      ],
+      "new_size": [
+        500,
+        337
+      ],
+      "original_pixels": 168500,
+      "new_pixels": 168500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "52f3e7844e5e01953681cd0d29aaa8ac16fbe6e89e73aa1f80eadfacfec117b3",
+      "new_sha256": "bf14a2ac487af6563f0325730db2c0fd52cefd8835fea99a116c8d1ece91bec4"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_0.jpg",
+      "original_size": [
+        478,
+        959
+      ],
+      "new_size": [
+        361,
+        725
+      ],
+      "original_pixels": 458402,
+      "new_pixels": 261725,
+      "aspect_ratio_error": 0.001013,
+      "resized": true,
+      "original_sha256": "296863fff725ca304289637e66ec6e829fbdf2f98a3ba414418d44b9a7b817eb",
+      "new_sha256": "8f4f126895da13e5ddd9f778b5171bc209b656919f31d7aa4c92a6a429a2e64d"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_1.jpg",
+      "original_size": [
+        2200,
+        1650
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 3630000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "a1f61cb3125665648cf2e6d218a06774b1d81aea59f9ba07bd1f7cf0bf0a6f18",
+      "new_sha256": "ad2b2367bfa6ef1f07e2bc6ef62229186225216da5385f808800d476b9851c55"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_10.jpg",
+      "original_size": [
+        960,
+        720
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 691200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "ad9b6c279589b70037ba788d190f14a251e4bb153d88ad48d528b3f909241f71",
+      "new_sha256": "c67e8427fcd570c021701cfeb50fbd16b22fa4726dec3ba43893dce1047e25f8"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_11.jpg",
+      "original_size": [
+        500,
+        667
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 333500,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 6.4e-05,
+      "resized": true,
+      "original_sha256": "9896680f0ff550db505f980636c78f52c4de51b96f23be7301c739f6fd9aebff",
+      "new_sha256": "ef5ecac318140773236b5d7cd2254023036aca275aa7db270753256759d708a7"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_2.jpg",
+      "original_size": [
+        400,
+        240
+      ],
+      "new_size": [
+        400,
+        240
+      ],
+      "original_pixels": 96000,
+      "new_pixels": 96000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "58288d063c689b1e415a0b0a8885ee13ed869fb577cccb57cbae9eb225940a56",
+      "new_sha256": "e1ec29f45bf49d680a76d55968d86775917651c1cfc9ec2638e2aa15c7ada304"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_3.jpg",
+      "original_size": [
+        518,
+        690
+      ],
+      "new_size": [
+        443,
+        590
+      ],
+      "original_pixels": 357420,
+      "new_pixels": 261370,
+      "aspect_ratio_error": 0.000164,
+      "resized": true,
+      "original_sha256": "6af03a31144415b2101d8a02c03e590bf81492ee5e777fedeba89db2f3d5863f",
+      "new_sha256": "98546634eada20ab50b6aa96ef040d0df798e0853bad7cb6d11b5b8bcbec73f9"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_4.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "71a477f95019f57c49e277e695c1ae320dcaf0f24798977d2567b346d3e5fdd4",
+      "new_sha256": "d66c821ff208313836ae14e39818bfed96051b43603fdfe5794a41581afb8c86"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_5.jpg",
+      "original_size": [
+        776,
+        523
+      ],
+      "new_size": [
+        623,
+        420
+      ],
+      "original_pixels": 405848,
+      "new_pixels": 261660,
+      "aspect_ratio_error": 0.000279,
+      "resized": true,
+      "original_sha256": "544b5f4e59db5b8bcea4039919055910a0849d094cf4d0c274b3a8c7a9fde742",
+      "new_sha256": "e0b2e255d4537fdb71ffc0b5b347a8634eba2b9e092473a29d936b40ade59cca"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_6.jpg",
+      "original_size": [
+        685,
+        499
+      ],
+      "new_size": [
+        599,
+        436
+      ],
+      "original_pixels": 341815,
+      "new_pixels": 261164,
+      "aspect_ratio_error": 0.000807,
+      "resized": true,
+      "original_sha256": "2dbf765e2f0185a2ae00c7b515c61f97f64657eb3a2e77340f0746c89b043345",
+      "new_sha256": "688ee9b52f79ea332b66440f12ba7b4d1ec97feed7dd57833542017746f7d793"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_7.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "5c5c0fdb5f442b8b24eee406285e92fe6f5dfab7729ecacb8804f8055ed3c711",
+      "new_sha256": "cd559f0a02dc9b5149f75d75ad85d852508b84c148d934d43727cc2fc08e2160"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_8.jpg",
+      "original_size": [
+        1125,
+        1620
+      ],
+      "new_size": [
+        426,
+        614
+      ],
+      "original_pixels": 1822500,
+      "new_pixels": 261564,
+      "aspect_ratio_error": 0.000912,
+      "resized": true,
+      "original_sha256": "0fa8a7ab11775f407affefa5343eb95b17e5aa7bcdd2fba31632ec38aeab3a3c",
+      "new_sha256": "a58b11c8b6c04cb586b0fa0e99b8c574620abfd2efc218d70dde019eb2cee648"
+    },
+    {
+      "file": "pw_corn_northern_leaf_blight_9.jpg",
+      "original_size": [
+        2128,
+        1500
+      ],
+      "new_size": [
+        609,
+        429
+      ],
+      "original_pixels": 3192000,
+      "new_pixels": 261261,
+      "aspect_ratio_error": 0.000644,
+      "resized": true,
+      "original_sha256": "993bb9e7f628a954510408c9e7a66d5365bbe2ac4bdd799a79a7ba406c53cefb",
+      "new_sha256": "acefe6a81fd0412226311ad03660b3dfe563086946e8dccf77240ec64bd67d47"
+    },
+    {
+      "file": "pw_corn_rust_0.jpg",
+      "original_size": [
+        2420,
+        1214
+      ],
+      "new_size": [
+        722,
+        362
+      ],
+      "original_pixels": 2937880,
+      "new_pixels": 261364,
+      "aspect_ratio_error": 0.000534,
+      "resized": true,
+      "original_sha256": "a16b7e15b3477fc4d7d2277ff70b458442ea6fb0dcdcf09f1a28926da3cc097c",
+      "new_sha256": "e25c186a1cf062e845c9503fa2253298d15a7e769e41e074ab7d322c359bb548"
+    },
+    {
+      "file": "pw_corn_rust_1.jpg",
+      "original_size": [
+        344,
+        568
+      ],
+      "new_size": [
+        336,
+        560
+      ],
+      "original_pixels": 195392,
+      "new_pixels": 188160,
+      "aspect_ratio_error": 0.009302,
+      "resized": true,
+      "original_sha256": "b9aee0828fcbe9c06317e0db2fb0f2e7a828adb5c7c35794990c89888b78950c",
+      "new_sha256": "9b2a5a1036d900784fa60d09ab180c5a6173c27fccccb30f32b9a2deb0d3894d"
+    },
+    {
+      "file": "pw_corn_rust_10.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "c6d8c97afc645495fa447f8c7e4c7898002a620a7377f9744d06af769e13eb28",
+      "new_sha256": "b29404be0d84e168cda45299deae231719a7a8d6775646fe7dc5c955aa2aab0e"
+    },
+    {
+      "file": "pw_corn_rust_11.jpg",
+      "original_size": [
+        1140,
+        1352
+      ],
+      "new_size": [
+        448,
+        532
+      ],
+      "original_pixels": 1541280,
+      "new_pixels": 238336,
+      "aspect_ratio_error": 0.001293,
+      "resized": true,
+      "original_sha256": "4821f90595d7bb3ce6011cd2ce58aab4008d034318a57bdf55a2425fd5a53199",
+      "new_sha256": "7e8156296bc127cc811d7eb90a18f6cd2b63f030cba7a8249bdcad7f3c597a27"
+    },
+    {
+      "file": "pw_corn_rust_2.jpg",
+      "original_size": [
+        2700,
+        2760
+      ],
+      "new_size": [
+        506,
+        517
+      ],
+      "original_pixels": 7452000,
+      "new_pixels": 261602,
+      "aspect_ratio_error": 0.000473,
+      "resized": true,
+      "original_sha256": "af2fb93d3ba257e3f97987516797153eb6b0df5ff2e547b1903dfee9cc3ae51b",
+      "new_sha256": "ca8018c82e8840eb01c5d5e59a6ef684c025e1ed813dc27bdddbe4ee30066e27"
+    },
+    {
+      "file": "pw_corn_rust_3.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "8fa205f09f6dc60cfaa26e7e99220c7a8bd2ae6f2e1e5e0975444a63b40a5cdb",
+      "new_sha256": "c9f0721c5265afa7b2d9aa5ffaa77fc453f195694c0670d9673e9105949dae23"
+    },
+    {
+      "file": "pw_corn_rust_4.jpg",
+      "original_size": [
+        640,
+        388
+      ],
+      "new_size": [
+        640,
+        388
+      ],
+      "original_pixels": 248320,
+      "new_pixels": 248320,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "8d6291155fe01e25ac20bd0f0cebaf7743408cd37b674a17730a9f150a29b9f9",
+      "new_sha256": "c049faf1174940b5482ea079fcb11378ceed285df06d42f5cdad63dc293503b9"
+    },
+    {
+      "file": "pw_corn_rust_5.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "d8d739d91deab1a19f5891700600e4887f82d5dadb00b3a20790a87afa4c5603",
+      "new_sha256": "afe3b89938992718fe6319bdf7137f018f13466cef31b349412a030fb77910a3"
+    },
+    {
+      "file": "pw_corn_rust_6.jpg",
+      "original_size": [
+        740,
+        555
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 410700,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "0da4b0fedae384262210644c5e20b31022857d7c7c7e7855df9ef568436920b5",
+      "new_sha256": "b72fcefb34ede21d6f1143abbd1a047358dccde36fc01f3328de642850142889"
+    },
+    {
+      "file": "pw_corn_rust_7.jpg",
+      "original_size": [
+        756,
+        528
+      ],
+      "new_size": [
+        612,
+        427
+      ],
+      "original_pixels": 399168,
+      "new_pixels": 261324,
+      "aspect_ratio_error": 0.001004,
+      "resized": true,
+      "original_sha256": "0e779d50af639a0992f8e04bf70a1f8322f2ffacd3570a570e648a3e144e85f5",
+      "new_sha256": "30b52dca058797f3895cbe2af5311a67a415dc87769b9b466653d8d4a080b749"
+    },
+    {
+      "file": "pw_corn_rust_8.jpg",
+      "original_size": [
+        800,
+        320
+      ],
+      "new_size": [
+        800,
+        320
+      ],
+      "original_pixels": 256000,
+      "new_pixels": 256000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "8070c851e2eb656a3830130069661f493ca1cee27c83cdf11d1df902f069f97e",
+      "new_sha256": "d4a67866786738923b6310b58ce4fa73c2083c7bc607c1c8eccc0a74071e401e"
+    },
+    {
+      "file": "pw_corn_rust_9.jpg",
+      "original_size": [
+        1707,
+        1280
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 2184960,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000369,
+      "resized": true,
+      "original_sha256": "cd28c06ada23c152c1705a2141b6e38673c82c5d4c14352610983a2aaef4a8b2",
+      "new_sha256": "745769966e9405f7ff307d6871d4016fd0eba35c63abc438c80869ea96b96bdc"
+    },
+    {
+      "file": "pw_potato_late_blight_0.jpg",
+      "original_size": [
+        500,
+        323
+      ],
+      "new_size": [
+        476,
+        308
+      ],
+      "original_pixels": 161500,
+      "new_pixels": 146608,
+      "aspect_ratio_error": 0.001636,
+      "resized": true,
+      "original_sha256": "2b19d9e331c7e7a4daaa52adc1517a4405174bc187f90f1cda7785e5db80c3f9",
+      "new_sha256": "632dde4ca9f3ba0888a8147364522ffc6c618eb5a30bd30bf6c81e383dfa1870"
+    },
+    {
+      "file": "pw_potato_late_blight_1.jpg",
+      "original_size": [
+        540,
+        360
+      ],
+      "new_size": [
+        540,
+        360
+      ],
+      "original_pixels": 194400,
+      "new_pixels": 194400,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "c229890a89569a6620351169252c4b5b148a38a714f6e52805856fc414cfb168",
+      "new_sha256": "c6fe169dd3e519ecf392b80329a4951dd76c8e41dede475ace7302c42552600d"
+    },
+    {
+      "file": "pw_potato_late_blight_10.jpg",
+      "original_size": [
+        317,
+        397
+      ],
+      "new_size": [
+        317,
+        397
+      ],
+      "original_pixels": 125849,
+      "new_pixels": 125849,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "7f09c565766384140767d41b2f5f05a0e79cf3b74a57b565f451401de5760cf6",
+      "new_sha256": "35c54b1fabeaccfed8c3c21098950547dd8a0def04ef40f8ef2a44288f73acbb"
+    },
+    {
+      "file": "pw_potato_late_blight_11.jpg",
+      "original_size": [
+        255,
+        166
+      ],
+      "new_size": [
+        255,
+        166
+      ],
+      "original_pixels": 42330,
+      "new_pixels": 42330,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "43227c6750ef3dad82bbb717ae40b51505212415850803c79b6f32a7f3eca16c",
+      "new_sha256": "d4a4513910138cb738c5d8488bf3f58a0fa010912a291c3b48797a49822d28e4"
+    },
+    {
+      "file": "pw_potato_late_blight_2.jpg",
+      "original_size": [
+        960,
+        1280
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 1228800,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "483eb981bb5bb1c1cb6f11c7a46a51d86bd809ec9d960e6180d27181ce3d70e6",
+      "new_sha256": "a25bbf21346e31485271db2d8f17bef4c12989aa67c72b3435537c710544d87f"
+    },
+    {
+      "file": "pw_potato_late_blight_3.jpg",
+      "original_size": [
+        1080,
+        810
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 874800,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "00537ef0b7855f0f59d154f03d6cedf87abc5645839d4cdf47ce0362629c753c",
+      "new_sha256": "e8ba94b1d2fda216d77f0a6876e2c265a43ff7f503712a11ca34c778f97db04e"
+    },
+    {
+      "file": "pw_potato_late_blight_4.jpg",
+      "original_size": [
+        79,
+        85
+      ],
+      "new_size": [
+        79,
+        85
+      ],
+      "original_pixels": 6715,
+      "new_pixels": 6715,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "dc1493b3b35fe6d77895e38744d8e232aff40ed139fcd2ad56e78f091e4cc707",
+      "new_sha256": "4c983c26151df94a2d4a6af9c982380cda5d575cf5192c524e2e8e04fdc09938"
+    },
+    {
+      "file": "pw_potato_late_blight_5.jpg",
+      "original_size": [
+        147,
+        130
+      ],
+      "new_size": [
+        147,
+        130
+      ],
+      "original_pixels": 19110,
+      "new_pixels": 19110,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "178d2ab1077c840a642f8ded3241f50c1268ef3d0c8848fc8e1bcfe2d33f527c",
+      "new_sha256": "ccca87c8d63e4fbdfaba22d26caa17947cc75a0ba14bea2b68ae1c16aab1a7bf"
+    },
+    {
+      "file": "pw_potato_late_blight_6.jpg",
+      "original_size": [
+        433,
+        288
+      ],
+      "new_size": [
+        420,
+        280
+      ],
+      "original_pixels": 124704,
+      "new_pixels": 117600,
+      "aspect_ratio_error": 0.002309,
+      "resized": true,
+      "original_sha256": "516cb4f179a795b087222483dd54666eaf227ddc9d58be88ba70c69b485f594e",
+      "new_sha256": "8a295a91ef6c2395d859d66072ac33b4fe2bd198be01709eb3d661fcd1d87b46"
+    },
+    {
+      "file": "pw_potato_late_blight_7.jpg",
+      "original_size": [
+        500,
+        331
+      ],
+      "new_size": [
+        500,
+        331
+      ],
+      "original_pixels": 165500,
+      "new_pixels": 165500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "e59698731c70b748471677ba7f66f2a2a87e889464a4c707c2989cec90fa9424",
+      "new_sha256": "29a217e322709279ebdfd8841936a7e4d09865691e5dc7dcbc57556834ca538d"
+    },
+    {
+      "file": "pw_potato_late_blight_8.jpg",
+      "original_size": [
+        400,
+        600
+      ],
+      "new_size": [
+        392,
+        588
+      ],
+      "original_pixels": 240000,
+      "new_pixels": 230496,
+      "aspect_ratio_error": 0.0,
+      "resized": true,
+      "original_sha256": "97364d5d6235b1feae78bffc38d8c9ee162ec3da0285a68203e62b1e92745685",
+      "new_sha256": "d1f63edf45a7290318d7ed47301a558122493b16d7066a52c559bffc7f093347"
+    },
+    {
+      "file": "pw_potato_late_blight_9.jpg",
+      "original_size": [
+        330,
+        214
+      ],
+      "new_size": [
+        330,
+        214
+      ],
+      "original_pixels": 70620,
+      "new_pixels": 70620,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "a2a0e5bcfc7e8afb080005fbfe2078bb0fe364df951b3b81ccd69ae6e7459f7a",
+      "new_sha256": "d8fcdc9acde3f2d03b34ea8c47e2d2f6aa87e7bc4242e94c08d42d9cfe8a41bd"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_0.jpg",
+      "original_size": [
+        500,
+        317
+      ],
+      "new_size": [
+        500,
+        317
+      ],
+      "original_pixels": 158500,
+      "new_pixels": 158500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "c36ca40b73a905a3a6accd50b51af71e64f7bb12ef6b8eb4a4b989c3f48a2405",
+      "new_sha256": "e9ba4bd0a41ee07821003e8bdc923764b19b7e361ed547688fa23447bbbf7271"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_1.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "3bb6e47c9a978636208d49992bfa0459bd663b58fa27777b0e9c13d312464858",
+      "new_sha256": "8f256946a5ad60149aadf5ac0b458076ac7e5bb131bdd83a103fe868727d1f73"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_10.jpg",
+      "original_size": [
+        720,
+        373
+      ],
+      "new_size": [
+        700,
+        364
+      ],
+      "original_pixels": 268560,
+      "new_pixels": 254800,
+      "aspect_ratio_error": 0.003739,
+      "resized": true,
+      "original_sha256": "893a08a44621043f0272f580dc7561a8134722e706d3019c7b5f9a1447756b2f",
+      "new_sha256": "84dbca70a1e2518a32cb93f6c38674c2e4f6a708a0261cd47972f6324e3a92ec"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_11.jpg",
+      "original_size": [
+        550,
+        367
+      ],
+      "new_size": [
+        550,
+        367
+      ],
+      "original_pixels": 201850,
+      "new_pixels": 201850,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "d5e098949322a1bb11a53e89f14474464920ef5a180f73a7f5404590f8eee77e",
+      "new_sha256": "6e4d62d1fc34460ebf92b3486f4e2e04a805ed7553345dd0b8c6fccbe040be92"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_2.jpg",
+      "original_size": [
+        763,
+        501
+      ],
+      "new_size": [
+        631,
+        414
+      ],
+      "original_pixels": 382263,
+      "new_pixels": 261234,
+      "aspect_ratio_error": 0.000788,
+      "resized": true,
+      "original_sha256": "0ca6cd54211598be1d0160578107db96f2f10b3902d13d8f364a536e4c79818c",
+      "new_sha256": "16074a3676911135cced5858960fe7f7367c32bb9f1ee510aa65e8a79ed504b5"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_3.jpg",
+      "original_size": [
+        600,
+        450
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 270000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "7e8593f594ec48558c6ef15dad0fdff5c4ae00545ebb8c02bb73520d7a03fcf0",
+      "new_sha256": "37e72fb242ef20f479ec8e8d5b442ef29acfdab42594b70c4e03172d35e2fc00"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_4.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "66698157aece424564b60909919066055fc58940a13fca8dfd6f9685d5aff0b1",
+      "new_sha256": "b0862af2f0d1e0942a45bc14014a53ff864dfb121c7a1fdd91b5e8b3cab97d17"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_5.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "7f190ac51e67a0da7307cba1b4a8be4298c7eb7f74d7b1cff0ca21058ad5182f",
+      "new_sha256": "5d12a6ce50af3fe466cb4a1108a7397022cd7465b09db5fdc84f5b9c5f7ef58e"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_6.jpg",
+      "original_size": [
+        950,
+        710
+      ],
+      "new_size": [
+        592,
+        442
+      ],
+      "original_pixels": 674500,
+      "new_pixels": 261664,
+      "aspect_ratio_error": 0.001,
+      "resized": true,
+      "original_sha256": "27ecf29e773331fc642625819b8e610c49d988211f92c57122470d4386bd3450",
+      "new_sha256": "afb8076d0290dac53501ff9353913ce4716c940ab5d0b6f784762b61db411eee"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_7.jpg",
+      "original_size": [
+        690,
+        521
+      ],
+      "new_size": [
+        589,
+        444
+      ],
+      "original_pixels": 359490,
+      "new_pixels": 261516,
+      "aspect_ratio_error": 0.001661,
+      "resized": true,
+      "original_sha256": "134789fa9d5c1ef94a51b5d77101d591709942f304d7f3e78fbe827aff5454f5",
+      "new_sha256": "92d17f88dac4169c8e0c30fef714003683b1f746896a5db29799c6386138a525"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_8.jpg",
+      "original_size": [
+        500,
+        317
+      ],
+      "new_size": [
+        500,
+        317
+      ],
+      "original_pixels": 158500,
+      "new_pixels": 158500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "e5ada6de83f48d2ad1168a1b23b356a8c1b480901f855171570b17d3fea00a2a",
+      "new_sha256": "ddd88ea8c2294fb91035aa2e78fd6a9126f1d7728943e96bd888f644a411b6ac"
+    },
+    {
+      "file": "pw_squash_powdery_mildew_9.jpg",
+      "original_size": [
+        1536,
+        2048
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 3145728,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "e74531e9cd010d28b2d4847fcd4fbf45160f34e7fb65c76024928c45548fdc46",
+      "new_sha256": "67471649c1bb59911d3585c42b21ef23fc1b5d30c6328d39912b0f07875a8fab"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_0.jpg",
+      "original_size": [
+        600,
+        400
+      ],
+      "new_size": [
+        588,
+        392
+      ],
+      "original_pixels": 240000,
+      "new_pixels": 230496,
+      "aspect_ratio_error": 0.0,
+      "resized": true,
+      "original_sha256": "268146e23945b998fe3bd30c6d9f347e84bcc8ed1231a3a78968f7d77155209d",
+      "new_sha256": "762bef3e3188f69ab2a4bc91892b0ba95e7b257fb1cd50499e321576355c19ad"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_1.jpg",
+      "original_size": [
+        1050,
+        715
+      ],
+      "new_size": [
+        616,
+        420
+      ],
+      "original_pixels": 750750,
+      "new_pixels": 258720,
+      "aspect_ratio_error": 0.00127,
+      "resized": true,
+      "original_sha256": "222b622c0df6648816fc7657d7a60d10014bba8dc5a4a77afdf7accd3f0aebe7",
+      "new_sha256": "30aecbae6ee248155ee2c0dcb2e2760f3c5eca44402a56e83823a3b0ae5cb6cc"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_10.jpg",
+      "original_size": [
+        300,
+        227
+      ],
+      "new_size": [
+        300,
+        227
+      ],
+      "original_pixels": 68100,
+      "new_pixels": 68100,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "a5e1fcc25c6d65bead0bdc5429e5bf3933001114efe456ba866089fb8e2f43e1",
+      "new_sha256": "f9fcd0827d42fdb9030ed3473954c8c578a85e7e16d07bda4a22d7914584c5b5"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_11.jpg",
+      "original_size": [
+        289,
+        189
+      ],
+      "new_size": [
+        289,
+        189
+      ],
+      "original_pixels": 54621,
+      "new_pixels": 54621,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "cbe5be23827bb37a14c41b8d7fe877aac4b7fa2ae53f9b0a565197eef5da5440",
+      "new_sha256": "7bcf6288e69aa3b88a1039b54a1b7f38b76714e687c1a33158827a4211a8aef1"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_2.jpg",
+      "original_size": [
+        945,
+        1260
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 1190700,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "b03e3f885a37991374cb123bf78bbca390ef810e776551a36d6e79f2dd92f289",
+      "new_sha256": "7efed7494e4b1f3a1fae6d2c11b2f0a18d3ad2a7c9822268c680dd5d27117080"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_3.jpg",
+      "original_size": [
+        722,
+        433
+      ],
+      "new_size": [
+        661,
+        396
+      ],
+      "original_pixels": 312626,
+      "new_pixels": 261756,
+      "aspect_ratio_error": 0.001053,
+      "resized": true,
+      "original_sha256": "eeec575465cd7417d3b9dcf74d93eec7c977bc54845e94d6cece677ce5d13977",
+      "new_sha256": "d1ec46de12d1c2601f082866ba494b55db04805b64b39e2a90a33825f91af69b"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_4.jpg",
+      "original_size": [
+        800,
+        600
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 480000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "5a8c679977e230c4db4bfd29ec73cb288829580575d6db592960336d79d1c148",
+      "new_sha256": "a026c3e3bc628c363b9710731794dec163f21c5e332ca0beaa6dba56ee2aaf19"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_5.jpg",
+      "original_size": [
+        685,
+        296
+      ],
+      "new_size": [
+        685,
+        296
+      ],
+      "original_pixels": 202760,
+      "new_pixels": 202760,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "3e234ca876c4393fe9c40d062765918cecd2038d2097975044bf2742f475a037",
+      "new_sha256": "dc7bea0c7242737d973257919254b3ac377a705417b52c93482abfafdae0b866"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_6.jpg",
+      "original_size": [
+        458,
+        452
+      ],
+      "new_size": [
+        458,
+        452
+      ],
+      "original_pixels": 207016,
+      "new_pixels": 207016,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "58a57d8fe0ab46a26d9acce5649e590cc2c454a9c62e3a77361e782db37a61aa",
+      "new_sha256": "ec3ff53d72c80bc031c33ae06d99d6336528a9686cd01426050993d0b7fb3da9"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_7.jpg",
+      "original_size": [
+        484,
+        616
+      ],
+      "new_size": [
+        453,
+        577
+      ],
+      "original_pixels": 298144,
+      "new_pixels": 261381,
+      "aspect_ratio_error": 0.000788,
+      "resized": true,
+      "original_sha256": "f9285ddd4ad9135a585758ab6df280b11746920ecc5ff7755bd780d715942ab3",
+      "new_sha256": "8d95653da9b494c645a2893a51a6a67f0c1d711a843fa3c3ecb2cc64480c145f"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_8.jpg",
+      "original_size": [
+        300,
+        225
+      ],
+      "new_size": [
+        300,
+        225
+      ],
+      "original_pixels": 67500,
+      "new_pixels": 67500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "d0970a7b321b8ff4432e97823d3e5887c24d32af6c8c943c05fa51502db29d2d",
+      "new_sha256": "cc987a126ceb5fff0664aa06f41420d7ceaec6d055093ba869c6c6278fdc20f5"
+    },
+    {
+      "file": "pw_tomato_bacterial_leaf_spot_9.jpg",
+      "original_size": [
+        666,
+        500
+      ],
+      "new_size": [
+        590,
+        443
+      ],
+      "original_pixels": 333000,
+      "new_pixels": 261370,
+      "aspect_ratio_error": 0.000129,
+      "resized": true,
+      "original_sha256": "922afee357e21c9f0272e8ab74f31a3517028a5a9b798952254b1ae090d04a5c",
+      "new_sha256": "633ea2ac66569b1697c021c3e90e536e3bd1b549a9ff2ef826bcfd890a05ac26"
+    },
+    {
+      "file": "pw_tomato_early_blight_0.jpg",
+      "original_size": [
+        1200,
+        1600
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 1920000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "d2466db321375cfc2c7ab56a842e47fb57525ce579411bdf8efcddff28418d95",
+      "new_sha256": "cae65d6d2b91b40402a3e85341b1da0c5e1b167ce639c4fa3e01232ba979ee42"
+    },
+    {
+      "file": "pw_tomato_early_blight_1.jpg",
+      "original_size": [
+        500,
+        309
+      ],
+      "new_size": [
+        500,
+        309
+      ],
+      "original_pixels": 154500,
+      "new_pixels": 154500,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "57c8b7c5fff5200e3475e2cab43b5cd94030f2b919f322c8aec0dd4f8d7cfbae",
+      "new_sha256": "1cc1c5ac685531f899d9f7f88d773733b25f3c3cac87a25a2c583efc25738fb3"
+    },
+    {
+      "file": "pw_tomato_early_blight_10.jpg",
+      "original_size": [
+        754,
+        476
+      ],
+      "new_size": [
+        644,
+        406
+      ],
+      "original_pixels": 358904,
+      "new_pixels": 261464,
+      "aspect_ratio_error": 0.001372,
+      "resized": true,
+      "original_sha256": "833e73ec187c94f94d8ff7388b259d7cd1f8ae68d0e0c46c6aa2de7260c54d83",
+      "new_sha256": "72669afbb5ccbff0f1c43ae08660a4cf6b84d94d739bdc86f04972193f1fa57f"
+    },
+    {
+      "file": "pw_tomato_early_blight_11.jpg",
+      "original_size": [
+        800,
+        556
+      ],
+      "new_size": [
+        614,
+        426
+      ],
+      "original_pixels": 444800,
+      "new_pixels": 261564,
+      "aspect_ratio_error": 0.001714,
+      "resized": true,
+      "original_sha256": "1fe42b60ec69c5c01f1124d6686a5c8e37d25546eecf0dbc00a8de08f629dc1f",
+      "new_sha256": "96292a2a3d890bd22517dcd605523b49b540c7aa0ada6422bf9ef5b85896b1d3"
+    },
+    {
+      "file": "pw_tomato_early_blight_2.jpg",
+      "original_size": [
+        224,
+        164
+      ],
+      "new_size": [
+        224,
+        164
+      ],
+      "original_pixels": 36736,
+      "new_pixels": 36736,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "84684bd2af8d4415710c6e66e8ec58f23e6d3232bddddb10bae580d94747c000",
+      "new_sha256": "a3ae8eb15bcb2b8dd834c65eb58503711282ee4bb9cfd7d6d1e3ed5290be482f"
+    },
+    {
+      "file": "pw_tomato_early_blight_3.jpg",
+      "original_size": [
+        1600,
+        1310
+      ],
+      "new_size": [
+        565,
+        463
+      ],
+      "original_pixels": 2096000,
+      "new_pixels": 261595,
+      "aspect_ratio_error": 0.000877,
+      "resized": true,
+      "original_sha256": "f055eefdd649f466e2b7934efb9eefc199657d1b0d4f865036dbdc0a996d3747",
+      "new_sha256": "de4f3f052400944a31d00a906c82cc80c01fde073098ac0e11f27a9528c344cd"
+    },
+    {
+      "file": "pw_tomato_early_blight_4.jpg",
+      "original_size": [
+        640,
+        463
+      ],
+      "new_size": [
+        601,
+        435
+      ],
+      "original_pixels": 296320,
+      "new_pixels": 261435,
+      "aspect_ratio_error": 0.000492,
+      "resized": true,
+      "original_sha256": "c0ef4027c06968216208fabb16a228c4b6ff79fb0c6c086330faa82740474e64",
+      "new_sha256": "1d65285a59ef4e2cf1e4d986b2dd5d511ee86305d43f40681afdba8c29e39cb3"
+    },
+    {
+      "file": "pw_tomato_early_blight_5.jpg",
+      "original_size": [
+        453,
+        1024
+      ],
+      "new_size": [
+        336,
+        756
+      ],
+      "original_pixels": 463872,
+      "new_pixels": 254016,
+      "aspect_ratio_error": 0.00466,
+      "resized": true,
+      "original_sha256": "55d82e4b183c6b0af630b672707b6cc169b82a1ce7226dcf8704a297bdd26383",
+      "new_sha256": "952b26fc8d6c99683889f326dbb77ba800e4e0632bce0dc0165b47b9584f5c2e"
+    },
+    {
+      "file": "pw_tomato_early_blight_6.jpg",
+      "original_size": [
+        800,
+        566
+      ],
+      "new_size": [
+        588,
+        420
+      ],
+      "original_pixels": 452800,
+      "new_pixels": 246960,
+      "aspect_ratio_error": 0.0095,
+      "resized": true,
+      "original_sha256": "119016d1411a0a8145ae6a4a8660ba2c23075fe96fcafbd6ea43c12b714854aa",
+      "new_sha256": "7016eb51131e4856ff8ce41b0ab83d3f9ab3fc084e518deb373fa034f22fab78"
+    },
+    {
+      "file": "pw_tomato_early_blight_7.jpg",
+      "original_size": [
+        232,
+        240
+      ],
+      "new_size": [
+        232,
+        240
+      ],
+      "original_pixels": 55680,
+      "new_pixels": 55680,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "5980002fc2db7f565b94fedc1e8841e363e3466137a0d42cd08136297d9ef90b",
+      "new_sha256": "d61c32e3eb196ada57cc68c9a5e693dbdfcbfdf4f6d3b608a0cb68388f50ba6e"
+    },
+    {
+      "file": "pw_tomato_early_blight_8.jpg",
+      "original_size": [
+        1220,
+        470
+      ],
+      "new_size": [
+        824,
+        317
+      ],
+      "original_pixels": 573400,
+      "new_pixels": 261208,
+      "aspect_ratio_error": 0.001396,
+      "resized": true,
+      "original_sha256": "75b01df4f6bdfa0c1003eb1ed334bf79d9ca331587521c3bfba6604ac7023f91",
+      "new_sha256": "33ba2ca5f7727006dbce11665c72296207e58266597ed7459253aefc4030484a"
+    },
+    {
+      "file": "pw_tomato_early_blight_9.jpg",
+      "original_size": [
+        650,
+        420
+      ],
+      "new_size": [
+        636,
+        411
+      ],
+      "original_pixels": 273000,
+      "new_pixels": 261396,
+      "aspect_ratio_error": 0.000112,
+      "resized": true,
+      "original_sha256": "a6984e843f963d5794fb0b6c40cc2b7cb1290cf64dbc9f264dd86fde35958173",
+      "new_sha256": "824ae3ee0b01e603bd65407ecd487f1132889cbe8377f391d32c8fbe679b277c"
+    },
+    {
+      "file": "pw_tomato_late_blight_0.jpg",
+      "original_size": [
+        908,
+        572
+      ],
+      "new_size": [
+        645,
+        406
+      ],
+      "original_pixels": 519376,
+      "new_pixels": 261870,
+      "aspect_ratio_error": 0.000792,
+      "resized": true,
+      "original_sha256": "a3f4ee5efafbeedd1027bebda000bff0ea5aa3e2dac8f39351ad68fd00bb8a76",
+      "new_sha256": "f95183f9a2a3c0d9a02e7cf933254ce43486ae4312c071ff69b4fc7ff3c2d8b4"
+    },
+    {
+      "file": "pw_tomato_late_blight_1.jpg",
+      "original_size": [
+        1200,
+        675
+      ],
+      "new_size": [
+        682,
+        384
+      ],
+      "original_pixels": 810000,
+      "new_pixels": 261888,
+      "aspect_ratio_error": 0.000977,
+      "resized": true,
+      "original_sha256": "41c1477fec4fc5759c659958818b17018b6933c56369973151ceba27f48626d2",
+      "new_sha256": "09fdac260c1352b8cb0825c4a566b5b1696818c79c9b582333f4b53b2d86be52"
+    },
+    {
+      "file": "pw_tomato_late_blight_10.jpg",
+      "original_size": [
+        1600,
+        1200
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 1920000,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "8a355c2c65699b811f3c73010679f86336e4df3f95c068b0317b6135bec6a591",
+      "new_sha256": "abe7bfb147ce26459f672de6fd3ce0f9f6073e7ea6a6c1dea73da0781bbce4f5"
+    },
+    {
+      "file": "pw_tomato_late_blight_11.jpg",
+      "original_size": [
+        1080,
+        1446
+      ],
+      "new_size": [
+        442,
+        592
+      ],
+      "original_pixels": 1561680,
+      "new_pixels": 261664,
+      "aspect_ratio_error": 0.000357,
+      "resized": true,
+      "original_sha256": "aecf69627ea53e989c7621e8992e3a28e9721f3f94879885777be00594985242",
+      "new_sha256": "8ac9cd60a4537d2e95ba3a618b55beccd517c9941d7c6594205fffeb3cda75fc"
+    },
+    {
+      "file": "pw_tomato_late_blight_2.jpg",
+      "original_size": [
+        640,
+        805
+      ],
+      "new_size": [
+        448,
+        560
+      ],
+      "original_pixels": 515200,
+      "new_pixels": 250880,
+      "aspect_ratio_error": 0.00625,
+      "resized": true,
+      "original_sha256": "e4d6c5dace3084e2876bf671fc16265ec700f527218ec37f3158f89561b68038",
+      "new_sha256": "f2548c468992e48e6109d9d3d7613d1f0159954a9ec84c506582eb53278e22d6"
+    },
+    {
+      "file": "pw_tomato_late_blight_3.jpg",
+      "original_size": [
+        600,
+        498
+      ],
+      "new_size": [
+        561,
+        466
+      ],
+      "original_pixels": 298800,
+      "new_pixels": 261426,
+      "aspect_ratio_error": 0.000794,
+      "resized": true,
+      "original_sha256": "64195d6823274358cccd5db14d3b902393bb15f600b09c6c456e114796077b93",
+      "new_sha256": "a885da600cc6e2dba41e327390a92249601d6567200fc4fc3d4bc9d9bfc65d1b"
+    },
+    {
+      "file": "pw_tomato_late_blight_4.jpg",
+      "original_size": [
+        500,
+        552
+      ],
+      "new_size": [
+        487,
+        537
+      ],
+      "original_pixels": 276000,
+      "new_pixels": 261519,
+      "aspect_ratio_error": 0.001207,
+      "resized": true,
+      "original_sha256": "5982137c2aae4e06b6944b2d8a206cab3c8e3ef498a3f39ce4ee9882acb6a173",
+      "new_sha256": "046e6169047c37236fa52dd0f023d4b8010276b4731b2486550f7b8e6d15be8d"
+    },
+    {
+      "file": "pw_tomato_late_blight_5.jpg",
+      "original_size": [
+        390,
+        256
+      ],
+      "new_size": [
+        390,
+        256
+      ],
+      "original_pixels": 99840,
+      "new_pixels": 99840,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "6be4c01b254a5df3d0b77215f3b3a7a8ae1f5bb9ac22a02d51d8dd3d105d6bed",
+      "new_sha256": "b19f3b7b263f63f9334241bfa9165ca07d616bfe57114418926370d01ad5a707"
+    },
+    {
+      "file": "pw_tomato_late_blight_6.jpg",
+      "original_size": [
+        866,
+        1390
+      ],
+      "new_size": [
+        404,
+        648
+      ],
+      "original_pixels": 1203740,
+      "new_pixels": 261792,
+      "aspect_ratio_error": 0.000699,
+      "resized": true,
+      "original_sha256": "7652473f01c9d5c1dc9458e827687efab69ffeef555d3c0850d1129efebdc345",
+      "new_sha256": "8494d8fe789a7d79c83ba46271cc9199279d7801a2ac1335e656603831577416"
+    },
+    {
+      "file": "pw_tomato_late_blight_7.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "b2104b11e25750e85caccca8e94dc425a590929c209db0d3ad14489f3ae73d30",
+      "new_sha256": "b6ab0a87c40372c832374cdd6dfddcbc56d96aeb7790eacf41869b83eea09fd9"
+    },
+    {
+      "file": "pw_tomato_late_blight_8.jpg",
+      "original_size": [
+        720,
+        1280
+      ],
+      "new_size": [
+        384,
+        682
+      ],
+      "original_pixels": 921600,
+      "new_pixels": 261888,
+      "aspect_ratio_error": 0.000978,
+      "resized": true,
+      "original_sha256": "909b9f83af19abae31b08669eca3567f43593bb64187a1ad96169a310dcc9ff4",
+      "new_sha256": "a4857f02df245fc348fec697de24f51e6ed37e1dee0628f2398af018a7e71671"
+    },
+    {
+      "file": "pw_tomato_late_blight_9.jpg",
+      "original_size": [
+        690,
+        518
+      ],
+      "new_size": [
+        590,
+        443
+      ],
+      "original_pixels": 357420,
+      "new_pixels": 261370,
+      "aspect_ratio_error": 0.000164,
+      "resized": true,
+      "original_sha256": "77f0f9bc19095f19b30135f8f54a272942b1eb766f820f6874b882989b5973f9",
+      "new_sha256": "084cb5924702a82b62bda8bc5e476e7dfe517f007607fd1aa635e63642c1aca9"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_0.jpg",
+      "original_size": [
+        900,
+        600
+      ],
+      "new_size": [
+        627,
+        418
+      ],
+      "original_pixels": 540000,
+      "new_pixels": 262086,
+      "aspect_ratio_error": 0.0,
+      "resized": true,
+      "original_sha256": "42dd5c1f179d4c3290f3e7faef6ce7d31b5d2f7b20a5550f7f0f993c1bc17bf8",
+      "new_sha256": "f3bafdabc9b2d02e2b32beeeb56cc949fbc71bce9689ca102b4c60d435e112ec"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_1.jpg",
+      "original_size": [
+        765,
+        283
+      ],
+      "new_size": [
+        756,
+        280
+      ],
+      "original_pixels": 216495,
+      "new_pixels": 211680,
+      "aspect_ratio_error": 0.001176,
+      "resized": true,
+      "original_sha256": "0889c0b77f4c6b2673ee809788ffe3990275c92a196900aa872d5271204a5af7",
+      "new_sha256": "3b4117d5863f7905320f5e82888d85c533b43164ff4ba76f65fbbf7c1240c5a1"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_10.jpg",
+      "original_size": [
+        660,
+        372
+      ],
+      "new_size": [
+        644,
+        364
+      ],
+      "original_pixels": 245520,
+      "new_pixels": 234416,
+      "aspect_ratio_error": 0.002797,
+      "resized": true,
+      "original_sha256": "7b80c3e5ddb6284175bfbef630172037dd39f3b32be1f62d0990c9aba990c561",
+      "new_sha256": "37fde12396cb3206fa012b359841f4076c9979446b0598fba7ac91954fcfbe26"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_11.jpg",
+      "original_size": [
+        600,
+        380
+      ],
+      "new_size": [
+        600,
+        380
+      ],
+      "original_pixels": 228000,
+      "new_pixels": 228000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "5b76e15adc1b9cffe3c7d593f174ba04fe88a3b2674cd79b2c310716ac6afb9f",
+      "new_sha256": "814f7a9fab186697fbfc8d41e82437383145c48b53b5ba48ff47abc62bfb1123"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_2.jpg",
+      "original_size": [
+        300,
+        407
+      ],
+      "new_size": [
+        300,
+        407
+      ],
+      "original_pixels": 122100,
+      "new_pixels": 122100,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "eaa36b52c8381d722431f4d41015d054cd9117f88aba13d7268202b6ef86fa07",
+      "new_sha256": "e4dab63c63ad094f634841c6198934d9ba0c788e2f3a72190e1785ff16b88f11"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_3.jpg",
+      "original_size": [
+        686,
+        386
+      ],
+      "new_size": [
+        682,
+        384
+      ],
+      "original_pixels": 264796,
+      "new_pixels": 261888,
+      "aspect_ratio_error": 0.000653,
+      "resized": true,
+      "original_sha256": "87c604f445b8db9ccdbd29f751b2f9946eef9f3b15ea688ea0d8cfc261dd173b",
+      "new_sha256": "0a98d527e256def0fe658e18df0cecb1d78188b4c106e6bc17d8992f0b2de973"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_4.jpg",
+      "original_size": [
+        2736,
+        3648
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 9980928,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "b5f6afe314d004a262d0cc1e123cda9638d6f8cec34b802a9b44043903865e3a",
+      "new_sha256": "acb4d755f3615a57b6dd3d32c07887cbe020a7ff5d924fd8c8f052fb636d0eeb"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_5.jpg",
+      "original_size": [
+        639,
+        360
+      ],
+      "new_size": [
+        639,
+        360
+      ],
+      "original_pixels": 230040,
+      "new_pixels": 230040,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "1984895467fee36d380d995b0f485bf253364b56ff5cb5f6efce396336daa734",
+      "new_sha256": "110e438a55eb66d98d49464a7e15f15cf24fbdc7c038f5e7e86ab7eb9ba7e04c"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_6.jpg",
+      "original_size": [
+        550,
+        341
+      ],
+      "new_size": [
+        550,
+        341
+      ],
+      "original_pixels": 187550,
+      "new_pixels": 187550,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "583d6a22ba544e862515f2b7bc5ac078a04e352350ed006f42774313d4d0b737",
+      "new_sha256": "0678b829bceb1cee5a67fb3f329768c3294c9aa0d9b17b5439a14d2dbf30882a"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_7.jpg",
+      "original_size": [
+        600,
+        400
+      ],
+      "new_size": [
+        588,
+        392
+      ],
+      "original_pixels": 240000,
+      "new_pixels": 230496,
+      "aspect_ratio_error": 0.0,
+      "resized": true,
+      "original_sha256": "a3a560e7f81691d5eb2ad16a3517f58032084f31a7be3724921049ac400246e6",
+      "new_sha256": "75fffd226fefdd714f77e8dbceb10b14e3454c9988cafd5d25a5fd538dcf20d9"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_8.jpg",
+      "original_size": [
+        640,
+        341
+      ],
+      "new_size": [
+        640,
+        341
+      ],
+      "original_pixels": 218240,
+      "new_pixels": 218240,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "0b719fbbc56083e9b99ff688108ef7161b5e59e6a96f4503f5da3ccf0acac134",
+      "new_sha256": "a06a2605c7420934fea1b1d3177b04fffa033629ac8483c3c16029f19e42f31a"
+    },
+    {
+      "file": "pw_tomato_leaf_mold_9.jpg",
+      "original_size": [
+        640,
+        385
+      ],
+      "new_size": [
+        640,
+        385
+      ],
+      "original_pixels": 246400,
+      "new_pixels": 246400,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "d0e032f83ca39322431061114e1c0f549796327e13a8855fd474594df51dfc71",
+      "new_sha256": "4ad5cdd7cc25633072d4d37f20d082b15c18e270d27b0a6a7b30c0ae351d579f"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_0.jpg",
+      "original_size": [
+        500,
+        310
+      ],
+      "new_size": [
+        500,
+        310
+      ],
+      "original_pixels": 155000,
+      "new_pixels": 155000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "98a99226e550d14f756df305c044ca6231f266231a6b0841c6bc9058f2306bcf",
+      "new_sha256": "b524300d82ea5b3ae1d5b578b47f461bfd8eadf03f73c098f86062500d14cbf5"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_1.jpg",
+      "original_size": [
+        1000,
+        667
+      ],
+      "new_size": [
+        626,
+        418
+      ],
+      "original_pixels": 667000,
+      "new_pixels": 261668,
+      "aspect_ratio_error": 0.001096,
+      "resized": true,
+      "original_sha256": "2e934409948de3ea9a06bf46de10253b6ede042990e0ba152b5f031cc6e667f4",
+      "new_sha256": "8b1c5048c0b78ba0978a18f6e698dab50a1fa6b947967e98dae144c01895d82e"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_10.jpg",
+      "original_size": [
+        765,
+        576
+      ],
+      "new_size": [
+        590,
+        444
+      ],
+      "original_pixels": 440640,
+      "new_pixels": 261960,
+      "aspect_ratio_error": 0.00053,
+      "resized": true,
+      "original_sha256": "642ca46e7cd6425a8a32e8f64b62d69da38cad2ebe47e5799d9e3fa992bb0d5a",
+      "new_sha256": "e132bfc0cadd52f995d6d57757a6a43741fab30880d1a00272e47555371a94ec"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_11.jpg",
+      "original_size": [
+        1130,
+        554
+      ],
+      "new_size": [
+        731,
+        358
+      ],
+      "original_pixels": 626020,
+      "new_pixels": 261698,
+      "aspect_ratio_error": 0.001073,
+      "resized": true,
+      "original_sha256": "d012ec4cac44a22e74e65df94b00206a52eac8e084bca55efadc637bfc73a8ff",
+      "new_sha256": "e619c0705cfae19be853f81a347c166c86735fba5bb861fbb6a752a18677f70a"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_2.jpg",
+      "original_size": [
+        700,
+        548
+      ],
+      "new_size": [
+        578,
+        453
+      ],
+      "original_pixels": 383600,
+      "new_pixels": 261834,
+      "aspect_ratio_error": 0.001123,
+      "resized": true,
+      "original_sha256": "8b681febfb4776156fe0baf8ef042029d0c35c3cbf6bc20a47a057a8ea2a67a2",
+      "new_sha256": "0709d349e2edecbd7c1fe39f19cc61c4490b51cc4f19dd07a7be19fb410eb9c4"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_3.jpg",
+      "original_size": [
+        640,
+        853
+      ],
+      "new_size": [
+        443,
+        591
+      ],
+      "original_pixels": 545920,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000954,
+      "resized": true,
+      "original_sha256": "45c497a7f6e08102f70e01e00f5b8de34cebcf3b771f3e13a3cd351f8126a7c1",
+      "new_sha256": "22a87b209fe36b3b86940aafeebbbd13359b7809f8f64fcb73de9ce2fc817c76"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_4.jpg",
+      "original_size": [
+        600,
+        600
+      ],
+      "new_size": [
+        504,
+        504
+      ],
+      "original_pixels": 360000,
+      "new_pixels": 254016,
+      "aspect_ratio_error": 0.0,
+      "resized": true,
+      "original_sha256": "7ff899429ce12b68bbe342a3b3c1dfc36bd66074403cab51e8757e4d082f8d23",
+      "new_sha256": "b77e7b7fc6e555b744e0df90967ad7cae0d3ae286431b74d7074a2c751929ce2"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_5.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "3083ef6872f2f3c29a9bbd17964d1998b7b01591a5a1455f5411ec9765e6c248",
+      "new_sha256": "f0ccb3e7d67f187d77303b6af6666e22a9cb090686695c058eacbf4247a60794"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_6.jpg",
+      "original_size": [
+        107,
+        100
+      ],
+      "new_size": [
+        107,
+        100
+      ],
+      "original_pixels": 10700,
+      "new_pixels": 10700,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "799dae13f52ac7fff0e5538dcef22e8cd20cb76499e2a08b206d1042d1292cf1",
+      "new_sha256": "34557efdbe90cdf15fff93c5691cbd27ab769ba7ffd2aa215dfdae415db6f17a"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_7.jpg",
+      "original_size": [
+        722,
+        429
+      ],
+      "new_size": [
+        664,
+        394
+      ],
+      "original_pixels": 309738,
+      "new_pixels": 261616,
+      "aspect_ratio_error": 0.001364,
+      "resized": true,
+      "original_sha256": "a382cf321e192be0bdb985d05324278cff58556c6b7fc9ea5c1776e1c26043dd",
+      "new_sha256": "3cc823022c945b85a868ed3e39f7b2603d39dec17229d934f7b778c42ae54876"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_8.jpg",
+      "original_size": [
+        640,
+        480
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 307200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "7f8d20c257f875fb4e349eba0c2904de6a735287ec00aa0c3891dbd5091b2331",
+      "new_sha256": "8318835e007494d1547f048db2e55ed9ed3a787c175a5fa89e06693f335853ee"
+    },
+    {
+      "file": "pw_tomato_septoria_leaf_spot_9.jpg",
+      "original_size": [
+        441,
+        630
+      ],
+      "new_size": [
+        428,
+        611
+      ],
+      "original_pixels": 277830,
+      "new_pixels": 261508,
+      "aspect_ratio_error": 0.000701,
+      "resized": true,
+      "original_sha256": "de8bfd1eb3506866e77e9dfa8a0a9146466a86d34aa58f60b05cc1a1a2d9dc90",
+      "new_sha256": "d106f5379546b66a4504fe040b270de6af629babd1a30c88be7e642d2db3ec34"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_0.jpg",
+      "original_size": [
+        512,
+        340
+      ],
+      "new_size": [
+        504,
+        336
+      ],
+      "original_pixels": 174080,
+      "new_pixels": 169344,
+      "aspect_ratio_error": 0.003906,
+      "resized": true,
+      "original_sha256": "3c67bb9c670a72c3217678674c9018c7c5f9bcf3e1fe8fcd2504474b8fd19cbd",
+      "new_sha256": "ff1a6fe9c51d091a9c28b375d0c7e27035a7aba9861be8d5ec4ce8e9c58732cc"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_1.jpg",
+      "original_size": [
+        160,
+        120
+      ],
+      "new_size": [
+        160,
+        120
+      ],
+      "original_pixels": 19200,
+      "new_pixels": 19200,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "b66f255ce060be5272cc4a2ea03cb1ebf19008146e9684d68f768c5583e9c4a9",
+      "new_sha256": "6331530bca9c5562530d8d1f376cd526fc690eb65c02df6ce25e97a3376b559f"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_10.jpg",
+      "original_size": [
+        2560,
+        1920
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 4915200,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "4a84e49c4fd111d2d42e676726aff633fa0d211ffb4e8b5851c7588959ecc502",
+      "new_sha256": "08194d943bedb7111ae752e7d4a265ace436f7b24dc012286c2019ca3c31a27e"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_11.jpg",
+      "original_size": [
+        904,
+        1280
+      ],
+      "new_size": [
+        430,
+        609
+      ],
+      "original_pixels": 1157120,
+      "new_pixels": 261870,
+      "aspect_ratio_error": 0.000247,
+      "resized": true,
+      "original_sha256": "0925053c4a95702a54d3a3c6a293fcf340e85f92ff7df54655289014da290c31",
+      "new_sha256": "4383fa41e430c040afe1018fe6f120fb7b56e17d53981d49f67783ae28a44ad8"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_2.jpg",
+      "original_size": [
+        694,
+        706
+      ],
+      "new_size": [
+        507,
+        516
+      ],
+      "original_pixels": 489964,
+      "new_pixels": 261612,
+      "aspect_ratio_error": 0.000452,
+      "resized": true,
+      "original_sha256": "bb50162a33fce8ff5cb6c7046a93680ec8856906ea591f017c5d7809bf325850",
+      "new_sha256": "04eab945563a023849c8979531c7f3b2345ece195d71acf8e0aaf47049fa5b61"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_3.jpg",
+      "original_size": [
+        1024,
+        768
+      ],
+      "new_size": [
+        591,
+        443
+      ],
+      "original_pixels": 786432,
+      "new_pixels": 261813,
+      "aspect_ratio_error": 0.000564,
+      "resized": true,
+      "original_sha256": "70e10c5c50eb95f461d420de33d4926245517e4f049f8c694168f738d4c4063f",
+      "new_sha256": "0750b4860d31679fc749eff7bc660cec215863729e8774deacec5fda82286c29"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_4.jpg",
+      "original_size": [
+        511,
+        597
+      ],
+      "new_size": [
+        473,
+        553
+      ],
+      "original_pixels": 305067,
+      "new_pixels": 261569,
+      "aspect_ratio_error": 0.000715,
+      "resized": true,
+      "original_sha256": "55156c036d94d5a6b5b229e0572fbac7b00075c8088a573f5dd2f9573d2474fc",
+      "new_sha256": "8197b5da93bdd78166592306ea666f50cad5427654572cd0cd9ee9b940bee5b0"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_5.jpg",
+      "original_size": [
+        246,
+        173
+      ],
+      "new_size": [
+        246,
+        173
+      ],
+      "original_pixels": 42558,
+      "new_pixels": 42558,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "aff1f216d58f8436e6fd47822ff494e7e9f0fa108f40a0aa5b4568de22cb6076",
+      "new_sha256": "0005dd211603162105cd0fa018d6c5b13dad47ed04dd26cd02e77637cd0f864d"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_6.jpg",
+      "original_size": [
+        528,
+        542
+      ],
+      "new_size": [
+        505,
+        518
+      ],
+      "original_pixels": 286176,
+      "new_pixels": 261590,
+      "aspect_ratio_error": 0.000753,
+      "resized": true,
+      "original_sha256": "3579a31b9cc2c15af5ebcee9f20e4eaad68bcaf991e13f5c93d6fa3f152c236e",
+      "new_sha256": "8b6a648511005d9676f0cc4bedcbd348bb95cc91f97e3b67b745fc60e0ba8c39"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_7.jpg",
+      "original_size": [
+        528,
+        211
+      ],
+      "new_size": [
+        528,
+        211
+      ],
+      "original_pixels": 111408,
+      "new_pixels": 111408,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "59db2e195692ee81997276bb30d22bc2b34948aa70b9a3eb2b430cd95406f743",
+      "new_sha256": "60f5e27ed584fa31e115188bc77ddd9fd6cc8cf3f906784f845f63b24f2adff9"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_8.jpg",
+      "original_size": [
+        400,
+        300
+      ],
+      "new_size": [
+        400,
+        300
+      ],
+      "original_pixels": 120000,
+      "new_pixels": 120000,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "aab338b44cac02921195692f905cdd7bdf6b3d6bc1c4632f74d3d90e49a3ad5d",
+      "new_sha256": "ec92fc6dbf22aaa4df9351e2d8b30c13c9427234b6d45cbf92f98d8ce71c119d"
+    },
+    {
+      "file": "pw_tomato_yellow_leaf_curl_virus_9.jpg",
+      "original_size": [
+        268,
+        217
+      ],
+      "new_size": [
+        268,
+        217
+      ],
+      "original_pixels": 58156,
+      "new_pixels": 58156,
+      "aspect_ratio_error": 0.0,
+      "resized": false,
+      "original_sha256": "9fa05fbde6880b33c6b18dab1366bf0356ad884538b3e840697dd27ebddf762a",
+      "new_sha256": "d9752f4b6edb3eda53ac553e3efb6b942b9c15c0b9a1375e513b17d9d3a59f81"
+    }
+  ]
+}

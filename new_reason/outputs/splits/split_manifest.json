@@ -1,0 +1,227 @@
+{
+  "train": {
+    "name": "train",
+    "total": 14701,
+    "answer_count": 8850,
+    "abstain_count": 5851,
+    "answer_ratio": 0.602,
+    "abstain_ratio": 0.398,
+    "abstain_breakdown": {
+      "wrong_object": 973,
+      "no_target": 4878
+    },
+    "relation_distribution": {
+      "base": 903,
+      "T1": 1806,
+      "T2": 903,
+      "T3": 903,
+      "T4_control": 1098,
+      "T7_include": 903,
+      "T7_ladder": 3003,
+      "base_occluded": 725,
+      "T2_occluded": 337,
+      "T3_occluded": 337,
+      "T5": 2810,
+      "T6": 973
+    },
+    "crop_distribution": {
+      "apple": 1499,
+      "corn": 2623,
+      "cherry": 32,
+      "tomato": 3102,
+      "squash": 679,
+      "raspberry": 116,
+      "potato": 412,
+      "bell": 103,
+      "soybean": 68,
+      "grape": 165,
+      "peach": 96,
+      "strawberry": 29,
+      "coco": 5777
+    },
+    "source_image_id_count": 644,
+    "t6_count": 973
+  },
+  "dev": {
+    "name": "dev",
+    "total": 2408,
+    "answer_count": 1204,
+    "abstain_count": 1204,
+    "answer_ratio": 0.5,
+    "abstain_ratio": 0.5,
+    "abstain_breakdown": {
+      "wrong_object": 205,
+      "no_target": 999
+    },
+    "relation_distribution": {
+      "base": 187,
+      "T7_ladder": 476,
+      "T3": 106,
+      "T1": 217,
+      "T4_control": 121,
+      "T2": 115,
+      "T7_include": 106,
+      "T6": 205,
+      "base_occluded": 143,
+      "T2_occluded": 69,
+      "T3_occluded": 69,
+      "T5": 594
+    },
+    "crop_distribution": {
+      "cherry": 14,
+      "corn": 449,
+      "soybean": 12,
+      "squash": 128,
+      "grape": 32,
+      "apple": 251,
+      "bell": 14,
+      "tomato": 554,
+      "raspberry": 24,
+      "potato": 80,
+      "peach": 13,
+      "strawberry": 11,
+      "coco": 826
+    },
+    "source_image_id_count": 140,
+    "t6_count": 205
+  },
+  "dev_all_samples": {
+    "name": "dev_all (including unused)",
+    "total": 2987,
+    "answer_count": 1783,
+    "abstain_count": 1204,
+    "answer_ratio": 0.5969,
+    "abstain_ratio": 0.4031,
+    "abstain_breakdown": {
+      "wrong_object": 205,
+      "no_target": 999
+    },
+    "relation_distribution": {
+      "base": 187,
+      "T7_ladder": 594,
+      "T3": 187,
+      "T1": 374,
+      "T4_control": 191,
+      "T2": 187,
+      "T7_include": 187,
+      "T6": 205,
+      "base_occluded": 143,
+      "T2_occluded": 69,
+      "T3_occluded": 69,
+      "T5": 594
+    },
+    "crop_distribution": {
+      "cherry": 16,
+      "corn": 552,
+      "soybean": 16,
+      "squash": 161,
+      "grape": 39,
+      "apple": 299,
+      "bell": 16,
+      "tomato": 639,
+      "raspberry": 29,
+      "potato": 102,
+      "peach": 16,
+      "strawberry": 13,
+      "coco": 1089
+    },
+    "source_image_id_count": 140,
+    "t6_count": 205
+  },
+  "test": {
+    "name": "test",
+    "total": 2646,
+    "answer_count": 1323,
+    "abstain_count": 1323,
+    "answer_ratio": 0.5,
+    "abstain_ratio": 0.5,
+    "abstain_breakdown": {
+      "wrong_object": 205,
+      "no_target": 1118
+    },
+    "relation_distribution": {
+      "base": 206,
+      "T7_ladder": 508,
+      "T3": 130,
+      "T7_include": 112,
+      "T2": 119,
+      "T1": 236,
+      "T4_control": 160,
+      "T6": 205,
+      "base_occluded": 170,
+      "T2_occluded": 80,
+      "T3_occluded": 80,
+      "T5": 640
+    },
+    "crop_distribution": {
+      "cherry": 12,
+      "soybean": 21,
+      "corn": 474,
+      "raspberry": 21,
+      "grape": 31,
+      "peach": 24,
+      "potato": 92,
+      "squash": 128,
+      "apple": 255,
+      "bell": 25,
+      "tomato": 562,
+      "strawberry": 11,
+      "coco": 990
+    },
+    "source_image_id_count": 145,
+    "t6_count": 205
+  },
+  "test_all_samples": {
+    "name": "test_all (including unused)",
+    "total": 3314,
+    "answer_count": 1991,
+    "abstain_count": 1323,
+    "answer_ratio": 0.6008,
+    "abstain_ratio": 0.3992,
+    "abstain_breakdown": {
+      "wrong_object": 205,
+      "no_target": 1118
+    },
+    "relation_distribution": {
+      "base": 206,
+      "T7_ladder": 637,
+      "T3": 206,
+      "T7_include": 206,
+      "T2": 206,
+      "T1": 412,
+      "T4_control": 266,
+      "T6": 205,
+      "base_occluded": 170,
+      "T2_occluded": 80,
+      "T3_occluded": 80,
+      "T5": 640
+    },
+    "crop_distribution": {
+      "cherry": 13,
+      "soybean": 26,
+      "corn": 582,
+      "raspberry": 29,
+      "grape": 39,
+      "peach": 32,
+      "potato": 116,
+      "squash": 161,
+      "apple": 311,
+      "bell": 29,
+      "tomato": 661,
+      "strawberry": 13,
+      "coco": 1302
+    },
+    "source_image_id_count": 145,
+    "t6_count": 205
+  },
+  "dose_pool": {
+    "name": "dose_pool",
+    "total": 9128,
+    "note": "Fuzzy samples excluded from train/dev/test"
+  },
+  "leakage_check": {
+    "train_dev_intersection": 0,
+    "train_test_intersection": 0,
+    "dev_test_intersection": 0
+  }
+}

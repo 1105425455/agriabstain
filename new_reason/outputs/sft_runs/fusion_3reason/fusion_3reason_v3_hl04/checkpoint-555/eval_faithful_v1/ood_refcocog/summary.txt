@@ -1,0 +1,34 @@
+=== AgriAbstain eval [ood_refcocog] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-555
+n=362
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8453  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0608
+HOR_FCA (高危子集↓)  = 0.0608  (n=181)
+MTS_micro           = 0.8315
+MTS_macro           = 0.8315
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0387
+U_Abs (拒对↑)       = 0.9392
+AAC (答对↑)         = 0.7238
+MCC                 = 0.9008
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6615
+A_Ground_c          = 0.8235
+U_Reason↑           = 0.9392
+U_Reason_c          = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 131, 'FP': 43, 'FN': 7, 'TN': 170, 'AU': 11, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9392  (170/181)
+  OOD_answer       0.7238  (131/181)

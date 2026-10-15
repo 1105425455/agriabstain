@@ -1,0 +1,24 @@
+[dev_loss] 加载 100 条 dev 数据 (limit=100)
+[dev_loss] 加载 base 模型: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.68s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  3.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  3.00s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[dev_loss] 使用 Qwen3VLWithTriHead (三分类)
+[dev_loss] 加载 LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-555
+/user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1487.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[dev_loss] 10/100 (0.27 it/s) avg_loss=0.3276
+[dev_loss] 20/100 (0.36 it/s) avg_loss=0.2051
+[dev_loss] 30/100 (0.41 it/s) avg_loss=0.2236
+[dev_loss] 40/100 (0.43 it/s) avg_loss=0.2757
+[dev_loss] 50/100 (0.45 it/s) avg_loss=0.2699
+[dev_loss] 60/100 (0.47 it/s) avg_loss=0.3133
+[dev_loss] 70/100 (0.48 it/s) avg_loss=0.2886
+[dev_loss] 80/100 (0.49 it/s) avg_loss=0.2865
+[dev_loss] 90/100 (0.50 it/s) avg_loss=0.2816
+[dev_loss] 100/100 (0.50 it/s) avg_loss=0.2809
+[dev_loss] 完成 100/100 条，耗时 199.8s
+DEV_LOSS=0.280943

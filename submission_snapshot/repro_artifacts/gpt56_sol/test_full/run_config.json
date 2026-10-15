@@ -1,0 +1,20 @@
+{
+  "data": "benchmark/annotations/sft/sft_test.jsonl",
+  "data_sha256": "ae6e5e46fcbfaf3613e37299ac143e45d501f1030398cded911b94d74b50a9b2",
+  "requested_records": 2646,
+  "completed_records": 2646,
+  "missing_records": 0,
+  "duplicate_sample_id_records": 0,
+  "model_requested": "gpt-5.6-sol",
+  "endpoint": "<GPT56_ENDPOINT>",
+  "image_detail": "original",
+  "max_completion_tokens": 384,
+  "workers": 4,
+  "temperature": 0,
+  "stream": false,
+  "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call.",
+  "system_sha256": "2736f68a851ba868b994fdd2cb83960e71c00df6676689a01d1cbc13d70bb7df",
+  "key_persisted": false,
+  "failures": [],
+  "missing_sample_ids": []
+}

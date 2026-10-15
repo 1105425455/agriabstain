@@ -1,0 +1,37 @@
+① judge 配对图数: 372
+  作物分布: real={'apple': 67, 'corn': 156, 'tomato': 149}, wo配额={'apple': 66933, 'corn': 155844, 'tomato': 148851}
+  wrong_object 实际选取: {'apple': 67, 'corn': 312, 'tomato': 594} (配额={'apple': 66933, 'corn': 155844, 'tomato': 148851})
+② judge_real_extra 孤立真病 answer 数: 130
+② evidence 配对图数 (非COCO): 281
+  A2: 添加 388 条未配对 crop0 样本
+③.5 中间档 answer: 候选=784, 选取=300
+
+=== wrong_object oversample ===
+  oversample前 wrong_object 数: 973
+  复制样本数: 527
+  oversample后 wrong_object 数: 1500
+
+=== new_reason 2reason SFT 审计 ===
+sft_train 总计: 7072 条
+  成分: {'judge_real': 372, 'judge_wrong_object': 973, 'judge_real_extra': 130, 'evidence_visible': 281, 'evidence_no_target': 281, 'evidence_no_target_extra': 388, 'evidence_mid_answer': 300, 'T2': 100, 'T3': 100, 'T7_include': 100, 't4_control': 220, 't5_no_target': 1500, 'occluded_no_target': 200, 'coco_ans': 1100, 'coco_no_target': 500}
+  answer(decision_label=1): 2703 (38%) / abstain(decision_label=0): 4369 (62%)
+  reason 分布: {'wrong_object': 1500, 'no_target': 2869}
+  reason_label 分布: {-1: 2703, 0: 1500, 1: 2869}
+  head_label 分布(三分类): {0: 2703, 1: 1500, 2: 2869}
+  二进制 decision 分布(answer=0, abstain=1): {0: 2703, 1: 4369}
+  同图配对: judge 1345 + evidence(配对) 562 = 1907 (27%)
+  COCO 占比: 1600 (23%)
+  输出: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_2reason/sft_train.json
+
+sft_test 总计: 2646 条 → /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_2reason/sft_test.jsonl
+sft_dev 总计: 2408 条 → /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_2reason/sft_dev.json
+
+✓ 所有样本格式+reason+decision_label+reason_label+head_label 验证通过
+
+=== 抽 3 条(answer/wrong_object/no_target 各1) ===
+  [answer] decision_label=1 head_label=0 | human: <image>Locate the refrigerator in this image.
+         gpt: {"decision":"answer","label":"refrigerator","box":[233,199,691,990]}
+  [wrong_object] decision_label=0 head_label=1 | human: <image>Where is the tomato leaf late blight in the imag
+         gpt: {"decision":"abstain","reason":"wrong_object"}
+  [no_target] decision_label=0 head_label=2 | human: <image>Where is the dog in the image?
+         gpt: {"decision":"abstain","reason":"no_target"}

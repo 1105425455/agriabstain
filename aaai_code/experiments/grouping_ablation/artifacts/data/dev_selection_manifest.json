@@ -1,0 +1,7 @@
+{
+  "dev_records": 100,
+  "dev_subset_sha256": "9376d9c9ccaab5966201293ed72b5d5ece50366624e67027a9aa18307c7caabc",
+  "evaluator_sha256": "e0919ce4883396dbb4312d0fd1779b4127524f517dade1249511c59b66ccff56",
+  "grouped_epoch1_recovery_task_id": 617455,
+  "selection_policy": "minimum teacher-forced LM loss on the fixed 100-record dev subset"
+}

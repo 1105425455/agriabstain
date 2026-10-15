@@ -1,0 +1,70 @@
+{
+  "tag": "L3_dose",
+  "data": "new_reason/outputs/eval_probes/test_L3_dose.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "n_samples": 750,
+  "n_ambiguous_skipped": 419,
+  "gate": {
+    "format_valid_rate": 0.4413,
+    "decision_accuracy": 0.396,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 171,
+      "FP": 10,
+      "FN": 2,
+      "TN": 123,
+      "AU": 25,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 331,
+      "answerable": 183,
+      "unanswerable": 148,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.16891891891891891,
+      "HOR_FCA": 0.16891891891891891,
+      "HOR_count": {
+        "high_occlusion_au": 25,
+        "high_occlusion_unanswerable": 148
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.01092896174863388,
+      "U_Abs": 0.831081081081081,
+      "AAC": 0.9344262295081968,
+      "MCC": 0.8411282073693029
+    },
+    "grounding_reason": {
+      "A_Ground": 0.8174816236287451,
+      "A_Ground_c": 0.8505367907406647,
+      "U_Reason": 0.8243243243243243,
+      "U_Reason_c": 0.991869918699187
+    },
+    "comparison": {
+      "UAC": 0.831081081081081,
+      "AR": 0.3776435045317221
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.8851963746223565,
+    "MTS_macro": 0.8851963746223565,
+    "per_relation": {
+      "L3_ladder": 0.8851963746223565
+    },
+    "per_relation_counts": {
+      "L3_ladder": {
+        "pass": 293,
+        "total": 331
+      }
+    }
+  },
+  "within_image": null
+}

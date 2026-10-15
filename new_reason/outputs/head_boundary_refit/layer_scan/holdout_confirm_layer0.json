@@ -1,0 +1,50 @@
+{
+  "layer": 0,
+  "npz_index": 0,
+  "transformer_layer": 1,
+  "note": "baseline第27层=npz index 26 (npz_index+1=transformer_layer)",
+  "classifier": "logistic",
+  "best_C": 1.0,
+  "baseline_fa": 0.01,
+  "baseline_nt": 0.98,
+  "wo_recall": 0.7357,
+  "answer_fa": 0.2871,
+  "nt_accuracy": 0.7636,
+  "n_wo": 140,
+  "n_answer": 101,
+  "n_nt": 55,
+  "confusion_matrix": [
+    [
+      72,
+      25,
+      4
+    ],
+    [
+      37,
+      103,
+      0
+    ],
+    [
+      7,
+      6,
+      42
+    ]
+  ],
+  "min_score": 0.7129,
+  "success": false,
+  "reasons": [
+    "WO_recall=73.6% < 85% ✗",
+    "answer_FA=28.71% > baseline=1.00%+1pp=2.00% ✗",
+    "NT_acc=76.36% < baseline=98.00%-0.5pp=97.50% ✗"
+  ],
+  "bootstrap_ci": {
+    "n_resamples": 1000,
+    "ci_level": 0.95,
+    "wo_recall_ci_lower": 0.6643,
+    "wo_recall_ci_upper": 0.8071,
+    "answer_fa_ci_lower": 0.198,
+    "answer_fa_ci_upper": 0.3861
+  },
+  "n_train": 1736,
+  "n_holdout": 296
+}

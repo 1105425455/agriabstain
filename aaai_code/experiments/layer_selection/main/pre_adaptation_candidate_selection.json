@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "protocol": "pre_adaptation_frozen_base_candidate_comparison_v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "adapter": null,
+  "readout": "pre_response_prompt_token",
+  "candidate_policy": "compare_fixed_api_indices_9_18_27",
+  "selection_metric": "maximum minimum per-state development accuracy",
+  "split": {
+    "group_disjoint": true,
+    "seed": 42,
+    "extracted_records": 1736,
+    "probe_fit_records": 1599,
+    "probe_development_records": 137
+  },
+  "candidates": [
+    {
+      "api_index": 9,
+      "npz_index": 8,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "answer_accuracy": 0.7021,
+      "visual_contradiction_accuracy": 0.7385,
+      "target_unavailable_accuracy": 0.8,
+      "min_per_state_accuracy": 0.7021
+    },
+    {
+      "api_index": 18,
+      "npz_index": 17,
+      "classifier": "logistic",
+      "best_C": 0.1,
+      "answer_accuracy": 0.766,
+      "visual_contradiction_accuracy": 0.7385,
+      "target_unavailable_accuracy": 0.8,
+      "min_per_state_accuracy": 0.7385
+    },
+    {
+      "api_index": 27,
+      "npz_index": 26,
+      "classifier": "logistic",
+      "best_C": 0.01,
+      "answer_accuracy": 0.766,
+      "visual_contradiction_accuracy": 0.8769,
+      "target_unavailable_accuracy": 0.84,
+      "min_per_state_accuracy": 0.766
+    }
+  ],
+  "selected_api_index": 27,
+  "selected_min_per_state_accuracy": 0.766,
+  "index_mapping": "API index L is hidden_states[L]; API index 27 is block-26 output",
+  "source_provenance": {
+    "manifest_sha256": "d6de34afc71645b4dbc74c4698a3544daa283e9e1b24062e6b37381aaa30bfea",
+    "dev_scan_sha256": "ccd560dc9621f83c4083ee8171d3d14469d42930c3797060d06507d21ced7b3b",
+    "min_score_curve_sha256": "0081a66efd115714535a02df5028b617253e586c4961e7c51cdbdbc198f6c130",
+    "input_sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+    "selection_records_sha256": "5628894105b718282edb6c85003cab436317192eae7c69f11315c06c529e4e29",
+    "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad",
+    "extraction_script_sha256": "b7450b869accef5511cd048317d30275dd6dfef7ebff479566feff98f62a4f39"
+  }
+}

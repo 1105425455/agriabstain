@@ -1,0 +1,6 @@
+{
+  "world_size": 4,
+  "total_train": 7072,
+  "total_dev": 100,
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04_epoch1_recovery/checkpoint-111"
+}

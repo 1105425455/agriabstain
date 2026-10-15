@@ -1,0 +1,252 @@
+{
+  "protocol": {
+    "data": "benchmark/annotations/eval/test_L3_dose.jsonl",
+    "records": 750,
+    "hard_endpoint_records": 331,
+    "ambiguous_intermediate_records": 419,
+    "prompt_policy": "Exact ReGate decision system override, per-record query, and image. GPT output is parsed once with the same ReGate parser; no JSON mode or semantic repair.",
+    "reason_policy": "Labels and reasons use the frozen evaluation GT.",
+    "iou_threshold": 0.5,
+    "metric_denominator_policy": {
+      "FCA": "all GT unsupported records; invalid is not a committed answer",
+      "A_FU": "all GT supported records; invalid is a false rejection",
+      "Strict_3": "all hard-label records; invalid is incorrect",
+      "E2E_mIoU": "all GT supported records; invalid, abstention, or wrong label contributes zero",
+      "paired_CI": "paired bootstrap over the same fixed GT sample universe"
+    },
+    "api": {
+      "provider": "OpenAI-compatible commercial API gateway",
+      "endpoint": "<GPT56_ENDPOINT>",
+      "requested_model_id": "gpt-5.6-sol",
+      "returned_model_ids": {
+        "gpt-5.6-sol": 750
+      },
+      "provider_model_revision": null,
+      "version_note": "The provider returned model ID gpt-5.6-sol but exposed no dated snapshot or revision identifier.",
+      "access_date_utc": "2026-07-22",
+      "temperature": 0,
+      "max_completion_tokens": 384,
+      "image_detail": "original",
+      "system_prompt": "You are a vision-language grounding assistant for high-stakes plant disease diagnosis. Locate the queried target. If the queried target is present and localizable, return {\"decision\":\"answer\",\"label\":\"...\",\"box\":[x1,y1,x2,y2]} with box in [0,1000] relative coords. Otherwise abstain: {\"decision\":\"abstain\",\"reason\":\"wrong_object|no_target\"}. wrong_object: the image shows a visually similar but different object/disease, not the queried one. no_target: the queried target is not locatable (absent from the image, or cropped out of view).",
+      "user_prompt_policy": "The per-record user query is unchanged except that the literal <image> placeholder is removed when attaching the image.",
+      "evaluation_runs": 1,
+      "accepted_responses_per_record": 1,
+      "request_attempt_histogram": {
+        "1": 750
+      },
+      "repeat_policy": "One accepted response per record in one evaluation run; no repeated model runs or majority voting. Additional attempts, if present, are transport retries only."
+    }
+  },
+  "gpt56_sol": {
+    "all_record_format_valid_rate": 0.9973333333333333,
+    "hard_endpoint_format_valid_rate": 0.9969788519637462,
+    "hard_endpoint_decision_accuracy": 0.7854984894259819,
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 134,
+        "FP": 35,
+        "FN": 13,
+        "TN": 98,
+        "AU": 50,
+        "INVALID": 1
+      },
+      "counts": {
+        "total": 331,
+        "answerable": 183,
+        "unanswerable": 148,
+        "invalid": 1,
+        "invalid_answerable": 1,
+        "invalid_unanswerable": 0
+      },
+      "selection_confusion_matrix": {
+        "TP": 169,
+        "FP": 50,
+        "FN": 14,
+        "TN": 98
+      },
+      "headline": {
+        "FCA": 0.33783783783783783,
+        "HOR_FCA": 0.33783783783783783,
+        "HOR_count": {
+          "high_occlusion_au": 50,
+          "high_occlusion_unanswerable": 148
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.07650273224043716,
+        "Supported_Retention": 0.9234972677595629,
+        "U_Abs": 0.6621621621621622,
+        "AAC": 0.73224043715847,
+        "MCC": 0.6154183963526305
+      },
+      "semantic": {
+        "Strict_3": 0.7854984894259819
+      },
+      "grounding_reason": {
+        "E2E_mIoU": 0.6567492155088626,
+        "E2E_mIoU_c": 0.7111544759652181,
+        "A_Ground": 0.6567492155088626,
+        "A_Ground_c": 0.7111544759652181,
+        "U_Reason": 0.6148648648648649,
+        "U_Reason_c": 0.9285714285714286
+      },
+      "comparison": {
+        "UAC": 0.6621621621621622,
+        "AR": 0.338368580060423
+      },
+      "invalid_rate": 0.0030211480362537764,
+      "iou_threshold": 0.5,
+      "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+    },
+    "mts": {
+      "MTS_micro": 0.6797583081570997,
+      "MTS_macro": 0.6797583081570997,
+      "per_relation": {
+        "L3_ladder": 0.6797583081570997
+      },
+      "per_relation_counts": {
+        "L3_ladder": {
+          "pass": 225,
+          "total": 331
+        }
+      }
+    },
+    "answer_rate_by_visibility": [
+      {
+        "visible_ratio_bin": "0.0",
+        "n": 148,
+        "answer_rate": 0.33783783783783783,
+        "abstain_rate": 0.6621621621621622,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "0.25",
+        "n": 195,
+        "answer_rate": 0.7282051282051282,
+        "abstain_rate": 0.26666666666666666,
+        "invalid_rate": 0.005128205128205128
+      },
+      {
+        "visible_ratio_bin": "0.5",
+        "n": 128,
+        "answer_rate": 0.859375,
+        "abstain_rate": 0.140625,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "0.75",
+        "n": 96,
+        "answer_rate": 0.8958333333333334,
+        "abstain_rate": 0.10416666666666667,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "1.0",
+        "n": 183,
+        "answer_rate": 0.9234972677595629,
+        "abstain_rate": 0.07103825136612021,
+        "invalid_rate": 0.00546448087431694
+      }
+    ]
+  },
+  "regate_reference": {
+    "source": "<REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/eval_faithful_v1/L3_dose/metrics.json",
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 144,
+        "FP": 37,
+        "FN": 2,
+        "TN": 122,
+        "AU": 26,
+        "INVALID": 0
+      },
+      "counts": {
+        "total": 331,
+        "answerable": 183,
+        "unanswerable": 148,
+        "invalid": 0,
+        "invalid_answerable": 0,
+        "invalid_unanswerable": 0
+      },
+      "selection_confusion_matrix": {
+        "TP": 181,
+        "FP": 26,
+        "FN": 2,
+        "TN": 122
+      },
+      "headline": {
+        "FCA": 0.17567567567567569,
+        "HOR_FCA": 0.17567567567567569,
+        "HOR_count": {
+          "high_occlusion_au": 26,
+          "high_occlusion_unanswerable": 148
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.01092896174863388,
+        "Supported_Retention": 0.9890710382513661,
+        "U_Abs": 0.8243243243243243,
+        "AAC": 0.7868852459016393,
+        "MCC": 0.8355300601640155
+      },
+      "semantic": {
+        "Strict_3": 0.8066465256797583
+      },
+      "grounding_reason": {
+        "E2E_mIoU": 0.6894942440963101,
+        "E2E_mIoU_c": 0.6971129650255511,
+        "A_Ground": 0.6894942440963101,
+        "A_Ground_c": 0.6971129650255511,
+        "U_Reason": 0.8243243243243243,
+        "U_Reason_c": 1.0
+      },
+      "comparison": {
+        "UAC": 0.8243243243243243,
+        "AR": 0.37462235649546827
+      },
+      "invalid_rate": 0.0,
+      "iou_threshold": 0.5,
+      "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+    },
+    "mts": {
+      "MTS_micro": 0.8036253776435045,
+      "MTS_macro": 0.8036253776435045,
+      "per_relation": {
+        "L3_ladder": 0.8036253776435045
+      },
+      "per_relation_counts": {
+        "L3_ladder": {
+          "pass": 266,
+          "total": 331
+        }
+      }
+    }
+  },
+  "paired_gpt_minus_regate": {
+    "FCA": {
+      "difference_gpt_minus_regate": 0.16216216216216217,
+      "ci_low": 0.08108108108108109,
+      "ci_high": 0.25
+    },
+    "A_FU": {
+      "difference_gpt_minus_regate": 0.06557377049180328,
+      "ci_low": 0.0273224043715847,
+      "ci_high": 0.10382513661202186
+    },
+    "supported_grounding_accuracy": {
+      "difference_gpt_minus_regate": -0.0546448087431694,
+      "ci_low": -0.12568306010928962,
+      "ci_high": 0.01639344262295082
+    },
+    "Strict_3": {
+      "difference_gpt_minus_regate": -0.021148036253776436,
+      "ci_low": -0.07250755287009064,
+      "ci_high": 0.027190332326283987
+    },
+    "E2E_mIoU": {
+      "difference_gpt_minus_regate": -0.032745028587447544,
+      "ci_low": -0.08779375836900831,
+      "ci_high": 0.020945859012700446
+    }
+  }
+}

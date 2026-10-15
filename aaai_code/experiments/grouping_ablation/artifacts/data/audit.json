@@ -1,0 +1,69 @@
+{
+  "benchmark_collisions": [],
+  "candidate_inventory": {
+    "coco": 117063,
+    "plantdoc": 888
+  },
+  "category_state_strata": 178,
+  "checks": {
+    "all_media_paths_exist": true,
+    "all_negative_sources_replaced": true,
+    "benchmark_source_collision_empty": true,
+    "category_state_distribution_equal": true,
+    "negative_prompt_target_unchanged": true,
+    "positive_negative_source_overlap_empty": true,
+    "positive_rows_unchanged": true,
+    "row_count_equal": true,
+    "semantic_assignment_errors_empty": true,
+    "state_distribution_equal": true
+  },
+  "condition": "independent_negative",
+  "counts": {
+    "independent_negative_sources": 1776,
+    "independent_negative_sources_by_dataset": {
+      "coco_ground_abstain": 888,
+      "plantdoc_vg": 888
+    },
+    "maximum_rows_per_independent_source": 25,
+    "positive_rows": 2703,
+    "replaced_negative_rows": 4369,
+    "rows": 7072,
+    "states": {
+      "answer": 2703,
+      "no_target": 2869,
+      "wrong_object": 1500
+    }
+  },
+  "inputs": {
+    "baseline_sft": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_train_with_source.json",
+    "baseline_sft_sha256": "ec93f5dfe19076182547d43cb58f161f307102b1bdc07842786eaa38f56cac16",
+    "coco_annotations": "/user/huangyongbin/newrepo/agriabstain/datasets/annotations/instances_train2017.json",
+    "plantdoc_config": "/user/huangyongbin/newrepo/agriabstain/aaai_code/configs/plantdoc_full.yaml",
+    "raw_train": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/splits/train.jsonl",
+    "raw_train_sha256": "014ba4652c0e741ce891369f76a8062b7873568c97a2304e0cce7aca43f35e0b",
+    "split_dir": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/splits"
+  },
+  "invalid_assignments": [],
+  "missing_images": [],
+  "outputs": {
+    "assignments": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/negative_assignments.jsonl",
+    "assignments_sha256": "39ce1ae445f6e6ea95a2f59c3a9501beee14bd28b61bda7eb1454535b8fa3882",
+    "sft_train": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json",
+    "sft_train_sha256": "76709bd2012e0bd0e48f0f01eb05b50466000e49b028ccbc3d48113e301e8555"
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "source_usage_histogram": {
+    "1": 888,
+    "3": 568,
+    "4": 197,
+    "5": 15,
+    "6": 67,
+    "7": 4,
+    "9": 23,
+    "10": 1,
+    "18": 4,
+    "19": 5,
+    "25": 4
+  }
+}

@@ -1,0 +1,37 @@
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (5127, 4096), pos=2273 neg=2854
+[calibrate_head r0] test:  (410, 4096),  pos=205 neg=205
+[calibrate_head r0] dev:   (100, 4096),  pos=50 neg=50
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→2)
+[calibrate_head r0]   epoch 50/1000, train_loss=0.1368, dev_loss=0.5295, dev_MCC=0.7839
+[calibrate_head r0]     → 新最佳 dev loss: 0.5295 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0631, dev_loss=0.8343, dev_MCC=0.6710
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0309, dev_loss=1.0556, dev_MCC=0.7878
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.3699, dev_loss=0.5159, dev_MCC=0.6822
+[calibrate_head r0]     → 新最佳 dev loss: 0.5159 (epoch 200)
+[calibrate_head r0]   epoch 250/1000, train_loss=0.1389, dev_loss=0.5133, dev_MCC=0.7116
+[calibrate_head r0]     → 新最佳 dev loss: 0.5133 (epoch 250)
+[calibrate_head r0]   epoch 300/1000, train_loss=0.0653, dev_loss=0.7672, dev_MCC=0.7294
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 350/1000, train_loss=0.0270, dev_loss=0.9807, dev_MCC=0.6940
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 400/1000, train_loss=0.0141, dev_loss=1.0981, dev_MCC=0.7116
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 450/1000, train_loss=0.0094, dev_loss=1.1918, dev_MCC=0.6940
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 500/1000, train_loss=0.0415, dev_loss=0.8322, dev_MCC=0.7348
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 500，最佳 dev loss: 0.5133
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.5133）
+[calibrate_head r0] train MCC: 0.8937
+[calibrate_head r0] dev   MCC: 0.7116
+[calibrate_head r0] test  MCC: 0.4299 (末次一次性评估，不参与选 epoch)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion/fusion/checkpoint-162/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] test MCC: 0.4299

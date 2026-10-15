@@ -1,0 +1,6 @@
+{
+  "world_size": 8,
+  "total_train": 7072,
+  "total_dev": 100,
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222"
+}

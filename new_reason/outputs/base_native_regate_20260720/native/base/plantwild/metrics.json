@@ -1,0 +1,95 @@
+{
+  "tag": "plantwild",
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/base_native_regate_20260720/inputs/plantwild_resolved.jsonl",
+  "adapter": null,
+  "n_samples": 408,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.375,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 112,
+      "FP": 2,
+      "FN": 30,
+      "TN": 169,
+      "AU": 95,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 408,
+      "answerable": 144,
+      "unanswerable": 264,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 114,
+      "FP": 95,
+      "FN": 30,
+      "TN": 169
+    },
+    "headline": {
+      "FCA": 0.35984848484848486,
+      "HOR_FCA": 0.10416666666666667,
+      "HOR_count": {
+        "high_occlusion_au": 15,
+        "high_occlusion_unanswerable": 144
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.20833333333333334,
+      "Supported_Retention": 0.7916666666666666,
+      "U_Abs": 0.6401515151515151,
+      "AAC": 0.7777777777777778,
+      "MCC": 0.41284255076008647
+    },
+    "semantic": {
+      "Strict_3": 0.375
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.0,
+      "E2E_mIoU_c": 0.0,
+      "A_Ground": 0.0,
+      "A_Ground_c": 0.0,
+      "U_Reason": 0.1553030303030303,
+      "U_Reason_c": 0.24260355029585798
+    },
+    "comparison": {
+      "UAC": 0.6401515151515151,
+      "AR": 0.4877450980392157
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.375,
+    "MTS_macro": 0.37222222222222223,
+    "per_relation": {
+      "OOD_absent": 0.013888888888888888,
+      "OOD_answer": 0.7777777777777778,
+      "OOD_confusion": 0.325
+    },
+    "per_relation_counts": {
+      "OOD_absent": {
+        "pass": 2,
+        "total": 144
+      },
+      "OOD_answer": {
+        "pass": 112,
+        "total": 144
+      },
+      "OOD_confusion": {
+        "pass": 39,
+        "total": 120
+      }
+    }
+  },
+  "within_image": null
+}

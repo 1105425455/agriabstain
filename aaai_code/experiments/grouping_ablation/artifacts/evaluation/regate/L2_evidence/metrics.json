@@ -1,0 +1,90 @@
+{
+  "tag": "L2_evidence",
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222",
+  "n_samples": 790,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.4646,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 277,
+      "FP": 91,
+      "FN": 27,
+      "TN": 48,
+      "AU": 347,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 790,
+      "answerable": 395,
+      "unanswerable": 395,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 368,
+      "FP": 347,
+      "FN": 27,
+      "TN": 48
+    },
+    "headline": {
+      "FCA": 0.8784810126582279,
+      "HOR_FCA": 0.8784810126582279,
+      "HOR_count": {
+        "high_occlusion_au": 347,
+        "high_occlusion_unanswerable": 395
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.06835443037974684,
+      "Supported_Retention": 0.9316455696202531,
+      "U_Abs": 0.12151898734177215,
+      "AAC": 0.7012658227848101,
+      "MCC": 0.09068503858838141
+    },
+    "semantic": {
+      "Strict_3": 0.46455696202531643
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.6154615705064289,
+      "E2E_mIoU_c": 0.6606177183424985,
+      "A_Ground": 0.6154615705064289,
+      "A_Ground_c": 0.6606177183424985,
+      "U_Reason": 0.1189873417721519,
+      "U_Reason_c": 0.9791666666666666
+    },
+    "comparison": {
+      "UAC": 0.12151898734177215,
+      "AR": 0.0949367088607595
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.41012658227848103,
+    "MTS_macro": 0.410126582278481,
+    "per_relation": {
+      "L2_cropout": 0.1189873417721519,
+      "L2_keep": 0.7012658227848101
+    },
+    "per_relation_counts": {
+      "L2_cropout": {
+        "pass": 47,
+        "total": 395
+      },
+      "L2_keep": {
+        "pass": 277,
+        "total": 395
+      }
+    }
+  },
+  "within_image": null
+}

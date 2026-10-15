@@ -1,0 +1,25 @@
+[select_holdout] device=cuda
+[select_holdout] 从 grid table 读取选中 head: refit_seed42_pm3.0_hw2.0.pt
+[select_holdout] 加载 holdout 数据集...
+  holdout: 296 样本
+    WO=140, answer=101, nt=55
+
+[select_holdout] 评估 baseline (calibrated head)...
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+  WO recall: 62.1%
+  Answer false-abstain: 1.0%
+  NT accuracy: 98.2%
+
+[select_holdout] 评估选中 head: refit_seed42_pm3.0_hw2.0.pt
+  WO recall: 95.7%
+  Answer false-abstain: 10.9%
+  NT accuracy: 100.0%
+  WO recall gain: +33.6pp
+
+成功线判据:
+  WO recall gain: +33.6pp >= +15pp ✓
+  Answer false-abstain: 10.9% (baseline 1.0%), increase ≈ 10.0/101 > 1 ✗
+  NT accuracy drop: -1.82pp <= 0.5pp ✓
+  总体: ✗ 未通过
+
+[select_holdout] 评估报告: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/refit_heads/holdout_eval.json

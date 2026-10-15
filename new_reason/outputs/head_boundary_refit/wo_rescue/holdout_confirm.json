@@ -1,0 +1,72 @@
+{
+  "mode": "degraded_confirm",
+  "frozen_config": {
+    "tau_protect": 0.7,
+    "t": 0.5,
+    "C": 0.1
+  },
+  "degraded_criteria": {
+    "wo_recall_gain_min": 0.08,
+    "answer_fa_flip_max": 1,
+    "nt_accuracy_drop_max": 0.005
+  },
+  "baseline": {
+    "wo_recall": 0.6214,
+    "answer_false_abstain": 0.0099,
+    "nt_accuracy": 0.9818
+  },
+  "rescue": {
+    "wo_recall": 0.6786,
+    "wo_recall_gain": 0.0572,
+    "answer_false_abstain": 0.0099,
+    "nt_accuracy": 0.9818,
+    "confusion_matrix": [
+      [
+        100,
+        0,
+        1
+      ],
+      [
+        45,
+        95,
+        0
+      ],
+      [
+        1,
+        0,
+        54
+      ]
+    ],
+    "rescue_info": {
+      "n_answer_pred": 154,
+      "n_protected": 146,
+      "n_low_conf": 8,
+      "n_flipped": 8,
+      "tau_protect": 0.7,
+      "t": 0.5
+    }
+  },
+  "bootstrap": {
+    "wo_gain_ci_lower": 0.0214,
+    "wo_gain_ci_upper": 0.1,
+    "wo_gain_point_estimate": 0.0571,
+    "fa_increment_ci_upper": 0.0198,
+    "fa_ci_upper_absolute": 0.0297,
+    "n_resamples": 1000
+  },
+  "n_answer_to_wo_flip": 0,
+  "nt_accuracy_drop": 0.0,
+  "success_criteria": {
+    "wo_ok": false,
+    "fa_ok": true,
+    "nt_ok": true,
+    "passes": false
+  },
+  "reasons": [
+    "WO recall gain: +5.7pp (baseline 62.1% → 67.9%) ✗ [req >= +8pp]",
+    "Answer false-abstain flips: 0 ✓ [req <= 1]",
+    "NT accuracy drop: 0.00pp ✓ [req <= 0.5pp]"
+  ],
+  "message": "这是rescue路径的一次冻结确认",
+  "note": "Designer pre-registered frozen config (tau_protect=0.7, t=0.5, C=0.1). Dev上的此配置: 0 answer翻转, WO gain +9.41pp, FA/NT保持基线。"
+}

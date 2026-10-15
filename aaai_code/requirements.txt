@@ -1,0 +1,46 @@
+# ReGate — Code and Data Supplement
+#
+# Versions pinned below are the ones recorded in environment/training_environment.json,
+# read from the installed distribution metadata of the interpreter that produced the
+# reported runs. Packages marked "version not recorded" are imported by the code but were
+# not captured in that record; they are listed without a pin rather than with a guessed one.
+#
+# Python 3.11.15 was used for the reported runs; 3.10 or newer is sufficient.
+
+# ── Group 1: CPU-only verification of the reported numbers (README §4) ────────────────
+# Recomputes every metric from the record-level predictions in repro_artifacts/.
+numpy==2.2.6
+scikit-learn==1.9.0
+scipy==1.17.1
+PyYAML==6.0.3
+
+# ── Group 2: benchmark construction, auditing and plotting (README §5) ────────────────
+Pillow==12.2.0
+tqdm==4.68.3
+matplotlib==3.11.0
+pyarrow          # version not recorded; reads the RefCOCOg val parquet
+
+# ── Group 3: GPU training and evaluation (README §6) ──────────────────────────────────
+# Install torch for your CUDA runtime first. The reported runs used the CUDA 12.8 build:
+#   pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0
+transformers==4.57.0          # Qwen3-VL support required
+peft==0.17.1
+accelerate==1.14.0
+deepspeed==0.16.4
+safetensors==0.8.0
+qwen-vl-utils==0.0.14
+datasets==3.6.0
+
+# ── Group 4: test suite ───────────────────────────────────────────────────────────────
+pytest           # version not recorded
+
+# ── Optional, not used for any reported result ────────────────────────────────────────
+# flash-attn   imported under try/except by training/qwenvl/train/trainer.py; the reported
+#              runs fall back to the standard attention path when it is absent.
+# vllm         optional inference backend of evaluation/eval_qwen3vl_3reason.py, imported
+#              lazily. Every evaluation behind the paper ran with --backend hf, so vllm is
+#              not needed to reproduce any reported number.
+# requests     only for experiments/gpt56_sol_l3/, which queries a commercial API that
+#              reviewers are not expected to call; its recorded outputs are in
+#              repro_artifacts/gpt56_sol/.

@@ -1,0 +1,13 @@
+{
+  "rescue_type": "L2-logistic",
+  "mode": "degraded_confirm",
+  "tau_protect": 0.7,
+  "t": 0.5,
+  "C": 0.1,
+  "holdout_wo_recall": 0.6786,
+  "holdout_wo_gain": 0.0572,
+  "holdout_answer_fa": 0.0099,
+  "holdout_nt_accuracy": 0.9818,
+  "holdout_wo_gain_ci_lower": 0.0214,
+  "holdout_passes": false
+}

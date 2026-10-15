@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "input": "repro_artifacts/evidence_judge/L2/head_probabilities.jsonl",
+    "n_records": 790,
+    "relations": [
+      "L2_cropout",
+      "L2_keep"
+    ],
+    "n_samples_original": 790,
+    "n_bootstrap": 9999,
+    "bootstrap_seed": 42
+  },
+  "L2": {
+    "n_pairs": 148,
+    "n_total_groups": 397,
+    "parse_failures": 0,
+    "incomplete_pairs": 249,
+    "deduplicated_records": 245,
+    "groups_with_duplicates": 86,
+    "conflicting_duplicate_groups": 0,
+    "invalid_groups": 0,
+    "delta_p_answer_mean": 0.7858108089667993,
+    "delta_p_answer_median": 0.9955944161047228,
+    "correct_direction_ratio": 0.9662162162162162,
+    "bootstrap_95ci": {
+      "low": 0.7200137347599255,
+      "high": 0.8399519610432944,
+      "method": "BCa"
+    },
+    "pairing_key": "source_instance+target_label"
+  },
+  "input_equivariance_consistency": {
+    "error": "no valid variant samples"
+  }
+}

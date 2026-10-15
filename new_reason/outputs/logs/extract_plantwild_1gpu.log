@@ -1,0 +1,29 @@
+[extract_plantwild r0] device=cuda:0
+[extract_plantwild r0] PlantWild 样本数: 408 条
+[extract_plantwild r0] 分片: rank=0, world=1, 本片=408
+[extract_plantwild r0] 加载 processor
+[extract_plantwild r0] 加载 base model (Qwen3VLWithTriHead)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.68s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:08,  4.02s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.40s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[extract_plantwild r0] 加载 LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[extract_plantwild r0] 自检校准头: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+[extract_plantwild r0] 自检: classifier[0].weight norm = 11.6250 (期望 ~11.6250)
+[extract_plantwild r0] 自检: sd_range = [0.539, 9.688]
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[extract_plantwild r0] 进度 50/408 (20.2s, 2.47 it/s)
+[extract_plantwild r0] 进度 100/408 (34.2s, 2.92 it/s)
+[extract_plantwild r0] 进度 150/408 (46.9s, 3.20 it/s)
+[extract_plantwild r0] 进度 200/408 (69.7s, 2.87 it/s)
+[extract_plantwild r0] 进度 250/408 (83.0s, 3.01 it/s)
+[extract_plantwild r0] 进度 300/408 (96.3s, 3.11 it/s)
+[extract_plantwild r0] 进度 350/408 (107.0s, 3.27 it/s)
+[extract_plantwild r0] 进度 400/408 (118.9s, 3.36 it/s)
+[extract_plantwild r0] 分片完成: 408 条, 120.5s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/features_alllayers/hidden_plantwild.rank0of1.npz
+[extract_plantwild r0] 写入 .done_plantwild.rank0of1
+[extract_plantwild r0] 合并 world=1
+[extract_plantwild r0] 合并完成: 408 hidden
+[extract_plantwild r0] hidden shape: (408, 36, 4096)
+[extract_plantwild r0] 保存 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/features_alllayers/hidden_plantwild.npz (408 样本, 36 层)
+[extract_plantwild r0] manifest: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/head_boundary_refit/manifest_extract_plantwild.json

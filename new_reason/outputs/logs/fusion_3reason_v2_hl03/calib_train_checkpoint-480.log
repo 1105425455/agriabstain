@@ -1,0 +1,41 @@
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (6096, 4096), pos=524 neg=2703
+[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类
+[calibrate_head r0]   epoch 50/1000, train_loss=0.0683, dev_loss=0.4717, dev_MCC=0.8065, per_class_acc={'answer': '85.29%', 'wrong_object': '78.79%', 'no_target': '96.97%'}
+[calibrate_head r0]     → 新最佳 dev loss: 0.4717 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0341, dev_loss=0.6434, dev_MCC=0.7909, per_class_acc={'answer': '79.41%', 'wrong_object': '81.82%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0134, dev_loss=0.7222, dev_MCC=0.7909, per_class_acc={'answer': '79.41%', 'wrong_object': '81.82%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0857, dev_loss=0.4798, dev_MCC=0.7465, per_class_acc={'answer': '73.53%', 'wrong_object': '78.79%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0229, dev_loss=0.6291, dev_MCC=0.8059, per_class_acc={'answer': '82.35%', 'wrong_object': '81.82%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.0103, dev_loss=0.7388, dev_MCC=0.7909, per_class_acc={'answer': '79.41%', 'wrong_object': '81.82%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.4717
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.4717）
+[calibrate_head r0] train MCC (multi-class): 0.9579
+[calibrate_head r0] dev   MCC (multi-class): 0.8065
+[calibrate_head r0] 
+=== dev classification_report ===
+                 precision    recall  f1-score   support
+
+      answer(0)     0.8286    0.8529    0.8406        34
+wrong_object(1)     0.8966    0.7879    0.8387        33
+   no_target(2)     0.8889    0.9697    0.9275        33
+
+       accuracy                         0.8700       100
+      macro avg     0.8713    0.8702    0.8689       100
+   weighted avg     0.8709    0.8700    0.8687       100
+
+[calibrate_head r0]   answer(0) acc: 0.8529 (34 样本)
+[calibrate_head r0]   wrong_object(1) acc: 0.7879 (33 样本)
+[calibrate_head r0]   no_target(2) acc: 0.9697 (33 样本)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v2_hl03/checkpoint-480/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)

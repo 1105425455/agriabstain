@@ -1,0 +1,226 @@
+{
+  "protocol": {
+    "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl",
+    "records": 410,
+    "hard_endpoint_records": 410,
+    "ambiguous_intermediate_records": 0,
+    "prompt_policy": "Exact ReGate decision system override, per-record query, and image. GPT output is parsed once with the same AgriAbstain parser; no JSON mode or semantic repair.",
+    "reason_policy": "Labels and reasons use the frozen evaluation GT.",
+    "iou_threshold": 0.5,
+    "metric_denominator_policy": {
+      "FCA": "all GT unsupported records; invalid is not a committed answer",
+      "A_FU": "all GT supported records; invalid is a false rejection",
+      "Strict_3": "all hard-label records; invalid is incorrect",
+      "E2E_mIoU": "all GT supported records; invalid, abstention, or wrong label contributes zero",
+      "paired_CI": "paired bootstrap over the same fixed GT sample universe"
+    },
+    "api": {
+      "provider": "ModelBest LLM Center",
+      "endpoint": "https://llm-center.modelbest.cn/llm/v1/chat/completions",
+      "requested_model_id": "gpt-5.6-sol",
+      "returned_model_ids": {
+        "gpt-5.6-sol": 410
+      },
+      "provider_model_revision": null,
+      "version_note": "The provider returned model ID gpt-5.6-sol but exposed no dated snapshot or revision identifier.",
+      "access_date_utc": "2026-07-22",
+      "temperature": 0,
+      "max_completion_tokens": 384,
+      "image_detail": "original",
+      "system_prompt": "You are AgriAbstain, a vision-language grounding assistant for high-stakes plant disease diagnosis. Locate the queried target. If the queried target is present and localizable, return {\"decision\":\"answer\",\"label\":\"...\",\"box\":[x1,y1,x2,y2]} with box in [0,1000] relative coords. Otherwise abstain: {\"decision\":\"abstain\",\"reason\":\"wrong_object|no_target\"}. wrong_object: the image shows a visually similar but different object/disease, not the queried one. no_target: the queried target is not locatable (absent from the image, or cropped out of view).",
+      "user_prompt_policy": "The per-record user query is unchanged except that the literal <image> placeholder is removed when attaching the image.",
+      "evaluation_runs": 1,
+      "accepted_responses_per_record": 1,
+      "request_attempt_histogram": {
+        "1": 410
+      },
+      "repeat_policy": "One accepted response per record in one evaluation run; no repeated model runs or majority voting. Additional attempts, if present, are transport retries only."
+    }
+  },
+  "gpt56_sol": {
+    "all_record_format_valid_rate": 0.9926829268292683,
+    "hard_endpoint_format_valid_rate": 0.9926829268292683,
+    "hard_endpoint_decision_accuracy": 0.6487804878048781,
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 137,
+        "FP": 47,
+        "FN": 20,
+        "TN": 85,
+        "AU": 118,
+        "INVALID": 3
+      },
+      "counts": {
+        "total": 410,
+        "answerable": 205,
+        "unanswerable": 205,
+        "invalid": 3,
+        "invalid_answerable": 1,
+        "invalid_unanswerable": 2
+      },
+      "selection_confusion_matrix": {
+        "TP": 184,
+        "FP": 118,
+        "FN": 21,
+        "TN": 87
+      },
+      "headline": {
+        "FCA": 0.5756097560975609,
+        "HOR_FCA": 0.0,
+        "HOR_count": {
+          "high_occlusion_au": 0,
+          "high_occlusion_unanswerable": 0
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.1024390243902439,
+        "Supported_Retention": 0.8975609756097561,
+        "U_Abs": 0.4146341463414634,
+        "AAC": 0.6682926829268293,
+        "MCC": 0.3654505218018025
+      },
+      "semantic": {
+        "Strict_3": 0.6487804878048781
+      },
+      "grounding_reason": {
+        "E2E_mIoU": 0.6140962304757794,
+        "E2E_mIoU_c": 0.6841833002583412,
+        "A_Ground": 0.6140962304757794,
+        "A_Ground_c": 0.6841833002583412,
+        "U_Reason": 0.4,
+        "U_Reason_c": 0.9647058823529412
+      },
+      "comparison": {
+        "UAC": 0.4146341463414634,
+        "AR": 0.2634146341463415
+      },
+      "invalid_rate": 0.007317073170731708,
+      "iou_threshold": 0.5,
+      "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+    },
+    "mts": {
+      "MTS_micro": 0.5341463414634147,
+      "MTS_macro": 0.5341463414634147,
+      "per_relation": {
+        "L1_mismatch": 0.4,
+        "L1_real": 0.6682926829268293
+      },
+      "per_relation_counts": {
+        "L1_mismatch": {
+          "pass": 82,
+          "total": 205
+        },
+        "L1_real": {
+          "pass": 137,
+          "total": 205
+        }
+      }
+    },
+    "answer_rate_by_visibility": []
+  },
+  "regate_reference": {
+    "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/eval_faithful_v1/L1_discrim/metrics.json",
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 189,
+        "FP": 4,
+        "FN": 12,
+        "TN": 79,
+        "AU": 126,
+        "INVALID": 0
+      },
+      "counts": {
+        "total": 410,
+        "answerable": 205,
+        "unanswerable": 205,
+        "invalid": 0,
+        "invalid_answerable": 0,
+        "invalid_unanswerable": 0
+      },
+      "selection_confusion_matrix": {
+        "TP": 193,
+        "FP": 126,
+        "FN": 12,
+        "TN": 79
+      },
+      "headline": {
+        "FCA": 0.6146341463414634,
+        "HOR_FCA": 0.0,
+        "HOR_count": {
+          "high_occlusion_au": 0,
+          "high_occlusion_unanswerable": 0
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.05853658536585366,
+        "Supported_Retention": 0.9414634146341463,
+        "U_Abs": 0.3853658536585366,
+        "AAC": 0.9219512195121952,
+        "MCC": 0.39324097571755234
+      },
+      "semantic": {
+        "Strict_3": 0.651219512195122
+      },
+      "grounding_reason": {
+        "E2E_mIoU": 0.810333283165365,
+        "E2E_mIoU_c": 0.8607166997352323,
+        "A_Ground": 0.810333283165365,
+        "A_Ground_c": 0.8607166997352323,
+        "U_Reason": 0.3804878048780488,
+        "U_Reason_c": 0.9873417721518988
+      },
+      "comparison": {
+        "UAC": 0.3853658536585366,
+        "AR": 0.22195121951219512
+      },
+      "invalid_rate": 0.0,
+      "iou_threshold": 0.5,
+      "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+    },
+    "mts": {
+      "MTS_micro": 0.651219512195122,
+      "MTS_macro": 0.651219512195122,
+      "per_relation": {
+        "L1_mismatch": 0.3804878048780488,
+        "L1_real": 0.9219512195121952
+      },
+      "per_relation_counts": {
+        "L1_mismatch": {
+          "pass": 78,
+          "total": 205
+        },
+        "L1_real": {
+          "pass": 189,
+          "total": 205
+        }
+      }
+    }
+  },
+  "paired_gpt_minus_regate": {
+    "FCA": {
+      "difference_gpt_minus_regate": -0.03902439024390244,
+      "ci_low": -0.11219512195121951,
+      "ci_high": 0.02939024390243836
+    },
+    "A_FU": {
+      "difference_gpt_minus_regate": 0.04390243902439024,
+      "ci_low": -0.004878048780487805,
+      "ci_high": 0.08780487804878048
+    },
+    "supported_grounding_accuracy": {
+      "difference_gpt_minus_regate": -0.25365853658536586,
+      "ci_low": -0.32207317073170727,
+      "ci_high": -0.18048780487804877
+    },
+    "Strict_3": {
+      "difference_gpt_minus_regate": -0.0024390243902439024,
+      "ci_low": -0.046341463414634146,
+      "ci_high": 0.041463414634146344
+    },
+    "E2E_mIoU": {
+      "difference_gpt_minus_regate": -0.1962370526895865,
+      "ci_low": -0.2495093746004944,
+      "ci_high": -0.14231073031679217
+    }
+  }
+}

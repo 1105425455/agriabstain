@@ -1,0 +1,19 @@
+{
+  "base": "<MODEL_ROOT>/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "adapter": "<REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "input": "<REPO_ROOT>/new_reason/outputs/sft_3reason/sft_train.json",
+  "input_sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+  "rl_samples": "<REPO_ROOT>/new_reason/outputs/rl_grpo_trihead/rl_data/rl_samples.jsonl",
+  "rl_samples_sha256": "5628894105b718282edb6c85003cab436317192eae7c69f11315c06c529e4e29",
+  "split_assignment": "<REPO_ROOT>/new_reason/outputs/rl_grpo_trihead/rl_data/split_assignment.json",
+  "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad",
+  "max_pixels": 262144,
+  "n_layers": 36,
+  "n_train": 1736,
+  "n_holdout": 296,
+  "world_size": 8,
+  "script": "<REPO_ROOT>/new_reason/scripts/head_boundary_refit/extract_hidden_alllayers.py",
+  "script_sha256": "170befc86389ad1ed55bc654fc1864d032241089f73a751140096f9ee83065ae",
+  "date": "2026-07-15 15:06:23",
+  "extract_all_layers": true
+}

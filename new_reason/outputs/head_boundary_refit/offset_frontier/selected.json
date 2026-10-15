@@ -1,0 +1,129 @@
+{
+  "delta_star": 1.15,
+  "selected_by": "gate_passed",
+  "dev": {
+    "baseline": {
+      "delta": 0.0,
+      "wo_recall": 0.2664,
+      "answer_accuracy": 0.9505,
+      "answer_false_abstain": 0.0495,
+      "nt_accuracy": 0.9643,
+      "confusion_matrix": [
+        [
+          96,
+          2,
+          3
+        ],
+        [
+          158,
+          55,
+          1
+        ],
+        [
+          2,
+          0,
+          54
+        ]
+      ],
+      "n_samples": 371,
+      "n_wo": 214,
+      "n_answer": 101,
+      "n_nt": 56
+    },
+    "selected": {
+      "delta": 1.15,
+      "wo_recall": 0.4299,
+      "answer_accuracy": 0.9406,
+      "answer_false_abstain": 0.0594,
+      "nt_accuracy": 0.9643,
+      "confusion_matrix": [
+        [
+          95,
+          2,
+          4
+        ],
+        [
+          125,
+          86,
+          3
+        ],
+        [
+          2,
+          0,
+          54
+        ]
+      ],
+      "n_samples": 371,
+      "n_wo": 214,
+      "n_answer": 101,
+      "n_nt": 56,
+      "selected_by": "gate_passed",
+      "wo_recall_gain": 0.1635
+    }
+  },
+  "holdout": {
+    "baseline": {
+      "delta": 0.0,
+      "wo_recall": 0.6214,
+      "answer_accuracy": 0.9901,
+      "answer_false_abstain": 0.0099,
+      "nt_accuracy": 0.9818,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          1
+        ],
+        [
+          53,
+          87,
+          0
+        ],
+        [
+          1,
+          0,
+          54
+        ]
+      ],
+      "n_samples": 296,
+      "n_wo": 140,
+      "n_answer": 101,
+      "n_nt": 55
+    },
+    "selected": {
+      "wo_recall": 0.6857,
+      "wo_recall_gain": 0.0643,
+      "answer_false_abstain": 0.0099,
+      "nt_accuracy": 0.9818,
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          1
+        ],
+        [
+          44,
+          96,
+          0
+        ],
+        [
+          1,
+          0,
+          54
+        ]
+      ]
+    }
+  },
+  "success_criteria": {
+    "wo_recall_gain_min": 0.15,
+    "answer_fa_max_increase": 0.01,
+    "nt_acc_drop_max": 0.005
+  },
+  "holdout_passes": false,
+  "holdout_reasons": [
+    "WO recall gain: +6.4pp < +15pp ✗",
+    "Answer false-abstain: 1.0% (baseline 1.0%), increase=0.0pp ≤ 1pp ✓",
+    "NT accuracy drop: 0.00pp ≤ 0.5pp ✓"
+  ],
+  "conclusion": "平移在 dev 上可两全，但 holdout 未过成功线，纯平移泛化不足，不可两全"
+}

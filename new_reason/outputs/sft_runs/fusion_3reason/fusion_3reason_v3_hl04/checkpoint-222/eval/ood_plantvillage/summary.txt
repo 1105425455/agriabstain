@@ -1,0 +1,34 @@
+=== AgriAbstain eval [ood_plantvillage] ===
+data: new_reason/outputs/eval_probes/ood_plantvillage.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-222
+n=240
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.2208  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.6250
+HOR_FCA (高危子集↓)  = 0.3333  (n=132)
+MTS_micro           = 0.2208
+MTS_macro           = 0.2024
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0000
+U_Abs (拒对↑)       = 0.3750
+AAC (答对↑)         = 0.0000
+MCC                 = 0.0000
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.0000
+A_Ground_c          = 0.0000
+U_Reason↑           = 0.2208
+U_Reason_c          = 0.5889
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 0, 'FP': 0, 'FN': 0, 'TN': 90, 'AU': 150, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.3864  (51/132)
+  OOD_confusion    0.0185  (2/108)

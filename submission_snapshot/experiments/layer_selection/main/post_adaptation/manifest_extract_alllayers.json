@@ -1,0 +1,16 @@
+{
+  "base": "<MODEL_ROOT>/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "adapter": "<REPO_ROOT>/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "input": "benchmark/annotations/sft/sft_train.json",
+  "selection_records": "repro_artifacts/layer_selection/selection_records.jsonl",
+  "split_assignment": "repro_artifacts/layer_selection/split_assignment.json",
+  "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad",
+  "max_pixels": 262144,
+  "n_layers": 36,
+  "n_train": 1736,
+  "n_holdout": 296,
+  "world_size": 8,
+  "script": "experiments/layer_selection/extract_all_layers.py",
+  "date": "2026-07-15 15:06:23",
+  "extract_all_layers": true
+}

@@ -1,0 +1,15 @@
+{
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "best_step": 444,
+  "dev_losses": {
+    "111": 0.311196,
+    "222": 0.29023,
+    "333": 0.28344,
+    "444": 0.278026,
+    "555": 0.280943,
+    "666": 0.283077
+  },
+  "extra_checkpoint_task_ids": {
+    "111": 617455
+  }
+}

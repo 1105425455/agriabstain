@@ -1,0 +1,644 @@
+W0724 14:07:47.849000 3196 site-packages/torch/distributed/run.py:774] 
+W0724 14:07:47.849000 3196 site-packages/torch/distributed/run.py:774] *****************************************
+W0724 14:07:47.849000 3196 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0724 14:07:47.849000 3196 site-packages/torch/distributed/run.py:774] *****************************************
+[Gloo] Rank 2 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 4 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 0 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 1 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank [Gloo] Rank 3 is connected to 7 peer ranks. Expected number of connected peer ranks is : 77 is connected to 
+7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank [Gloo] Rank 6 is connected to 7 peer ranks. Expected number of connected peer ranks is : 57 is connected to 7
+ peer ranks. Expected number of connected peer ranks is : 7
+[eval r0] device=cuda:0 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r0] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r5] device=cuda:5 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r5] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r4] device=cuda:4 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r4] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r3] device=cuda:3 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r7] device=cuda:7 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r7] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r1] device=cuda:1 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r6] device=cuda:6 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r6] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r2] device=cuda:2 loading base: <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.10s/it]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.23s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.92s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.91s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.92s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.93s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.89s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.94s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.93s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.84s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.81s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.75s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.74s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.75s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.75s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.75s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.75s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.78s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.77s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.77s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.97s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.98s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.77s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.96s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.75s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.98s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.78s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.98s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.77s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.97s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.74s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.95s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.37s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.04s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at <USER_HOME>/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[eval r6] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r4] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r2] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r7] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r5] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r1] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r0] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r3] loading LoRA adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+[eval r6] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r0] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r0] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r0] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r6] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r6] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r0] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r6] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r0] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r6] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r0] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r6] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r2] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r4] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r2] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r2] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r5] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r2] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r4] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r4] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r3] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r2] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r2] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r1] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r4] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r5] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r5] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r4] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r4] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r3] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r3] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r7] [dual-head] 从 adapter 加载 discrim_head: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/adapter_model.safetensors
+[eval r5] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r1] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r1] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r3] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r5] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r5] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r1] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r3] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r3] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r7] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r7] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r1] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r1] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r7] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.7500
+[eval r7] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r7] [dual-head] 用校准头覆盖端到端头: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/discrim_head_calibrated.pt
+[eval r3] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r4] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r2] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r1] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r0] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r5] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r6] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r2] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r2] model loaded on cuda:2, running 6 probe(s) [dual-head mode]
+[eval r2] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r4] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r4] model loaded on cuda:4, running 6 probe(s) [dual-head mode]
+[eval r4] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r1] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r1] model loaded on cuda:1, running 6 probe(s) [dual-head mode]
+[eval r1] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r0] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r0] model loaded on cuda:0, running 6 probe(s) [dual-head mode]
+[eval r0] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r5] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r5] model loaded on cuda:5, running 6 probe(s) [dual-head mode]
+[eval r5] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r7] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3750, sd_range=[0.482,7.844]
+[eval r3] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r3] model loaded on cuda:3, running 6 probe(s) [dual-head mode]
+[eval r3] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r6] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r6] model loaded on cuda:6, running 6 probe(s) [dual-head mode]
+[eval r6] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r7] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r7] model loaded on cuda:7, running 6 probe(s) [dual-head mode]
+[eval r7] === probe 1/6: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r1] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank1of8.jsonl
+[eval r6] [hf probe#0] total=2646 mine=330 done=0 todo=330 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank6of8.jsonl
+[eval r7] [hf probe#0] total=2646 mine=330 done=0 todo=330 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank7of8.jsonl
+[eval r3] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank3of8.jsonl
+[eval r2] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank2of8.jsonl
+[eval r5] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank5of8.jsonl
+[eval r0] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank0of8.jsonl
+[eval r4] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank4of8.jsonl
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[eval r3] probe#0 50/331 (0.40 it/s)
+[eval r4] probe#0 50/331 (0.40 it/s)
+[eval r6] probe#0 50/330 (0.39 it/s)
+[eval r1] probe#0 50/331 (0.38 it/s)
+[eval r2] probe#0 50/331 (0.38 it/s)
+[eval r7] probe#0 50/330 (0.37 it/s)
+[eval r0] probe#0 50/331 (0.37 it/s)
+[eval r5] probe#0 50/331 (0.37 it/s)
+[eval r4] probe#0 100/331 (0.40 it/s)
+[eval r1] probe#0 100/331 (0.39 it/s)
+[eval r0] probe#0 100/331 (0.39 it/s)
+[eval r2] probe#0 100/331 (0.39 it/s)
+[eval r6] probe#0 100/330 (0.39 it/s)
+[eval r3] probe#0 100/331 (0.38 it/s)
+[eval r5] probe#0 100/331 (0.38 it/s)
+[eval r7] probe#0 100/330 (0.37 it/s)
+[eval r4] probe#0 150/331 (0.40 it/s)
+[eval r1] probe#0 150/331 (0.40 it/s)
+[eval r3] probe#0 150/331 (0.39 it/s)
+[eval r6] probe#0 150/330 (0.39 it/s)
+[eval r2] probe#0 150/331 (0.39 it/s)
+[eval r0] probe#0 150/331 (0.38 it/s)
+[eval r7] probe#0 150/330 (0.38 it/s)
+[eval r5] probe#0 150/331 (0.38 it/s)
+[eval r6] probe#0 200/330 (0.43 it/s)
+[eval r1] probe#0 200/331 (0.43 it/s)
+[eval r0] probe#0 200/331 (0.42 it/s)
+[eval r3] probe#0 200/331 (0.42 it/s)
+[eval r4] probe#0 200/331 (0.41 it/s)
+[eval r2] probe#0 200/331 (0.41 it/s)
+[eval r7] probe#0 200/330 (0.40 it/s)
+[eval r5] probe#0 200/331 (0.40 it/s)
+[eval r6] probe#0 250/330 (0.50 it/s)
+[eval r1] probe#0 250/331 (0.49 it/s)
+[eval r3] probe#0 250/331 (0.48 it/s)
+[eval r0] probe#0 250/331 (0.48 it/s)
+[eval r2] probe#0 250/331 (0.48 it/s)
+[eval r4] probe#0 250/331 (0.48 it/s)
+[eval r5] probe#0 250/331 (0.47 it/s)
+[eval r7] probe#0 250/330 (0.47 it/s)
+[eval r6] probe#0 300/330 (0.54 it/s)
+[eval r0] probe#0 300/331 (0.54 it/s)
+[eval r3] probe#0 300/331 (0.54 it/s)
+[eval r1] probe#0 300/331 (0.54 it/s)
+[eval r4] probe#0 300/331 (0.54 it/s)
+[eval r2] probe#0 300/331 (0.53 it/s)
+[eval r7] probe#0 300/330 (0.53 it/s)
+[eval r6] probe#0 shard done in 571.5s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank6of8.jsonl
+[eval r6] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r6] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r1] probe#0 shard done in 576.6s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank1of8.jsonl
+[eval r1] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r1] [hf probe#1] total=410 mine=52 done=0 todo=52 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r0] probe#0 shard done in 577.9s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank0of8.jsonl
+[eval r0] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r0] [hf probe#1] total=410 mine=52 done=0 todo=52 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r3] probe#0 shard done in 578.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank3of8.jsonl
+[eval r3] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r3] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r2] probe#0 shard done in 590.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank2of8.jsonl
+[eval r2] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r2] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r4] probe#0 shard done in 590.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank4of8.jsonl
+[eval r4] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r4] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r5] probe#0 300/331 (0.50 it/s)
+[eval r7] probe#0 shard done in 598.8s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank7of8.jsonl
+[eval r7] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r7] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r5] probe#0 shard done in 621.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/shards/preds.rank5of8.jsonl
+[eval r5] === probe 2/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r5] [hf probe#1] total=410 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r1] probe#1 50/52 (0.45 it/s)
+[eval r6] probe#1 50/51 (0.41 it/s)
+[eval r3] probe#1 50/51 (0.43 it/s)
+[eval r1] probe#1 shard done in 117.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r1] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r1] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r6] probe#1 shard done in 123.5s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r6] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r6] [hf probe#2] total=790 mine=98 done=0 todo=98 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r3] probe#1 shard done in 118.0s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r3] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r3] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r0] probe#1 50/52 (0.40 it/s)
+[eval r7] probe#1 50/51 (0.47 it/s)
+[eval r7] probe#1 shard done in 108.4s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r7] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r7] [hf probe#2] total=790 mine=98 done=0 todo=98 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r0] probe#1 shard done in 129.9s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r0] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r0] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r4] probe#1 50/51 (0.42 it/s)
+[eval r2] probe#1 50/51 (0.41 it/s)
+[eval r4] probe#1 shard done in 122.0s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r4] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r4] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r2] probe#1 shard done in 124.5s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r2] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r2] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r5] probe#1 50/51 (0.44 it/s)
+[eval r5] probe#1 shard done in 116.8s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r5] === probe 3/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r5] [hf probe#2] total=790 mine=99 done=0 todo=99 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r1] probe#2 50/99 (0.59 it/s)
+[eval r3] probe#2 50/99 (0.56 it/s)
+[eval r7] probe#2 50/98 (0.58 it/s)
+[eval r6] probe#2 50/98 (0.40 it/s)
+[eval r5] probe#2 50/99 (0.56 it/s)
+[eval r0] probe#2 50/99 (0.40 it/s)
+[eval r2] probe#2 50/99 (0.41 it/s)
+[eval r4] probe#2 50/99 (0.39 it/s)
+[eval r1] probe#2 shard done in 181.0s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r1] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r1] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank1of8.jsonl
+[eval r3] probe#2 shard done in 179.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r3] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r3] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank3of8.jsonl
+[eval r7] probe#2 shard done in 177.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r7] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r7] [hf probe#3] total=750 mine=93 done=0 todo=93 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank7of8.jsonl
+[eval r5] probe#2 shard done in 186.9s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r5] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r5] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank5of8.jsonl
+[eval r6] probe#2 shard done in 248.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r6] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r6] [hf probe#3] total=750 mine=93 done=0 todo=93 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank6of8.jsonl
+[eval r0] probe#2 shard done in 248.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r0] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r0] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank0of8.jsonl
+[eval r2] probe#2 shard done in 244.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r2] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r2] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank2of8.jsonl
+[eval r4] probe#2 shard done in 249.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r4] === probe 4/6: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r4] [hf probe#3] total=750 mine=94 done=0 todo=94 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank4of8.jsonl
+[eval r1] probe#3 50/94 (0.40 it/s)
+[eval r3] probe#3 50/94 (0.39 it/s)
+[eval r7] probe#3 50/93 (0.39 it/s)
+[eval r5] probe#3 50/94 (0.38 it/s)
+[eval r6] probe#3 50/93 (0.42 it/s)
+[eval r1] probe#3 shard done in 204.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank1of8.jsonl
+[eval r1] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r1] [hf probe#4] total=362 mine=46 done=0 todo=46 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank1of8.jsonl
+[eval r0] probe#3 50/94 (0.40 it/s)
+[eval r4] probe#3 50/94 (0.42 it/s)
+[eval r2] probe#3 50/94 (0.39 it/s)
+[eval r3] probe#3 shard done in 221.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank3of8.jsonl
+[eval r3] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r3] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank3of8.jsonl
+[eval r7] probe#3 shard done in 215.5s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank7of8.jsonl
+[eval r7] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r7] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank7of8.jsonl
+[eval r5] probe#3 shard done in 214.9s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank5of8.jsonl
+[eval r5] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r5] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank5of8.jsonl
+[eval r6] probe#3 shard done in 198.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank6of8.jsonl
+[eval r6] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r6] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank6of8.jsonl
+[eval r1] probe#4 shard done in 68.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank1of8.jsonl
+[eval r1] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r1] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank1of8.jsonl
+[eval r0] probe#3 shard done in 205.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank0of8.jsonl
+[eval r0] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r0] [hf probe#4] total=362 mine=46 done=0 todo=46 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank0of8.jsonl
+[eval r3] probe#4 shard done in 70.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank3of8.jsonl
+[eval r3] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r3] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank3of8.jsonl
+[eval r2] probe#3 shard done in 211.8s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank2of8.jsonl
+[eval r2] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r2] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank2of8.jsonl
+[eval r4] probe#3 shard done in 209.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/shards/preds.rank4of8.jsonl
+[eval r4] === probe 5/6: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r4] [hf probe#4] total=362 mine=45 done=0 todo=45 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank4of8.jsonl
+[eval r7] probe#4 shard done in 78.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank7of8.jsonl
+[eval r7] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r7] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank7of8.jsonl
+[eval r6] probe#4 shard done in 69.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank6of8.jsonl
+[eval r6] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r6] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank6of8.jsonl
+[eval r1] probe#5 50/51 (0.76 it/s)
+[eval r1] probe#5 shard done in 66.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank1of8.jsonl
+[eval r3] probe#5 50/51 (0.85 it/s)
+[eval r3] probe#5 shard done in 58.8s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank3of8.jsonl
+[eval r0] probe#4 shard done in 64.4s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank0of8.jsonl
+[eval r0] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r0] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank0of8.jsonl
+[eval r7] probe#5 50/51 (0.90 it/s)
+[eval r7] probe#5 shard done in 57.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank7of8.jsonl
+[eval r5] probe#4 shard done in 96.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank5of8.jsonl
+[eval r5] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r5] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank5of8.jsonl
+[eval r2] probe#4 shard done in 82.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank2of8.jsonl
+[eval r2] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r2] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank2of8.jsonl
+[eval r4] probe#4 shard done in 82.5s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/shards/preds.rank4of8.jsonl
+[eval r4] === probe 6/6: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r4] [hf probe#5] total=408 mine=51 done=0 todo=51 -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank4of8.jsonl
+[eval r6] probe#5 50/51 (0.65 it/s)
+[eval r6] probe#5 shard done in 77.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank6of8.jsonl
+[eval r5] probe#5 50/51 (0.87 it/s)
+[eval r5] probe#5 shard done in 59.1s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank5of8.jsonl
+[eval r0] probe#5 50/51 (0.64 it/s)
+[eval r0] probe#5 shard done in 78.2s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank0of8.jsonl
+[eval r4] probe#5 50/51 (0.78 it/s)
+[eval r4] probe#5 shard done in 64.7s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank4of8.jsonl
+[eval r2] probe#5 50/51 (0.70 it/s)
+[eval r2] probe#5 shard done in 71.3s -> <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/shards/preds.rank2of8.jsonl
+[eval r0] === merge probe 1/6: comprehensive ===
+=== ReGate eval [comprehensive] ===
+data: <REPO_ROOT>/new_reason/outputs/sft_3reason/sft_test.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=2646
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6633  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.4860
+HOR_FCA (lower better)   = 0.4436  (n=1118)
+MTS_micro                = 0.6230
+MTS_macro                = 0.5267
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0446
+U_Abs (higher better)    = 0.5140
+AAC (higher better)      = 0.7619
+MCC                      = 0.5231
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.6780
+E2E_mIoU_c               = 0.7097
+A_Ground (alias)         = 0.6780
+A_Ground_c (alias)       = 0.7097
+U_Reason (higher better) = 0.5042
+U_Reason_c               = 0.9809
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 1008, 'FP': 256, 'FN': 59, 'TN': 680, 'AU': 643, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.7797  (184/236)
+  T2               0.7395  (88/119)
+  T2_occluded      0.0875  (7/80)
+  T3               0.8000  (104/130)
+  T3_occluded      0.0375  (3/80)
+  T4_control       0.7125  (114/160)
+  T5               0.8734  (559/640)
+  T6               0.2634  (54/205)
+  T7_include       0.7768  (87/112)
+  T7_ladder        0.5827  (296/508)
+  base_occluded    0.1412  (24/170)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/comprehensive/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 2/6: L1_discrim ===
+=== ReGate eval [L1_discrim] ===
+data: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L1_discrim.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=410
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.5122  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.7659
+HOR_FCA (lower better)   = 0.0000  (n=0)
+MTS_micro                = 0.5024
+MTS_macro                = 0.5024
+
+--- Safeguard ---
+A_FU (lower better)      = 0.1659
+U_Abs (higher better)    = 0.2341
+AAC (higher better)      = 0.7854
+MCC                      = 0.0854
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.7098
+E2E_mIoU_c               = 0.8509
+A_Ground (alias)         = 0.7098
+A_Ground_c (alias)       = 0.8509
+U_Reason (higher better) = 0.2195
+U_Reason_c               = 0.9375
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 161, 'FP': 10, 'FN': 34, 'TN': 48, 'AU': 157, 'INVALID': 0}
+
+--- MTS per relation ---
+  L1_mismatch      0.2195  (45/205)
+  L1_real          0.7854  (161/205)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L1_discrim/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 3/6: L2_evidence ===
+=== ReGate eval [L2_evidence] ===
+data: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L2_evidence.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=790
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.4646  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.8785
+HOR_FCA (lower better)   = 0.8785  (n=395)
+MTS_micro                = 0.4101
+MTS_macro                = 0.4101
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0684
+U_Abs (higher better)    = 0.1215
+AAC (higher better)      = 0.7013
+MCC                      = 0.0907
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.6155
+E2E_mIoU_c               = 0.6606
+A_Ground (alias)         = 0.6155
+A_Ground_c (alias)       = 0.6606
+U_Reason (higher better) = 0.1190
+U_Reason_c               = 0.9792
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 277, 'FP': 91, 'FN': 27, 'TN': 48, 'AU': 347, 'INVALID': 0}
+
+--- MTS per relation ---
+  L2_cropout       0.1190  (47/395)
+  L2_keep          0.7013  (277/395)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L2_evidence/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 4/6: L3_dose ===
+=== ReGate eval [L3_dose] ===
+data: <REPO_ROOT>/new_reason/outputs/eval_probes/test_L3_dose.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=750
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 0.4413  (>= 0.95 ?)
+decision_accuracy = 0.2280  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.8311
+HOR_FCA (lower better)   = 0.8311  (n=148)
+MTS_micro                = 0.5015
+MTS_macro                = 0.5015
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0000
+U_Abs (higher better)    = 0.1689
+AAC (higher better)      = 0.7760
+MCC                      = 0.3178
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.7015
+E2E_mIoU_c               = 0.7015
+A_Ground (alias)         = 0.7015
+A_Ground_c (alias)       = 0.7015
+U_Reason (higher better) = 0.1622
+U_Reason_c               = 0.9600
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 142, 'FP': 41, 'FN': 0, 'TN': 25, 'AU': 123, 'INVALID': 0}
+
+--- MTS per relation ---
+  L3_ladder        0.5015  (166/331)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/L3_dose/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 5/6: refcocog ===
+=== ReGate eval [refcocog] ===
+data: <REPO_ROOT>/new_reason/outputs/eval_probes/ood_refcocog.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=362
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8729  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (lower better)       = 0.0552
+HOR_FCA (lower better)   = 0.0552  (n=181)
+MTS_micro                = 0.8674
+MTS_macro                = 0.8674
+
+--- Safeguard ---
+A_FU (lower better)      = 0.0055
+U_Abs (higher better)    = 0.9448
+AAC (higher better)      = 0.7901
+MCC                      = 0.9404
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.7256
+E2E_mIoU_c               = 0.8707
+A_Ground (alias)         = 0.7256
+A_Ground_c (alias)       = 0.8707
+U_Reason (higher better) = 0.9448
+U_Reason_c               = 1.0000
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 143, 'FP': 37, 'FN': 1, 'TN': 171, 'AU': 10, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9448  (171/181)
+  OOD_answer       0.7901  (143/181)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/refcocog/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 6/6: plantwild ===
+=== ReGate eval [plantwild] ===
+data: <REPO_ROOT>/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl
+adapter: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222
+n=408
+
+--- Gate (format and decision precheck) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6299  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (lower better)       = 0.2500
+HOR_FCA (lower better)   = 0.0972  (n=144)
+MTS_micro                = 0.6299
+MTS_macro                = 0.6185
+
+--- Safeguard ---
+A_FU (lower better)      = 0.3958
+U_Abs (higher better)    = 0.7500
+AAC (higher better)      = 0.5417
+MCC                      = 0.3496
+
+--- Grounding / Reason ---
+E2E_mIoU (higher better) = 0.0000
+E2E_mIoU_c               = 0.0000
+A_Ground (alias)         = 0.0000
+A_Ground_c (alias)       = 0.0000
+U_Reason (higher better) = 0.6780
+U_Reason_c               = 0.9040
+
+invalid_rate             = 0.0000
+confusion_matrix         = {'TP': 78, 'FP': 9, 'FN': 57, 'TN': 198, 'AU': 66, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.8889  (128/144)
+  OOD_answer       0.5417  (78/144)
+  OOD_confusion    0.4250  (51/120)
+[eval] written: <REPO_ROOT>/aaai_code/experiments/grouping_ablation/artifacts/evaluation/regate/plantwild/metrics.json , predictions.jsonl , summary.txt

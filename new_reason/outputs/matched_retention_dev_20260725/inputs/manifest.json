@@ -1,0 +1,44 @@
+{
+  "protocol": "development-only threshold selection for matched retention",
+  "inputs": {
+    "dev_split": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/dev.jsonl",
+    "dev_split_sha256": "dba7ed433cdf6e1e2584f04ff86868cf7bcff9329258f33d214c9150ab111042",
+    "test_split": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/test.jsonl",
+    "test_split_sha256": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4",
+    "sft_dev": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/sft/sft_dev.json",
+    "sft_dev_sha256": "05675e4e8d615b216c594025c1fbc52e8dfaa407e748cddbe215caa042201ea6"
+  },
+  "output": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl",
+  "output_sha256": "f4d5e3ab4de2a9bf3d6e9671d024b584c473a8d41bd60c5969125af8d64d05c3",
+  "n_dev": 2408,
+  "n_test_audited": 2646,
+  "unique_dev_sample_ids": 2408,
+  "unique_dev_source_images": 140,
+  "unique_test_source_images": 145,
+  "dev_test_source_overlap": 0,
+  "sft_dev_semantic_multiset_equal": true,
+  "decision_counts": {
+    "abstain": 1204,
+    "answer": 1204
+  },
+  "reason_counts": {
+    "no_target": 999,
+    "wrong_object": 205
+  },
+  "relation_counts": {
+    "T1": 217,
+    "T2": 115,
+    "T2_occluded": 69,
+    "T3": 106,
+    "T3_occluded": 69,
+    "T4_control": 121,
+    "T5": 594,
+    "T6": 205,
+    "T7_include": 106,
+    "T7_ladder": 476,
+    "base": 187,
+    "base_occluded": 143
+  },
+  "benchmark_root": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark",
+  "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images"
+}

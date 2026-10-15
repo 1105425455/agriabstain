@@ -1,0 +1,46 @@
+{
+  "task": "audit_refcocog_image_isolation",
+  "input_files": {
+    "parquet": "data/ood/refcocog/metadata/val-00000-of-00003.parquet",
+    "train_jsonl": "annotations/splits/train.jsonl",
+    "train_jsonl_sha256": "9592cedeef8ff8c3429b81466fb95763ce4a0769c2bfdf40c80493d36320c530",
+    "probe_jsonl": "annotations/eval/ood_refcocog.jsonl"
+  },
+  "train": {
+    "coco_ground_abstain_records": 5777,
+    "unique_coco_image_ids": 142
+  },
+  "probe": {
+    "total_records": 362,
+    "unique_refcocog_rows": 181,
+    "unique_coco_image_ids": 180,
+    "parse_failures": 0,
+    "sample_id_order_hash": "68f085c735c45a1030c2133466b939b5a5a8b57cd9d38c0d35fe0e7bb728cda6"
+  },
+  "intersection": {
+    "count": 0,
+    "list": []
+  },
+  "row_consistency": {
+    "consistent": true,
+    "conflicts": []
+  },
+  "file_hashes": {
+    "probe_before_file": "6a634b52c8ff518f53474532b06b7564cde390ccc8813bec9784e73433a0e045",
+    "probe_after_file": "6a634b52c8ff518f53474532b06b7564cde390ccc8813bec9784e73433a0e045",
+    "probe_before_records": "8900ee85f5d739e765ca355f890ea8ac46ec711ee1ea62334545c907e02d7bd4",
+    "probe_after_records": "8900ee85f5d739e765ca355f890ea8ac46ec711ee1ea62334545c907e02d7bd4",
+    "normalized_without_added_metadata": "4fbb193e5510c681e391a2a5771006228d970b3087dff409a827c90d12586784",
+    "reconstructed_pre_backfill_file": "d34e3ebde62f5dbfeb2c73532695d7d0b0cbf05d0bc3a4e9b824fd2e39c66c47"
+  },
+  "metadata_fields_added": [
+    "coco_image_id",
+    "refcocog_row_index",
+    "coco_file_name",
+    "question_id"
+  ],
+  "backfill_history": {
+    "records_missing_any_field_before_this_run": 0,
+    "note": "A repeated run is idempotent and may report a missing count of 0. The reconstructed_pre_backfill_file is rebuilt by removing the four added fields and re-emitting the records in the original JSONL format."
+  }
+}

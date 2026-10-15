@@ -1,0 +1,43 @@
+=== AgriAbstain eval [test_full] ===
+data: new_reason/outputs/sft_3reason/sft_test.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=2646
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8636  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0907
+HOR_FCA (高危子集↓)  = 0.0537  (n=1118)
+MTS_micro           = 0.8352
+MTS_macro           = 0.8512
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0506
+U_Abs (拒对↑)       = 0.9093
+AAC (答对↑)         = 0.8450
+MCC                 = 0.8593
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.7438
+A_Ground_c          = 0.7896
+U_Reason↑           = 0.8254
+U_Reason_c          = 0.9077
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 1118, 'FP': 138, 'FN': 67, 'TN': 1203, 'AU': 120, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.8347  (197/236)
+  T2               0.8403  (100/119)
+  T2_occluded      0.9250  (74/80)
+  T3               0.8308  (108/130)
+  T3_occluded      0.9375  (75/80)
+  T4_control       0.8313  (133/160)
+  T5               0.8031  (514/640)
+  T6               0.7073  (145/205)
+  T7_include       0.8929  (100/112)
+  T7_ladder        0.8661  (440/508)
+  base_occluded    0.8941  (152/170)

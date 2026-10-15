@@ -1,0 +1,33 @@
+{
+  "total_records": 288,
+  "total_unique_images": 156,
+  "per_class": 12,
+  "seed": 42,
+  "by_probe": {
+    "absent": 156,
+    "confusion": 132
+  },
+  "by_relation": {
+    "OOD_absent": 156,
+    "OOD_confusion": 132
+  },
+  "true_class_counts": {
+    "apple rust leaf": 12,
+    "apple scab leaf": 12,
+    "corn gray leaf spot": 12,
+    "corn leaf blight": 12,
+    "corn rust leaf": 12,
+    "potato leaf late blight": 12,
+    "squash powdery mildew leaf": 12,
+    "tomato leaf bacterial spot": 12,
+    "tomato early blight leaf": 12,
+    "tomato leaf late blight": 12,
+    "tomato mold leaf": 12,
+    "tomato septoria leaf spot": 12,
+    "tomato leaf yellow virus": 12
+  },
+  "manual_quality_excluded": 2,
+  "expected_absent": 156,
+  "expected_confusion": 132,
+  "expected_total": 288
+}

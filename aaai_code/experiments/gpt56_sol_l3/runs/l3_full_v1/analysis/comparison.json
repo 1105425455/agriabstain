@@ -1,0 +1,185 @@
+{
+  "protocol": {
+    "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl",
+    "records": 750,
+    "hard_endpoint_records": 331,
+    "ambiguous_intermediate_records": 419,
+    "prompt_policy": "Exact L3 per-record prompt and image. GPT output is parsed once with the same AgriAbstain parser; no JSON mode or semantic repair.",
+    "reason_policy": "Hard endpoint labels and reasons use the existing L3 GT.",
+    "iou_threshold": 0.5
+  },
+  "gpt56_sol": {
+    "all_record_format_valid_rate": 1.0,
+    "hard_endpoint_format_valid_rate": 1.0,
+    "hard_endpoint_decision_accuracy": 0.8126888217522659,
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 143,
+        "FP": 30,
+        "FN": 10,
+        "TN": 103,
+        "AU": 45,
+        "INVALID": 0
+      },
+      "counts": {
+        "total": 331,
+        "answerable": 183,
+        "unanswerable": 148,
+        "invalid": 0
+      },
+      "headline": {
+        "FCA": 0.30405405405405406,
+        "HOR_FCA": 0.30405405405405406,
+        "HOR_count": {
+          "high_occlusion_au": 45,
+          "high_occlusion_unanswerable": 148
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.0546448087431694,
+        "U_Abs": 0.6959459459459459,
+        "AAC": 0.7814207650273224,
+        "MCC": 0.6724359813880555
+      },
+      "grounding_reason": {
+        "E2E_mIoU": 0.7018734348448428,
+        "E2E_mIoU_c": 0.7424441536220012,
+        "A_Ground": 0.7018734348448428,
+        "A_Ground_c": 0.7424441536220012,
+        "U_Reason": 0.6486486486486487,
+        "U_Reason_c": 0.9320388349514563
+      },
+      "comparison": {
+        "UAC": 0.6959459459459459,
+        "AR": 0.3413897280966767
+      },
+      "invalid_rate": 0.0,
+      "iou_threshold": 0.5
+    },
+    "mts": {
+      "MTS_micro": 0.7220543806646526,
+      "MTS_macro": 0.7220543806646526,
+      "per_relation": {
+        "L3_ladder": 0.7220543806646526
+      },
+      "per_relation_counts": {
+        "L3_ladder": {
+          "pass": 239,
+          "total": 331
+        }
+      }
+    },
+    "answer_rate_by_visibility": [
+      {
+        "visible_ratio_bin": "0.0",
+        "n": 148,
+        "answer_rate": 0.30405405405405406,
+        "abstain_rate": 0.6959459459459459,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "0.25",
+        "n": 195,
+        "answer_rate": 0.676923076923077,
+        "abstain_rate": 0.3230769230769231,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "0.5",
+        "n": 128,
+        "answer_rate": 0.8515625,
+        "abstain_rate": 0.1484375,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "0.75",
+        "n": 96,
+        "answer_rate": 0.8645833333333334,
+        "abstain_rate": 0.13541666666666666,
+        "invalid_rate": 0.0
+      },
+      {
+        "visible_ratio_bin": "1.0",
+        "n": 183,
+        "answer_rate": 0.9453551912568307,
+        "abstain_rate": 0.0546448087431694,
+        "invalid_rate": 0.0
+      }
+    ]
+  },
+  "regate_reference": {
+    "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/eval_faithful_v1/L3_dose/metrics.json",
+    "metrics": {
+      "confusion_matrix": {
+        "TP": 144,
+        "FP": 37,
+        "FN": 2,
+        "TN": 122,
+        "AU": 26,
+        "INVALID": 0
+      },
+      "counts": {
+        "total": 331,
+        "answerable": 183,
+        "unanswerable": 148,
+        "invalid": 0
+      },
+      "headline": {
+        "FCA": 0.17567567567567569,
+        "HOR_FCA": 0.17567567567567569,
+        "HOR_count": {
+          "high_occlusion_au": 26,
+          "high_occlusion_unanswerable": 148
+        }
+      },
+      "safeguard": {
+        "A_FU": 0.01092896174863388,
+        "U_Abs": 0.8243243243243243,
+        "AAC": 0.7868852459016393,
+        "MCC": 0.8355300601640155
+      },
+      "grounding_reason": {
+        "A_Ground": 0.6894942440963101,
+        "A_Ground_c": 0.6971129650255511,
+        "U_Reason": 0.8243243243243243,
+        "U_Reason_c": 1.0
+      },
+      "comparison": {
+        "UAC": 0.8243243243243243,
+        "AR": 0.37462235649546827
+      },
+      "invalid_rate": 0.0,
+      "iou_threshold": 0.5
+    },
+    "mts": {
+      "MTS_micro": 0.8036253776435045,
+      "MTS_macro": 0.8036253776435045,
+      "per_relation": {
+        "L3_ladder": 0.8036253776435045
+      },
+      "per_relation_counts": {
+        "L3_ladder": {
+          "pass": 266,
+          "total": 331
+        }
+      }
+    }
+  },
+  "paired_gpt_minus_regate": {
+    "FCA": {
+      "difference_gpt_minus_regate": 0.12837837837837837,
+      "ci_low": 0.0472972972972973,
+      "ci_high": 0.21621621621621623
+    },
+    "A_FU": {
+      "difference_gpt_minus_regate": 0.04371584699453552,
+      "ci_low": 0.01092896174863388,
+      "ci_high": 0.08196721311475409
+    },
+    "supported_grounding_accuracy": {
+      "difference_gpt_minus_regate": -0.00546448087431694,
+      "ci_low": -0.07650273224043716,
+      "ci_high": 0.07103825136612021
+    }
+  }
+}

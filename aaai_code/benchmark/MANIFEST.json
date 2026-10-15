@@ -1,0 +1,283 @@
+{
+  "benchmark_name": "AgriAbstain Benchmark Subset",
+  "version": "1.0",
+  "description": "Curated subset of the AgriAbstain benchmark for an AAAI submission. Contains source images, OOD evaluation images, and rewritten annotations. This is a data-only package (no code/scripts/configs included). Generate derived images using scripts/build_benchmark.py from aaai_code/.",
+  "image_counts": {
+    "source_plantdoc": {
+      "total": 726,
+      "expected": 726,
+      "match": true,
+      "by_split": {
+        "train": 502,
+        "dev": 110,
+        "test": 114
+      }
+    },
+    "source_coco": {
+      "total": 203,
+      "expected": 203,
+      "match": true,
+      "by_split": {
+        "train": 142,
+        "dev": 30,
+        "test": 31
+      }
+    },
+    "ood_refcocog": {
+      "total": 181,
+      "expected": 181,
+      "match": true
+    },
+    "ood_plantwild_closed12": {
+      "total": 144,
+      "expected": 144,
+      "match": true
+    }
+  },
+  "annotation_counts": {
+    "sft_train": {
+      "actual": 7072,
+      "expected": 7072,
+      "match": true
+    },
+    "sft_dev": {
+      "actual": 2408,
+      "expected": 2408,
+      "match": true
+    },
+    "sft_test": {
+      "actual": 2646,
+      "expected": 2646,
+      "match": true
+    },
+    "closed12": {
+      "actual": 408,
+      "expected": 408,
+      "match": true
+    },
+    "refcocog": {
+      "actual": 362,
+      "expected": 362,
+      "match": true
+    }
+  },
+  "annotations": [
+    {
+      "path": "annotations/splits/train.jsonl",
+      "format": "jsonl",
+      "sha256": "9592cedeef8ff8c3429b81466fb95763ce4a0769c2bfdf40c80493d36320c530",
+      "bytes": 11791658,
+      "records": 14701
+    },
+    {
+      "path": "annotations/splits/dev.jsonl",
+      "format": "jsonl",
+      "sha256": "dba7ed433cdf6e1e2584f04ff86868cf7bcff9329258f33d214c9150ab111042",
+      "bytes": 1929457,
+      "records": 2408
+    },
+    {
+      "path": "annotations/splits/test.jsonl",
+      "format": "jsonl",
+      "sha256": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4",
+      "bytes": 2172337,
+      "records": 2646
+    },
+    {
+      "path": "annotations/splits/dose_pool.jsonl",
+      "format": "jsonl",
+      "sha256": "93534f3267196144d91fb9f63d58ab6c29260d91d2fd3b1626096abe61b0179b",
+      "bytes": 8393009,
+      "records": 9128
+    },
+    {
+      "path": "annotations/splits/split_manifest.json",
+      "format": "json",
+      "sha256": "d0435dc768f1289b5f65c405d3658c38d3540eb0b5156a5aa3ede1a89de0c986",
+      "bytes": 4796,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/splits/SPLIT_METADATA_FIX_AUDIT.json",
+      "format": "json",
+      "sha256": "467df8e01479007f03b95ffb7a6f30bfe6dcbf065b70deebd0c3847bbc213571",
+      "bytes": 2059,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/sft/sft_train.json",
+      "format": "json",
+      "sha256": "8d20b843b022746f88d2d0a8f79e2d3063ceae03741ed12012a682bb190c23e4",
+      "bytes": 7365045,
+      "records": 7072
+    },
+    {
+      "path": "annotations/sft/sft_train_with_source.json",
+      "format": "json",
+      "sha256": "f043e9078c393ae98e19c620056138cfbc14808182c680ceeb8691d6d6a4d197",
+      "bytes": 7897600,
+      "records": 7072
+    },
+    {
+      "path": "annotations/sft/sft_dev.json",
+      "format": "json",
+      "sha256": "05675e4e8d615b216c594025c1fbc52e8dfaa407e748cddbe215caa042201ea6",
+      "bytes": 2498239,
+      "records": 2408
+    },
+    {
+      "path": "annotations/sft/sft_test.jsonl",
+      "format": "jsonl",
+      "sha256": "44dd753b36091f3a92adaa501d681bad5e6a8f9e1bc11db70258d63733bca612",
+      "bytes": 3060399,
+      "records": 2646
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.jsonl",
+      "format": "jsonl",
+      "sha256": "76aff96a8472533927525b6d2fe8b70e9348f247d980a196f4de519dcdd8ee5b",
+      "bytes": 18212085,
+      "records": 20131
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.summary.json",
+      "format": "json",
+      "sha256": "ed716e35b210f431ff3ff5c7ad73561a69bd4c037111d641827c0d87df0b2ffb",
+      "bytes": 1861,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/raw/plantdoc_full.raw.config.snapshot.yaml",
+      "format": "yaml",
+      "sha256": "9e0fcda4fb43c043c2a6a6809316f7a6ad2bfc8336bb5ac0c51ca8ecb877bf42",
+      "bytes": 2571
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.jsonl",
+      "format": "jsonl",
+      "sha256": "1128c5aef89234e08091344d394a002117c4bf6b38ed492f08f441f488b663cd",
+      "bytes": 7079468,
+      "records": 9999
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.summary.json",
+      "format": "json",
+      "sha256": "97260baa94aa8d809a174210d43246c6c10d733caaab3c9d20d8f57bb5d31bb4",
+      "bytes": 1232,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/raw/coco_full.raw.config.snapshot.yaml",
+      "format": "yaml",
+      "sha256": "b20d2d843508087ae9369bb48488422162e16e3a74e1f3e48af29ac78f830e97",
+      "bytes": 525
+    },
+    {
+      "path": "annotations/eval/dev_L1_discrim.jsonl",
+      "format": "jsonl",
+      "sha256": "e4a86e072b194a241d6e0e1ff14dc775998e3fa1e65d2dabf8c2922f2e5a5057",
+      "bytes": 613183,
+      "records": 410
+    },
+    {
+      "path": "annotations/eval/dev_L2_evidence.jsonl",
+      "format": "jsonl",
+      "sha256": "607696685adae795115cb1cda2fc0dfb741dfeb29d90fb32a0b8b1e4dc2954f6",
+      "bytes": 785274,
+      "records": 570
+    },
+    {
+      "path": "annotations/eval/dev_L3_dose.jsonl",
+      "format": "jsonl",
+      "sha256": "99b87e545a2fb18bce9551cba09b892beebbc4fc27f673d7d2e8cced60c31da5",
+      "bytes": 981276,
+      "records": 677
+    },
+    {
+      "path": "annotations/eval/test_L1_discrim.jsonl",
+      "format": "jsonl",
+      "sha256": "038d0190eb31ec5e57e70fa72049155c7e0196973e4852239bb3bdaee47fcbc5",
+      "bytes": 629889,
+      "records": 410
+    },
+    {
+      "path": "annotations/eval/test_L2_evidence.jsonl",
+      "format": "jsonl",
+      "sha256": "10ffdeeadeccadee390b4a82b7ff9b8dd7f4da9328553e43643c823d09b7b453",
+      "bytes": 1090687,
+      "records": 790
+    },
+    {
+      "path": "annotations/eval/test_L3_dose.jsonl",
+      "format": "jsonl",
+      "sha256": "194d93732c21bd028fd4b96db47dad676d74e8efffe725cfc51fad6d2fc766be",
+      "bytes": 1091833,
+      "records": 750
+    },
+    {
+      "path": "annotations/eval/ood_refcocog.jsonl",
+      "format": "jsonl",
+      "sha256": "937dff6b4cfe8eab7058d172a7db367ffed8684d485b39741c560b8d7cc2ed68",
+      "bytes": 531923,
+      "records": 362
+    },
+    {
+      "path": "annotations/eval/REFCOCOG_IMAGE_ID_ISOLATION_AUDIT.json",
+      "format": "json",
+      "sha256": "78b0f00f7067791a032c9fd66ced98b775182cc9954177eb9dbcda7b73aff95b",
+      "bytes": 1854,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/eval/plantwild_real_closed12_paired_408.jsonl",
+      "format": "jsonl",
+      "sha256": "e2b069298e2a39dd19ef53d88385fe18f538caa9d4320cdebf55615ae32c5d0e",
+      "bytes": 602762,
+      "records": 408
+    },
+    {
+      "path": "annotations/eval/BUILD_AUDIT.json",
+      "format": "json",
+      "sha256": "25c3a5ff8528fa78b188b6d2136b3ce5d1258d726de58ae3e172689677eb21ff",
+      "bytes": 48258,
+      "records": "N/A (dict)"
+    },
+    {
+      "path": "annotations/audits/PLANTDOC_CAPABILITY_GATE_AUDIT.json",
+      "format": "json",
+      "sha256": "764e5d6724ae01503d8223a8cdc2d6bc231d7910820a7f2ff36cfea3218e6bd3",
+      "bytes": 7643,
+      "records": "N/A (dict)"
+    }
+  ],
+  "path_audit": {
+    "old_prefix_occurrences": {},
+    "old_prefix_occurrences_total": 0,
+    "missing_image_refs": {},
+    "missing_image_refs_total": 0,
+    "derived_image_refs_count": 50867,
+    "derived_image_refs": [
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-gaussian_blur.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-mean_replace.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-nontarget-pixelate.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-include.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-100.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-075.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-1bc22b07197f479b-0-region-ladder-050.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-include.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-100.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-075.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-3d4cff5accc985ab-0-region-ladder-050.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-photometric.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-hflip.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-gaussian_blur.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-mean_replace.jpg",
+      "data/derived/plantdoc/train/plantdoc-train-8eac39c6256d88fc-0-nontarget-pixelate.jpg"
+    ]
+  },
+  "image_manifest": "IMAGE_MANIFEST.json"
+}

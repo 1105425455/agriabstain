@@ -1,0 +1,12 @@
+{
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222",
+  "best_step": 222,
+  "dev_losses": {
+    "111": 0.320155,
+    "222": 0.289195,
+    "333": 0.29504,
+    "444": 0.318394,
+    "555": 0.321698,
+    "666": 0.325238
+  }
+}

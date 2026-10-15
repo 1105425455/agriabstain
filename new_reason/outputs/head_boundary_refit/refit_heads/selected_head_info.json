@@ -1,0 +1,9 @@
+{
+  "selected_tag": "refit_seed42_pm3.0_hw2.0",
+  "selected_path": "new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm3.0_hw2.0.pt",
+  "dev_score": 1.0,
+  "pair_margin": 3.0,
+  "hard_weight_ce": 2.0,
+  "seed": 42,
+  "best_epoch": 29
+}

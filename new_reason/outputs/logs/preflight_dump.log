@@ -1,0 +1,314 @@
+W0709 21:30:40.966000 77 site-packages/torch/distributed/run.py:793] 
+W0709 21:30:40.966000 77 site-packages/torch/distributed/run.py:793] *****************************************
+W0709 21:30:40.966000 77 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0709 21:30:40.966000 77 site-packages/torch/distributed/run.py:793] *****************************************
+[eval r0] device=cuda:0 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r0] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r1] device=cuda:1 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r5] device=cuda:5 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r5] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r2] device=cuda:2 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r7] device=cuda:7 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r7] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r3] device=cuda:3 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r6] device=cuda:6 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r6] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r4] device=cuda:4 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r4] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.16s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.15s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.18s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.16s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.15s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.18s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.16s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.18s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.06s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.06s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.06s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.05s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:06,  3.05s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.81s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.81s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.81s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.80s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.81s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.84s/it]
+
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[eval r4] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r3] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r7] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r0] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r2] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r5] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r6] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r1] loading LoRA adapter: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r4] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r4] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r4] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r4] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r4] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r4] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r4] model loaded on cuda:4, running 1 probe(s) [dual-head mode]
+[eval r4] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r4] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank4of8.jsonl
+[eval r0] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r0] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r0] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r0] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r0] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r0] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r0] model loaded on cuda:0, running 1 probe(s) [dual-head mode]
+[eval r0] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r0] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank0of8.jsonl
+[eval r3] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r2] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r3] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r3] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r2] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r2] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r6] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r3] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r2] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r3] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r6] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r6] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r2] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r3] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r3] model loaded on cuda:3, running 1 probe(s) [dual-head mode]
+[eval r3] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r7] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r2] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r2] model loaded on cuda:2, running 1 probe(s) [dual-head mode]
+[eval r2] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r6] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r6] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r7] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r7] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r6] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r6] model loaded on cuda:6, running 1 probe(s) [dual-head mode]
+[eval r6] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r7] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r3] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank3of8.jsonl
+[eval r7] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r2] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank2of8.jsonl
+[eval r7] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r7] model loaded on cuda:7, running 1 probe(s) [dual-head mode]
+[eval r7] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r6] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank6of8.jsonl
+[eval r7] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank7of8.jsonl
+[eval r5] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r1] [dual-head] 从 adapter 加载 discrim_head: new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[eval r5] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r5] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r1] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r1] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r5] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r1] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r5] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r5] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r5] model loaded on cuda:5, running 1 probe(s) [dual-head mode]
+[eval r5] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r1] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r1] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r1] model loaded on cuda:1, running 1 probe(s) [dual-head mode]
+[eval r1] === probe 1/1: new_reason/outputs/preflight/sft_train.jsonl -> new_reason/outputs/preflight/dump_out (tag=train_dump) ===
+[eval r5] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank5of8.jsonl
+[eval r1] [hf probe#0] total=7072 mine=884 done=0 todo=884 -> new_reason/outputs/preflight/dump_out/shards/preds.rank1of8.jsonl
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[eval r2] probe#0 50/884 (0.52 it/s)
+[eval r3] probe#0 50/884 (0.50 it/s)
+[eval r0] probe#0 50/884 (0.49 it/s)
+[eval r7] probe#0 50/884 (0.49 it/s)
+[eval r1] probe#0 50/884 (0.49 it/s)
+[eval r6] probe#0 50/884 (0.48 it/s)
+[eval r5] probe#0 50/884 (0.45 it/s)
+[eval r6] probe#0 100/884 (0.52 it/s)
+[eval r5] probe#0 100/884 (0.50 it/s)
+[eval r7] probe#0 100/884 (0.49 it/s)
+[eval r0] probe#0 100/884 (0.49 it/s)
+[eval r1] probe#0 100/884 (0.49 it/s)
+[eval r4] probe#0 100/884 (0.47 it/s)
+[eval r2] probe#0 150/884 (0.53 it/s)
+[eval r3] probe#0 150/884 (0.52 it/s)
+[eval r5] probe#0 150/884 (0.51 it/s)
+[eval r0] probe#0 150/884 (0.50 it/s)
+[eval r7] probe#0 150/884 (0.49 it/s)
+[eval r4] probe#0 150/884 (0.48 it/s)
+[eval r2] probe#0 200/884 (0.54 it/s)
+[eval r3] probe#0 200/884 (0.52 it/s)
+[eval r6] probe#0 200/884 (0.52 it/s)
+[eval r5] probe#0 200/884 (0.51 it/s)
+[eval r0] probe#0 200/884 (0.50 it/s)
+[eval r4] probe#0 200/884 (0.50 it/s)
+[eval r7] probe#0 200/884 (0.50 it/s)
+[eval r1] probe#0 200/884 (0.49 it/s)
+[eval r2] probe#0 250/884 (0.54 it/s)
+[eval r5] probe#0 250/884 (0.52 it/s)
+[eval r6] probe#0 250/884 (0.52 it/s)
+[eval r7] probe#0 250/884 (0.51 it/s)
+[eval r4] probe#0 250/884 (0.51 it/s)
+[eval r1] probe#0 250/884 (0.49 it/s)
+[eval r2] probe#0 300/884 (0.53 it/s)
+[eval r6] probe#0 300/884 (0.52 it/s)
+[eval r7] probe#0 300/884 (0.52 it/s)
+[eval r3] probe#0 300/884 (0.52 it/s)
+[eval r5] probe#0 300/884 (0.51 it/s)
+[eval r1] probe#0 300/884 (0.49 it/s)
+[eval r2] probe#0 350/884 (0.53 it/s)
+[eval r5] probe#0 350/884 (0.52 it/s)
+[eval r6] probe#0 350/884 (0.52 it/s)
+[eval r3] probe#0 350/884 (0.52 it/s)
+[eval r0] probe#0 350/884 (0.52 it/s)
+[eval r7] probe#0 350/884 (0.51 it/s)
+[eval r4] probe#0 350/884 (0.51 it/s)
+[eval r1] probe#0 350/884 (0.49 it/s)
+[eval r2] probe#0 400/884 (0.53 it/s)
+[eval r5] probe#0 400/884 (0.53 it/s)
+[eval r0] probe#0 400/884 (0.52 it/s)
+[eval r6] probe#0 400/884 (0.52 it/s)
+[eval r3] probe#0 400/884 (0.51 it/s)
+[eval r4] probe#0 400/884 (0.51 it/s)
+[eval r7] probe#0 400/884 (0.51 it/s)
+[eval r2] probe#0 450/884 (0.53 it/s)
+[eval r5] probe#0 450/884 (0.53 it/s)
+[eval r0] probe#0 450/884 (0.52 it/s)
+[eval r6] probe#0 450/884 (0.52 it/s)
+[eval r7] probe#0 450/884 (0.52 it/s)
+[eval r4] probe#0 450/884 (0.52 it/s)
+[eval r3] probe#0 450/884 (0.51 it/s)
+[eval r0] probe#0 500/884 (0.52 it/s)
+[eval r7] probe#0 500/884 (0.52 it/s)
+[eval r4] probe#0 500/884 (0.51 it/s)
+[eval r1] probe#0 500/884 (0.50 it/s)
+[eval r2] probe#0 550/884 (0.53 it/s)
+[eval r5] probe#0 550/884 (0.53 it/s)
+[eval r0] probe#0 550/884 (0.52 it/s)
+[eval r7] probe#0 550/884 (0.52 it/s)
+[eval r6] probe#0 550/884 (0.52 it/s)
+[eval r4] probe#0 550/884 (0.51 it/s)
+[eval r3] probe#0 550/884 (0.51 it/s)
+[eval r1] probe#0 550/884 (0.50 it/s)
+[eval r5] probe#0 600/884 (0.53 it/s)
+[eval r7] probe#0 600/884 (0.52 it/s)
+[eval r0] probe#0 600/884 (0.52 it/s)
+[eval r6] probe#0 600/884 (0.52 it/s)
+[eval r4] probe#0 600/884 (0.52 it/s)
+[eval r3] probe#0 600/884 (0.51 it/s)
+[eval r2] probe#0 650/884 (0.54 it/s)
+[eval r5] probe#0 650/884 (0.53 it/s)
+[eval r7] probe#0 650/884 (0.52 it/s)
+[eval r0] probe#0 650/884 (0.52 it/s)
+[eval r6] probe#0 650/884 (0.52 it/s)
+[eval r4] probe#0 650/884 (0.52 it/s)
+[eval r3] probe#0 650/884 (0.51 it/s)
+[eval r1] probe#0 650/884 (0.51 it/s)
+[eval r5] probe#0 700/884 (0.53 it/s)
+[eval r7] probe#0 700/884 (0.53 it/s)
+[eval r0] probe#0 700/884 (0.52 it/s)
+[eval r6] probe#0 700/884 (0.52 it/s)
+[eval r4] probe#0 700/884 (0.52 it/s)
+[eval r3] probe#0 700/884 (0.51 it/s)
+[eval r1] probe#0 700/884 (0.51 it/s)
+[eval r2] probe#0 750/884 (0.54 it/s)
+[eval r5] probe#0 750/884 (0.53 it/s)
+[eval r7] probe#0 750/884 (0.52 it/s)
+[eval r0] probe#0 750/884 (0.52 it/s)
+[eval r6] probe#0 750/884 (0.52 it/s)
+[eval r3] probe#0 750/884 (0.51 it/s)
+[eval r1] probe#0 750/884 (0.51 it/s)
+[eval r5] probe#0 800/884 (0.53 it/s)
+[eval r7] probe#0 800/884 (0.53 it/s)
+[eval r0] probe#0 800/884 (0.52 it/s)
+[eval r3] probe#0 800/884 (0.51 it/s)
+[eval r1] probe#0 800/884 (0.51 it/s)
+[eval r2] probe#0 850/884 (0.54 it/s)
+[eval r7] probe#0 850/884 (0.53 it/s)
+[eval r5] probe#0 850/884 (0.53 it/s)
+[eval r0] probe#0 850/884 (0.53 it/s)
+[eval r6] probe#0 850/884 (0.52 it/s)
+[eval r4] probe#0 850/884 (0.52 it/s)
+[eval r2] probe#0 shard done in 1641.9s -> new_reason/outputs/preflight/dump_out/shards/preds.rank2of8.jsonl
+[eval r7] probe#0 shard done in 1668.5s -> new_reason/outputs/preflight/dump_out/shards/preds.rank7of8.jsonl
+[eval r5] probe#0 shard done in 1670.9s -> new_reason/outputs/preflight/dump_out/shards/preds.rank5of8.jsonl
+[eval r0] probe#0 shard done in 1680.4s -> new_reason/outputs/preflight/dump_out/shards/preds.rank0of8.jsonl
+[eval r4] probe#0 shard done in 1687.1s -> new_reason/outputs/preflight/dump_out/shards/preds.rank4of8.jsonl
+[eval r6] probe#0 shard done in 1689.5s -> new_reason/outputs/preflight/dump_out/shards/preds.rank6of8.jsonl
+[eval r3] probe#0 shard done in 1731.8s -> new_reason/outputs/preflight/dump_out/shards/preds.rank3of8.jsonl
+[eval r1] probe#0 shard done in 1745.4s -> new_reason/outputs/preflight/dump_out/shards/preds.rank1of8.jsonl
+[eval r0] === merge probe 1/1: train_dump ===
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/user/huangyongbin/newrepo/agriabstain/scripts/eval_qwen3vl_swift_3reason.py", line 1611, in <module>
+[rank0]:     raise SystemExit(main())
+[rank0]:                      ^^^^^^
+[rank0]:   File "/user/huangyongbin/newrepo/agriabstain/scripts/eval_qwen3vl_swift_3reason.py", line 1603, in main
+[rank0]:     result = merge_and_score(args)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/user/huangyongbin/newrepo/agriabstain/scripts/eval_qwen3vl_swift_3reason.py", line 1476, in merge_and_score
+[rank0]:     (out_dir / "summary.txt").write_text(summary)
+[rank0]:   File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/pathlib.py", line 1079, in write_text
+[rank0]:     return f.write(data)
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]: UnicodeEncodeError: 'ascii' codec can't encode characters in position 200-202: ordinal not in range(128)
+E0709 22:03:35.975000 77 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 167) of binary: /user/huangyongbin/miniconda3/envs/agrisam3/bin/python.real
+Traceback (most recent call last):
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/eval_qwen3vl_swift_3reason.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-09_22:03:35
+  host      : pytorchjob-hyb-546587-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 167)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

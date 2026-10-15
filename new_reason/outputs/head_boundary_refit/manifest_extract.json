@@ -1,0 +1,22 @@
+{
+  "base": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "calibrated_head": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt",
+  "calibrated_head_sha256": "cd2b2df7c6778fb94d5378dbff28ab48c91b2ad9205be979030da4a07070a5f3",
+  "input": "new_reason/outputs/sft_3reason/sft_train.json",
+  "input_sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+  "rl_samples": "new_reason/outputs/rl_grpo_trihead/rl_data/rl_samples.jsonl",
+  "rl_samples_sha256": "5628894105b718282edb6c85003cab436317192eae7c69f11315c06c529e4e29",
+  "split_assignment": "new_reason/outputs/rl_grpo_trihead/rl_data/split_assignment.json",
+  "split_assignment_sha256": "40df5bcdd2fc212f73b0b50205d489d7db773a154ce878b70a08ddd334339fad",
+  "max_pixels": 262144,
+  "REPR_LAYER_HS_IDX": 27,
+  "n_train": 1736,
+  "n_holdout": 296,
+  "world_size": 8,
+  "script": "/user/huangyongbin/newrepo/agriabstain/new_reason/scripts/head_boundary_refit/extract_hidden.py",
+  "script_sha256": "2e05e546403305f0bd8abdc0b510d78cdccb35acbce601af783b4975b418e566",
+  "date": "2026-07-14 22:06:25",
+  "head_label_mean": 0.8438940092165899,
+  "head_label_std": 0.7041251380004201
+}

@@ -1,0 +1,47 @@
+{
+  "task": "audit_refcocog_image_isolation",
+  "input_files": {
+    "parquet": "/user/huangyongbin/newrepo/agriabstain/data/ood/refcocog/data/val-00000-of-00003.parquet",
+    "parquet_sha256": "0fd8fb54d2ae36bd0388c36071ae7b35d53117864b4e101fc3eb8dd6d8e658a5",
+    "train_jsonl": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/splits/train.jsonl",
+    "train_jsonl_sha256": "014ba4652c0e741ce891369f76a8062b7873568c97a2304e0cce7aca43f35e0b",
+    "probe_jsonl": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl"
+  },
+  "train": {
+    "coco_ground_abstain_records": 5777,
+    "unique_coco_image_ids": 142
+  },
+  "probe": {
+    "total_records": 362,
+    "unique_refcocog_rows": 181,
+    "unique_coco_image_ids": 180,
+    "parse_failures": 0,
+    "sample_id_order_hash": "68f085c735c45a1030c2133466b939b5a5a8b57cd9d38c0d35fe0e7bb728cda6"
+  },
+  "intersection": {
+    "count": 0,
+    "list": []
+  },
+  "row_consistency": {
+    "consistent": true,
+    "conflicts": []
+  },
+  "file_hashes": {
+    "probe_before_file": "c2eddf6298534632bd5de9e770ba6291fbf2f773697e8e81b96a4c8a63cdd342",
+    "probe_after_file": "c2eddf6298534632bd5de9e770ba6291fbf2f773697e8e81b96a4c8a63cdd342",
+    "probe_before_records": "495aa7205052566868761dd8ef75b32af578a9731f153be52e374e00a38f1790",
+    "probe_after_records": "495aa7205052566868761dd8ef75b32af578a9731f153be52e374e00a38f1790",
+    "normalized_without_added_metadata": "53585476adef9503ff4b269f6c501854ec4376a5a84c536b9438a2a87ce12951",
+    "reconstructed_pre_backfill_file": "e6a783dc879f2b542489526a6185a082b7196a125afa5492df4cde91c41b8685"
+  },
+  "metadata_fields_added": [
+    "coco_image_id",
+    "refcocog_row_index",
+    "coco_file_name",
+    "question_id"
+  ],
+  "backfill_history": {
+    "records_missing_any_field_before_this_run": 0,
+    "note": "后续幂等运行可能显示缺失数为0；reconstructed_pre_backfill_file 通过移除四个新增字段按原JSONL格式重建。"
+  }
+}

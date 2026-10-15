@@ -1,0 +1,15 @@
+{
+  "analysis": "Validation loss reached its minimum before the final epoch; extending training is not supported and would risk overfitting.",
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "best_epoch": 4,
+  "best_step": 444,
+  "best_val_loss": 0.278026,
+  "extra_checkpoint_task_ids": {
+    "111": 617455
+  },
+  "final_train_loss": 0.3867527295698275,
+  "loss_curve": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/grouped_dev_selection/selection/loss_curves.png",
+  "metrics_jsonl": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/grouped_dev_selection/selection/metrics.jsonl",
+  "selection_policy": "minimum teacher-forced LM loss on the fixed 100-record dev subset",
+  "train_runtime_seconds": 2343.5684
+}

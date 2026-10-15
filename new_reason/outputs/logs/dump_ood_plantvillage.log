@@ -1,0 +1,12 @@
+[dump-ood] load base+adapter max_pixels=1048576
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 41.38it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[dump-ood] calibrated head loaded, sd_range=[0.539,9.688]
+[dump-ood] 240 rows
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[dump-ood] 50/240 ok=50 5.22 it/s
+[dump-ood] 100/240 ok=100 5.86 it/s
+[dump-ood] 150/240 ok=150 6.04 it/s
+[dump-ood] 200/240 ok=200 6.17 it/s
+[dump-ood] done 240/240 in 38.2s -> new_reason/outputs/preflight/ood_plantvillage_dump_1m.jsonl

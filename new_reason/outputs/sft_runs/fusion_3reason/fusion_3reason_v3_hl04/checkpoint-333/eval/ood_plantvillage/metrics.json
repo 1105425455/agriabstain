@@ -1,0 +1,75 @@
+{
+  "tag": "ood_plantvillage",
+  "data": "new_reason/outputs/eval_probes/ood_plantvillage.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-333",
+  "n_samples": 240,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.3875,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 141,
+      "AU": 99,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 240,
+      "answerable": 0,
+      "unanswerable": 240,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.4125,
+      "HOR_FCA": 0.07575757575757576,
+      "HOR_count": {
+        "high_occlusion_au": 10,
+        "high_occlusion_unanswerable": 132
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.0,
+      "U_Abs": 0.5875,
+      "AAC": 0.0,
+      "MCC": 0.0
+    },
+    "grounding_reason": {
+      "A_Ground": 0.0,
+      "A_Ground_c": 0.0,
+      "U_Reason": 0.3875,
+      "U_Reason_c": 0.6595744680851063
+    },
+    "comparison": {
+      "UAC": 0.5875,
+      "AR": 0.5875
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.3875,
+    "MTS_macro": 0.36826599326599324,
+    "per_relation": {
+      "OOD_absent": 0.5606060606060606,
+      "OOD_confusion": 0.17592592592592593
+    },
+    "per_relation_counts": {
+      "OOD_absent": {
+        "pass": 74,
+        "total": 132
+      },
+      "OOD_confusion": {
+        "pass": 19,
+        "total": 108
+      }
+    }
+  },
+  "within_image": null
+}

@@ -1,0 +1,1118 @@
+{
+  "schema_version": 1,
+  "protocol": "prompt_interface_fixed_gt_v1",
+  "evaluator": "reason_abstain.eval.metrics.aggregate_metrics",
+  "denominator_policy": "fixed_gt_universe_invalid_is_incorrect",
+  "datasets": {
+    "comprehensive": {
+      "methods": {
+        "regate": {
+          "n_samples": 2646,
+          "predictions_sha256": "3f656b6085510af19c8748f062638abd53540c79516e6607b8950bb5ac132db9",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 1051,
+              "FP": 240,
+              "FN": 32,
+              "TN": 1148,
+              "AU": 175,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 1291,
+              "FP": 175,
+              "FN": 32,
+              "TN": 1148
+            },
+            "headline": {
+              "FCA": 0.13227513227513227,
+              "HOR_FCA": 0.07871198568872988,
+              "HOR_count": {
+                "high_occlusion_au": 88,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.02418745275888133,
+              "Supported_Retention": 0.9758125472411187,
+              "U_Abs": 0.8677248677248677,
+              "AAC": 0.7944066515495087,
+              "MCC": 0.8485085166883631
+            },
+            "semantic": {
+              "Strict_3": 0.8560090702947846
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.7011410786557658,
+              "E2E_mIoU_c": 0.7185202533397197,
+              "A_Ground": 0.7011410786557658,
+              "A_Ground_c": 0.7185202533397197,
+              "U_Reason": 0.8654572940287226,
+              "U_Reason_c": 0.9973867595818815
+            },
+            "comparison": {
+              "UAC": 0.8677248677248677,
+              "AR": 0.4459561602418745
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "native_lm": {
+          "n_samples": 2646,
+          "predictions_sha256": "65983d84f36d8177fdd28bbea7ebf26bad8978c17c2746193957b580dcc0b795",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 1056,
+              "FP": 70,
+              "FN": 197,
+              "TN": 1198,
+              "AU": 125,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 1126,
+              "FP": 125,
+              "FN": 197,
+              "TN": 1198
+            },
+            "headline": {
+              "FCA": 0.0944822373393802,
+              "HOR_FCA": 0.02146690518783542,
+              "HOR_count": {
+                "high_occlusion_au": 24,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.14890400604686319,
+              "Supported_Retention": 0.8510959939531368,
+              "U_Abs": 0.9055177626606198,
+              "AAC": 0.7981859410430839,
+              "MCC": 0.7577366940255057
+            },
+            "semantic": {
+              "Strict_3": 0.8193499622071051
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.7046306177684918,
+              "E2E_mIoU_c": 0.8279096867741693,
+              "A_Ground": 0.7046306177684918,
+              "A_Ground_c": 0.8279096867741693,
+              "U_Reason": 0.7876039304610734,
+              "U_Reason_c": 0.8697829716193656
+            },
+            "comparison": {
+              "UAC": 0.9055177626606198,
+              "AR": 0.5272108843537415
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "direct": {
+          "n_samples": 2646,
+          "predictions_sha256": "d31d575cd4250de8349752ec4baf196cdf9f832065f03d24433648093ad2d8da",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 988,
+              "FP": 73,
+              "FN": 262,
+              "TN": 1213,
+              "AU": 110,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 1061,
+              "FP": 110,
+              "FN": 262,
+              "TN": 1213
+            },
+            "headline": {
+              "FCA": 0.08314436885865457,
+              "HOR_FCA": 0.013416815742397137,
+              "HOR_count": {
+                "high_occlusion_au": 15,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.1980347694633409,
+              "Supported_Retention": 0.8019652305366591,
+              "U_Abs": 0.9168556311413454,
+              "AAC": 0.7467876039304611,
+              "MCC": 0.7236124979972947
+            },
+            "semantic": {
+              "Strict_3": 0.843915343915344
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.6601527496982015,
+              "E2E_mIoU_c": 0.8316654770303974,
+              "A_Ground": 0.6601527496982015,
+              "A_Ground_c": 0.8316654770303974,
+              "U_Reason": 0.8949357520786092,
+              "U_Reason_c": 0.9760923330585326
+            },
+            "comparison": {
+              "UAC": 0.9168556311413454,
+              "AR": 0.5574452003023431
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward": {
+          "n_samples": 2646,
+          "predictions_sha256": "ca4796134485fa6bff92e6cbca5e1a4c1f4eeeec22a92759bbbe06812568cd25",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 1007,
+              "FP": 102,
+              "FN": 214,
+              "TN": 1144,
+              "AU": 179,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 1109,
+              "FP": 179,
+              "FN": 214,
+              "TN": 1144
+            },
+            "headline": {
+              "FCA": 0.13529856386999245,
+              "HOR_FCA": 0.01699463327370304,
+              "HOR_count": {
+                "high_occlusion_au": 19,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.1617535903250189,
+              "Supported_Retention": 0.8382464096749811,
+              "U_Abs": 0.8647014361300076,
+              "AAC": 0.7611489040060468,
+              "MCC": 0.7031939604992109
+            },
+            "semantic": {
+              "Strict_3": 0.8340891912320484
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.6688703674028095,
+              "E2E_mIoU_c": 0.8236164743117282,
+              "A_Ground": 0.6688703674028095,
+              "A_Ground_c": 0.8236164743117282,
+              "U_Reason": 0.8563869992441421,
+              "U_Reason_c": 0.9903846153846154
+            },
+            "comparison": {
+              "UAC": 0.8647014361300076,
+              "AR": 0.5132275132275133
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward_evidence": {
+          "n_samples": 2646,
+          "predictions_sha256": "5ce54b4b78577bef292419e6863bdbf8427cb5399d69fd0a91c4000860c60b3c",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 991,
+              "FP": 94,
+              "FN": 238,
+              "TN": 1157,
+              "AU": 166,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 1085,
+              "FP": 166,
+              "FN": 238,
+              "TN": 1157
+            },
+            "headline": {
+              "FCA": 0.1254724111866969,
+              "HOR_FCA": 0.016100178890876567,
+              "HOR_count": {
+                "high_occlusion_au": 18,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.17989417989417988,
+              "Supported_Retention": 0.8201058201058201,
+              "U_Abs": 0.8745275888133031,
+              "AAC": 0.7490551776266062,
+              "MCC": 0.6956643574519877
+            },
+            "semantic": {
+              "Strict_3": 0.8321995464852607
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.6585328983378304,
+              "E2E_mIoU_c": 0.8257071071831762,
+              "A_Ground": 0.6585328983378304,
+              "A_Ground_c": 0.8257071071831762,
+              "U_Reason": 0.8669690098261527,
+              "U_Reason_c": 0.9913569576490925
+            },
+            "comparison": {
+              "UAC": 0.8745275888133031,
+              "AR": 0.5272108843537415
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "structured_cot": {
+          "n_samples": 2646,
+          "predictions_sha256": "fffced550d6cc6e44e5fd04b314caffe50dfe17891cb41c2bd1d715b6cd087df",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 800,
+              "FP": 51,
+              "FN": 472,
+              "TN": 1271,
+              "AU": 52,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 2646,
+              "answerable": 1323,
+              "unanswerable": 1323,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 851,
+              "FP": 52,
+              "FN": 472,
+              "TN": 1271
+            },
+            "headline": {
+              "FCA": 0.039304610733182165,
+              "HOR_FCA": 0.0017889087656529517,
+              "HOR_count": {
+                "high_occlusion_au": 2,
+                "high_occlusion_unanswerable": 1118
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.35676492819349964,
+              "Supported_Retention": 0.6432350718065003,
+              "U_Abs": 0.9606953892668179,
+              "AAC": 0.6046863189720333,
+              "MCC": 0.6368750135672969
+            },
+            "semantic": {
+              "Strict_3": 0.7645502645502645
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.5390979719313701,
+              "E2E_mIoU_c": 0.8456079440590656,
+              "A_Ground": 0.5390979719313701,
+              "A_Ground_c": 0.8456079440590656,
+              "U_Reason": 0.891156462585034,
+              "U_Reason_c": 0.9276160503540519
+            },
+            "comparison": {
+              "UAC": 0.9606953892668179,
+              "AR": 0.6587301587301587
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        }
+      }
+    },
+    "refcocog": {
+      "methods": {
+        "regate": {
+          "n_samples": 362,
+          "predictions_sha256": "a7373f6ac081d9e9d2080b68b06f40fbf5dfc55ea6291965e8eef782707c089e",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 128,
+              "FP": 53,
+              "FN": 0,
+              "TN": 166,
+              "AU": 15,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 181,
+              "FP": 15,
+              "FN": 0,
+              "TN": 166
+            },
+            "headline": {
+              "FCA": 0.08287292817679558,
+              "HOR_FCA": 0.08287292817679558,
+              "HOR_count": {
+                "high_occlusion_au": 15,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.0,
+              "Supported_Retention": 1.0,
+              "U_Abs": 0.9171270718232044,
+              "AAC": 0.7071823204419889,
+              "MCC": 0.9202927661946518
+            },
+            "semantic": {
+              "Strict_3": 0.8204419889502762
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.6454899759239684,
+              "E2E_mIoU_c": 0.7952175731363953,
+              "A_Ground": 0.6454899759239684,
+              "A_Ground_c": 0.7952175731363953,
+              "U_Reason": 0.9171270718232044,
+              "U_Reason_c": 1.0
+            },
+            "comparison": {
+              "UAC": 0.9171270718232044,
+              "AR": 0.4585635359116022
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "native_lm": {
+          "n_samples": 362,
+          "predictions_sha256": "42d14a1cb6260fdc8e91be1989d109369788571203665c22d4765b05681a9cff",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 128,
+              "FP": 35,
+              "FN": 17,
+              "TN": 173,
+              "AU": 8,
+              "INVALID": 1
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 1,
+              "invalid_answerable": 1,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 163,
+              "FP": 8,
+              "FN": 18,
+              "TN": 173
+            },
+            "headline": {
+              "FCA": 0.04419889502762431,
+              "HOR_FCA": 0.04419889502762431,
+              "HOR_count": {
+                "high_occlusion_au": 8,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.09944751381215469,
+              "Supported_Retention": 0.9005524861878453,
+              "U_Abs": 0.9558011049723757,
+              "AAC": 0.7071823204419889,
+              "MCC": 0.857663561930192
+            },
+            "semantic": {
+              "Strict_3": 0.8342541436464088
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.6454899759239684,
+              "E2E_mIoU_c": 0.8830330106606598,
+              "A_Ground": 0.6454899759239684,
+              "A_Ground_c": 0.8830330106606598,
+              "U_Reason": 0.9447513812154696,
+              "U_Reason_c": 0.9884393063583815
+            },
+            "comparison": {
+              "UAC": 0.9558011049723757,
+              "AR": 0.5276243093922652
+            },
+            "invalid_rate": 0.0027624309392265192,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "direct": {
+          "n_samples": 362,
+          "predictions_sha256": "715b493f709cc84a013b16aa1c1e0a4f88edb47672cb506e43d04060d44cc03c",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 76,
+              "FP": 82,
+              "FN": 23,
+              "TN": 178,
+              "AU": 3,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 158,
+              "FP": 3,
+              "FN": 23,
+              "TN": 178
+            },
+            "headline": {
+              "FCA": 0.016574585635359115,
+              "HOR_FCA": 0.016574585635359115,
+              "HOR_count": {
+                "high_occlusion_au": 3,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.1270718232044199,
+              "Supported_Retention": 0.8729281767955801,
+              "U_Abs": 0.9834254143646409,
+              "AAC": 0.4198895027624309,
+              "MCC": 0.8616298407725972
+            },
+            "semantic": {
+              "Strict_3": 0.6933701657458563
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.38194467040436114,
+              "E2E_mIoU_c": 0.8855710600077327,
+              "A_Ground": 0.38194467040436114,
+              "A_Ground_c": 0.8855710600077327,
+              "U_Reason": 0.9613259668508287,
+              "U_Reason_c": 0.9775280898876404
+            },
+            "comparison": {
+              "UAC": 0.9834254143646409,
+              "AR": 0.5552486187845304
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward": {
+          "n_samples": 362,
+          "predictions_sha256": "92f8ded2f300881a9e664ae372b724fbb2833509f397f9e06e9179c62caadbc8",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 38,
+              "FP": 120,
+              "FN": 23,
+              "TN": 174,
+              "AU": 7,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 158,
+              "FP": 7,
+              "FN": 23,
+              "TN": 174
+            },
+            "headline": {
+              "FCA": 0.03867403314917127,
+              "HOR_FCA": 0.03867403314917127,
+              "HOR_count": {
+                "high_occlusion_au": 7,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.1270718232044199,
+              "Supported_Retention": 0.8729281767955801,
+              "U_Abs": 0.9613259668508287,
+              "AAC": 0.20994475138121546,
+              "MCC": 0.8375328731721846
+            },
+            "semantic": {
+              "Strict_3": 0.5883977900552486
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.18945791008485788,
+              "E2E_mIoU_c": 0.879144463962076,
+              "A_Ground": 0.18945791008485788,
+              "A_Ground_c": 0.879144463962076,
+              "U_Reason": 0.9613259668508287,
+              "U_Reason_c": 1.0
+            },
+            "comparison": {
+              "UAC": 0.9613259668508287,
+              "AR": 0.5441988950276243
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward_evidence": {
+          "n_samples": 362,
+          "predictions_sha256": "cda1845d38eafb602a31ac66c5bbd8a2b80671415ec9b6634cb04e8d6b9dff87",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 52,
+              "FP": 92,
+              "FN": 37,
+              "TN": 174,
+              "AU": 7,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 144,
+              "FP": 7,
+              "FN": 37,
+              "TN": 174
+            },
+            "headline": {
+              "FCA": 0.03867403314917127,
+              "HOR_FCA": 0.03867403314917127,
+              "HOR_count": {
+                "high_occlusion_au": 7,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.20441988950276244,
+              "Supported_Retention": 0.7955801104972375,
+              "U_Abs": 0.9613259668508287,
+              "AAC": 0.287292817679558,
+              "MCC": 0.7675220584231007
+            },
+            "semantic": {
+              "Strict_3": 0.6270718232044199
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.26154526081757135,
+              "E2E_mIoU_c": 0.8875475387444146,
+              "A_Ground": 0.26154526081757135,
+              "A_Ground_c": 0.8875475387444146,
+              "U_Reason": 0.9613259668508287,
+              "U_Reason_c": 1.0
+            },
+            "comparison": {
+              "UAC": 0.9613259668508287,
+              "AR": 0.5828729281767956
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "structured_cot": {
+          "n_samples": 362,
+          "predictions_sha256": "b1232fae9e87f7516cbb98010df9d7e6c7083de628d68f2f54881b4abe97076a",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 29,
+              "FP": 90,
+              "FN": 62,
+              "TN": 179,
+              "AU": 2,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 362,
+              "answerable": 181,
+              "unanswerable": 181,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 119,
+              "FP": 2,
+              "FN": 62,
+              "TN": 179
+            },
+            "headline": {
+              "FCA": 0.011049723756906077,
+              "HOR_FCA": 0.011049723756906077,
+              "HOR_count": {
+                "high_occlusion_au": 2,
+                "high_occlusion_unanswerable": 181
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.3425414364640884,
+              "Supported_Retention": 0.6574585635359116,
+              "U_Abs": 0.988950276243094,
+              "AAC": 0.16022099447513813,
+              "MCC": 0.6851484117172474
+            },
+            "semantic": {
+              "Strict_3": 0.5718232044198895
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.1441769285075323,
+              "E2E_mIoU_c": 0.8905742304235215,
+              "A_Ground": 0.1441769285075323,
+              "A_Ground_c": 0.8905742304235215,
+              "U_Reason": 0.9779005524861878,
+              "U_Reason_c": 0.9888268156424581
+            },
+            "comparison": {
+              "UAC": 0.988950276243094,
+              "AR": 0.6657458563535912
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        }
+      }
+    },
+    "plantwild_closed12": {
+      "methods": {
+        "regate": {
+          "n_samples": 408,
+          "predictions_sha256": "002d4e8358689de65b7a250d345f19b22c7fd30084a97805d483d26b37724690",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 108,
+              "FP": 15,
+              "FN": 21,
+              "TN": 193,
+              "AU": 71,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 123,
+              "FP": 71,
+              "FN": 21,
+              "TN": 193
+            },
+            "headline": {
+              "FCA": 0.2689393939393939,
+              "HOR_FCA": 0.04861111111111111,
+              "HOR_count": {
+                "high_occlusion_au": 7,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.14583333333333334,
+              "Supported_Retention": 0.8541666666666666,
+              "U_Abs": 0.7310606060606061,
+              "AAC": 0.75,
+              "MCC": 0.5600154577606145
+            },
+            "semantic": {
+              "Strict_3": 0.6936274509803921
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.6628787878787878,
+              "U_Reason_c": 0.9067357512953368
+            },
+            "comparison": {
+              "UAC": 0.7310606060606061,
+              "AR": 0.5245098039215687
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "native_lm": {
+          "n_samples": 408,
+          "predictions_sha256": "54d7b98724d21ad48ede5696036fa9b2a18e08d1dde1a460e7b449e8ce4fed45",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 110,
+              "FP": 0,
+              "FN": 34,
+              "TN": 223,
+              "AU": 41,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 110,
+              "FP": 41,
+              "FN": 34,
+              "TN": 223
+            },
+            "headline": {
+              "FCA": 0.1553030303030303,
+              "HOR_FCA": 0.006944444444444444,
+              "HOR_count": {
+                "high_occlusion_au": 1,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.2361111111111111,
+              "Supported_Retention": 0.7638888888888888,
+              "U_Abs": 0.8446969696969697,
+              "AAC": 0.7638888888888888,
+              "MCC": 0.602351548048438
+            },
+            "semantic": {
+              "Strict_3": 0.6470588235294118
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.5833333333333334,
+              "U_Reason_c": 0.6905829596412556
+            },
+            "comparison": {
+              "UAC": 0.8446969696969697,
+              "AR": 0.6299019607843137
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "direct": {
+          "n_samples": 408,
+          "predictions_sha256": "ebeddd1aa770f935de024f7c4a8878c8eca557e53e1aead9a4c9529beb2a75cd",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 106,
+              "FP": 2,
+              "FN": 36,
+              "TN": 221,
+              "AU": 43,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 108,
+              "FP": 43,
+              "FN": 36,
+              "TN": 221
+            },
+            "headline": {
+              "FCA": 0.16287878787878787,
+              "HOR_FCA": 0.013888888888888888,
+              "HOR_count": {
+                "high_occlusion_au": 2,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.25,
+              "Supported_Retention": 0.75,
+              "U_Abs": 0.8371212121212122,
+              "AAC": 0.7361111111111112,
+              "MCC": 0.5811067839056508
+            },
+            "semantic": {
+              "Strict_3": 0.7549019607843137
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.7651515151515151,
+              "U_Reason_c": 0.9140271493212669
+            },
+            "comparison": {
+              "UAC": 0.8371212121212122,
+              "AR": 0.6299019607843137
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward": {
+          "n_samples": 408,
+          "predictions_sha256": "b514f07675260f4507464a958924a0e7e820d7e4dbc3a9fdf9bf179d52e01b7c",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 104,
+              "FP": 10,
+              "FN": 30,
+              "TN": 194,
+              "AU": 70,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 114,
+              "FP": 70,
+              "FN": 30,
+              "TN": 194
+            },
+            "headline": {
+              "FCA": 0.26515151515151514,
+              "HOR_FCA": 0.020833333333333332,
+              "HOR_count": {
+                "high_occlusion_au": 3,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.20833333333333334,
+              "Supported_Retention": 0.7916666666666666,
+              "U_Abs": 0.7348484848484849,
+              "AAC": 0.7222222222222222,
+              "MCC": 0.505662982855556
+            },
+            "semantic": {
+              "Strict_3": 0.6446078431372549
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.6022727272727273,
+              "U_Reason_c": 0.8195876288659794
+            },
+            "comparison": {
+              "UAC": 0.7348484848484849,
+              "AR": 0.5490196078431373
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "reward_evidence": {
+          "n_samples": 408,
+          "predictions_sha256": "02fc08320dd4590f6cc6921447e550666529a577d12e5793116a72a183aa8b36",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 105,
+              "FP": 7,
+              "FN": 32,
+              "TN": 199,
+              "AU": 65,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 112,
+              "FP": 65,
+              "FN": 32,
+              "TN": 199
+            },
+            "headline": {
+              "FCA": 0.24621212121212122,
+              "HOR_FCA": 0.013888888888888888,
+              "HOR_count": {
+                "high_occlusion_au": 2,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.2222222222222222,
+              "Supported_Retention": 0.7777777777777778,
+              "U_Abs": 0.7537878787878788,
+              "AAC": 0.7291666666666666,
+              "MCC": 0.5125632923539691
+            },
+            "semantic": {
+              "Strict_3": 0.678921568627451
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.6515151515151515,
+              "U_Reason_c": 0.864321608040201
+            },
+            "comparison": {
+              "UAC": 0.7537878787878788,
+              "AR": 0.5661764705882353
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        },
+        "structured_cot": {
+          "n_samples": 408,
+          "predictions_sha256": "d07c298f2767acc34c589df2ff1dcb167f0812c3a38f26b79a25d480eaa370ff",
+          "metrics": {
+            "confusion_matrix": {
+              "TP": 83,
+              "FP": 1,
+              "FN": 60,
+              "TN": 242,
+              "AU": 22,
+              "INVALID": 0
+            },
+            "counts": {
+              "total": 408,
+              "answerable": 144,
+              "unanswerable": 264,
+              "invalid": 0,
+              "invalid_answerable": 0,
+              "invalid_unanswerable": 0
+            },
+            "selection_confusion_matrix": {
+              "TP": 84,
+              "FP": 22,
+              "FN": 60,
+              "TN": 242
+            },
+            "headline": {
+              "FCA": 0.08333333333333333,
+              "HOR_FCA": 0.006944444444444444,
+              "HOR_count": {
+                "high_occlusion_au": 1,
+                "high_occlusion_unanswerable": 144
+              }
+            },
+            "safeguard": {
+              "A_FU": 0.4166666666666667,
+              "Supported_Retention": 0.5833333333333333,
+              "U_Abs": 0.9166666666666666,
+              "AAC": 0.5763888888888888,
+              "MCC": 0.5448749092681445
+            },
+            "semantic": {
+              "Strict_3": 0.6421568627450981
+            },
+            "grounding_reason": {
+              "E2E_mIoU": 0.0,
+              "E2E_mIoU_c": 0.0,
+              "A_Ground": 0.0,
+              "A_Ground_c": 0.0,
+              "U_Reason": 0.678030303030303,
+              "U_Reason_c": 0.7396694214876033
+            },
+            "comparison": {
+              "UAC": 0.9166666666666666,
+              "AR": 0.7401960784313726
+            },
+            "invalid_rate": 0.0,
+            "iou_threshold": 0.5,
+            "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+          }
+        }
+      }
+    }
+  }
+}

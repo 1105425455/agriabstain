@@ -1,0 +1,35 @@
+=== AgriAbstain eval [plantwild_real_v1] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-555
+n=444
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.7275  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.1007
+HOR_FCA (高危子集↓)  = 0.0321  (n=156)
+MTS_micro           = 0.7275
+MTS_macro           = 0.7232
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.3846
+U_Abs (拒对↑)       = 0.8993
+AAC (答对↑)         = 0.5705
+MCC                 = 0.5463
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.0000
+A_Ground_c          = 0.0000
+U_Reason↑           = 0.8125
+U_Reason_c          = 0.9035
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 89, 'FP': 7, 'FN': 60, 'TN': 259, 'AU': 29, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9551  (149/156)
+  OOD_answer       0.5705  (89/156)
+  OOD_confusion    0.6439  (85/132)

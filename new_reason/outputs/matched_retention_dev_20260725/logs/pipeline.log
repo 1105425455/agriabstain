@@ -1,0 +1,612 @@
+=== matched-retention dev-selection pipeline ===
+BASE_MODEL=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+CHECKPOINT=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+CALIBRATED_HEAD=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+DEV_SPLIT=/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/dev.jsonl
+TEST_SPLIT=/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/test.jsonl
+OUTPUT_ROOT=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725
+NPROC=4
+{
+  "protocol": "development-only threshold selection for matched retention",
+  "inputs": {
+    "dev_split": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/dev.jsonl",
+    "dev_split_sha256": "dba7ed433cdf6e1e2584f04ff86868cf7bcff9329258f33d214c9150ab111042",
+    "test_split": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/splits/test.jsonl",
+    "test_split_sha256": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4",
+    "sft_dev": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/sft/sft_dev.json",
+    "sft_dev_sha256": "05675e4e8d615b216c594025c1fbc52e8dfaa407e748cddbe215caa042201ea6"
+  },
+  "output": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl",
+  "output_sha256": "f4d5e3ab4de2a9bf3d6e9671d024b584c473a8d41bd60c5969125af8d64d05c3",
+  "n_dev": 2408,
+  "n_test_audited": 2646,
+  "unique_dev_sample_ids": 2408,
+  "unique_dev_source_images": 140,
+  "unique_test_source_images": 145,
+  "dev_test_source_overlap": 0,
+  "sft_dev_semantic_multiset_equal": true,
+  "decision_counts": {
+    "abstain": 1204,
+    "answer": 1204
+  },
+  "reason_counts": {
+    "no_target": 999,
+    "wrong_object": 205
+  },
+  "relation_counts": {
+    "T1": 217,
+    "T2": 115,
+    "T2_occluded": 69,
+    "T3": 106,
+    "T3_occluded": 69,
+    "T4_control": 121,
+    "T5": 594,
+    "T6": 205,
+    "T7_include": 106,
+    "T7_ladder": 476,
+    "base": 187,
+    "base_occluded": 143
+  },
+  "benchmark_root": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark",
+  "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images"
+}
+=== Stage 1/3: SFT-native generation on canonical dev ===
+W0725 14:32:55.692000 135 site-packages/torch/distributed/run.py:793] 
+W0725 14:32:55.692000 135 site-packages/torch/distributed/run.py:793] *****************************************
+W0725 14:32:55.692000 135 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0725 14:32:55.692000 135 site-packages/torch/distributed/run.py:793] *****************************************
+[eval r0] device=cuda:0 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] device=cuda:3 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] device=cuda:2 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] device=cuda:1 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.12s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.13s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.13s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.13s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  3.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  3.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.99s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.99s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.97s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.97s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.97s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.89s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.90s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.90s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.89s/it]
+
+[eval r2] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r0] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r3] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r1] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[eval r0] model loaded on cuda:0, running 1 probe(s) 
+[eval r0] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft (tag=comprehensive_dev) ===
+[eval r3] model loaded on cuda:3, running 1 probe(s) 
+[eval r3] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft (tag=comprehensive_dev) ===
+[eval r1] model loaded on cuda:1, running 1 probe(s) 
+[eval r1] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft (tag=comprehensive_dev) ===
+[eval r0] [hf probe#0] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank0of4.jsonl
+[eval r2] model loaded on cuda:2, running 1 probe(s) 
+[eval r2] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft (tag=comprehensive_dev) ===
+[eval r3] [hf probe#0] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank3of4.jsonl
+[eval r1] [hf probe#0] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank1of4.jsonl
+[eval r2] [hf probe#0] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank2of4.jsonl
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py:610: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /opt/conda/conda-bld/pytorch_1729647429097/work/aten/src/ATen/native/cuda/jit_utils.cpp:1442.)
+  total_tokens = int(torch.prod(grid_thw, dim=1).sum().item())
+[eval r3] probe#0 50/602 (0.48 it/s)
+[eval r2] probe#0 50/602 (0.48 it/s)
+[eval r1] probe#0 50/602 (0.48 it/s)
+[eval r0] probe#0 50/602 (0.47 it/s)
+[eval r1] probe#0 100/602 (0.52 it/s)
+[eval r3] probe#0 100/602 (0.50 it/s)
+[eval r0] probe#0 100/602 (0.49 it/s)
+[eval r2] probe#0 100/602 (0.49 it/s)
+[eval r1] probe#0 150/602 (0.51 it/s)
+[eval r3] probe#0 150/602 (0.51 it/s)
+[eval r0] probe#0 150/602 (0.50 it/s)
+[eval r2] probe#0 150/602 (0.50 it/s)
+[eval r1] probe#0 200/602 (0.52 it/s)
+[eval r3] probe#0 200/602 (0.51 it/s)
+[eval r2] probe#0 200/602 (0.50 it/s)
+[eval r0] probe#0 200/602 (0.49 it/s)
+[eval r1] probe#0 250/602 (0.52 it/s)
+[eval r3] probe#0 250/602 (0.51 it/s)
+[eval r2] probe#0 250/602 (0.50 it/s)
+[eval r0] probe#0 250/602 (0.49 it/s)
+[eval r1] probe#0 300/602 (0.51 it/s)
+[eval r3] probe#0 300/602 (0.51 it/s)
+[eval r2] probe#0 300/602 (0.50 it/s)
+[eval r0] probe#0 300/602 (0.49 it/s)
+[eval r1] probe#0 350/602 (0.53 it/s)
+[eval r3] probe#0 350/602 (0.52 it/s)
+[eval r0] probe#0 350/602 (0.51 it/s)
+[eval r2] probe#0 350/602 (0.50 it/s)
+[eval r1] probe#0 400/602 (0.56 it/s)
+[eval r3] probe#0 400/602 (0.56 it/s)
+[eval r0] probe#0 400/602 (0.54 it/s)
+[eval r2] probe#0 400/602 (0.54 it/s)
+[eval r1] probe#0 450/602 (0.59 it/s)
+[eval r3] probe#0 450/602 (0.59 it/s)
+[eval r0] probe#0 450/602 (0.57 it/s)
+[eval r2] probe#0 450/602 (0.57 it/s)
+[eval r1] probe#0 500/602 (0.62 it/s)
+[eval r3] probe#0 500/602 (0.61 it/s)
+[eval r0] probe#0 500/602 (0.60 it/s)
+[eval r2] probe#0 500/602 (0.59 it/s)
+[eval r1] probe#0 550/602 (0.64 it/s)
+[eval r3] probe#0 550/602 (0.63 it/s)
+[eval r0] probe#0 550/602 (0.62 it/s)
+[eval r2] probe#0 550/602 (0.62 it/s)
+[eval r1] probe#0 600/602 (0.66 it/s)
+[eval r1] probe#0 shard done in 912.8s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank1of4.jsonl
+[eval r3] probe#0 600/602 (0.65 it/s)
+[eval r3] probe#0 shard done in 920.5s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank3of4.jsonl
+[eval r0] probe#0 600/602 (0.64 it/s)
+[eval r0] probe#0 shard done in 935.3s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank0of4.jsonl
+[eval r2] probe#0 600/602 (0.64 it/s)
+[eval r2] probe#0 shard done in 944.8s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/shards/preds.rank2of4.jsonl
+[eval r0] === merge probe 1/1: comprehensive_dev ===
+=== AgriAbstain eval [comprehensive_dev] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/inputs/dev_resolved.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+n=2408
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8281  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0988
+HOR_FCA (高危子集↓)  = 0.0100  (n=999)
+MTS_micro           = 0.7992
+MTS_macro           = 0.8168
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.1395
+U_Abs (拒对↑)       = 0.9012
+AAC (答对↑)         = 0.8065
+MCC                 = 0.7623
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7306
+E2E_mIoU_c           = 0.8491
+A_Ground (depr.)     = 0.7306
+A_Ground_c (depr.)   = 0.8491
+U_Reason↑            = 0.7957
+U_Reason_c           = 0.8829
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 971, 'FP': 65, 'FN': 168, 'TN': 1085, 'AU': 119, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.8433  (183/217)
+  T2               0.8261  (95/115)
+  T2_occluded      0.9420  (65/69)
+  T3               0.8302  (88/106)
+  T3_occluded      0.9420  (65/69)
+  T4_control       0.6942  (84/121)
+  T5               0.8064  (479/594)
+  T6               0.4634  (95/205)
+  T7_include       0.8585  (91/106)
+  T7_ladder        0.8277  (394/476)
+  base_occluded    0.9510  (136/143)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/native_sft/metrics.json , predictions.jsonl , summary.txt
+=== Stage 2/3: calibrated ReGate head probabilities on canonical dev ===
+W0725 14:52:56.324000 378 site-packages/torch/distributed/run.py:793] 
+W0725 14:52:56.324000 378 site-packages/torch/distributed/run.py:793] *****************************************
+W0725 14:52:56.324000 378 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0725 14:52:56.324000 378 site-packages/torch/distributed/run.py:793] *****************************************
+[extract_prob r0] derived_root: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images
+[extract_prob r1] derived_root: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images
+[extract_prob r2] derived_root: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images
+[extract_prob r3] derived_root: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images
+[extract_prob r0] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank0of4.jsonl
+[extract_prob r1] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank1of4.jsonl
+[extract_prob r3] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank3of4.jsonl
+[extract_prob r2] total=2408 mine=602 done=0 todo=602 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank2of4.jsonl
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.90s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.30s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.29s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.20s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.28s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.65s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  2.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.87s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[extract_prob r1] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[extract_prob r3] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[extract_prob r0] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[extract_prob r2] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444
+[extract_prob r0] loading discrim_head from adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[extract_prob r0] [WARN] discrim_head missing keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[extract_prob r0] [WARN] discrim_head unexpected keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[extract_prob r0] discrim_head loaded, classifier[0].weight norm=28.8750
+[extract_prob r0] loading calibrated head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+[extract_prob r1] loading discrim_head from adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[extract_prob r1] [WARN] discrim_head missing keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[extract_prob r1] [WARN] discrim_head unexpected keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[extract_prob r1] discrim_head loaded, classifier[0].weight norm=28.8750
+[extract_prob r1] loading calibrated head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+[extract_prob r3] loading discrim_head from adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[extract_prob r3] [WARN] discrim_head missing keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[extract_prob r3] [WARN] discrim_head unexpected keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[extract_prob r3] discrim_head loaded, classifier[0].weight norm=28.8750
+[extract_prob r3] loading calibrated head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+[extract_prob r0] calibrated head loaded, classifier[0].weight norm=11.6250, sd_range=[0.539,9.688]
+[extract_prob r1] calibrated head loaded, classifier[0].weight norm=11.6250, sd_range=[0.539,9.688]
+[extract_prob r2] loading discrim_head from adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/adapter_model.safetensors
+[extract_prob r3] calibrated head loaded, classifier[0].weight norm=11.6250, sd_range=[0.539,9.688]
+[extract_prob r2] [WARN] discrim_head missing keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[extract_prob r2] [WARN] discrim_head unexpected keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[extract_prob r2] discrim_head loaded, classifier[0].weight norm=28.8750
+[extract_prob r2] loading calibrated head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/discrim_head_calibrated.pt
+[extract_prob r2] calibrated head loaded, classifier[0].weight norm=11.6250, sd_range=[0.539,9.688]
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[extract_prob r3]   10/602 (2.13 it/s)
+[extract_prob r0]   10/602 (2.12 it/s)
+[extract_prob r1]   10/602 (2.10 it/s)
+[extract_prob r2]   10/602 (2.13 it/s)
+[extract_prob r0]   20/602 (3.22 it/s)
+[extract_prob r3]   20/602 (3.22 it/s)
+[extract_prob r1]   20/602 (3.21 it/s)
+[extract_prob r2]   20/602 (3.19 it/s)
+[extract_prob r3]   30/602 (3.90 it/s)
+[extract_prob r0]   30/602 (3.88 it/s)
+[extract_prob r1]   30/602 (3.88 it/s)
+[extract_prob r2]   30/602 (3.81 it/s)
+[extract_prob r0]   40/602 (4.32 it/s)
+[extract_prob r1]   40/602 (4.32 it/s)
+[extract_prob r3]   40/602 (4.29 it/s)
+[extract_prob r2]   40/602 (4.24 it/s)
+[extract_prob r0]   50/602 (4.62 it/s)
+[extract_prob r1]   50/602 (4.59 it/s)
+[extract_prob r3]   50/602 (4.57 it/s)
+[extract_prob r2]   50/602 (4.56 it/s)
+[extract_prob r0]   60/602 (4.84 it/s)
+[extract_prob r3]   60/602 (4.81 it/s)
+[extract_prob r1]   60/602 (4.81 it/s)
+[extract_prob r2]   60/602 (4.78 it/s)
+[extract_prob r0]   70/602 (5.02 it/s)
+[extract_prob r3]   70/602 (5.01 it/s)
+[extract_prob r1]   70/602 (4.99 it/s)
+[extract_prob r2]   70/602 (4.96 it/s)
+[extract_prob r0]   80/602 (5.19 it/s)
+[extract_prob r3]   80/602 (5.16 it/s)
+[extract_prob r1]   80/602 (5.14 it/s)
+[extract_prob r2]   80/602 (5.11 it/s)
+[extract_prob r0]   90/602 (5.32 it/s)
+[extract_prob r1]   90/602 (5.30 it/s)
+[extract_prob r3]   90/602 (5.28 it/s)
+[extract_prob r2]   90/602 (5.24 it/s)
+[extract_prob r0]   100/602 (5.40 it/s)
+[extract_prob r1]   100/602 (5.39 it/s)
+[extract_prob r3]   100/602 (5.38 it/s)
+[extract_prob r2]   100/602 (5.34 it/s)
+[extract_prob r0]   110/602 (5.49 it/s)
+[extract_prob r1]   110/602 (5.48 it/s)
+[extract_prob r3]   110/602 (5.47 it/s)
+[extract_prob r2]   110/602 (5.41 it/s)
+[extract_prob r0]   120/602 (5.57 it/s)
+[extract_prob r3]   120/602 (5.54 it/s)
+[extract_prob r1]   120/602 (5.53 it/s)
+[extract_prob r2]   120/602 (5.48 it/s)
+[extract_prob r0]   130/602 (5.63 it/s)
+[extract_prob r3]   130/602 (5.61 it/s)
+[extract_prob r1]   130/602 (5.59 it/s)
+[extract_prob r2]   130/602 (5.54 it/s)
+[extract_prob r0]   140/602 (5.68 it/s)
+[extract_prob r3]   140/602 (5.67 it/s)
+[extract_prob r1]   140/602 (5.66 it/s)
+[extract_prob r2]   140/602 (5.59 it/s)
+[extract_prob r0]   150/602 (5.73 it/s)
+[extract_prob r3]   150/602 (5.71 it/s)
+[extract_prob r1]   150/602 (5.70 it/s)
+[extract_prob r2]   150/602 (5.64 it/s)
+[extract_prob r0]   160/602 (5.75 it/s)
+[extract_prob r3]   160/602 (5.72 it/s)
+[extract_prob r1]   160/602 (5.69 it/s)
+[extract_prob r2]   160/602 (5.64 it/s)
+[extract_prob r0]   170/602 (5.74 it/s)
+[extract_prob r3]   170/602 (5.70 it/s)
+[extract_prob r1]   170/602 (5.70 it/s)
+[extract_prob r2]   170/602 (5.63 it/s)
+[extract_prob r0]   180/602 (5.74 it/s)
+[extract_prob r3]   180/602 (5.71 it/s)
+[extract_prob r1]   180/602 (5.70 it/s)
+[extract_prob r2]   180/602 (5.63 it/s)
+[extract_prob r0]   190/602 (5.73 it/s)
+[extract_prob r3]   190/602 (5.70 it/s)
+[extract_prob r1]   190/602 (5.67 it/s)
+[extract_prob r2]   190/602 (5.62 it/s)
+[extract_prob r0]   200/602 (5.74 it/s)
+[extract_prob r3]   200/602 (5.69 it/s)
+[extract_prob r1]   200/602 (5.67 it/s)
+[extract_prob r2]   200/602 (5.60 it/s)
+[extract_prob r0]   210/602 (5.74 it/s)
+[extract_prob r3]   210/602 (5.69 it/s)
+[extract_prob r1]   210/602 (5.68 it/s)
+[extract_prob r2]   210/602 (5.59 it/s)
+[extract_prob r0]   220/602 (5.73 it/s)
+[extract_prob r3]   220/602 (5.69 it/s)
+[extract_prob r1]   220/602 (5.69 it/s)
+[extract_prob r2]   220/602 (5.59 it/s)
+[extract_prob r0]   230/602 (5.74 it/s)
+[extract_prob r3]   230/602 (5.70 it/s)
+[extract_prob r1]   230/602 (5.68 it/s)
+[extract_prob r2]   230/602 (5.59 it/s)
+[extract_prob r0]   240/602 (5.74 it/s)
+[extract_prob r3]   240/602 (5.70 it/s)
+[extract_prob r1]   240/602 (5.68 it/s)
+[extract_prob r2]   240/602 (5.59 it/s)
+[extract_prob r0]   250/602 (5.74 it/s)
+[extract_prob r3]   250/602 (5.70 it/s)
+[extract_prob r1]   250/602 (5.68 it/s)
+[extract_prob r2]   250/602 (5.58 it/s)
+[extract_prob r0]   260/602 (5.73 it/s)
+[extract_prob r3]   260/602 (5.71 it/s)
+[extract_prob r1]   260/602 (5.69 it/s)
+[extract_prob r2]   260/602 (5.59 it/s)
+[extract_prob r0]   270/602 (5.73 it/s)
+[extract_prob r3]   270/602 (5.72 it/s)
+[extract_prob r1]   270/602 (5.68 it/s)
+[extract_prob r2]   270/602 (5.57 it/s)
+[extract_prob r3]   280/602 (5.72 it/s)
+[extract_prob r0]   280/602 (5.72 it/s)
+[extract_prob r1]   280/602 (5.68 it/s)
+[extract_prob r2]   280/602 (5.56 it/s)
+[extract_prob r3]   290/602 (5.73 it/s)
+[extract_prob r0]   290/602 (5.72 it/s)
+[extract_prob r1]   290/602 (5.69 it/s)
+[extract_prob r2]   290/602 (5.56 it/s)
+[extract_prob r3]   300/602 (5.73 it/s)
+[extract_prob r0]   300/602 (5.72 it/s)
+[extract_prob r1]   300/602 (5.70 it/s)
+[extract_prob r3]   310/602 (5.74 it/s)
+[extract_prob r2]   300/602 (5.56 it/s)
+[extract_prob r0]   310/602 (5.74 it/s)
+[extract_prob r1]   310/602 (5.72 it/s)
+[extract_prob r3]   320/602 (5.76 it/s)
+[extract_prob r2]   310/602 (5.58 it/s)
+[extract_prob r0]   320/602 (5.74 it/s)
+[extract_prob r1]   320/602 (5.74 it/s)
+[extract_prob r3]   330/602 (5.77 it/s)
+[extract_prob r0]   330/602 (5.76 it/s)
+[extract_prob r1]   330/602 (5.76 it/s)
+[extract_prob r2]   320/602 (5.59 it/s)
+[extract_prob r3]   340/602 (5.79 it/s)
+[extract_prob r0]   340/602 (5.78 it/s)
+[extract_prob r1]   340/602 (5.78 it/s)
+[extract_prob r2]   330/602 (5.60 it/s)
+[extract_prob r3]   350/602 (5.81 it/s)
+[extract_prob r0]   350/602 (5.80 it/s)
+[extract_prob r1]   350/602 (5.79 it/s)
+[extract_prob r2]   340/602 (5.62 it/s)
+[extract_prob r3]   360/602 (5.83 it/s)
+[extract_prob r0]   360/602 (5.82 it/s)
+[extract_prob r1]   360/602 (5.81 it/s)
+[extract_prob r2]   350/602 (5.63 it/s)
+[extract_prob r3]   370/602 (5.85 it/s)
+[extract_prob r0]   370/602 (5.84 it/s)
+[extract_prob r1]   370/602 (5.82 it/s)
+[extract_prob r2]   360/602 (5.65 it/s)
+[extract_prob r0]   380/602 (5.86 it/s)
+[extract_prob r3]   380/602 (5.86 it/s)
+[extract_prob r1]   380/602 (5.83 it/s)
+[extract_prob r2]   370/602 (5.67 it/s)
+[extract_prob r3]   390/602 (5.88 it/s)
+[extract_prob r0]   390/602 (5.88 it/s)
+[extract_prob r1]   390/602 (5.85 it/s)
+[extract_prob r2]   380/602 (5.69 it/s)
+[extract_prob r3]   400/602 (5.90 it/s)
+[extract_prob r0]   400/602 (5.90 it/s)
+[extract_prob r1]   400/602 (5.87 it/s)
+[extract_prob r2]   390/602 (5.72 it/s)
+[extract_prob r3]   410/602 (5.93 it/s)
+[extract_prob r0]   410/602 (5.92 it/s)
+[extract_prob r1]   410/602 (5.89 it/s)
+[extract_prob r2]   400/602 (5.75 it/s)
+[extract_prob r3]   420/602 (5.95 it/s)
+[extract_prob r0]   420/602 (5.94 it/s)
+[extract_prob r1]   420/602 (5.91 it/s)
+[extract_prob r2]   410/602 (5.77 it/s)
+[extract_prob r3]   430/602 (5.97 it/s)
+[extract_prob r0]   430/602 (5.96 it/s)
+[extract_prob r1]   430/602 (5.93 it/s)
+[extract_prob r2]   420/602 (5.79 it/s)
+[extract_prob r3]   440/602 (5.99 it/s)
+[extract_prob r0]   440/602 (5.98 it/s)
+[extract_prob r1]   440/602 (5.95 it/s)
+[extract_prob r2]   430/602 (5.81 it/s)
+[extract_prob r3]   450/602 (6.01 it/s)
+[extract_prob r0]   450/602 (6.00 it/s)
+[extract_prob r1]   450/602 (5.97 it/s)
+[extract_prob r2]   440/602 (5.83 it/s)
+[extract_prob r3]   460/602 (6.03 it/s)
+[extract_prob r0]   460/602 (6.01 it/s)
+[extract_prob r1]   460/602 (5.99 it/s)
+[extract_prob r2]   450/602 (5.85 it/s)
+[extract_prob r3]   470/602 (6.05 it/s)
+[extract_prob r0]   470/602 (6.03 it/s)
+[extract_prob r1]   470/602 (6.01 it/s)
+[extract_prob r2]   460/602 (5.87 it/s)
+[extract_prob r3]   480/602 (6.06 it/s)
+[extract_prob r0]   480/602 (6.05 it/s)
+[extract_prob r1]   480/602 (6.02 it/s)
+[extract_prob r2]   470/602 (5.89 it/s)
+[extract_prob r3]   490/602 (6.08 it/s)
+[extract_prob r0]   490/602 (6.06 it/s)
+[extract_prob r1]   490/602 (6.03 it/s)
+[extract_prob r2]   480/602 (5.88 it/s)
+[extract_prob r3]   500/602 (6.08 it/s)
+[extract_prob r0]   500/602 (6.06 it/s)
+[extract_prob r1]   500/602 (6.04 it/s)
+[extract_prob r2]   490/602 (5.90 it/s)
+[extract_prob r3]   510/602 (6.09 it/s)
+[extract_prob r0]   510/602 (6.07 it/s)
+[extract_prob r1]   510/602 (6.05 it/s)
+[extract_prob r2]   500/602 (5.91 it/s)
+[extract_prob r3]   520/602 (6.11 it/s)
+[extract_prob r0]   520/602 (6.09 it/s)
+[extract_prob r1]   520/602 (6.07 it/s)
+[extract_prob r2]   510/602 (5.93 it/s)
+[extract_prob r3]   530/602 (6.12 it/s)
+[extract_prob r0]   530/602 (6.10 it/s)
+[extract_prob r1]   530/602 (6.08 it/s)
+[extract_prob r2]   520/602 (5.94 it/s)
+[extract_prob r3]   540/602 (6.12 it/s)
+[extract_prob r0]   540/602 (6.11 it/s)
+[extract_prob r1]   540/602 (6.08 it/s)
+[extract_prob r2]   530/602 (5.95 it/s)
+[extract_prob r3]   550/602 (6.13 it/s)
+[extract_prob r0]   550/602 (6.12 it/s)
+[extract_prob r1]   550/602 (6.08 it/s)
+[extract_prob r2]   540/602 (5.96 it/s)
+[extract_prob r3]   560/602 (6.14 it/s)
+[extract_prob r0]   560/602 (6.13 it/s)
+[extract_prob r1]   560/602 (6.09 it/s)
+[extract_prob r2]   550/602 (5.96 it/s)
+[extract_prob r3]   570/602 (6.14 it/s)
+[extract_prob r0]   570/602 (6.13 it/s)
+[extract_prob r1]   570/602 (6.09 it/s)
+[extract_prob r2]   560/602 (5.96 it/s)
+[extract_prob r3]   580/602 (6.15 it/s)
+[extract_prob r0]   580/602 (6.13 it/s)
+[extract_prob r1]   580/602 (6.10 it/s)
+[extract_prob r2]   570/602 (5.96 it/s)
+[extract_prob r3]   590/602 (6.15 it/s)
+[extract_prob r0]   590/602 (6.13 it/s)
+[extract_prob r1]   590/602 (6.11 it/s)
+[extract_prob r2]   580/602 (5.97 it/s)
+[extract_prob r3]   600/602 (6.16 it/s)
+[extract_prob r3] done 602 variants in 97.7s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank3of4.jsonl (errors=0)
+[extract_prob r0]   600/602 (6.14 it/s)
+[extract_prob r1]   600/602 (6.12 it/s)
+[extract_prob r0] done 602 variants in 98.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank0of4.jsonl (errors=0)
+[extract_prob r1] done 602 variants in 98.3s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank1of4.jsonl (errors=0)
+[extract_prob r2]   590/602 (5.98 it/s)
+[extract_prob r2]   600/602 (5.98 it/s)
+[extract_prob r2] done 602 variants in 100.6s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/shards/probs.rank2of4.jsonl (errors=0)
+[extract_prob r0] merged 2408 records (2408 rows) -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/dev/regate_head/head_probabilities.jsonl
+[extract_prob r0] all done
+=== Stage 3/3: dev selection and frozen test application ===
+{
+  "protocol": {
+    "selection_split": "development",
+    "evaluation_split": "test",
+    "selection_rule": "Choose the highest empirical p_answer threshold whose dev supported-query retention is at least the SFT-native dev retention; freeze it before test.",
+    "test_rematching": false,
+    "interpolation_used_for_claim": false
+  },
+  "integrity": {
+    "dev_native_sha256": "3df5f300bc34d1414516772aa4f097120fddad51f6502f9087aa74fbc5f88e34",
+    "dev_probabilities_sha256": "dcfc9369405f88b8356380f16cb4c286d673645bc4b6657a266e5e97179fa1fd",
+    "test_native_sha256": "65983d84f36d8177fdd28bbea7ebf26bad8978c17c2746193957b580dcc0b795",
+    "test_regate_sha256": "3f656b6085510af19c8748f062638abd53540c79516e6607b8950bb5ac132db9",
+    "dev_id_sets_equal": true,
+    "test_id_sets_equal": true,
+    "n_dev": 2408,
+    "n_test": 2646
+  },
+  "development_selection": {
+    "sft_native": {
+      "dataset": "comprehensive_dev",
+      "method": "SFT_native_observed",
+      "policy": "native_decision",
+      "threshold": null,
+      "total": 2408,
+      "supported": 1204,
+      "unsupported": 1204,
+      "answered": 1155,
+      "answered_supported": 1036,
+      "answered_unsupported": 119,
+      "strict_3_correct": 1994,
+      "selective_risk_errors": 184,
+      "grounding_correct": 971,
+      "grounding_denom": 1036,
+      "format_valid": 2408,
+      "total_coverage": 0.4796511627906977,
+      "supported_query_retention": 0.8604651162790697,
+      "unsupported_hallucination_rate": 0.09883720930232558,
+      "strict_3_accuracy": 0.8280730897009967,
+      "selective_risk": 0.15930735930735931,
+      "grounding_accuracy": 0.9372586872586872,
+      "format_valid_rate": 1.0,
+      "grounding_scope": "bbox"
+    },
+    "target_supported_query_retention": 0.8604651162790697,
+    "selected_threshold": 0.9888232350349426,
+    "selected_empirical_point": {
+      "threshold": 0.9888232350349426,
+      "answered_supported": 1036,
+      "supported": 1204,
+      "supported_query_retention": 0.8604651162790697,
+      "answered_unsupported": 43,
+      "unsupported": 1204,
+      "unsupported_hallucination_rate": 0.03571428571428571,
+      "total_coverage": 0.4480897009966777
+    },
+    "retention_overshoot": 0.0
+  },
+  "frozen_test_evaluation": {
+    "sft_native": {
+      "dataset": "comprehensive",
+      "method": "SFT_native_observed",
+      "policy": "native_decision",
+      "threshold": null,
+      "total": 2646,
+      "supported": 1323,
+      "unsupported": 1323,
+      "answered": 1251,
+      "answered_supported": 1126,
+      "answered_unsupported": 125,
+      "strict_3_correct": 2168,
+      "selective_risk_errors": 195,
+      "grounding_correct": 1056,
+      "grounding_denom": 1126,
+      "format_valid": 2646,
+      "total_coverage": 0.47278911564625853,
+      "supported_query_retention": 0.8510959939531368,
+      "unsupported_hallucination_rate": 0.0944822373393802,
+      "strict_3_accuracy": 0.8193499622071051,
+      "selective_risk": 0.15587529976019185,
+      "grounding_accuracy": 0.9378330373001776,
+      "format_valid_rate": 1.0,
+      "grounding_scope": "bbox"
+    },
+    "regate": {
+      "dataset": "comprehensive",
+      "method": "ReGate",
+      "policy": "dev_selected_p_supported_threshold",
+      "threshold": 0.9888232350349426,
+      "total": 2646,
+      "supported": 1323,
+      "unsupported": 1323,
+      "answered": 1237,
+      "answered_supported": 1177,
+      "answered_unsupported": 60,
+      "strict_3_correct": 2314,
+      "selective_risk_errors": 239,
+      "grounding_correct": 998,
+      "grounding_denom": 1177,
+      "format_valid": 1251,
+      "total_coverage": 0.46749811035525324,
+      "supported_query_retention": 0.889644746787604,
+      "unsupported_hallucination_rate": 0.045351473922902494,
+      "strict_3_accuracy": 0.8745275888133031,
+      "selective_risk": 0.19320937752627323,
+      "grounding_accuracy": 0.8479184367034834,
+      "format_valid_rate": 0.47278911564625853,
+      "grounding_scope": "bbox"
+    },
+    "supported_retention_difference_regate_minus_sft": 0.038548752834467126,
+    "absolute_fca_reduction": 0.04913076341647771,
+    "relative_fca_reduction": 0.52
+  },
+  "claim_text": "Using a threshold selected exclusively on the development set (tau=0.988823235) and frozen before test evaluation, ReGate achieves test supported retention 0.8896 versus 0.8511 for SFT native, while reducing test FCA from 0.0945 to 0.0454 (52.0% relative reduction)."
+}
+=== pipeline complete ===
+RESULT=/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/matched_retention_dev_20260725/analysis/result.json

@@ -1,0 +1,56 @@
+{
+  "input": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/evidence/L3/test/head_probabilities.jsonl",
+  "checkpoint": 444,
+  "n_records": 750,
+  "n_source_instance_groups": 183,
+  "bootstrap": {
+    "unit": "source_instance_group",
+    "n_resamples": 10000,
+    "seed": 42
+  },
+  "levels": [
+    {
+      "visibility": 0.0,
+      "n": 148,
+      "mean_p_answer": 0.18719976683316433,
+      "median_p_answer": 0.0015070504741743207,
+      "mean_ci_95_low": 0.1333292144552386,
+      "mean_ci_95_high": 0.24522297210259952
+    },
+    {
+      "visibility": 0.25,
+      "n": 195,
+      "mean_p_answer": 0.5135693988576606,
+      "median_p_answer": 0.511715829372406,
+      "mean_ci_95_low": 0.4386369454763667,
+      "mean_ci_95_high": 0.5697460763875912
+    },
+    {
+      "visibility": 0.5,
+      "n": 128,
+      "mean_p_answer": 0.9201936297322391,
+      "median_p_answer": 0.9999881386756897,
+      "mean_ci_95_low": 0.8771277556961989,
+      "mean_ci_95_high": 0.9573083729003212
+    },
+    {
+      "visibility": 0.75,
+      "n": 96,
+      "mean_p_answer": 0.9782355438971232,
+      "median_p_answer": 0.9999954104423523,
+      "mean_ci_95_low": 0.9498060323921558,
+      "mean_ci_95_high": 0.997073199425606
+    },
+    {
+      "visibility": 1.0,
+      "n": 183,
+      "mean_p_answer": 0.982836722251272,
+      "median_p_answer": 0.9999949932098389,
+      "mean_ci_95_low": 0.9666847694796876,
+      "mean_ci_95_high": 0.994535928793618
+    }
+  ],
+  "mean_spearman_rho": 0.7502525178259414,
+  "mean_kendall_tau": 0.6817204438882764,
+  "mean_adjacent_violation_rate": 0.21448087431693996
+}

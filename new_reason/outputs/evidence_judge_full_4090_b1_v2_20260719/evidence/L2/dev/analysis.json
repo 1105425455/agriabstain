@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "input": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/evidence/L2/dev/head_probabilities.jsonl",
+    "n_records": 570,
+    "relations": [
+      "L2_cropout",
+      "L2_keep"
+    ],
+    "n_samples_original": 570,
+    "n_bootstrap": 9999,
+    "bootstrap_seed": 42
+  },
+  "L2": {
+    "n_pairs": 124,
+    "n_total_groups": 287,
+    "parse_failures": 0,
+    "incomplete_pairs": 163,
+    "deduplicated_records": 159,
+    "groups_with_duplicates": 69,
+    "conflicting_duplicate_groups": 0,
+    "invalid_groups": 0,
+    "delta_p_answer_mean": 0.824696864363114,
+    "delta_p_answer_median": 0.9948698715306818,
+    "correct_direction_ratio": 0.9919354838709677,
+    "bootstrap_95ci": {
+      "low": 0.7618957305636045,
+      "high": 0.8766744031643909,
+      "method": "BCa"
+    },
+    "pairing_key": "source_instance+target_label"
+  },
+  "input_equivariance_consistency": {
+    "error": "no valid variant samples"
+  }
+}

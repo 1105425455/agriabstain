@@ -1,0 +1,90 @@
+{
+  "tag": "refcocog",
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222",
+  "n_samples": 362,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.8812,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": true
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 143,
+      "FP": 31,
+      "FN": 7,
+      "TN": 174,
+      "AU": 7,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 362,
+      "answerable": 181,
+      "unanswerable": 181,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 174,
+      "FP": 7,
+      "FN": 7,
+      "TN": 174
+    },
+    "headline": {
+      "FCA": 0.03867403314917127,
+      "HOR_FCA": 0.03867403314917127,
+      "HOR_count": {
+        "high_occlusion_au": 7,
+        "high_occlusion_unanswerable": 181
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.03867403314917127,
+      "Supported_Retention": 0.9613259668508287,
+      "U_Abs": 0.9613259668508287,
+      "AAC": 0.7900552486187845,
+      "MCC": 0.9226519337016574
+    },
+    "semantic": {
+      "Strict_3": 0.8812154696132597
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.725643954836321,
+      "E2E_mIoU_c": 0.9007169165027413,
+      "A_Ground": 0.725643954836321,
+      "A_Ground_c": 0.9007169165027413,
+      "U_Reason": 0.9613259668508287,
+      "U_Reason_c": 1.0
+    },
+    "comparison": {
+      "UAC": 0.9613259668508287,
+      "AR": 0.5
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.8756906077348067,
+    "MTS_macro": 0.8756906077348066,
+    "per_relation": {
+      "OOD_absent": 0.9613259668508287,
+      "OOD_answer": 0.7900552486187845
+    },
+    "per_relation_counts": {
+      "OOD_absent": {
+        "pass": 174,
+        "total": 181
+      },
+      "OOD_answer": {
+        "pass": 143,
+        "total": 181
+      }
+    }
+  },
+  "within_image": null
+}

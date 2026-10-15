@@ -1,0 +1,20 @@
+{
+  "records": 750,
+  "unique_sample_ids": 750,
+  "unique_response_ids": 750,
+  "api_models": {
+    "gpt-5.6-sol": 750
+  },
+  "attempts": {
+    "1": 750
+  },
+  "image_hashes_match": true,
+  "system_prompt_hashes_match": true,
+  "user_prompt_hashes_match": true,
+  "usage_totals": {
+    "prompt_tokens": 1725452,
+    "completion_tokens": 140464,
+    "total_tokens": 1865916
+  },
+  "api_key_stored": false
+}

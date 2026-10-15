@@ -1,0 +1,120 @@
+{
+  "tag": "test_full",
+  "data": "new_reason/outputs/sft_3reason/sft_test.jsonl",
+  "adapter": null,
+  "n_samples": 2646,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.8802,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": true
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 1029,
+      "FP": 190,
+      "FN": 104,
+      "TN": 1238,
+      "AU": 85,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 2646,
+      "answerable": 1323,
+      "unanswerable": 1323,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.06424792139077853,
+      "HOR_FCA": 0.038461538461538464,
+      "HOR_count": {
+        "high_occlusion_au": 43,
+        "high_occlusion_unanswerable": 1118
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.07860922146636433,
+      "U_Abs": 0.9357520786092215,
+      "AAC": 0.7777777777777778,
+      "MCC": 0.8572312623637266
+    },
+    "grounding_reason": {
+      "A_Ground": 0.6852494380053822,
+      "A_Ground_c": 0.7437120643815592,
+      "U_Reason": 0.9334845049130763,
+      "U_Reason_c": 0.9975767366720517
+    },
+    "comparison": {
+      "UAC": 0.9357520786092215,
+      "AR": 0.5071806500377929
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.8590163934426229,
+    "MTS_macro": 0.8441723535434869,
+    "per_relation": {
+      "T1": 0.8008474576271186,
+      "T2": 0.7563025210084033,
+      "T2_occluded": 0.95,
+      "T3": 0.7615384615384615,
+      "T3_occluded": 0.9375,
+      "T4_control": 0.83125,
+      "T5": 0.971875,
+      "T6": 0.7951219512195122,
+      "T7_include": 0.7410714285714286,
+      "T7_ladder": 0.7992125984251969,
+      "base_occluded": 0.9411764705882353
+    },
+    "per_relation_counts": {
+      "T1": {
+        "pass": 189,
+        "total": 236
+      },
+      "T2": {
+        "pass": 90,
+        "total": 119
+      },
+      "T2_occluded": {
+        "pass": 76,
+        "total": 80
+      },
+      "T3": {
+        "pass": 99,
+        "total": 130
+      },
+      "T3_occluded": {
+        "pass": 75,
+        "total": 80
+      },
+      "T4_control": {
+        "pass": 133,
+        "total": 160
+      },
+      "T5": {
+        "pass": 622,
+        "total": 640
+      },
+      "T6": {
+        "pass": 163,
+        "total": 205
+      },
+      "T7_include": {
+        "pass": 83,
+        "total": 112
+      },
+      "T7_ladder": {
+        "pass": 406,
+        "total": 508
+      },
+      "base_occluded": {
+        "pass": 160,
+        "total": 170
+      }
+    }
+  },
+  "within_image": null
+}

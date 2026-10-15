@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "input": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/evidence/L2/test_variants/head_probabilities.jsonl",
+    "n_records": 5530,
+    "relations": [
+      "L2_cropout",
+      "L2_keep"
+    ],
+    "n_samples_original": 790,
+    "n_bootstrap": 9999,
+    "bootstrap_seed": 42
+  },
+  "L2": {
+    "n_pairs": 148,
+    "n_total_groups": 397,
+    "parse_failures": 0,
+    "incomplete_pairs": 249,
+    "deduplicated_records": 245,
+    "groups_with_duplicates": 86,
+    "conflicting_duplicate_groups": 0,
+    "invalid_groups": 0,
+    "delta_p_answer_mean": 0.7858108089667993,
+    "delta_p_answer_median": 0.9955944161047228,
+    "correct_direction_ratio": 0.9662162162162162,
+    "bootstrap_95ci": {
+      "low": 0.7200137347599255,
+      "high": 0.8399519610432944,
+      "method": "BCa"
+    },
+    "pairing_key": "source_instance+target_label"
+  },
+  "input_equivariance_consistency": {
+    "by_variant_type_query": {
+      "n_samples": 790,
+      "p_answer_std_mean": 0.09724847129791082,
+      "p_answer_std_median": 0.00010868034905797685,
+      "p_answer_range_mean": 0.19449694259582165,
+      "p_answer_range_median": 0.0002173606981159537,
+      "mean_abs_delta_mean": 0.11196850372436587,
+      "mean_abs_delta_median": 0.0001167688986356552,
+      "argmax_decision_flip_rate": 0.1120253164556962,
+      "all_equivalents_std_mean": 0.0941421145308561,
+      "all_equivalents_std_median": 0.00010212997259801657,
+      "bootstrap_95ci_p_answer_std": {
+        "low": 0.08574846684601226,
+        "high": 0.10955924008532263,
+        "method": "BCa"
+      },
+      "bootstrap_95ci_mean_abs_delta": {
+        "low": 0.09868652426242018,
+        "high": 0.12626014934562863,
+        "method": "BCa"
+      }
+    },
+    "by_variant_type_image": {
+      "n_samples": 790,
+      "p_answer_std_mean": 0.008776899207406064,
+      "p_answer_std_median": 7.755712414175644e-06,
+      "p_answer_range_mean": 0.021698354660061373,
+      "p_answer_range_median": 2.1301457309164107e-05,
+      "mean_abs_delta_mean": 0.012258192925151564,
+      "mean_abs_delta_median": 1.0973424650728703e-05,
+      "argmax_decision_flip_rate": 0.012025316455696202,
+      "all_equivalents_std_mean": 0.009275066563448982,
+      "all_equivalents_std_median": 9.896237653929865e-06,
+      "bootstrap_95ci_p_answer_std": {
+        "low": 0.006943034250651893,
+        "high": 0.011325692094895675,
+        "method": "BCa"
+      },
+      "bootstrap_95ci_mean_abs_delta": {
+        "low": 0.00972499192648832,
+        "high": 0.015789886355329578,
+        "method": "BCa"
+      }
+    },
+    "by_relation": {
+      "L2_keep": {
+        "n_samples": 790,
+        "p_answer_std_mean": 0.012526681859277683,
+        "p_answer_std_median": 1.6093254089355469e-06,
+        "p_answer_range_mean": 0.02574575661285191,
+        "p_answer_range_median": 3.337860107421875e-06,
+        "mean_abs_delta_mean": 0.014143228058112325,
+        "mean_abs_delta_median": 1.7285346984863281e-06,
+        "argmax_decision_flip_rate": 0.007594936708860759,
+        "all_equivalents_std_mean": 0.011645771823934326,
+        "all_equivalents_std_median": 1.5317330015689536e-06,
+        "bootstrap_95ci_p_answer_std": {
+          "low": 0.009055997205197347,
+          "high": 0.017250492455321665,
+          "method": "BCa"
+        },
+        "bootstrap_95ci_mean_abs_delta": {
+          "low": 0.01035574070543466,
+          "high": 0.019475676619739757,
+          "method": "BCa"
+        }
+      },
+      "L2_cropout": {
+        "n_samples": 790,
+        "p_answer_std_mean": 0.09349868864603919,
+        "p_answer_std_median": 0.0007503343532850724,
+        "p_answer_range_mean": 0.1904495406430311,
+        "p_answer_range_median": 0.001630157232284546,
+        "mean_abs_delta_mean": 0.11008346859140511,
+        "mean_abs_delta_median": 0.0008744291262701154,
+        "argmax_decision_flip_rate": 0.08312236286919832,
+        "all_equivalents_std_mean": 0.09177140927037067,
+        "all_equivalents_std_median": 0.0007101767376651994,
+        "bootstrap_95ci_p_answer_std": {
+          "low": 0.0827995695083698,
+          "high": 0.10525970360315477,
+          "method": "BCa"
+        },
+        "bootstrap_95ci_mean_abs_delta": {
+          "low": 0.09762082084845179,
+          "high": 0.1238498685722675,
+          "method": "BCa"
+        }
+      }
+    }
+  }
+}

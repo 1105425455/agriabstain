@@ -1,0 +1,466 @@
+W0713 19:56:55.362000 293 site-packages/torch/distributed/run.py:774] 
+W0713 19:56:55.362000 293 site-packages/torch/distributed/run.py:774] *****************************************
+W0713 19:56:55.362000 293 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0713 19:56:55.362000 293 site-packages/torch/distributed/run.py:774] *****************************************
+[Gloo] Rank 0 is connected to 3 peer ranks. Expected number of connected peer ranks is : 3
+[Gloo] Rank 1 is connected to 3 peer ranks. Expected number of connected peer ranks is : 3
+[Gloo] Rank 2 is connected to 3 peer ranks. Expected number of connected peer ranks is : 3
+[Gloo] Rank 3 is connected to 3 peer ranks. Expected number of connected peer ranks is : 3
+[eval r1] device=cuda:1 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r0] device=cuda:0 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r0] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r2] device=cuda:2 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+[eval r3] device=cuda:3 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] [dual-head] 使用 Qwen3VLWithDualHead 模型类
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.28s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.79s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.71s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.79s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.78s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.54s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.53s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.57s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.54s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.82s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.81s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.81s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.15s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[eval r0] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+[eval r1] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+[eval r2] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+[eval r3] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+[eval r0] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/adapter_model.safetensors
+[eval r0] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r0] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r0] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r0] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r0] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/discrim_head_calibrated.pt
+[eval r1] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/adapter_model.safetensors
+[eval r1] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r1] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r2] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/adapter_model.safetensors
+[eval r1] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r3] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/adapter_model.safetensors
+[eval r1] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r1] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/discrim_head_calibrated.pt
+[eval r2] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r2] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r3] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r3] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r2] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r3] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750（非随机，确认成功）
+[eval r2] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r2] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/discrim_head_calibrated.pt
+[eval r3] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r3] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/discrim_head_calibrated.pt
+[eval r0] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3125, sd_range=[0.582,9.875][eval r1] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3125, sd_range=[0.582,9.875]
+
+[eval r2] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3125, sd_range=[0.582,9.875]
+[eval r3] [dual-head] 校准头已加载, classifier[0].weight 范数=12.3125, sd_range=[0.582,9.875]
+[eval r1] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r1] model loaded on cuda:1, running 6 probe(s) [dual-head mode]
+[eval r1] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim (tag=L1_discrim) ===
+[eval r0] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r0] model loaded on cuda:0, running 6 probe(s) [dual-head mode]
+[eval r0] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim (tag=L1_discrim) ===
+[eval r3] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r3] model loaded on cuda:3, running 6 probe(s) [dual-head mode]
+[eval r3] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim (tag=L1_discrim) ===
+[eval r2] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r2] model loaded on cuda:2, running 6 probe(s) [dual-head mode]
+[eval r2] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim (tag=L1_discrim) ===
+[eval r3] [hf probe#0] total=410 mine=102 done=0 todo=102 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank3of4.jsonl
+[eval r1] [hf probe#0] total=410 mine=103 done=0 todo=103 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank1of4.jsonl
+[eval r2] [hf probe#0] total=410 mine=102 done=0 todo=102 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank2of4.jsonl
+[eval r0] [hf probe#0] total=410 mine=103 done=0 todo=103 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank0of4.jsonl
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[eval r1] probe#0 50/103 (1.47 it/s)
+[eval r3] probe#0 50/102 (1.22 it/s)
+[eval r1] probe#0 100/103 (0.95 it/s)
+[eval r3] probe#0 100/102 (0.91 it/s)
+[eval r3] probe#0 shard done in 110.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank3of4.jsonl
+[eval r3] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence (tag=L2_evidence) ===
+[eval r3] [hf probe#1] total=790 mine=197 done=0 todo=197 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank3of4.jsonl
+[eval r1] probe#0 shard done in 110.5s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank1of4.jsonl
+[eval r1] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence (tag=L2_evidence) ===
+[eval r1] [hf probe#1] total=790 mine=198 done=0 todo=198 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank1of4.jsonl
+[eval r0] probe#0 50/103 (0.41 it/s)
+[eval r2] probe#0 50/102 (0.40 it/s)
+[eval r3] probe#1 50/197 (1.80 it/s)
+[eval r1] probe#1 50/198 (1.46 it/s)
+[eval r3] probe#1 100/197 (1.12 it/s)
+[eval r1] probe#1 100/198 (1.10 it/s)
+[eval r0] probe#0 100/103 (0.42 it/s)
+[eval r2] probe#0 100/102 (0.41 it/s)
+[eval r0] probe#0 shard done in 243.5s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank0of4.jsonl
+[eval r0] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence (tag=L2_evidence) ===
+[eval r0] [hf probe#1] total=790 mine=198 done=0 todo=198 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank0of4.jsonl
+[eval r1] probe#1 150/198 (1.11 it/s)
+[eval r2] probe#0 shard done in 246.7s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/shards/preds.rank2of4.jsonl
+[eval r2] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence (tag=L2_evidence) ===
+[eval r2] [hf probe#1] total=790 mine=197 done=0 todo=197 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank2of4.jsonl
+[eval r3] probe#1 150/197 (1.04 it/s)
+[eval r1] probe#1 shard done in 199.4s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank1of4.jsonl
+[eval r1] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose (tag=L3_dose) ===
+[eval r1] [hf probe#2] total=750 mine=188 done=0 todo=188 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank1of4.jsonl
+[eval r3] probe#1 shard done in 201.3s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank3of4.jsonl
+[eval r3] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose (tag=L3_dose) ===
+[eval r3] [hf probe#2] total=750 mine=187 done=0 todo=187 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank3of4.jsonl
+[eval r0] probe#1 50/198 (0.42 it/s)
+[eval r2] probe#1 50/197 (0.41 it/s)
+[eval r1] probe#2 50/188 (0.45 it/s)
+[eval r3] probe#2 50/187 (0.43 it/s)
+[eval r0] probe#1 100/198 (0.44 it/s)
+[eval r2] probe#1 100/197 (0.43 it/s)
+[eval r1] probe#2 100/188 (0.49 it/s)
+[eval r3] probe#2 100/187 (0.48 it/s)
+[eval r3] probe#2 150/187 (0.61 it/s)
+[eval r1] probe#2 150/188 (0.61 it/s)
+[eval r0] probe#1 150/198 (0.45 it/s)
+[eval r2] probe#1 150/197 (0.44 it/s)
+[eval r1] probe#2 shard done in 287.9s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank1of4.jsonl
+[eval r1] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full (tag=test_full) ===
+[eval r1] [hf probe#3] total=2646 mine=662 done=0 todo=662 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank1of4.jsonl
+[eval r3] probe#2 shard done in 300.9s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank3of4.jsonl
+[eval r3] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full (tag=test_full) ===
+[eval r3] [hf probe#3] total=2646 mine=661 done=0 todo=661 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank3of4.jsonl
+[eval r0] probe#1 shard done in 448.2s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank0of4.jsonl
+[eval r0] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose (tag=L3_dose) ===
+[eval r0] [hf probe#2] total=750 mine=188 done=0 todo=188 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank0of4.jsonl
+[eval r2] probe#1 shard done in 459.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/shards/preds.rank2of4.jsonl
+[eval r2] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose (tag=L3_dose) ===
+[eval r2] [hf probe#2] total=750 mine=187 done=0 todo=187 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank2of4.jsonl
+[eval r1] probe#3 50/662 (0.40 it/s)
+[eval r3] probe#3 50/661 (0.44 it/s)
+[eval r0] probe#2 50/188 (0.44 it/s)
+[eval r2] probe#2 50/187 (0.44 it/s)
+[eval r1] probe#3 100/662 (0.42 it/s)
+[eval r3] probe#3 100/661 (0.44 it/s)
+[eval r0] probe#2 100/188 (0.49 it/s)
+[eval r0] probe#2 150/188 (0.66 it/s)
+[eval r2] probe#2 100/187 (0.46 it/s)
+[eval r1] probe#3 150/662 (0.43 it/s)
+[eval r2] probe#2 150/187 (0.58 it/s)
+[eval r3] probe#3 150/661 (0.42 it/s)
+[eval r0] probe#2 shard done in 278.8s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank0of4.jsonl
+[eval r0] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full (tag=test_full) ===
+[eval r0] [hf probe#3] total=2646 mine=662 done=0 todo=662 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank0of4.jsonl
+[eval r2] probe#2 shard done in 313.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/shards/preds.rank2of4.jsonl
+[eval r2] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full (tag=test_full) ===
+[eval r2] [hf probe#3] total=2646 mine=661 done=0 todo=661 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank2of4.jsonl
+[eval r1] probe#3 200/662 (0.43 it/s)
+[eval r0] probe#3 50/662 (0.45 it/s)
+[eval r3] probe#3 200/661 (0.42 it/s)
+[eval r2] probe#3 50/661 (0.40 it/s)
+[eval r1] probe#3 250/662 (0.43 it/s)
+[eval r0] probe#3 100/662 (0.47 it/s)
+[eval r3] probe#3 250/661 (0.42 it/s)
+[eval r2] probe#3 100/661 (0.41 it/s)
+[eval r0] probe#3 150/662 (0.46 it/s)
+[eval r1] probe#3 300/662 (0.43 it/s)
+[eval r3] probe#3 300/661 (0.42 it/s)
+[eval r1] probe#3 350/662 (0.45 it/s)
+[eval r2] probe#3 150/661 (0.41 it/s)
+[eval r3] probe#3 350/661 (0.44 it/s)
+[eval r0] probe#3 200/662 (0.46 it/s)
+[eval r1] probe#3 400/662 (0.49 it/s)
+[eval r1] probe#3 450/662 (0.55 it/s)
+[eval r1] probe#3 500/662 (0.60 it/s)
+[eval r3] probe#3 400/661 (0.48 it/s)
+[eval r1] probe#3 550/662 (0.64 it/s)
+[eval r3] probe#3 450/661 (0.53 it/s)
+[eval r1] probe#3 600/662 (0.69 it/s)
+[eval r3] probe#3 500/661 (0.58 it/s)
+[eval r3] probe#3 550/661 (0.64 it/s)
+[eval r1] probe#3 650/662 (0.74 it/s)
+[eval r1] probe#3 shard done in 885.3s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank1of4.jsonl
+[eval r1] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog (tag=ood_refcocog) ===
+[eval r1] [hf probe#4] total=362 mine=91 done=0 todo=91 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank1of4.jsonl
+[eval r3] probe#3 600/661 (0.69 it/s)
+[eval r2] probe#3 200/661 (0.42 it/s)
+[eval r3] probe#3 650/661 (0.73 it/s)
+[eval r3] probe#3 shard done in 888.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank3of4.jsonl
+[eval r3] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog (tag=ood_refcocog) ===
+[eval r3] [hf probe#4] total=362 mine=90 done=0 todo=90 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank3of4.jsonl
+[eval r0] probe#3 250/662 (0.46 it/s)
+[eval r3] probe#4 50/90 (0.77 it/s)
+[eval r1] probe#4 50/91 (0.61 it/s)
+[eval r2] probe#3 250/661 (0.42 it/s)
+[eval r0] probe#3 300/662 (0.46 it/s)
+[eval r1] probe#4 shard done in 144.1s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank1of4.jsonl
+[eval r1] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1 (tag=plantwild_real_v1) ===
+[eval r1] [hf probe#5] total=444 mine=111 done=0 todo=111 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank1of4.jsonl
+[eval r3] probe#4 shard done in 133.6s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank3of4.jsonl
+[eval r3] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1 (tag=plantwild_real_v1) ===
+[eval r3] [hf probe#5] total=444 mine=111 done=0 todo=111 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank3of4.jsonl
+[eval r1] probe#5 50/111 (0.88 it/s)
+[eval r3] probe#5 50/111 (0.89 it/s)
+[eval r0] probe#3 350/662 (0.48 it/s)
+[eval r2] probe#3 300/661 (0.42 it/s)
+[eval r3] probe#5 100/111 (1.02 it/s)
+[eval r1] probe#5 100/111 (0.95 it/s)
+[eval r0] probe#3 400/662 (0.52 it/s)
+[eval r3] probe#5 shard done in 110.4s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank3of4.jsonl
+[eval r1] probe#5 shard done in 118.9s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank1of4.jsonl
+[eval r0] probe#3 450/662 (0.57 it/s)
+[eval r0] probe#3 500/662 (0.63 it/s)
+[eval r0] probe#3 550/662 (0.69 it/s)
+[eval r0] probe#3 600/662 (0.74 it/s)
+[eval r0] probe#3 650/662 (0.79 it/s)
+[eval r0] probe#3 shard done in 826.3s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank0of4.jsonl
+[eval r0] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog (tag=ood_refcocog) ===
+[eval r0] [hf probe#4] total=362 mine=91 done=0 todo=91 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank0of4.jsonl
+[eval r2] probe#3 350/661 (0.44 it/s)
+[eval r2] probe#3 400/661 (0.49 it/s)
+[eval r2] probe#3 450/661 (0.54 it/s)
+[eval r2] probe#3 500/661 (0.59 it/s)
+[eval r0] probe#4 50/91 (0.69 it/s)
+[eval r2] probe#3 550/661 (0.64 it/s)
+[eval r2] probe#3 600/661 (0.69 it/s)
+[eval r2] probe#3 650/661 (0.74 it/s)
+[eval r2] probe#3 shard done in 887.2s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/shards/preds.rank2of4.jsonl
+[eval r2] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog (tag=ood_refcocog) ===
+[eval r2] [hf probe#4] total=362 mine=90 done=0 todo=90 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank2of4.jsonl
+[eval r0] probe#4 shard done in 125.5s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank0of4.jsonl
+[eval r0] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1 (tag=plantwild_real_v1) ===
+[eval r0] [hf probe#5] total=444 mine=111 done=0 todo=111 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank0of4.jsonl
+[eval r2] probe#4 50/90 (0.62 it/s)
+[eval r0] probe#5 50/111 (0.69 it/s)
+[eval r2] probe#4 shard done in 136.9s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/shards/preds.rank2of4.jsonl
+[eval r2] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1 (tag=plantwild_real_v1) ===
+[eval r2] [hf probe#5] total=444 mine=111 done=0 todo=111 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank2of4.jsonl
+[eval r0] probe#5 100/111 (0.76 it/s)
+[eval r0] probe#5 shard done in 141.7s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank0of4.jsonl
+[eval r2] probe#5 50/111 (0.67 it/s)
+[eval r2] probe#5 100/111 (0.70 it/s)
+[eval r2] probe#5 shard done in 157.4s -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/shards/preds.rank2of4.jsonl
+[eval r0] === merge probe 1/6: L1_discrim ===
+=== AgriAbstain eval [L1_discrim] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=410
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6805  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.4829
+HOR_FCA (高危子集↓)  = 0.0000  (n=0)
+MTS_micro           = 0.6805
+MTS_macro           = 0.6805
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0976
+U_Abs (拒对↑)       = 0.5171
+AAC (答对↑)         = 0.8634
+MCC                 = 0.4546
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.7535
+A_Ground_c          = 0.8350
+U_Reason↑           = 0.4976
+U_Reason_c          = 0.9623
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 177, 'FP': 8, 'FN': 20, 'TN': 106, 'AU': 99, 'INVALID': 0}
+
+--- MTS per relation ---
+  L1_mismatch      0.4976  (102/205)
+  L1_real          0.8634  (177/205)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L1_discrim/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 2/6: L2_evidence ===
+=== AgriAbstain eval [L2_evidence] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=790
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.7000  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.4203
+HOR_FCA (高危子集↓)  = 0.4203  (n=395)
+MTS_micro           = 0.6430
+MTS_macro           = 0.6430
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0405
+U_Abs (拒对↑)       = 0.5797
+AAC (答对↑)         = 0.7063
+MCC                 = 0.5829
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6244
+A_Ground_c          = 0.6508
+U_Reason↑           = 0.5797
+U_Reason_c          = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 279, 'FP': 100, 'FN': 16, 'TN': 229, 'AU': 166, 'INVALID': 0}
+
+--- MTS per relation ---
+  L2_cropout       0.5797  (229/395)
+  L2_keep          0.7063  (279/395)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L2_evidence/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 3/6: L3_dose ===
+=== AgriAbstain eval [L3_dose] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=750
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 0.4413  (>= 0.95 ?)
+decision_accuracy = 0.3693  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.1014
+HOR_FCA (高危子集↓)  = 0.1014  (n=148)
+MTS_micro           = 0.8308
+MTS_macro           = 0.8308
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0273
+U_Abs (拒对↑)       = 0.8986
+AAC (答对↑)         = 0.7760
+MCC                 = 0.8787
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6878
+A_Ground_c          = 0.7122
+U_Reason↑           = 0.8986
+U_Reason_c          = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 142, 'FP': 36, 'FN': 5, 'TN': 133, 'AU': 15, 'INVALID': 0}
+
+--- MTS per relation ---
+  L3_ladder        0.8308  (275/331)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/L3_dose/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 4/6: test_full ===
+=== AgriAbstain eval [test_full] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=2646
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8594  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0952
+HOR_FCA (高危子集↓)  = 0.0564  (n=1118)
+MTS_micro           = 0.8414
+MTS_macro           = 0.8290
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0461
+U_Abs (拒对↑)       = 0.9048
+AAC (答对↑)         = 0.7763
+MCC                 = 0.8597
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6836
+A_Ground_c          = 0.7173
+U_Reason↑           = 0.9010
+U_Reason_c          = 0.9958
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 1027, 'FP': 235, 'FN': 61, 'TN': 1197, 'AU': 126, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.7924  (187/236)
+  T2               0.7899  (94/119)
+  T2_occluded      0.9375  (75/80)
+  T3               0.8000  (104/130)
+  T3_occluded      0.9375  (75/80)
+  T4_control       0.8063  (129/160)
+  T5               0.9625  (616/640)
+  T6               0.6780  (139/205)
+  T7_include       0.7232  (81/112)
+  T7_ladder        0.7854  (399/508)
+  base_occluded    0.9059  (154/170)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/test_full/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 5/6: ood_refcocog ===
+=== AgriAbstain eval [ood_refcocog] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=362
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8398  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0663
+HOR_FCA (高危子集↓)  = 0.0663  (n=181)
+MTS_micro           = 0.8232
+MTS_macro           = 0.8232
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0110
+U_Abs (拒对↑)       = 0.9337
+AAC (答对↑)         = 0.7127
+MCC                 = 0.9241
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.6510
+A_Ground_c          = 0.7931
+U_Reason↑           = 0.9337
+U_Reason_c          = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 129, 'FP': 50, 'FN': 2, 'TN': 169, 'AU': 12, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9337  (169/181)
+  OOD_answer       0.7127  (129/181)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/ood_refcocog/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 6/6: plantwild_real_v1 ===
+=== AgriAbstain eval [plantwild_real_v1] ===
+data: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_v1/plantwild_real_paired_444.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666
+n=444
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6554  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.2396
+HOR_FCA (高危子集↓)  = 0.0513  (n=156)
+MTS_micro           = 0.6554
+MTS_macro           = 0.6389
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.2756
+U_Abs (拒对↑)       = 0.7604
+AAC (答对↑)         = 0.6346
+MCC                 = 0.4706
+
+--- Grounding / Reason ---
+A_Ground (IoU↑)     = 0.0000
+A_Ground_c          = 0.0000
+U_Reason↑           = 0.6667
+U_Reason_c          = 0.8767
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 99, 'FP': 14, 'FN': 43, 'TN': 219, 'AU': 69, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9487  (148/156)
+  OOD_answer       0.6346  (99/156)
+  OOD_confusion    0.3333  (44/132)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-666/eval_faithful_v1/plantwild_real_v1/metrics.json , predictions.jsonl , summary.txt

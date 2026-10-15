@@ -1,0 +1,58 @@
+{
+  "task": "fix_split_metadata",
+  "files_processed": [
+    "dev.jsonl",
+    "test.jsonl"
+  ],
+  "file_sha256_before": {
+    "dev.jsonl": "0f3f8b748a3cc0a6a0e5d304181d8dd31da3e5786fd8a99fcb8c5240623bf501",
+    "test.jsonl": "c919b7745eab0f14a023ac8bbee8af61ecd1a4edf4b2e16f729692d12e740463"
+  },
+  "file_sha256_after": {
+    "dev.jsonl": "0f3f8b748a3cc0a6a0e5d304181d8dd31da3e5786fd8a99fcb8c5240623bf501",
+    "test.jsonl": "c919b7745eab0f14a023ac8bbee8af61ecd1a4edf4b2e16f729692d12e740463"
+  },
+  "normalized_without_split_sha256": {
+    "dev.jsonl": "eb7047ce65f9099a12b8abaa92f66b5fa1a39eebb38d920c7dd093c46902982d",
+    "test.jsonl": "73e45f1857807aad3feedfe81cae13af46f5c3dbd3a9ba528f74a193b6618a3e"
+  },
+  "line_counts": {
+    "dev.jsonl": 2408,
+    "test.jsonl": 2646
+  },
+  "wrong_split_before": {
+    "dev.jsonl": 0,
+    "test.jsonl": 0
+  },
+  "wrong_split_after": {
+    "dev.jsonl": 0,
+    "test.jsonl": 0
+  },
+  "split_values_after": {
+    "dev.jsonl": "dev",
+    "test.jsonl": "test"
+  },
+  "sample_id_order_hash": {
+    "dev.jsonl": "b0b25b58d9c7f628df12aae70a105f5f57a233bebd0f5408a2f55ff3907f2bfa",
+    "test.jsonl": "1c5af6fc532cc30120b07fc928680e4c4c3b4722eec20e423516bcadf9bf255d"
+  },
+  "source_image_intersections": {
+    "train_vs_dev_intersection_count": 0,
+    "train_vs_dev_intersection_list": [],
+    "train_vs_test_intersection_count": 0,
+    "train_vs_test_intersection_list": [],
+    "dev_vs_test_intersection_count": 0,
+    "dev_vs_test_intersection_list": []
+  },
+  "historical_bug_reconstruction": {
+    "note": "首次修复前 dev/test 的顶层 split 均为 train。后续幂等运行会看到 wrong_split_before=0；以下 SHA256 由当前记录仅将 split 还原为 train 后，按原生成格式重建。",
+    "wrong_split_count": {
+      "dev.jsonl": 2408,
+      "test.jsonl": 2646
+    },
+    "reconstructed_pre_fix_file_sha256": {
+      "dev.jsonl": "d45e4334f3ba32df01fa3b3afdd2d199e84b325936496ecd266e3696da457c4d",
+      "test.jsonl": "1ce28c57fe5e0ff3f007727f3d644357426147c28ec9422be1e2f91107b007be"
+    }
+  }
+}

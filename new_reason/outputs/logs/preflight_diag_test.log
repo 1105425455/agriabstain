@@ -1,0 +1,55 @@
+[diag] loading new_reason/outputs/preflight/dump_out_test/predictions.jsonl
+[diag] loaded 2646 records
+[diag] head_hidden shape: (2646, 4096)
+[diag] head_label distribution: class0(answer)=1323, class1(wrong_obj)=205, class2(no_target)=1118
+[diag] === 1. P(answer) distribution ===
+[diag] prob_hist.png saved
+[diag] === 2. Train-set AUC (class0 vs class1) ===
+[diag] train AUC (class0 vs class1, max-pol): 0.9140
+[diag] === 3. Hard sample counts ===
+[diag]   class0 P(answer)<0.5: 120
+[diag]   class1 P(answer)>0.5 (leak): 76 / 205
+[diag]   class1 P(answer)>0.8 (high conf leak): 25
+[diag] === 4. Full c0-vs-c1 image-disjoint probe AUC ===
+[diag]   c0-vs-c1: n=1528, class1=205, images=1026
+[diag]   c0-vs-c1 probe AUC (GroupKFold, C=1): 0.9694 ± 0.0207
+[diag]   class1 leak count: 76
+[diag]   leak-zone probe AUC (GroupKFold, C=1): 0.9691 ± 0.0121
+[diag]     C=0.01: AUC=0.9787 ± 0.0074
+[diag]     C=0.1: AUC=0.9776 ± 0.0082
+[diag]     C=1.0: AUC=0.9691 ± 0.0121
+[diag]   permutation baseline: 0.5618 ± 0.0220 (n_perm=20)
+[diag]   GO/NO-GO decision: GO (probe AUC=0.9691)
+[diag] === 5. Stubborn kernel count ===
+[diag]   class1 P(answer)>0.8 count: 25
+[diag]   stubborn kernel count (high leak + nearest class0 not in top-5 NN): 2
+[diag] === 6. 372 same-image twin margin ===
+[diag]   twin pairs: 205
+[diag]   cosine margin: mean=0.9360 ± 0.0443
+[diag]   twin-only probe AUC: 0.9479
+[diag] === 7. Global geometry ===
+[diag]   silhouette (class0 vs class1): 0.1768
+[diag]   silhouette (all 3 classes): 0.3015
+[diag]   computing UMAP (2D)...
+[diag]   umap-learn not installed, skipping UMAP
+[diag] metrics.json saved -> new_reason/outputs/preflight/test_diag/diagnostics/metrics.json
+[diag] REPORT.md saved -> new_reason/outputs/preflight/test_diag/REPORT.md
+
+============================================================
+PRE-FLIGHT DIAGNOSIS COMPLETE
+============================================================
+  GO/NO-GO:          GO
+  Leak-zone probe AUC: 0.9691 +/- 0.0121
+  Full c0-vs-c1 probe AUC: 0.9694 +/- 0.0207
+  Train AUC (max-pol): 0.9140
+  Stubborn kernels:  2
+  372 twin pairs:    205
+  Twin margin:       0.9360 +/- 0.0443
+  Permutation baseline: 0.5618 +/- 0.0220
+  C=0.01: AUC=0.9787 +/- 0.0074
+  C=0.1: AUC=0.9776 +/- 0.0082
+  C=1.0: AUC=0.9691 +/- 0.0121
+  Metrics:           new_reason/outputs/preflight/test_diag/diagnostics/metrics.json
+  Report:            new_reason/outputs/preflight/test_diag/REPORT.md
+  prob_hist:         new_reason/outputs/preflight/test_diag/diagnostics/prob_hist.png
+  umap:              new_reason/outputs/preflight/test_diag/diagnostics/umap.png

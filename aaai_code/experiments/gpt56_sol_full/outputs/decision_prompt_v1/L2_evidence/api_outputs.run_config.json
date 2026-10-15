@@ -1,0 +1,20 @@
+{
+  "data": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl",
+  "data_sha256": "0cd9cd2dae2786ba83bdf3e101ff644173fffe24d93ade9e18edd4c97a409f4d",
+  "requested_records": 790,
+  "completed_records": 790,
+  "missing_records": 0,
+  "duplicate_sample_id_records": 492,
+  "model_requested": "gpt-5.6-sol",
+  "endpoint": "https://llm-center.modelbest.cn/llm/v1/chat/completions",
+  "image_detail": "original",
+  "max_completion_tokens": 384,
+  "workers": 4,
+  "temperature": 0,
+  "stream": false,
+  "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call.",
+  "system_sha256": "9ac67f3ebbe1e3c07e3f88c00ee1d8b4dd0d0fd4a4fdb072d89bbe8a1a8a7f3f",
+  "key_persisted": false,
+  "failures": [],
+  "missing_sample_ids": []
+}

@@ -1,0 +1,120 @@
+{
+  "tag": "test_full",
+  "data": "new_reason/outputs/sft_3reason/sft_test.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444",
+  "n_samples": 2646,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.8537,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": true
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 1136,
+      "FP": 152,
+      "FN": 35,
+      "TN": 1162,
+      "AU": 161,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 2646,
+      "answerable": 1323,
+      "unanswerable": 1323,
+      "invalid": 0
+    },
+    "headline": {
+      "FCA": 0.12169312169312169,
+      "HOR_FCA": 0.06887298747763863,
+      "HOR_count": {
+        "high_occlusion_au": 77,
+        "high_occlusion_unanswerable": 1118
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.026455026455026454,
+      "U_Abs": 0.8783068783068783,
+      "AAC": 0.8586545729402872,
+      "MCC": 0.8557416065647258
+    },
+    "grounding_reason": {
+      "A_Ground": 0.7581170467779176,
+      "A_Ground_c": 0.7820406839186218,
+      "U_Reason": 0.7792894935752078,
+      "U_Reason_c": 0.887263339070568
+    },
+    "comparison": {
+      "UAC": 0.8783068783068783,
+      "AR": 0.4523809523809524
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5
+  },
+  "mts": {
+    "MTS_micro": 0.8163934426229508,
+    "MTS_macro": 0.8383315791018809,
+    "per_relation": {
+      "T1": 0.8389830508474576,
+      "T2": 0.8487394957983193,
+      "T2_occluded": 0.925,
+      "T3": 0.8307692307692308,
+      "T3_occluded": 0.9125,
+      "T4_control": 0.85625,
+      "T5": 0.765625,
+      "T6": 0.5902439024390244,
+      "T7_include": 0.9285714285714286,
+      "T7_ladder": 0.8661417322834646,
+      "base_occluded": 0.8588235294117647
+    },
+    "per_relation_counts": {
+      "T1": {
+        "pass": 198,
+        "total": 236
+      },
+      "T2": {
+        "pass": 101,
+        "total": 119
+      },
+      "T2_occluded": {
+        "pass": 74,
+        "total": 80
+      },
+      "T3": {
+        "pass": 108,
+        "total": 130
+      },
+      "T3_occluded": {
+        "pass": 73,
+        "total": 80
+      },
+      "T4_control": {
+        "pass": 137,
+        "total": 160
+      },
+      "T5": {
+        "pass": 490,
+        "total": 640
+      },
+      "T6": {
+        "pass": 121,
+        "total": 205
+      },
+      "T7_include": {
+        "pass": 104,
+        "total": 112
+      },
+      "T7_ladder": {
+        "pass": 440,
+        "total": 508
+      },
+      "base_occluded": {
+        "pass": 146,
+        "total": 170
+      }
+    }
+  },
+  "within_image": null
+}

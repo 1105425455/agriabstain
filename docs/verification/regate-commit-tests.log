@@ -1,0 +1,32 @@
+........................................................................ [ 24%]
+........................................................................ [ 48%]
+....................ss.................................................. [ 72%]
+........................................................................ [ 96%]
+..........                                                               [100%]
+=============================== warnings summary ===============================
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/stats/_resampling.py:155: RuntimeWarning: invalid value encountered in scalar divide
+    a_hat = 1/6 * sum(nums) / sum(dens)**(3/2)
+
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL2::test_l2_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_basic_analysis
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_missing_endpoint_not_fabricated
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_group_count
+experiments/evidence_judge/test_evidence_judge.py::TestAnalyzeL3::test_l3_multi_instance_same_image
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_mixed_variant_types
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_flip_rate_denominator
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_all_equivalents_std
+experiments/evidence_judge/test_evidence_judge.py::TestConsistency::test_consistency_relation_breakdown
+  /user/huangyongbin/miniconda3/envs/agrivllm/lib/python3.11/site-packages/scipy/_lib/_util.py:365: DegenerateDataWarning: The BCa confidence interval cannot be calculated. This problem is known to occur when the distribution is degenerate or the statistic is np.min.
+    return fun(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+296 passed, 2 skipped, 18 warnings in 139.59s (0:02:19)

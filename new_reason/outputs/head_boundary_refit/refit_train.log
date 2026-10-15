@@ -1,0 +1,329 @@
+[refit_head] device=cuda
+[refit_head] 加载训练集...
+  full train: 1736 样本, hidden shape: torch.Size([1736, 4096])
+  holdout: 296 样本, 55 sources
+
+[refit_head] 三层划分：从 train 切出 dev...
+[split_train_dev] seed=42
+  DEV:   137 samples, 47 answer / 65 WO / 25 nt, from 25 sources
+  TRAIN: 1599 samples, from 292 sources
+  三层确认: train=1599 (292 src), dev=137 (25 src), holdout=296 (55 src)
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[refit_head] 计算 teacher logits...
+
+[refit_head] Baseline (calibrated head) on dev:
+  WO_recall=63.1%
+  answer_acc=100.0%
+  nt_acc=100.0%
+
+============================================================
+训练: seed=42, pair_margin=1.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=1.0, hw=2.0] epoch 1/200: total=1.8678 ce=1.0475 pw=0.0805 wo_push=0.2893 ans_keep=0.5672 kl=0.3115
+  [DEV eval epoch 5] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=1.0, hw=2.0] epoch 20/200: total=0.4290 ce=0.2216 pw=0.0348 wo_push=0.0694 ans_keep=0.1404 kl=0.0677
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=98.5% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=89.4% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm1.0_hw2.0.pt
+
+============================================================
+训练: seed=42, pair_margin=1.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=1.0, hw=3.0] epoch 1/200: total=2.2031 ce=1.2917 pw=0.0817 wo_push=0.2478 ans_keep=0.6713 kl=0.3702
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=96.9% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=1.0, hw=3.0] epoch 20/200: total=0.5154 ce=0.2904 pw=0.0158 wo_push=0.0666 ans_keep=0.1766 kl=0.0877
+  [DEV eval epoch 20] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=89.4% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=95.7% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm1.0_hw3.0.pt
+
+============================================================
+训练: seed=42, pair_margin=2.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=2.0, hw=2.0] epoch 1/200: total=1.9173 ce=1.0578 pw=0.1283 wo_push=0.2955 ans_keep=0.5555 kl=0.3057
+  [DEV eval epoch 5] WO_recall=95.4% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=96.9% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=2.0, hw=2.0] epoch 20/200: total=0.4504 ce=0.2337 pw=0.0472 wo_push=0.0777 ans_keep=0.1318 kl=0.0647
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm2.0_hw2.0.pt
+
+============================================================
+训练: seed=42, pair_margin=2.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=2.0, hw=3.0] epoch 1/200: total=2.2236 ce=1.2764 pw=0.1179 wo_push=0.2415 ans_keep=0.6741 kl=0.3716
+  [DEV eval epoch 5] WO_recall=98.5% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=87.2% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=2.0, hw=3.0] epoch 20/200: total=0.4991 ce=0.2621 pw=0.0499 wo_push=0.0567 ans_keep=0.1607 kl=0.0784
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm2.0_hw3.0.pt
+
+============================================================
+训练: seed=42, pair_margin=3.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=3.0, hw=2.0] epoch 1/200: total=1.9857 ce=1.0647 pw=0.1917 wo_push=0.2981 ans_keep=0.5524 kl=0.3041
+  [DEV eval epoch 5] WO_recall=98.5% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=96.9% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=98.5% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=3.0, hw=2.0] epoch 20/200: total=0.5548 ce=0.2623 pw=0.0877 wo_push=0.0818 ans_keep=0.1626 kl=0.0826
+  [DEV eval epoch 20] WO_recall=98.5% answer_acc=87.2% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=96.9% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=100.0% nt_acc=96.0% dev_score=1.0000 ★ BEST 
+  [DEV eval epoch 35] WO_recall=100.0% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=3.0, hw=2.0] epoch 40/200: total=0.4158 ce=0.2250 pw=0.0350 wo_push=0.0670 ans_keep=0.1126 kl=0.0660
+  [DEV eval epoch 40] WO_recall=100.0% answer_acc=83.0% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 45] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 50] WO_recall=100.0% answer_acc=89.4% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 55] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=3.0, hw=2.0] epoch 60/200: total=0.0252 ce=0.0116 pw=0.0000 wo_push=0.0010 ans_keep=0.0052 kl=0.0105
+  [DEV eval epoch 60] WO_recall=100.0% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 60
+  Best checkpoint: epoch 30, dev_score=1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm3.0_hw2.0.pt
+
+============================================================
+训练: seed=42, pair_margin=3.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=42, pm=3.0, hw=3.0] epoch 1/200: total=2.2770 ce=1.2725 pw=0.1703 wo_push=0.2387 ans_keep=0.6803 kl=0.3747
+  [DEV eval epoch 5] WO_recall=96.9% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=80.9% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=42, pm=3.0, hw=3.0] epoch 20/200: total=0.6766 ce=0.3441 pw=0.1109 wo_push=0.0761 ans_keep=0.1837 kl=0.0916
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=83.0% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=85.1% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed42_pm3.0_hw3.0.pt
+
+============================================================
+训练: seed=123, pair_margin=1.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=1.0, hw=2.0] epoch 1/200: total=2.4452 ce=1.0579 pw=0.6531 wo_push=0.3781 ans_keep=0.5589 kl=0.2657
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=83.0% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=1.0, hw=2.0] epoch 20/200: total=0.3053 ce=0.1751 pw=0.0016 wo_push=0.0510 ans_keep=0.1018 kl=0.0523
+  [DEV eval epoch 20] WO_recall=96.9% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=95.4% answer_acc=95.7% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=87.2% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm1.0_hw2.0.pt
+
+============================================================
+训练: seed=123, pair_margin=1.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=1.0, hw=3.0] epoch 1/200: total=2.7750 ce=1.2612 pw=0.6870 wo_push=0.3062 ans_keep=0.6846 kl=0.3315
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=87.2% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=98.5% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=85.1% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=1.0, hw=3.0] epoch 20/200: total=0.3679 ce=0.2156 pw=0.0036 wo_push=0.0414 ans_keep=0.1264 kl=0.0648
+  [DEV eval epoch 20] WO_recall=96.9% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=98.5% answer_acc=83.0% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=98.5% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm1.0_hw3.0.pt
+
+============================================================
+训练: seed=123, pair_margin=2.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=2.0, hw=2.0] epoch 1/200: total=2.6075 ce=1.0563 pw=0.8245 wo_push=0.3672 ans_keep=0.5567 kl=0.2647
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=87.2% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=2.0, hw=2.0] epoch 20/200: total=0.3992 ce=0.2096 pw=0.0187 wo_push=0.0607 ans_keep=0.1369 kl=0.0721
+  [DEV eval epoch 20] WO_recall=98.5% answer_acc=91.5% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=93.8% answer_acc=95.7% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=96.9% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm2.0_hw2.0.pt
+
+============================================================
+训练: seed=123, pair_margin=2.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=2.0, hw=3.0] epoch 1/200: total=2.9440 ce=1.2749 pw=0.8469 wo_push=0.3063 ans_keep=0.6801 kl=0.3289
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=91.5% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=2.0, hw=3.0] epoch 20/200: total=0.4478 ce=0.2413 pw=0.0192 wo_push=0.0437 ans_keep=0.1627 kl=0.0841
+  [DEV eval epoch 20] WO_recall=96.9% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=98.5% answer_acc=85.1% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=85.1% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm2.0_hw3.0.pt
+
+============================================================
+训练: seed=123, pair_margin=3.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=3.0, hw=2.0] epoch 1/200: total=2.8041 ce=1.0668 pw=1.0172 wo_push=0.3664 ans_keep=0.5500 kl=0.2619
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=98.5% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=3.0, hw=2.0] epoch 20/200: total=0.4852 ce=0.2330 pw=0.0519 wo_push=0.0679 ans_keep=0.1598 kl=0.0865
+  [DEV eval epoch 20] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=92.3% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=85.1% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm3.0_hw2.0.pt
+
+============================================================
+训练: seed=123, pair_margin=3.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=123, pm=3.0, hw=3.0] epoch 1/200: total=3.1379 ce=1.2778 pw=1.0352 wo_push=0.3003 ans_keep=0.6857 kl=0.3319
+  [DEV eval epoch 5] WO_recall=100.0% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=123, pm=3.0, hw=3.0] epoch 20/200: total=0.5280 ce=0.2878 pw=0.0232 wo_push=0.0648 ans_keep=0.1834 kl=0.0928
+  [DEV eval epoch 20] WO_recall=96.9% answer_acc=95.7% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=93.8% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed123_pm3.0_hw3.0.pt
+
+============================================================
+训练: seed=456, pair_margin=1.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=1.0, hw=2.0] epoch 1/200: total=2.0976 ce=1.0577 pw=0.2848 wo_push=0.3269 ans_keep=0.5521 kl=0.3156
+  [DEV eval epoch 5] WO_recall=95.4% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=96.9% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=83.0% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=1.0, hw=2.0] epoch 20/200: total=0.4274 ce=0.2234 pw=0.0262 wo_push=0.0719 ans_keep=0.1454 kl=0.0692
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=98.5% answer_acc=95.7% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=95.7% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm1.0_hw2.0.pt
+
+============================================================
+训练: seed=456, pair_margin=1.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=1.0, hw=3.0] epoch 1/200: total=2.4467 ce=1.2897 pw=0.2848 wo_push=0.2733 ans_keep=0.6916 kl=0.3898
+  [DEV eval epoch 5] WO_recall=93.8% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=98.5% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=1.0, hw=3.0] epoch 20/200: total=0.4155 ce=0.2282 pw=0.0195 wo_push=0.0513 ans_keep=0.1414 kl=0.0714
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=95.7% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm1.0_hw3.0.pt
+
+============================================================
+训练: seed=456, pair_margin=2.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=2.0, hw=2.0] epoch 1/200: total=2.2669 ce=1.0492 pw=0.4513 wo_push=0.3154 ans_keep=0.5654 kl=0.3260
+  [DEV eval epoch 5] WO_recall=95.4% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=95.4% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=85.1% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=2.0, hw=2.0] epoch 20/200: total=0.4237 ce=0.2327 pw=0.0149 wo_push=0.0777 ans_keep=0.1378 kl=0.0683
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=80.9% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm2.0_hw2.0.pt
+
+============================================================
+训练: seed=456, pair_margin=2.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=2.0, hw=3.0] epoch 1/200: total=2.6356 ce=1.2910 pw=0.4683 wo_push=0.2703 ans_keep=0.6953 kl=0.3935
+  [DEV eval epoch 5] WO_recall=95.4% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=96.9% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=83.0% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=2.0, hw=3.0] epoch 20/200: total=0.5842 ce=0.3089 pw=0.0519 wo_push=0.0686 ans_keep=0.1839 kl=0.0971
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=80.9% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=96.9% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm2.0_hw3.0.pt
+
+============================================================
+训练: seed=456, pair_margin=3.0, hard_weight=2.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=3.0, hw=2.0] epoch 1/200: total=2.4992 ce=1.0668 pw=0.6614 wo_push=0.3187 ans_keep=0.5680 kl=0.3277
+  [DEV eval epoch 5] WO_recall=98.5% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=93.8% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=87.2% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=3.0, hw=2.0] epoch 20/200: total=0.5706 ce=0.2690 pw=0.0782 wo_push=0.0897 ans_keep=0.1812 kl=0.0880
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=83.0% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=93.6% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=89.4% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm3.0_hw2.0.pt
+
+============================================================
+训练: seed=456, pair_margin=3.0, hard_weight=3.0
+============================================================
+[refit_head] 校准头加载并断言通过: norm=11.6332, sd=[0.540, 9.707]
+[seed=456, pm=3.0, hw=3.0] epoch 1/200: total=2.8633 ce=1.3090 pw=0.6761 wo_push=0.2723 ans_keep=0.6954 kl=0.3944
+  [DEV eval epoch 5] WO_recall=98.5% answer_acc=89.4% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 10] WO_recall=92.3% answer_acc=93.6% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 15] WO_recall=100.0% answer_acc=83.0% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+[seed=456, pm=3.0, hw=3.0] epoch 20/200: total=0.5139 ce=0.2641 pw=0.0614 wo_push=0.0592 ans_keep=0.1585 kl=0.0796
+  [DEV eval epoch 20] WO_recall=100.0% answer_acc=80.9% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 25] WO_recall=100.0% answer_acc=91.5% nt_acc=96.0% dev_score=-1.0000  ⛔ answer collapsed
+  [DEV eval epoch 30] WO_recall=100.0% answer_acc=89.4% nt_acc=100.0% dev_score=-1.0000  ⛔ answer collapsed
+  [Early stopping] No improvement for 30 epochs, stopping at epoch 30
+  Best checkpoint: epoch 0, dev_score=-1.0000
+[refit_head] 保存 head: new_reason/outputs/head_boundary_refit/refit_heads/refit_seed456_pm3.0_hw3.0.pt
+
+============================================================
+Dev 网格选点：选择 dev_score 最高的组合
+============================================================
+  选中: refit_seed42_pm3.0_hw2.0
+  dev_score=1.0000
+  WO_recall=1.0000
+  answer_acc=1.0000
+  nt_acc=0.9600
+  pair_margin=3.0, hard_weight=2.0, seed=42
+
+Dev 网格对比表: new_reason/outputs/head_boundary_refit/refit_heads/dev_grid_table.json
+选中 head 信息: new_reason/outputs/head_boundary_refit/refit_heads/selected_head_info.json
+
+训练完成。汇总: new_reason/outputs/head_boundary_refit/refit_heads/training_summary.json
+共训练 18 个 head

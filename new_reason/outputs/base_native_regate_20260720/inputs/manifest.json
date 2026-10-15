@@ -1,0 +1,23 @@
+{
+  "comprehensive": {
+    "sha256": "44dd753b36091f3a92adaa501d681bad5e6a8f9e1bc11db70258d63733bca612",
+    "count": 2646,
+    "benchmark_root": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark",
+    "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images",
+    "resolved_path": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/base_native_regate_20260720/inputs/comprehensive_resolved.jsonl"
+  },
+  "refcocog": {
+    "sha256": "937dff6b4cfe8eab7058d172a7db367ffed8684d485b39741c560b8d7cc2ed68",
+    "count": 362,
+    "benchmark_root": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark",
+    "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images",
+    "resolved_path": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/base_native_regate_20260720/inputs/refcocog_resolved.jsonl"
+  },
+  "plantwild": {
+    "sha256": "e2b069298e2a39dd19ef53d88385fe18f538caa9d4320cdebf55615ae32c5d0e",
+    "count": 408,
+    "benchmark_root": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark",
+    "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images",
+    "resolved_path": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/base_native_regate_20260720/inputs/plantwild_resolved.jsonl"
+  }
+}

@@ -1,0 +1,600 @@
+========================================
+AgriAbstain new_reason 3reason 训练-评估-测试流水线
+========================================
+PYTHONPATH=/user/huangyongbin/newrepo/agriabstain/newstory/qwen-vl-finetune:/user/huangyongbin/newrepo/agriabstain:
+REPO=/user/huangyongbin/newrepo/agriabstain/new_reason
+
+>>> Step 1: 极简端到端一次训练 (1 epoch, 每epoch存ckpt)
+[fusion_sft_3reason] NPROC=8 HEAD_LAMBDA=0.5 RUN=fusion_3reason_hl05 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05
+W0708 01:49:49.747000 134 site-packages/torch/distributed/run.py:774] 
+W0708 01:49:49.747000 134 site-packages/torch/distributed/run.py:774] *****************************************
+W0708 01:49:49.747000 134 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0708 01:49:49.747000 134 site-packages/torch/distributed/run.py:774] *****************************************
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,593] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 01:52:02,594] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+df: /root/.triton/autotune: No such file or directory
+df: /root/.triton/autotune: No such file or directory
+df: /root/.triton/autotune: No such file or directory
+df: /root/.triton/autotune: No such file or directory
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 01:52:19,415] [INFO] [comm.py:689:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2026-07-08 01:52:19,415] [INFO] [comm.py:658:init_distributed] cdb=None
+[W708 01:52:21.094572966 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094602993 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094606900 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094670199 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094710966 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094727888 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.094752143 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 01:52:21.095449556 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[dual-head][3reason] 使用 Qwen3VLWithTriHead 加载模型（三分类）
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.71s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.73s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.65s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.68s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.68s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+[dual-head][3reason] 三分类判别头启用: 一次 forward 拿双路输出, lambda=0.5
+[dual-head][3reason] discrim_head 参数已激活: requires_grad=True
+[dual-head][3reason] 已载入 mu/sd 标准化统计量: /user/huangyongbin/newrepo/agriabstain/final_story/outputs/discrim_musd.pt (source=base Qwen3-VL, train split 2000 samples, layer27 last-token, n=2000, sd_range=[0.303,5.250])
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+WARNING:accelerate.accelerator:[RANK 0] Gradient accumulation steps mismatch: GradientAccumulationPlugin has 1, DeepSpeed config has 8. Using DeepSpeed's value.
+  0%|          | 0/276 [00:00<?, ?it/s]                                       {'train_runtime': 0.0079, 'train_samples_per_second': 2234427.298, 'train_steps_per_second': 35097.714, 'train_loss': 0.0, 'epoch': 3.0}
+  0%|          | 0/276 [00:00<?, ?it/s]  0%|          | 0/276 [00:00<?, ?it/s]
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[rank0]:[W708 01:53:53.981555040 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[fusion_sft_3reason] done -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05
+>>> Step 1 完成: 极简端到端一次训练
+
+>>> Step 1.5: 训练标准头(std-head) 3reason版
+[calib] extract 表征 (8卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-184
+W0708 01:54:14.542000 657 site-packages/torch/distributed/run.py:774] 
+W0708 01:54:14.542000 657 site-packages/torch/distributed/run.py:774] *****************************************
+W0708 01:54:14.542000 657 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0708 01:54:14.542000 657 site-packages/torch/distributed/run.py:774] *****************************************
+[calibrate_head pre-import] LOCAL_RANK=6 → CUDA_VISIBLE_DEVICES=6
+[calibrate_head pre-import] LOCAL_RANK=4 → CUDA_VISIBLE_DEVICES=4
+[calibrate_head pre-import] LOCAL_RANK=3 → CUDA_VISIBLE_DEVICES=3
+[calibrate_head pre-import] LOCAL_RANK=7 → CUDA_VISIBLE_DEVICES=7
+[calibrate_head pre-import] LOCAL_RANK=1 → CUDA_VISIBLE_DEVICES=1
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head pre-import] LOCAL_RANK=5 → CUDA_VISIBLE_DEVICES=5
+[calibrate_head pre-import] LOCAL_RANK=2 → CUDA_VISIBLE_DEVICES=2
+[calibrate_head r5] 加载 base + adapter，device=cuda
+[calibrate_head r2] 加载 base + adapter，device=cuda
+[calibrate_head r0] 加载 base + adapter，device=cuda
+[calibrate_head r4] 加载 base + adapter，device=cuda
+[calibrate_head r6] 加载 base + adapter，device=cuda
+[calibrate_head r3] 加载 base + adapter，device=cuda
+[calibrate_head r1] 加载 base + adapter，device=cuda
+[calibrate_head r7] 加载 base + adapter，device=cuda
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.52it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.52it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.52it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.51it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.51it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.53it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.51it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.51it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.94it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.95it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.93it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[calibrate_head r0] 加载 sft_train.json
+[calibrate_head r0] sft_train 共 5857 条
+[calibrate_head r0] 加载 test_L1_discrim.jsonl
+[calibrate_head r0] test_L1 共 410 条
+[calibrate_head r0] 加载 dev.jsonl
+[calibrate_head r0] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r0] rank0: sft_train=733, dev=13
+[calibrate_head r6] 加载 sft_train.json
+[calibrate_head r2] 加载 sft_train.json
+[calibrate_head r3] 加载 sft_train.json
+[calibrate_head r7] 加载 sft_train.json
+[calibrate_head r1] 加载 sft_train.json
+[calibrate_head r5] 加载 sft_train.json
+[calibrate_head r4] 加载 sft_train.json
+[calibrate_head r1] sft_train 共 5857 条
+[calibrate_head r1] 加载 test_L1_discrim.jsonl
+[calibrate_head r6] sft_train 共 5857 条
+[calibrate_head r6] 加载 test_L1_discrim.jsonl
+[calibrate_head r7] sft_train 共 5857 条
+[calibrate_head r7] 加载 test_L1_discrim.jsonl
+[calibrate_head r3] sft_train 共 5857 条
+[calibrate_head r3] 加载 test_L1_discrim.jsonl
+[calibrate_head r2] sft_train 共 5857 条
+[calibrate_head r2] 加载 test_L1_discrim.jsonl
+[calibrate_head r5] sft_train 共 5857 条[calibrate_head r1] test_L1 共 410 条
+[calibrate_head r1] 加载 dev.jsonl
+
+[calibrate_head r5] 加载 test_L1_discrim.jsonl
+[calibrate_head r6] test_L1 共 410 条
+[calibrate_head r6] 加载 dev.jsonl
+[calibrate_head r7] test_L1 共 410 条
+[calibrate_head r7] 加载 dev.jsonl
+[calibrate_head r3] test_L1 共 410 条
+[calibrate_head r3] 加载 dev.jsonl
+[calibrate_head r2] test_L1 共 410 条
+[calibrate_head r2] 加载 dev.jsonl
+[calibrate_head r4] sft_train 共 5857 条
+[calibrate_head r4] 加载 test_L1_discrim.jsonl
+[calibrate_head r5] test_L1 共 410 条
+[calibrate_head r5] 加载 dev.jsonl
+[calibrate_head r4] test_L1 共 410 条
+[calibrate_head r4] 加载 dev.jsonl
+[calibrate_head r1] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r1] rank1: sft_train=732, dev=13
+[calibrate_head r6] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r3] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)[calibrate_head r6] rank6: sft_train=732, dev=12
+
+[calibrate_head r2] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)[calibrate_head r3] rank3: sft_train=732, dev=13
+
+[calibrate_head r2] rank2: sft_train=732, dev=13
+[calibrate_head r7] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r7] rank7: sft_train=732, dev=12
+[calibrate_head r5] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r5] rank5: sft_train=732, dev=12
+[calibrate_head r4] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r4] rank4: sft_train=732, dev=12
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[calibrate_head r0] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank0.npz (733 条)
+[calibrate_head r0] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank0.npz (13 条)
+[calibrate_head r3] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank3.npz (732 条)
+[calibrate_head r3] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank3.npz (13 条)
+[calibrate_head r6] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank6.npz (732 条)
+[calibrate_head r6] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank6.npz (12 条)
+[calibrate_head r2] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank2.npz (732 条)
+[calibrate_head r2] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank2.npz (13 条)
+[calibrate_head r7] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank7.npz (732 条)
+[calibrate_head r0] _safe_load_npz 第1次重试: BadZipFile: File is not a zip file
+[calibrate_head r7] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank7.npz (12 条)
+[calibrate_head r1] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank1.npz (732 条)
+[calibrate_head r1] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank1.npz (13 条)
+[calibrate_head r5] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank5.npz (732 条)
+[calibrate_head r5] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank5.npz (12 条)
+[calibrate_head r0] extract 完成: sft_train=5857, dev=100
+[calibrate_head r4] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank4.npz (732 条)
+[calibrate_head r4] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank4.npz (12 条)
+[calib] train 标准头 (单卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-184
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (5857, 4096), pos=973 neg=2403
+[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类
+[calibrate_head r0]   epoch 50/1000, train_loss=0.1456, dev_loss=0.5322, dev_MCC=0.7458, per_class_acc={'answer': '76.47%', 'wrong_object': '75.76%', 'no_target': '96.97%'}
+[calibrate_head r0]     → 新最佳 dev loss: 0.5322 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0713, dev_loss=0.6717, dev_MCC=0.7610, per_class_acc={'answer': '79.41%', 'wrong_object': '75.76%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0297, dev_loss=0.8392, dev_MCC=0.6879, per_class_acc={'answer': '79.41%', 'wrong_object': '66.67%', 'no_target': '90.91%'}
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0963, dev_loss=0.5909, dev_MCC=0.7457, per_class_acc={'answer': '79.41%', 'wrong_object': '75.76%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0210, dev_loss=0.7740, dev_MCC=0.7325, per_class_acc={'answer': '82.35%', 'wrong_object': '72.73%', 'no_target': '90.91%'}
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.0113, dev_loss=0.9048, dev_MCC=0.7024, per_class_acc={'answer': '79.41%', 'wrong_object': '69.70%', 'no_target': '90.91%'}
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.5322
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.5322）
+[calibrate_head r0] train MCC (multi-class): 0.9025
+[calibrate_head r0] dev   MCC (multi-class): 0.7458
+[calibrate_head r0] 
+=== dev classification_report ===
+                 precision    recall  f1-score   support
+
+      answer(0)     0.7879    0.7647    0.7761        34
+wrong_object(1)     0.8065    0.7576    0.7812        33
+   no_target(2)     0.8889    0.9697    0.9275        33
+
+       accuracy                         0.8300       100
+      macro avg     0.8277    0.8307    0.8283       100
+   weighted avg     0.8273    0.8300    0.8278       100
+
+[calibrate_head r0]   answer(0) acc: 0.7647 (34 样本)
+[calibrate_head r0]   wrong_object(1) acc: 0.7576 (33 样本)
+[calibrate_head r0]   no_target(2) acc: 0.9697 (33 样本)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-184/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calib] ✓ 标准头已存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-184/discrim_head_calibrated.pt
+[calib] extract 表征 (8卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-276
+W0708 01:59:36.422000 1106 site-packages/torch/distributed/run.py:774] 
+W0708 01:59:36.422000 1106 site-packages/torch/distributed/run.py:774] *****************************************
+W0708 01:59:36.422000 1106 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0708 01:59:36.422000 1106 site-packages/torch/distributed/run.py:774] *****************************************
+[calibrate_head pre-import] LOCAL_RANK=6 → CUDA_VISIBLE_DEVICES=6
+[calibrate_head pre-import] LOCAL_RANK=1 → CUDA_VISIBLE_DEVICES=1
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head pre-import] LOCAL_RANK=5 → CUDA_VISIBLE_DEVICES=5
+[calibrate_head pre-import] LOCAL_RANK=3 → CUDA_VISIBLE_DEVICES=3
+[calibrate_head pre-import] LOCAL_RANK=7 → CUDA_VISIBLE_DEVICES=7
+[calibrate_head pre-import] LOCAL_RANK=2 → CUDA_VISIBLE_DEVICES=2
+[calibrate_head pre-import] LOCAL_RANK=4 → CUDA_VISIBLE_DEVICES=4
+[calibrate_head r5] 加载 base + adapter，device=cuda
+[calibrate_head r6] 加载 base + adapter，device=cuda
+[calibrate_head r2] 加载 base + adapter，device=cuda
+[calibrate_head r4] 加载 base + adapter，device=cuda
+[calibrate_head r3] 加载 base + adapter，device=cuda
+[calibrate_head r1] 加载 base + adapter，device=cuda
+[calibrate_head r7] 加载 base + adapter，device=cuda
+[calibrate_head r0] 加载 base + adapter，device=cuda
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.04s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.86s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.99s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.96s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.95s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.94s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.64s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.61s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.61s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.68s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.59s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.90s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.89s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.90s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.90s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.64s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.86s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.88s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.87s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.31s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.32s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[calibrate_head r3] 加载 sft_train.json
+[calibrate_head r5] 加载 sft_train.json
+[calibrate_head r7] 加载 sft_train.json
+[calibrate_head r6] 加载 sft_train.json
+[calibrate_head r4] 加载 sft_train.json
+[calibrate_head r0] 加载 sft_train.json
+[calibrate_head r2] 加载 sft_train.json
+[calibrate_head r1] 加载 sft_train.json
+[calibrate_head r7] sft_train 共 5857 条
+[calibrate_head r7] 加载 test_L1_discrim.jsonl
+[calibrate_head r4] sft_train 共 5857 条[calibrate_head r2] sft_train 共 5857 条
+[calibrate_head r4] 加载 test_L1_discrim.jsonl
+
+[calibrate_head r2] 加载 test_L1_discrim.jsonl
+[calibrate_head r3] sft_train 共 5857 条
+[calibrate_head r3] 加载 test_L1_discrim.jsonl
+[calibrate_head r6] sft_train 共 5857 条
+[calibrate_head r6] 加载 test_L1_discrim.jsonl
+[calibrate_head r0] sft_train 共 5857 条
+[calibrate_head r0] 加载 test_L1_discrim.jsonl
+[calibrate_head r1] sft_train 共 5857 条
+[calibrate_head r1] 加载 test_L1_discrim.jsonl
+[calibrate_head r5] sft_train 共 5857 条
+[calibrate_head r5] 加载 test_L1_discrim.jsonl
+[calibrate_head r2] test_L1 共 410 条
+[calibrate_head r2] 加载 dev.jsonl
+[calibrate_head r5] test_L1 共 410 条
+[calibrate_head r5] 加载 dev.jsonl
+[calibrate_head r7] test_L1 共 410 条
+[calibrate_head r7] 加载 dev.jsonl
+[calibrate_head r3] test_L1 共 410 条
+[calibrate_head r3] 加载 dev.jsonl
+[calibrate_head r4] test_L1 共 410 条
+[calibrate_head r4] 加载 dev.jsonl
+[calibrate_head r6] test_L1 共 410 条
+[calibrate_head r6] 加载 dev.jsonl
+[calibrate_head r1] test_L1 共 410 条
+[calibrate_head r1] 加载 dev.jsonl
+[calibrate_head r0] test_L1 共 410 条
+[calibrate_head r0] 加载 dev.jsonl
+[calibrate_head r7] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r7] rank7: sft_train=732, dev=12
+[calibrate_head r6] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r5] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)[calibrate_head r6] rank6: sft_train=732, dev=12
+
+[calibrate_head r5] rank5: sft_train=732, dev=12
+[calibrate_head r2] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r2] rank2: sft_train=732, dev=13
+[calibrate_head r4] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r4] rank4: sft_train=732, dev=12
+[calibrate_head r3] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r3] rank3: sft_train=732, dev=13
+[calibrate_head r1] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r1] rank1: sft_train=732, dev=13
+[calibrate_head r0] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r0] rank0: sft_train=733, dev=13
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[calibrate_head r5] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank5.npz (732 条)
+[calibrate_head r5] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank5.npz (12 条)
+[calibrate_head r6] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank6.npz (732 条)
+[calibrate_head r6] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank6.npz (12 条)
+[calibrate_head r3] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank3.npz (732 条)
+[calibrate_head r3] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank3.npz (13 条)
+[calibrate_head r7] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank7.npz (732 条)
+[calibrate_head r7] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank7.npz (12 条)
+[calibrate_head r2] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank2.npz (732 条)
+[calibrate_head r2] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank2.npz (13 条)
+[calibrate_head r1] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank1.npz (732 条)
+[calibrate_head r1] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank1.npz (13 条)
+[calibrate_head r4] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank4.npz (732 条)
+[calibrate_head r4] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank4.npz (12 条)
+[calibrate_head r0] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank0.npz (733 条)
+[calibrate_head r0] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank0.npz (13 条)
+[calibrate_head r0] extract 完成: sft_train=5857, dev=100
+[calib] train 标准头 (单卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-276
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (5857, 4096), pos=973 neg=2403
+[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类
+[calibrate_head r0]   epoch 50/1000, train_loss=0.1325, dev_loss=0.5636, dev_MCC=0.7301, per_class_acc={'answer': '76.47%', 'wrong_object': '78.79%', 'no_target': '90.91%'}
+[calibrate_head r0]     → 新最佳 dev loss: 0.5636 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0656, dev_loss=0.7613, dev_MCC=0.7604, per_class_acc={'answer': '79.41%', 'wrong_object': '78.79%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0239, dev_loss=0.9061, dev_MCC=0.7465, per_class_acc={'answer': '76.47%', 'wrong_object': '75.76%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0440, dev_loss=0.8653, dev_MCC=0.7312, per_class_acc={'answer': '79.41%', 'wrong_object': '72.73%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0178, dev_loss=0.9841, dev_MCC=0.7312, per_class_acc={'answer': '79.41%', 'wrong_object': '72.73%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.0109, dev_loss=1.0517, dev_MCC=0.7169, per_class_acc={'answer': '79.41%', 'wrong_object': '69.70%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.5636
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.5636）
+[calibrate_head r0] train MCC (multi-class): 0.9120
+[calibrate_head r0] dev   MCC (multi-class): 0.7301
+[calibrate_head r0] 
+=== dev classification_report ===
+                 precision    recall  f1-score   support
+
+      answer(0)     0.7647    0.7647    0.7647        34
+wrong_object(1)     0.8125    0.7879    0.8000        33
+   no_target(2)     0.8824    0.9091    0.8955        33
+
+       accuracy                         0.8200       100
+      macro avg     0.8199    0.8206    0.8201       100
+   weighted avg     0.8193    0.8200    0.8195       100
+
+[calibrate_head r0]   answer(0) acc: 0.7647 (34 样本)
+[calibrate_head r0]   wrong_object(1) acc: 0.7879 (33 样本)
+[calibrate_head r0]   no_target(2) acc: 0.9091 (33 样本)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-276/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calib] ✓ 标准头已存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-276/discrim_head_calibrated.pt
+[calib] extract 表征 (8卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-92
+W0708 02:04:06.218000 1555 site-packages/torch/distributed/run.py:774] 
+W0708 02:04:06.218000 1555 site-packages/torch/distributed/run.py:774] *****************************************
+W0708 02:04:06.218000 1555 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0708 02:04:06.218000 1555 site-packages/torch/distributed/run.py:774] *****************************************
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head pre-import] LOCAL_RANK=6 → CUDA_VISIBLE_DEVICES=6
+[calibrate_head pre-import] LOCAL_RANK=1 → CUDA_VISIBLE_DEVICES=1
+[calibrate_head pre-import] LOCAL_RANK=4 → CUDA_VISIBLE_DEVICES=4
+[calibrate_head pre-import] LOCAL_RANK=3 → CUDA_VISIBLE_DEVICES=3
+[calibrate_head pre-import] LOCAL_RANK=2 → CUDA_VISIBLE_DEVICES=2
+[calibrate_head pre-import] LOCAL_RANK=5 → CUDA_VISIBLE_DEVICES=5
+[calibrate_head pre-import] LOCAL_RANK=7 → CUDA_VISIBLE_DEVICES=7
+[calibrate_head r2] 加载 base + adapter，device=cuda
+[calibrate_head r4] 加载 base + adapter，device=cuda
+[calibrate_head r6] 加载 base + adapter，device=cuda
+[calibrate_head r1] 加载 base + adapter，device=cuda
+[calibrate_head r0] 加载 base + adapter，device=cuda
+[calibrate_head r5] 加载 base + adapter，device=cuda
+[calibrate_head r3] 加载 base + adapter，device=cuda
+[calibrate_head r7] 加载 base + adapter，device=cuda
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.82it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.91it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 41.39it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 42.23it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 44.60it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.70it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.15it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 44.00it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[calibrate_head r1] 加载 sft_train.json
+[calibrate_head r4] 加载 sft_train.json
+[calibrate_head r2] 加载 sft_train.json
+[calibrate_head r4] sft_train 共 5857 条
+[calibrate_head r4] 加载 test_L1_discrim.jsonl
+[calibrate_head r1] sft_train 共 5857 条
+[calibrate_head r1] 加载 test_L1_discrim.jsonl
+[calibrate_head r2] sft_train 共 5857 条
+[calibrate_head r2] 加载 test_L1_discrim.jsonl
+[calibrate_head r4] test_L1 共 410 条
+[calibrate_head r4] 加载 dev.jsonl
+[calibrate_head r1] test_L1 共 410 条
+[calibrate_head r1] 加载 dev.jsonl
+[calibrate_head r2] test_L1 共 410 条
+[calibrate_head r2] 加载 dev.jsonl
+[calibrate_head r1] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r1] rank1: sft_train=732, dev=13
+[calibrate_head r4] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r4] rank4: sft_train=732, dev=12
+[calibrate_head r2] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r2] rank2: sft_train=732, dev=13
+[calibrate_head r6] 加载 sft_train.json
+[calibrate_head r6] sft_train 共 5857 条
+[calibrate_head r6] 加载 test_L1_discrim.jsonl
+[calibrate_head r6] test_L1 共 410 条
+[calibrate_head r6] 加载 dev.jsonl
+[calibrate_head r7] 加载 sft_train.json
+[calibrate_head r6] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r6] rank6: sft_train=732, dev=12
+[calibrate_head r7] sft_train 共 5857 条
+[calibrate_head r7] 加载 test_L1_discrim.jsonl
+[calibrate_head r7] test_L1 共 410 条
+[calibrate_head r7] 加载 dev.jsonl
+[calibrate_head r3] 加载 sft_train.json
+[calibrate_head r7] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r7] rank7: sft_train=732, dev=12
+[calibrate_head r3] sft_train 共 5857 条
+[calibrate_head r3] 加载 test_L1_discrim.jsonl
+[calibrate_head r3] test_L1 共 410 条
+[calibrate_head r3] 加载 dev.jsonl
+[calibrate_head r3] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r3] rank3: sft_train=732, dev=13
+[calibrate_head r5] 加载 sft_train.json
+[calibrate_head r5] sft_train 共 5857 条
+[calibrate_head r5] 加载 test_L1_discrim.jsonl
+[calibrate_head r5] test_L1 共 410 条
+[calibrate_head r5] 加载 dev.jsonl
+[calibrate_head r5] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r5] rank5: sft_train=732, dev=12
+[calibrate_head r0] 加载 sft_train.json
+[calibrate_head r0] sft_train 共 5857 条
+[calibrate_head r0] 加载 test_L1_discrim.jsonl
+[calibrate_head r0] test_L1 共 410 条
+[calibrate_head r0] 加载 dev.jsonl
+[calibrate_head r0] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[calibrate_head r0] rank0: sft_train=733, dev=13
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[calibrate_head r1] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank1.npz (732 条)
+[calibrate_head r1] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank1.npz (13 条)
+[calibrate_head r2] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank2.npz (732 条)
+[calibrate_head r4] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank4.npz (732 条)
+[calibrate_head r2] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank2.npz (13 条)
+[calibrate_head r4] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank4.npz (12 条)
+[calibrate_head r6] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank6.npz (732 条)
+[calibrate_head r6] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank6.npz (12 条)
+[calibrate_head r5] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank5.npz (732 条)
+[calibrate_head r5] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank5.npz (12 条)
+[calibrate_head r3] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank3.npz (732 条)
+[calibrate_head r3] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank3.npz (13 条)
+[calibrate_head r7] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank7.npz (732 条)
+[calibrate_head r7] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank7.npz (12 条)
+[calibrate_head r0] 写 sft shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_train_rank0.npz (733 条)
+[calibrate_head r0] 写 dev shard /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/logs/calib_dev_rank0.npz (13 条)
+[calibrate_head r0] extract 完成: sft_train=5857, dev=100
+[calib] train 标准头 (单卡): /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-92
+[calibrate_head pre-import] LOCAL_RANK=0 → CUDA_VISIBLE_DEVICES=0
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (5857, 4096), pos=973 neg=2403
+[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类
+[calibrate_head r0]   epoch 50/1000, train_loss=0.1885, dev_loss=0.5112, dev_MCC=0.6702, per_class_acc={'answer': '70.59%', 'wrong_object': '69.70%', 'no_target': '93.94%'}
+[calibrate_head r0]     → 新最佳 dev loss: 0.5112 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.1062, dev_loss=0.6379, dev_MCC=0.7451, per_class_acc={'answer': '73.53%', 'wrong_object': '84.85%', 'no_target': '90.91%'}
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0591, dev_loss=0.7210, dev_MCC=0.7607, per_class_acc={'answer': '79.41%', 'wrong_object': '75.76%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0657, dev_loss=0.7141, dev_MCC=0.7162, per_class_acc={'answer': '79.41%', 'wrong_object': '72.73%', 'no_target': '90.91%'}
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0194, dev_loss=0.9096, dev_MCC=0.6737, per_class_acc={'answer': '76.47%', 'wrong_object': '63.64%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.0118, dev_loss=0.9929, dev_MCC=0.7162, per_class_acc={'answer': '79.41%', 'wrong_object': '75.76%', 'no_target': '87.88%'}
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.5112
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.5112）
+[calibrate_head r0] train MCC (multi-class): 0.8688
+[calibrate_head r0] dev   MCC (multi-class): 0.6702
+[calibrate_head r0] 
+=== dev classification_report ===
+                 precision    recall  f1-score   support
+
+      answer(0)     0.6857    0.7059    0.6957        34
+wrong_object(1)     0.7419    0.6970    0.7188        33
+   no_target(2)     0.9118    0.9394    0.9254        33
+
+       accuracy                         0.7800       100
+      macro avg     0.7798    0.7807    0.7799       100
+   weighted avg     0.7789    0.7800    0.7791       100
+
+[calibrate_head r0]   answer(0) acc: 0.7059 (34 样本)
+[calibrate_head r0]   wrong_object(1) acc: 0.6970 (33 样本)
+[calibrate_head r0]   no_target(2) acc: 0.9394 (33 样本)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-92/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calib] ✓ 标准头已存: /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/checkpoint-92/discrim_head_calibrated.pt
+>>> Step 1.5 完成: 标准头训练
+
+>>> Step 2: dev loss 选 epoch (eval_dev_loss.py)
+[dev_loss] 评估 checkpoint-184

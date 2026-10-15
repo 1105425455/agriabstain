@@ -1,0 +1,97 @@
+[fusion_sft_3reason] NPROC=8 HEAD_LAMBDA=0.5 RUN=fusion_3reason_hl05 -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05
+W0708 02:49:50.067000 134 site-packages/torch/distributed/run.py:774] 
+W0708 02:49:50.067000 134 site-packages/torch/distributed/run.py:774] *****************************************
+W0708 02:49:50.067000 134 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0708 02:49:50.067000 134 site-packages/torch/distributed/run.py:774] *****************************************
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-07-08 02:50:48,600] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+df: /root/.triton/autotune: No such file or directory
+df: /root/.triton/autotune: No such file or directory
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:689:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,535] [INFO] [comm.py:658:init_distributed] cdb=None
+[2026-07-08 02:51:03,536] [INFO] [comm.py:658:init_distributed] cdb=None
+[W708 02:51:03.237674663 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237698188 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237820407 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237882323 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237960670 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237986859 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.237992029 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W708 02:51:03.238357194 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[dual-head][3reason] 使用 Qwen3VLWithTriHead 加载模型（三分类）
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 44.50it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 44.75it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 45.02it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 44.33it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.87it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 42.79it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 45.68it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 45.46it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+the initlized model is /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct the class is Qwen3VLWithTriHead
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+LoRA enabled
+[dual-head][3reason] 三分类判别头启用: 一次 forward 拿双路输出, lambda=0.5
+[dual-head][3reason] discrim_head 参数已激活: requires_grad=True
+[dual-head][3reason] 已载入 mu/sd 标准化统计量: /user/huangyongbin/newrepo/agriabstain/final_story/outputs/discrim_musd.pt (source=base Qwen3-VL, train split 2000 samples, layer27 last-token, n=2000, sd_range=[0.303,5.250])
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 151645, 'bos_token_id': None, 'pad_token_id': 151643}.
+WARNING:accelerate.accelerator:[RANK 0] Gradient accumulation steps mismatch: GradientAccumulationPlugin has 1, DeepSpeed config has 8. Using DeepSpeed's value.
+  0%|          | 0/276 [00:00<?, ?it/s]                                       {'train_runtime': 0.0079, 'train_samples_per_second': 2226865.556, 'train_steps_per_second': 34978.937, 'train_loss': 0.0, 'epoch': 3.0}
+  0%|          | 0/276 [00:00<?, ?it/s]  0%|          | 0/276 [00:00<?, ?it/s]
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[dual-head] discrim_head 已保存到 /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05/discrim_head.pt
+[rank0]:[W708 02:51:27.946967974 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[fusion_sft_3reason] done -> /user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_hl05
