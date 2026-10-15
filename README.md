@@ -2,6 +2,8 @@
 
 对应当前论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**（AAAI 2027 submission）。本仓库从作者现有工作区复制整理，保留开发代码、论文、原始结果与提交快照之间的对应关系。
 
+**新 agent 接手先读 [AGENTS.md](AGENTS.md) 和 [交接说明](docs/HANDOFF.md)**：包含当前 Git 状态、论文到实验的路径映射、可直接执行的 CPU 验证命令和外部资产边界。
+
 ## 内容与入口
 
 | 路径 | 内容 |
