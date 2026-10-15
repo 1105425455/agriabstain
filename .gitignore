@@ -8,9 +8,15 @@
 /new_reason/outputs/benchmarks
 /aaai_code/benchmark/data/
 *.pt
+*.pth
+*.ckpt
 *.npz
 *.safetensors
 *.bin
+*.onnx
+*.h5
+*.hdf5
+*.gguf
 *.parquet
 *.zip
 __pycache__/
