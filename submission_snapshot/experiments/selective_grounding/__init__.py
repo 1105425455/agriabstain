@@ -1,1 +1,0 @@
-"""Selective-grounding evaluation utilities."""

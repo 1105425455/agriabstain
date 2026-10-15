@@ -1,5 +1,7 @@
 # Agent 接手约定
 
+最新范围：按用户要求，`paper/`、`figure/`、`submission_snapshot/` 已从 Git 当前版本移除，仅本机保留且忽略；不要重新提交这些文件。日常 CPU 测试按根 README 排除需要论文 TeX 的 `test_paper_metric_consistency.py`。早期核验/交接文档中的论文及快照路径属于本地或历史资料。远端已推送过初始版本，旧 commit 仍含这些资料；未获授权不要 force-push。
+
 先读根 `README.md`，再读 `docs/HANDOFF.md`。验证记录以 `docs/VERIFICATION.md` 的“提交前完整性收尾”节为当前状态，后文保存历史过程。
 
 ## 工作范围

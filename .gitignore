@@ -1,4 +1,7 @@
 # 本地大型资产；路径与来源见 docs/EXTERNAL_ASSETS.json。
+/paper/
+/figure/
+/submission_snapshot/
 /datasets
 /data
 /final_story/outputs

@@ -1,4 +1,0 @@
-dataset,method,policy,threshold,total,supported,unsupported,answered,answered_supported,answered_unsupported,errors,total_coverage,valid_query_retention,unsupported_hallucination_rate,selective_risk
-comprehensive,ReGate,three_class_argmax,,2646,1323,1323,1466,1291,175,415,0.5540438397581254,0.9758125472411187,0.13227513227513227,0.2830832196452933
-refcocog,ReGate,three_class_argmax,,362,181,181,196,181,15,68,0.5414364640883977,1.0,0.08287292817679558,0.3469387755102041
-plantwild,ReGate,three_class_argmax,,408,144,264,194,123,71,86,0.47549019607843135,0.8541666666666666,0.2689393939393939,0.44329896907216493

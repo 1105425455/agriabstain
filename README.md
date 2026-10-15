@@ -1,6 +1,6 @@
 # AgriAbstain / ReGate 论文研究仓库
 
-对应当前论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**（AAAI 2027 submission）。本仓库从作者现有工作区复制整理，保留开发代码、论文、原始结果与提交快照之间的对应关系。
+对应当前论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**（AAAI 2027 submission）。本仓库保留开发代码、配置和作者侧实验结果。按用户要求，论文文件、论文配图和交付包不纳入当前 Git 版本。
 
 **新 agent 接手先读 [AGENTS.md](AGENTS.md) 和 [交接说明](docs/HANDOFF.md)**：包含当前 Git 状态、论文到实验的路径映射、可直接执行的 CPU 验证命令和外部资产边界。
 
@@ -9,11 +9,8 @@
 | 路径 | 内容 |
 |---|---|
 | `aaai_code/` | 当前论文的 benchmark 构造、两阶段训练、推理、评测、机制实验及现有测试 |
-| `paper/` | 当前正文、technical supplement、checklist、参考文献与最终图表 |
-| `figure/` | 任务示意图素材及源图片清单 |
 | `new_reason/outputs/` | 与论文相关的作者侧配置、日志、逐样本预测与分析结果；大型权重及特征为本地链接 |
 | `new_reason/baselines/prompt_cot/` | 当前 prompt-interface 对照的现有代码与结果 |
-| `submission_snapshot/` | 已交付的匿名代码数据包快照，保留原 RELEASE_MANIFEST；与作者开发版分开保存 |
 | `docs/COPY_MANIFEST.json` | 每份复制文件的原路径、字节数和 SHA-256 |
 | `docs/EXTERNAL_ASSETS.json` | 数据、模型、特征等外部资产的位置及本地链接 |
 | `docs/history/` | 原有研究记录，选点和指标以当前论文与正式结果为准 |
@@ -32,13 +29,13 @@
 
 当前服务器通过 Git 忽略的本地符号链接使用原研究工作区的数据、派生图片、checkpoint 和特征；Git clone 不会下载这些资产。完整位置见 `docs/EXTERNAL_ASSETS.json`，图片清单见 `aaai_code/benchmark/IMAGE_MANIFEST.json`。基座为 `Qwen3-VL-8B-Instruct`，正式 endpoint 为 `fusion_3reason_v3_hl04/checkpoint-444` 与其中的 `discrim_head_calibrated.pt`。
 
-迁移机器时需要按资产清单恢复大文件，并通过现有脚本的环境变量指定模型和产物目录。原始研究代码与 JSON 中保留了作者真实路径，以便追溯；部分历史入口仍依赖原工作区位置。匿名快照的可移植复现说明见 [REVIEWER_README](submission_snapshot/REVIEWER_README.md)。
+迁移机器时需要按资产清单恢复大文件，并通过现有脚本的环境变量指定模型和产物目录。原始研究代码与 JSON 中保留了作者真实路径，以便追溯；部分历史入口仍依赖原工作区位置。
 
 ## 版本边界
 
 本次整理直接复制现有实现，不重新实现算法、不改变论文数值、不混入早期 SFT/RL 方案或后续多 seed、linear-gate 实验。`asrabstain/` 属于独立项目。
 
-当前论文图文件齐全；Fig1/Fig2 的可编辑设计源文件尚未在论文图目录中发现。匿名包对分组消融及部分表征实验仅保存 compact 结果；作者侧相应材料在本仓库的结果目录和外部资产清单中另行追溯。
+论文、配图与交付快照仅保留在本机忽略目录，fresh clone 不含这些材料。COPY_MANIFEST 保留整理来源的历史清单，其中这些目录的条目不表示当前 Git 版本包含文件。
 
 ## 检查
 
@@ -48,7 +45,8 @@
 cd aaai_code
 PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
   /user/huangyongbin/miniconda3/envs/agrivllm/bin/python \
-  -m pytest -q -p no:cacheprovider reason_abstain experiments scripts/test_build_anonymous_release.py
+  -m pytest -q -p no:cacheprovider reason_abstain experiments scripts/test_build_anonymous_release.py \
+  --ignore=experiments/base_native_regate/test_paper_metric_consistency.py
 ```
 
-复制文件的校验结果、测试结果及已知限制见 `docs/VERIFICATION.md`。提交快照的 SHA-256 清单仅适用于 `submission_snapshot/`，不用于覆盖或解释作者代码。
+上述代码测试排除需要本地论文 TeX 的一致性测试。原 296 passed、2 skipped 包含该文件的 12 项检查；本机具备论文时仍可单独运行。历史核验记录见 `docs/VERIFICATION.md`。
