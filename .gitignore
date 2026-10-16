@@ -9,6 +9,10 @@
 /aaai_code/benchmark/data/source/
 /aaai_code/benchmark/data/ood/
 /aaai_code/benchmark/data/derived/
+/aaai_code/benchmark/data/
+/docs/REMOTE_ASSETS.json
+**/latest
+**/chat_template.jinja
 *.pt
 *.pth
 *.ckpt
