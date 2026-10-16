@@ -3,10 +3,10 @@ set -euo pipefail
 
 : "${OUTPUT_ROOT:?Set OUTPUT_ROOT to an external runtime output directory}"
 
-BASE_MODEL="${BASE_MODEL:-/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct}"
-CHECKPOINT="${CHECKPOINT:-/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444}"
-DERIVED_IMAGE_ROOT="${DERIVED_IMAGE_ROOT:-/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images}"
 CODE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+: "${BASE_MODEL:?Set BASE_MODEL to the downloaded Qwen3-VL-8B-Instruct directory}"
+CHECKPOINT="${CHECKPOINT:-${CODE_ROOT}/../new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444}"
+DERIVED_IMAGE_ROOT="${DERIVED_IMAGE_ROOT:-${CODE_ROOT}/benchmark/data/derived}"
 COMPREHENSIVE_DATA="${OUTPUT_ROOT}/inputs/sft_test_resolved.jsonl"
 
 python "${CODE_ROOT}/experiments/selective_grounding/resolve_image_paths.py" \

@@ -1,6 +1,6 @@
 # Agent接手约定
 
-先读根README、`docs/HANDOFF.md`、`docs/ASSET_RECOVERY.md`。当前资产范围以`docs/FINAL_ASSETS.json`为准。
+先读根README；它是下载、恢复、模型位置与验证的主要入口。当前资产范围以`docs/FINAL_ASSETS.json`为准，审稿内容见`review.md`。
 
 ## 当前边界
 
