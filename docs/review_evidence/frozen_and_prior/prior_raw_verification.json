@@ -1,0 +1,267 @@
+{
+  "rows": [
+    {
+      "condition": "grouped",
+      "seed": 7,
+      "interface": "native",
+      "FCA": 0.07482993197278912,
+      "retention": 0.7936507936507937,
+      "MCC": 0.7251195301178591,
+      "Strict3": 0.808390022675737,
+      "E2E_mIoU": 0.6552834368032233,
+      "MTS_macro": 0.7896383920263329,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "a4a6523a2e4d3316b470198a524e64b2ef9fc3ae67f4a9c5b9cc07ec4c00850d"
+    },
+    {
+      "condition": "grouped",
+      "seed": 7,
+      "interface": "regate",
+      "FCA": 0.06046863189720333,
+      "retention": 0.9070294784580499,
+      "MCC": 0.8470083430732691,
+      "Strict3": 0.8503401360544217,
+      "E2E_mIoU": 0.6317552395866665,
+      "MTS_macro": 0.8106122026827933,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "f43e2c65f0cf4971f7be2d87402a03321dded9d2f48d380abd00ac5a1ea6f792"
+    },
+    {
+      "condition": "grouped",
+      "seed": 21,
+      "interface": "native",
+      "FCA": 0.11035525321239607,
+      "retention": 0.8012093726379441,
+      "MCC": 0.6935715907545165,
+      "Strict3": 0.7490551776266062,
+      "E2E_mIoU": 0.650250825483782,
+      "MTS_macro": 0.7547400394182406,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "a497fdbc0cb99e548b87d85400958d7731969245852ec79dc54eb3df5ea2bc06"
+    },
+    {
+      "condition": "grouped",
+      "seed": 21,
+      "interface": "regate",
+      "FCA": 0.06802721088435375,
+      "retention": 0.8972033257747544,
+      "MCC": 0.8296777717441887,
+      "Strict3": 0.8318216175359032,
+      "E2E_mIoU": 0.5980894110458437,
+      "MTS_macro": 0.7873783077672897,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "c96d4d12c8ca220978b159dea73e81af0ba53eb114921dc68d26875b5af2547d"
+    },
+    {
+      "condition": "grouped",
+      "seed": 42,
+      "interface": "native",
+      "FCA": 0.08087679516250945,
+      "retention": 0.8246409674981103,
+      "MCC": 0.7471063169380835,
+      "Strict3": 0.8182161753590325,
+      "E2E_mIoU": 0.6806313478302588,
+      "MTS_macro": 0.7978818748217559,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "7335bd5f645287a4ff273197c5024cbe9b369da12acb4c253af9d3e9e393af89"
+    },
+    {
+      "condition": "grouped",
+      "seed": 42,
+      "interface": "regate",
+      "FCA": 0.05139833711262283,
+      "retention": 0.9024943310657596,
+      "MCC": 0.8520021054761374,
+      "Strict3": 0.8624338624338624,
+      "E2E_mIoU": 0.6455398188507772,
+      "MTS_macro": 0.8205955731140261,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "0dec6d2576b141ccd43fb8644acea0336c083bfb2f9c948d2bcdb3ee643ae1d7"
+    },
+    {
+      "condition": "independent",
+      "seed": 7,
+      "interface": "native",
+      "FCA": 0.1965230536659108,
+      "retention": 0.8639455782312925,
+      "MCC": 0.6686460813618834,
+      "Strict3": 0.8080120937263794,
+      "E2E_mIoU": 0.7147801769797109,
+      "MTS_macro": 0.7565957597299154,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "5f37c30ef71730c88582d13d94d85b66150124418312d3f52642b13d06ad4b53"
+    },
+    {
+      "condition": "independent",
+      "seed": 7,
+      "interface": "regate",
+      "FCA": 0.4958427815570673,
+      "retention": 0.9584278155706727,
+      "MCC": 0.519254524597535,
+      "Strict3": 0.6685563114134543,
+      "E2E_mIoU": 0.6978397310750463,
+      "MTS_macro": 0.5380208452687237,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "b31a595dfc119b3facdfa2a08657b70d11123283aea2436bbce21debddfa548d"
+    },
+    {
+      "condition": "independent",
+      "seed": 21,
+      "interface": "native",
+      "FCA": 0.2018140589569161,
+      "retention": 0.8669690098261527,
+      "MCC": 0.6667340169387652,
+      "Strict3": 0.7993197278911565,
+      "E2E_mIoU": 0.7058539434003592,
+      "MTS_macro": 0.745925886367958,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-21/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "99e8989bc47ff40a5c1aeba325d2bb9d06139d270aacf92e892bf6200131d228"
+    },
+    {
+      "condition": "independent",
+      "seed": 21,
+      "interface": "regate",
+      "FCA": 0.47921390778533635,
+      "retention": 0.9584278155706727,
+      "MCC": 0.5329635815057813,
+      "Strict3": 0.6783824640967498,
+      "E2E_mIoU": 0.688895328462123,
+      "MTS_macro": 0.5316302395539488,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-21/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "a0bf80ea0094f4752cecb2d933bff38ae5dba6408b90e54cde1af6250df989b5"
+    },
+    {
+      "condition": "independent",
+      "seed": 42,
+      "interface": "native",
+      "FCA": 0.1836734693877551,
+      "retention": 0.8223733938019653,
+      "MCC": 0.638711601623517,
+      "Strict3": 0.783068783068783,
+      "E2E_mIoU": 0.6772729364512405,
+      "MTS_macro": 0.7346450598864542,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-42/evaluation/native/comprehensive/predictions.jsonl",
+      "sha256": "9a118c29064526d9e66f50d5f000b7cc208d591fb06532afe0cdc5c63e4b9e6a"
+    },
+    {
+      "condition": "independent",
+      "seed": 42,
+      "interface": "regate",
+      "FCA": 0.4860166288737717,
+      "retention": 0.9516250944822373,
+      "MCC": 0.5178321233557749,
+      "Strict3": 0.6507936507936508,
+      "E2E_mIoU": 0.6616925898463285,
+      "MTS_macro": 0.5142949892131659,
+      "predictions": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-42/evaluation/regate/comprehensive/predictions.jsonl",
+      "sha256": "da1b7b89523bdbffde4628f7551e4606543e8ec0f92e466b6af2bede1ec19a05"
+    }
+  ],
+  "summary": {
+    "grouped/native": {
+      "FCA": {
+        "mean": 0.08868732678256488,
+        "sample_sd": 0.01900698333337596
+      },
+      "retention": {
+        "mean": 0.8065003779289494,
+        "sample_sd": 0.016158396316275046
+      },
+      "MCC": {
+        "mean": 0.721932479270153,
+        "sample_sd": 0.026909286440126433
+      },
+      "Strict3": {
+        "mean": 0.7918871252204586,
+        "sample_sd": 0.037417510875935395
+      },
+      "E2E_mIoU": {
+        "mean": 0.6620552033724214,
+        "sample_sd": 0.016283017268368154
+      },
+      "MTS_macro": {
+        "mean": 0.7807534354221098,
+        "sample_sd": 0.02290221235798402
+      }
+    },
+    "grouped/regate": {
+      "FCA": {
+        "mean": 0.0599647266313933,
+        "sample_sd": 0.00832588140179305
+      },
+      "retention": {
+        "mean": 0.9022423784328546,
+        "sample_sd": 0.004917919197768499
+      },
+      "MCC": {
+        "mean": 0.8428960734311984,
+        "sample_sd": 0.011716528511068393
+      },
+      "Strict3": {
+        "mean": 0.8481985386747292,
+        "sample_sd": 0.01541808074715161
+      },
+      "E2E_mIoU": {
+        "mean": 0.6251281564944291,
+        "sample_sd": 0.02440950579071987
+      },
+      "MTS_macro": {
+        "mean": 0.8061953611880364,
+        "sample_sd": 0.01704341649644311
+      }
+    },
+    "independent/native": {
+      "FCA": {
+        "mean": 0.19400352733686066,
+        "sample_sd": 0.009329054462874074
+      },
+      "retention": {
+        "mean": 0.8510959939531368,
+        "sample_sd": 0.024920395346688596
+      },
+      "MCC": {
+        "mean": 0.6580305666413886,
+        "sample_sd": 0.016758007178983014
+      },
+      "Strict3": {
+        "mean": 0.7968002015621063,
+        "sample_sd": 0.012661089855633394
+      },
+      "E2E_mIoU": {
+        "mean": 0.6993023522771036,
+        "sample_sd": 0.019593131008082236
+      },
+      "MTS_macro": {
+        "mean": 0.7457222353281092,
+        "sample_sd": 0.010976766883465987
+      }
+    },
+    "independent/regate": {
+      "FCA": {
+        "mean": 0.4870244394053918,
+        "sample_sd": 0.008360120948872306
+      },
+      "retention": {
+        "mean": 0.9561602418745275,
+        "sample_sd": 0.003927552851630112
+      },
+      "MCC": {
+        "mean": 0.5233500764863637,
+        "sample_sd": 0.00835586114005703
+      },
+      "Strict3": {
+        "mean": 0.6659108087679516,
+        "sample_sd": 0.013983371126228277
+      },
+      "E2E_mIoU": {
+        "mean": 0.6828092164611659,
+        "sample_sd": 0.018826431531715246
+      },
+      "MTS_macro": {
+        "mean": 0.5279820246786128,
+        "sample_sd": 0.012276447581639016
+      }
+    }
+  },
+  "summary_matches_original": true
+}

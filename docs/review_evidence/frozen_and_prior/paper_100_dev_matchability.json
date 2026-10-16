@@ -1,0 +1,15 @@
+{
+  "class_counts": {
+    "answer": 34,
+    "no_target": 33,
+    "wrong_object": 33
+  },
+  "frozen_dev_manifests_data": "sft_dev.json (see npz manifest_json); npz sample_id = sft-json row index only (no semantic ids)",
+  "image_basename_overlap": 81,
+  "matchable_in_frozen_cache": true,
+  "n_picked": 100,
+  "npz_sampleid_vs_paper_sid_overlap": 0,
+  "paper_dev_source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/splits/dev.jsonl",
+  "reason": "直接semantic sample_id不匹配，但original_index可映射sft_dev.json，再以image basename/query/state精确唯一匹配100/100；详见exact_dev100.json。",
+  "stratification_spec": "rng=random.Random(42); per_class=33 from classes [0,1,2]; +1 leftover; final shuffle"
+}

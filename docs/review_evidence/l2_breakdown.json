@@ -1,0 +1,3789 @@
+{
+  "paired_probability_analysis": {
+    "n_pairs": 148,
+    "n_total_groups": 397,
+    "parse_failures": 0,
+    "incomplete_pairs": 249,
+    "deduplicated_records": 245,
+    "groups_with_duplicates": 86,
+    "conflicting_duplicate_groups": 0,
+    "invalid_groups": 0,
+    "delta_p_answer_mean": 0.7858108089667993,
+    "delta_p_answer_median": 0.9955944161047228,
+    "correct_direction_ratio": 0.9662162162162162,
+    "bootstrap_95ci": {
+      "low": 0.7200137347599255,
+      "high": 0.8399519610432944,
+      "method": "BCa"
+    },
+    "pairing_key": "source_instance+target_label"
+  },
+  "l2_n": 790,
+  "l2_unsupported": 395,
+  "cross_target_label_count": 247,
+  "l2_groups": {
+    "all": {
+      "n": 395,
+      "answered": 188
+    },
+    "domain:plantdoc_vg": {
+      "n": 58,
+      "answered": 3
+    },
+    "query:corn leaf blight": {
+      "n": 10,
+      "answered": 0
+    },
+    "target_label_matches_query:True": {
+      "n": 148,
+      "answered": 26
+    },
+    "query:potato leaf late blight": {
+      "n": 6,
+      "answered": 1
+    },
+    "query:squash powdery mildew leaf": {
+      "n": 7,
+      "answered": 0
+    },
+    "query:corn rust leaf": {
+      "n": 3,
+      "answered": 0
+    },
+    "query:apple scab leaf": {
+      "n": 5,
+      "answered": 0
+    },
+    "query:apple rust leaf": {
+      "n": 2,
+      "answered": 1
+    },
+    "query:tomato leaf late blight": {
+      "n": 8,
+      "answered": 0
+    },
+    "query:tomato septoria leaf spot": {
+      "n": 10,
+      "answered": 0
+    },
+    "query:tomato early blight leaf": {
+      "n": 3,
+      "answered": 0
+    },
+    "query:tomato mold leaf": {
+      "n": 3,
+      "answered": 1
+    },
+    "query:corn gray leaf spot": {
+      "n": 1,
+      "answered": 0
+    },
+    "domain:coco_ground_abstain": {
+      "n": 337,
+      "answered": 185
+    },
+    "query:hot dog": {
+      "n": 3,
+      "answered": 1
+    },
+    "target_label_matches_query:False": {
+      "n": 247,
+      "answered": 162
+    },
+    "query:cup": {
+      "n": 6,
+      "answered": 4
+    },
+    "query:dining table": {
+      "n": 13,
+      "answered": 7
+    },
+    "query:dog": {
+      "n": 50,
+      "answered": 16
+    },
+    "query:suitcase": {
+      "n": 4,
+      "answered": 0
+    },
+    "query:bottle": {
+      "n": 18,
+      "answered": 11
+    },
+    "query:bicycle": {
+      "n": 9,
+      "answered": 7
+    },
+    "query:person": {
+      "n": 28,
+      "answered": 18
+    },
+    "query:bird": {
+      "n": 5,
+      "answered": 0
+    },
+    "query:cell phone": {
+      "n": 5,
+      "answered": 2
+    },
+    "query:stop sign": {
+      "n": 3,
+      "answered": 3
+    },
+    "query:backpack": {
+      "n": 3,
+      "answered": 1
+    },
+    "query:car": {
+      "n": 8,
+      "answered": 3
+    },
+    "query:couch": {
+      "n": 3,
+      "answered": 2
+    },
+    "query:oven": {
+      "n": 16,
+      "answered": 14
+    },
+    "query:microwave": {
+      "n": 23,
+      "answered": 19
+    },
+    "query:refrigerator": {
+      "n": 19,
+      "answered": 15
+    },
+    "query:sink": {
+      "n": 22,
+      "answered": 15
+    },
+    "query:bowl": {
+      "n": 13,
+      "answered": 5
+    },
+    "query:truck": {
+      "n": 3,
+      "answered": 2
+    },
+    "query:motorcycle": {
+      "n": 3,
+      "answered": 2
+    },
+    "query:chair": {
+      "n": 3,
+      "answered": 3
+    },
+    "query:bed": {
+      "n": 9,
+      "answered": 4
+    },
+    "query:toilet": {
+      "n": 11,
+      "answered": 5
+    },
+    "query:potted plant": {
+      "n": 21,
+      "answered": 9
+    },
+    "query:toaster": {
+      "n": 7,
+      "answered": 2
+    },
+    "query:book": {
+      "n": 4,
+      "answered": 1
+    },
+    "query:vase": {
+      "n": 13,
+      "answered": 11
+    },
+    "query:tv": {
+      "n": 6,
+      "answered": 1
+    },
+    "query:knife": {
+      "n": 6,
+      "answered": 2
+    }
+  },
+  "comprehensive_unsupported": {
+    "T2_occluded": {
+      "n": 80,
+      "answered": 5
+    },
+    "T3_occluded": {
+      "n": 80,
+      "answered": 7
+    },
+    "base_occluded": {
+      "n": 170,
+      "answered": 24
+    },
+    "T7_ladder": {
+      "n": 148,
+      "answered": 21
+    }
+  },
+  "l3_endpoint": {
+    "n": 148,
+    "answered": 26
+  },
+  "l2_negative_records": [
+    {
+      "sample_id": "L2-ncorn_leaf_blight_0796_02_jpg.rf.e0cd2a479ba87f73c6c4a88fb53f050b-cropout-plantdoc-train-84d6b1f300e05cc8-0-ladder-000",
+      "original_sample_id": "plantdoc-train-84d6b1f300e05cc8-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-84d6b1f300e05cc8-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-northern-corn-leaf-blight-exserohilum-turcicum-lesions-on-a-maize-BBFWRB_jpg.rf.97117e53208246276aaa2a6571b571f7-cropout-plantdoc-train-6bbb9ec2f3524438-0-ladder-000",
+      "original_sample_id": "plantdoc-train-6bbb9ec2f3524438-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-6bbb9ec2f3524438-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-northern-corn-leaf-blight-exserohilum-turcicum-lesions-on-a-maize-leaf-south-africa-xe3a7j_jpg.rf.2b6a6d67a6b70726b3aaa394490ee1ae-cropout-plantdoc-train-dd172c36c0db96dd-0-ladder-000",
+      "original_sample_id": "plantdoc-train-dd172c36c0db96dd-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-dd172c36c0db96dd-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-photo-7-004_jpg.rf.e774cd368b9498b68b9b5e4bdb24a8a0-cropout-plantdoc-train-6f96c489736618bc-0-ladder-000",
+      "original_sample_id": "plantdoc-train-6f96c489736618bc-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-6f96c489736618bc-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-phytophthora-infestans-potato-blight-first-foliar-symptoms-on-solanum-EJKRCK_jpg.rf.c7ebb27761ff8d233dd0864853698f0a-cropout-plantdoc-train-d78c11ae08225c21-0-ladder-000",
+      "original_sample_id": "plantdoc-train-d78c11ae08225c21-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-d78c11ae08225c21-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-potato-solanum-tuberosum-late-blight_jpg.rf.b5041254b5975708b0cc0bfe9cc14227-cropout-plantdoc-train-442185f8b71c4351-0-ladder-000",
+      "original_sample_id": "plantdoc-train-442185f8b71c4351-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-442185f8b71c4351-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-potato_late-blight_05_zoom_jpg.rf.a1c185720aba3e332c4455c665c5f3a5-cropout-plantdoc-train-d36df5ce857fc011-0-ladder-000",
+      "original_sample_id": "plantdoc-train-d36df5ce857fc011-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-d36df5ce857fc011-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-potato_late-blight_07_zoom_jpg.rf.e04add0a2f54c6186054dd1c054a0bc2-cropout-plantdoc-train-7a155679e7b2086a-0-ladder-000",
+      "original_sample_id": "plantdoc-train-7a155679e7b2086a-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-7a155679e7b2086a-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-potato_ocw_botrytis-lateblight_jpg.rf.082745729d576f06dcb77ef11313156f-cropout-plantdoc-train-914d1d778a6958a8-0-ladder-000",
+      "original_sample_id": "plantdoc-train-914d1d778a6958a8-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-914d1d778a6958a8-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-potato_ocw_lateblight-earlyblight_jpg.rf.13898035340590c90ac870264579a925-cropout-plantdoc-train-5d8f2306c8b6440b-0-ladder-000",
+      "original_sample_id": "plantdoc-train-5d8f2306c8b6440b-0-ladder-000",
+      "query": "potato leaf late blight",
+      "crop_target": "potato leaf late blight",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/plantdoc/train/plantdoc-train-5d8f2306c8b6440b-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-powderymildewcucurb-jallen_jpg.rf.4edf90a72dff09d8a46788fd9e1b9e30-cropout-plantdoc-train-5c7aadcba819bad8-0-ladder-000",
+      "original_sample_id": "plantdoc-train-5c7aadcba819bad8-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-5c7aadcba819bad8-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-ppth-friskop-1-corn-rust_png_jpg.rf.97862485b633ab18684898e645b8eb2c-cropout-plantdoc-train-500990ed83409f2a-0-ladder-000",
+      "original_sample_id": "plantdoc-train-500990ed83409f2a-0-ladder-000",
+      "query": "corn rust leaf",
+      "crop_target": "corn rust leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-500990ed83409f2a-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-scab-apple-leaf_jpg.rf.0931a6a8e32a6ce192de251813cfdb15-cropout-plantdoc-train-23dc797906263613-0-ladder-000",
+      "original_sample_id": "plantdoc-train-23dc797906263613-0-ladder-000",
+      "query": "apple scab leaf",
+      "crop_target": "apple scab leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-23dc797906263613-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-scab-on-foliage-300x259_jpg.rf.18df0b599994466d55eea248c6927b7c-cropout-plantdoc-train-b477a741ef570290-0-ladder-000",
+      "original_sample_id": "plantdoc-train-b477a741ef570290-0-ladder-000",
+      "query": "apple scab leaf",
+      "crop_target": "apple scab leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-b477a741ef570290-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-scab-venturia-inaequalis-development-of-disease-on-the-stem-upper-B359MJ_jpg.rf.603d5127478bda63ff8c3c0ed5c35cb1-cropout-plantdoc-train-ef3506773549c9ba-0-ladder-000",
+      "original_sample_id": "plantdoc-train-ef3506773549c9ba-0-ladder-000",
+      "query": "apple scab leaf",
+      "crop_target": "apple scab leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-ef3506773549c9ba-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-schurft_jpg.rf.025af8f92e8ba3726ee840cfb0fffaa6-cropout-plantdoc-train-197e4c5bafc3da00-0-ladder-000",
+      "original_sample_id": "plantdoc-train-197e4c5bafc3da00-0-ladder-000",
+      "query": "apple scab leaf",
+      "crop_target": "apple scab leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-197e4c5bafc3da00-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-severe%20PM%20at%20MHRI%202013%20%2821%29_JPG_jpg.rf.97268d56e547a9a3a108c58125d9216f-cropout-plantdoc-train-7ba183c9f70421ed-0-ladder-000",
+      "original_sample_id": "plantdoc-train-7ba183c9f70421ed-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-7ba183c9f70421ed-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-show_picture_asp?id=aaaaaaaaaanoroz&w=524_jpg.rf.8aa3a21d050ef565756351e5c053561d-cropout-plantdoc-train-af2d7653ad4734fd-0-ladder-000",
+      "original_sample_id": "plantdoc-train-af2d7653ad4734fd-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-af2d7653ad4734fd-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-southern-rust-lower-side_jpg.rf.debfd608e598bd0cbd78343ab2a1be7a-cropout-plantdoc-train-ef88d2169572b4e9-0-ladder-000",
+      "original_sample_id": "plantdoc-train-ef88d2169572b4e9-0-ladder-000",
+      "query": "corn rust leaf",
+      "crop_target": "corn rust leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-ef88d2169572b4e9-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-squash-powdery-mildew-4_jpg.rf.9e1af667c6bcbf98c3e9c51a573c98ef-cropout-plantdoc-train-30c8bf38b1da3729-0-ladder-000",
+      "original_sample_id": "plantdoc-train-30c8bf38b1da3729-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-30c8bf38b1da3729-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-stock-photo-apple-leaf-damaged-by-apple-rust-mite-a-common-arthropod-in-european-apple-orchards-galls-698959369_jpg.rf.a5ebcf66700e92cc4159c5fcee5c1c14-cropout-plantdoc-train-365d14ad0d6c9154-0-ladder-000",
+      "original_sample_id": "plantdoc-train-365d14ad0d6c9154-0-ladder-000",
+      "query": "apple rust leaf",
+      "crop_target": "apple rust leaf",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/plantdoc/train/plantdoc-train-365d14ad0d6c9154-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-stock-photo-northern-corn-leaf-blight-nclb-is-a-foliar-disease-of-corn-maize-caused-by-exserohilum-turcicum-592778840_jpg.rf.ed8036aaabd75c98d8565b1bfa4afc6e-cropout-plantdoc-train-08e002cdfddb714a-0-ladder-000",
+      "original_sample_id": "plantdoc-train-08e002cdfddb714a-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-08e002cdfddb714a-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-stock-photo-northern-corn-leaf-blight-nclb-is-a-foliar-disease-of-corn-maize-caused-by-exserohilum-turcicum-592778870_jpg.rf.8ae3590fa510527817d9804f2b391e94-cropout-plantdoc-train-71ade15e9f954c7d-0-ladder-000",
+      "original_sample_id": "plantdoc-train-71ade15e9f954c7d-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-71ade15e9f954c7d-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-stock-photo-northern-corn-leaf-blight-nclb-is-a-foliar-disease-of-corn-maize-caused-by-exserohilum-turcicum-592778882_jpg.rf.228659dca5879fa3d84baf60e3669324-cropout-plantdoc-train-fc3e77f29b9ef9b4-0-ladder-000",
+      "original_sample_id": "plantdoc-train-fc3e77f29b9ef9b4-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-fc3e77f29b9ef9b4-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-stock-photo-tomato-plants-infected-by-the-late-blight-plant-pathogen-phytophthora-infestans-macro-539209615_jpg.rf.bd5df2a5c6887d189352af1cd579c4c0-cropout-plantdoc-train-331d0d1e3359049e-0-ladder-000",
+      "original_sample_id": "plantdoc-train-331d0d1e3359049e-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-331d0d1e3359049e-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-swcdg1-e1482969712678-300x188_jpg.rf.c9bbd9604b2a2fad599eeb2cd6740c28-cropout-plantdoc-train-807f8de6f13fd021-0-ladder-000",
+      "original_sample_id": "plantdoc-train-807f8de6f13fd021-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-807f8de6f13fd021-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-swcdg1_jpg.rf.0296e44905b83227da0ba4c4802b064d-cropout-plantdoc-train-826b961538365750-0-ladder-000",
+      "original_sample_id": "plantdoc-train-826b961538365750-0-ladder-000",
+      "query": "corn leaf blight",
+      "crop_target": "corn leaf blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-826b961538365750-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-blight-phytophthora-infestans-close-up-of-infected-leaf-b5n95x_jpg.rf.42d301c19710cb09d747bd8f5c25199b-cropout-plantdoc-train-3ef941f098e9e113-0-ladder-000",
+      "original_sample_id": "plantdoc-train-3ef941f098e9e113-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-3ef941f098e9e113-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-blight-treatment-blight_jpg.rf.f0b69b5252190a7080d9fde21a567155-cropout-plantdoc-train-67eb74dfed867951-0-ladder-000",
+      "original_sample_id": "plantdoc-train-67eb74dfed867951-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-67eb74dfed867951-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-early-blight-1_jpg.rf.20c6f38734091828908ff5d7cfd0e0ca-cropout-plantdoc-train-92fbf89a2128851e-0-ladder-000",
+      "original_sample_id": "plantdoc-train-92fbf89a2128851e-0-ladder-000",
+      "query": "tomato early blight leaf",
+      "crop_target": "tomato early blight leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-92fbf89a2128851e-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-late-blight-conn-2015-137c_jpg.rf.baabd96fbc87e1d130bbccef241ad5b2-cropout-plantdoc-train-f0c01297d52a65f0-0-ladder-000",
+      "original_sample_id": "plantdoc-train-f0c01297d52a65f0-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-f0c01297d52a65f0-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-late-blight-foliar-lesions_Scot-Nelson_CC-BY-SA-2_0_jpg.rf.1f38159ed2602b5a2ec4ff9b95b2eb1f-cropout-plantdoc-train-932bf24fe1f77939-0-ladder-000",
+      "original_sample_id": "plantdoc-train-932bf24fe1f77939-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-932bf24fe1f77939-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-late-blight-phytophthora-infestans-necrosis-sporulation-on-a-tomato-leaf-underside-XA233C_jpg.rf.ce947bf86183ff1c1a412f78f72e4160-cropout-plantdoc-train-0723cf1590cc99c9-0-ladder-000",
+      "original_sample_id": "plantdoc-train-0723cf1590cc99c9-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-0723cf1590cc99c9-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-late-blight-sporulation-on-a-tomato-leaflet-picture-id81781370?s=612x612_jpg.rf.1a5c4e4ed46b4b7a9b18ec0f03eebe79-cropout-plantdoc-train-056faa6693e62073-0-ladder-000",
+      "original_sample_id": "plantdoc-train-056faa6693e62073-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-056faa6693e62073-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-leaf-mold-2_jpg.rf.f376d18da4f6d2070e07190457026a4d-cropout-plantdoc-train-3cfb08d6e6908fe6-0-ladder-000",
+      "original_sample_id": "plantdoc-train-3cfb08d6e6908fe6-0-ladder-000",
+      "query": "tomato mold leaf",
+      "crop_target": "tomato mold leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-3cfb08d6e6908fe6-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-leaf-mold-infection-on-a-leaf-top-and-underside-picture-id81781575?s=612x612_jpg.rf.1325690158ca18ebe0da33a3e38d66d9-cropout-plantdoc-train-01c7b4f6feafc652-0-ladder-000",
+      "original_sample_id": "plantdoc-train-01c7b4f6feafc652-0-ladder-000",
+      "query": "tomato mold leaf",
+      "crop_target": "tomato mold leaf",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/plantdoc/train/plantdoc-train-01c7b4f6feafc652-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-leaf-spot-septoria-lycopersici-leaf-spotting-on-tomato-at9jap_jpg.rf.bd13292329d233985594cee7e73280f9-cropout-plantdoc-train-c000708856c4265c-0-ladder-000",
+      "original_sample_id": "plantdoc-train-c000708856c4265c-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-c000708856c4265c-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-leaf-spot-septoria-lycopersici-on-a-tomato-leaflet-acg9j5_jpg.rf.7a4646c1ff5897d26b9715f0373c7cfb-cropout-plantdoc-train-4381805dd6e80838-0-ladder-000",
+      "original_sample_id": "plantdoc-train-4381805dd6e80838-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-4381805dd6e80838-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-septoria-5-500x384_jpg.rf.27a6db496cb6d49122cc9e74d109f278-cropout-plantdoc-train-2681fc92be8e8598-0-ladder-000",
+      "original_sample_id": "plantdoc-train-2681fc92be8e8598-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-2681fc92be8e8598-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-septoria-5_jpg.rf.6de6991f2d84110f6203fe09f8b2fa55-cropout-plantdoc-train-dcf9598008ff5612-0-ladder-000",
+      "original_sample_id": "plantdoc-train-dcf9598008ff5612-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-dcf9598008ff5612-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato-septoria-leaf-spot-600_jpg.rf.322195d123b66ce8f3063d2d439307c7-cropout-plantdoc-train-ca906aeab1e93c33-0-ladder-000",
+      "original_sample_id": "plantdoc-train-ca906aeab1e93c33-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-ca906aeab1e93c33-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato_D33a-Late-blight-015-OMAFHRT_zoom_jpg.rf.1cc95e2f41499b29a5d511143374abe8-cropout-plantdoc-train-d6495449dcecd898-0-ladder-000",
+      "original_sample_id": "plantdoc-train-d6495449dcecd898-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-d6495449dcecd898-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato_fulvia_jpg.rf.cd450919994950b18000f7595d15d0eb-cropout-plantdoc-train-938c9977a929aa45-0-ladder-000",
+      "original_sample_id": "plantdoc-train-938c9977a929aa45-0-ladder-000",
+      "query": "tomato mold leaf",
+      "crop_target": "tomato mold leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-938c9977a929aa45-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato_late-blight_03_zoom_jpg.rf.d64648ff86e8e8ee97023185ae050212-cropout-plantdoc-train-c97502763fafd096-0-ladder-000",
+      "original_sample_id": "plantdoc-train-c97502763fafd096-0-ladder-000",
+      "query": "tomato leaf late blight",
+      "crop_target": "tomato leaf late blight",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-c97502763fafd096-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomato_leaf_spots_1500x1500%253E_jpg.rf.71bc85ecac446dff37f2978c78a7689f-cropout-plantdoc-train-af7582dba8688eee-0-ladder-000",
+      "original_sample_id": "plantdoc-train-af7582dba8688eee-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-af7582dba8688eee-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomatoearlyblight_jpg.rf.a14bf906fda5d8c7a5f977f47128ca5b-cropout-plantdoc-train-0670c573c050c465-0-ladder-000",
+      "original_sample_id": "plantdoc-train-0670c573c050c465-0-ladder-000",
+      "query": "tomato early blight leaf",
+      "crop_target": "tomato early blight leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-0670c573c050c465-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tomatoseptorialeafspotjpg-788d20798a3c74e7_jpg.rf.5099945f5c33bdcbb167611d47f789e4-cropout-plantdoc-train-4d00252ab95d8601-0-ladder-000",
+      "original_sample_id": "plantdoc-train-4d00252ab95d8601-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-4d00252ab95d8601-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-tree-problems-cedar-apple-rust-apple-leaf-475x350_jpg.rf.540c84701470b84dc6102a68a170e489-cropout-plantdoc-train-aac35f34891afe74-0-ladder-000",
+      "original_sample_id": "plantdoc-train-aac35f34891afe74-0-ladder-000",
+      "query": "apple rust leaf",
+      "crop_target": "apple rust leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-aac35f34891afe74-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-uuid%3D23d9bc54-c4a7-4958-890c-0505ac310594%26groupId%3D1841%26t%3D1278717199836_jpg.rf.de672d5deabfa92b746cbfd5c42bce5f-cropout-plantdoc-train-125fe8e9d73afd2e-0-ladder-000",
+      "original_sample_id": "plantdoc-train-125fe8e9d73afd2e-0-ladder-000",
+      "query": "corn gray leaf spot",
+      "crop_target": "corn gray leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-125fe8e9d73afd2e-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-uuid%3Db547b743-d1a1-4788-86dc-8e90ad17e170%26groupId%3D1841%26t%3D1375243802648_jpg.rf.ac9461be6a9e5d64b2e30cb84ebdec9a-cropout-plantdoc-train-2b2dad062a70d572-0-ladder-000",
+      "original_sample_id": "plantdoc-train-2b2dad062a70d572-0-ladder-000",
+      "query": "corn rust leaf",
+      "crop_target": "corn rust leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-2b2dad062a70d572-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-venturia_jpg.rf.2453363cf57472c05349ccd5040656c2-cropout-plantdoc-train-7668dfe5a1b6a8e7-0-ladder-000",
+      "original_sample_id": "plantdoc-train-7668dfe5a1b6a8e7-0-ladder-000",
+      "query": "apple scab leaf",
+      "crop_target": "apple scab leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-7668dfe5a1b6a8e7-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-web1_copy_early-blight-6-_0_jpg.rf.bf2ae7480a06ec974b2ad3c573fd821b-cropout-plantdoc-train-c49fba822dee289f-0-ladder-000",
+      "original_sample_id": "plantdoc-train-c49fba822dee289f-0-ladder-000",
+      "query": "tomato early blight leaf",
+      "crop_target": "tomato early blight leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-c49fba822dee289f-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-web1_copy_tomato-septoria-leaf-spot4_jpg.rf.d875d13d2b4cb99f7e76d56a9cef2dae-cropout-plantdoc-train-06c67feb9d6dbce9-0-ladder-000",
+      "original_sample_id": "plantdoc-train-06c67feb9d6dbce9-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-06c67feb9d6dbce9-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-what-is-powdery-mildew-on-plants-mild-powdery-mildew-that-will-appear-on-most-squash-leaves-during-the-mid-summer-powdery-mildew-plant-spray-powdery-mildew-on-tomato-plant-leaves_jpg.rf.23c43dd532620c90ab05d462668b11dd-cropout-plantdoc-train-1833e5ca9453654c-0-ladder-000",
+      "original_sample_id": "plantdoc-train-1833e5ca9453654c-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-1833e5ca9453654c-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-white-powdery-mildew-leaves_jpg.rf.9f65e160bbe0edd40babfe11c6766f88-cropout-plantdoc-train-3773032a9db66f90-0-ladder-000",
+      "original_sample_id": "plantdoc-train-3773032a9db66f90-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-3773032a9db66f90-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-whitemildew1_l_jpg.rf.a27a9e6f53ed9d2dc7a6d2d165066849-cropout-plantdoc-train-09f2a0cf24731ef4-0-ladder-000",
+      "original_sample_id": "plantdoc-train-09f2a0cf24731ef4-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-09f2a0cf24731ef4-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-woman-cutting-off-yellow-summer-squash-leaves-with-powdery-mildew-eef3dd_jpg.rf.7d9ff725c42aa87d93cf30f736d2b415-cropout-plantdoc-train-ad500a8ec98acd4c-0-ladder-000",
+      "original_sample_id": "plantdoc-train-ad500a8ec98acd4c-0-ladder-000",
+      "query": "squash powdery mildew leaf",
+      "crop_target": "squash powdery mildew leaf",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-ad500a8ec98acd4c-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-x3-most-common-types-tomato-blight_jpg_pagespeed_ic_5cLJi6TXEi_jpg.rf.60d0ca0cf1cfed4ee9005c30cbfd22fe-cropout-plantdoc-train-885c8eb6a4c73ce7-0-ladder-000",
+      "original_sample_id": "plantdoc-train-885c8eb6a4c73ce7-0-ladder-000",
+      "query": "tomato septoria leaf spot",
+      "crop_target": "tomato septoria leaf spot",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/plantdoc/train/plantdoc-train-885c8eb6a4c73ce7-0-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-156-ladder-000",
+      "original_sample_id": "coco-train-558840-156-ladder-000",
+      "query": "hot dog",
+      "crop_target": "hot dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558840-156-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-676791-ladder-000",
+      "original_sample_id": "coco-train-558840-676791-ladder-000",
+      "query": "hot dog",
+      "crop_target": "cup",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-676791-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-1960933-ladder-000",
+      "original_sample_id": "coco-train-558840-1960933-ladder-000",
+      "query": "hot dog",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558840-1960933-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-156-ladder-000",
+      "original_sample_id": "coco-train-558840-156-ladder-000",
+      "query": "cup",
+      "crop_target": "hot dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-156-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-676791-ladder-000",
+      "original_sample_id": "coco-train-558840-676791-ladder-000",
+      "query": "cup",
+      "crop_target": "cup",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-676791-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-1960933-ladder-000",
+      "original_sample_id": "coco-train-558840-1960933-ladder-000",
+      "query": "cup",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-1960933-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-156-ladder-000",
+      "original_sample_id": "coco-train-558840-156-ladder-000",
+      "query": "dining table",
+      "crop_target": "hot dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558840-156-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-676791-ladder-000",
+      "original_sample_id": "coco-train-558840-676791-ladder-000",
+      "query": "dining table",
+      "crop_target": "cup",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-676791-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558840-cropout-coco-train-558840-1960933-ladder-000",
+      "original_sample_id": "coco-train-558840-1960933-ladder-000",
+      "query": "dining table",
+      "crop_target": "dining table",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558840-1960933-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-514915-cropout-coco-train-514915-2251-ladder-000",
+      "original_sample_id": "coco-train-514915-2251-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-514915-2251-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-580255-cropout-coco-train-580255-2081660-ladder-000",
+      "original_sample_id": "coco-train-580255-2081660-ladder-000",
+      "query": "suitcase",
+      "crop_target": "suitcase",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-580255-2081660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-4940-ladder-000",
+      "original_sample_id": "coco-train-519838-4940-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-4940-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-82755-ladder-000",
+      "original_sample_id": "coco-train-519838-82755-ladder-000",
+      "query": "dog",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-82755-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-126487-ladder-000",
+      "original_sample_id": "coco-train-519838-126487-ladder-000",
+      "query": "dog",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-126487-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-211453-ladder-000",
+      "original_sample_id": "coco-train-519838-211453-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-211453-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-4940-ladder-000",
+      "original_sample_id": "coco-train-519838-4940-ladder-000",
+      "query": "bottle",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-4940-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-82755-ladder-000",
+      "original_sample_id": "coco-train-519838-82755-ladder-000",
+      "query": "bottle",
+      "crop_target": "bottle",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-82755-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-126487-ladder-000",
+      "original_sample_id": "coco-train-519838-126487-ladder-000",
+      "query": "bottle",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-126487-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-211453-ladder-000",
+      "original_sample_id": "coco-train-519838-211453-ladder-000",
+      "query": "bottle",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-211453-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-4940-ladder-000",
+      "original_sample_id": "coco-train-519838-4940-ladder-000",
+      "query": "bicycle",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-4940-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-82755-ladder-000",
+      "original_sample_id": "coco-train-519838-82755-ladder-000",
+      "query": "bicycle",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-82755-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-126487-ladder-000",
+      "original_sample_id": "coco-train-519838-126487-ladder-000",
+      "query": "bicycle",
+      "crop_target": "bicycle",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-126487-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-211453-ladder-000",
+      "original_sample_id": "coco-train-519838-211453-ladder-000",
+      "query": "bicycle",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-211453-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-4940-ladder-000",
+      "original_sample_id": "coco-train-519838-4940-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-4940-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-82755-ladder-000",
+      "original_sample_id": "coco-train-519838-82755-ladder-000",
+      "query": "person",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-82755-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-126487-ladder-000",
+      "original_sample_id": "coco-train-519838-126487-ladder-000",
+      "query": "person",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-519838-126487-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-519838-cropout-coco-train-519838-211453-ladder-000",
+      "original_sample_id": "coco-train-519838-211453-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-519838-211453-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-569729-cropout-coco-train-569729-6259-ladder-000",
+      "original_sample_id": "coco-train-569729-6259-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-569729-6259-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-7514-ladder-000",
+      "original_sample_id": "coco-train-560830-7514-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560830-7514-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1501505-ladder-000",
+      "original_sample_id": "coco-train-560830-1501505-ladder-000",
+      "query": "dog",
+      "crop_target": "cup",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560830-1501505-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1965741-ladder-000",
+      "original_sample_id": "coco-train-560830-1965741-ladder-000",
+      "query": "dog",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560830-1965741-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-7514-ladder-000",
+      "original_sample_id": "coco-train-560830-7514-ladder-000",
+      "query": "cup",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560830-7514-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1501505-ladder-000",
+      "original_sample_id": "coco-train-560830-1501505-ladder-000",
+      "query": "cup",
+      "crop_target": "cup",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560830-1501505-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1965741-ladder-000",
+      "original_sample_id": "coco-train-560830-1965741-ladder-000",
+      "query": "cup",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560830-1965741-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-7514-ladder-000",
+      "original_sample_id": "coco-train-560830-7514-ladder-000",
+      "query": "dining table",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560830-7514-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1501505-ladder-000",
+      "original_sample_id": "coco-train-560830-1501505-ladder-000",
+      "query": "dining table",
+      "crop_target": "cup",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560830-1501505-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560830-cropout-coco-train-560830-1965741-ladder-000",
+      "original_sample_id": "coco-train-560830-1965741-ladder-000",
+      "query": "dining table",
+      "crop_target": "dining table",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560830-1965741-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-7793-ladder-000",
+      "original_sample_id": "coco-train-535483-7793-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-7793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-125020-ladder-000",
+      "original_sample_id": "coco-train-535483-125020-ladder-000",
+      "query": "dog",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-125020-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-187285-ladder-000",
+      "original_sample_id": "coco-train-535483-187285-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-187285-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1400671-ladder-000",
+      "original_sample_id": "coco-train-535483-1400671-ladder-000",
+      "query": "dog",
+      "crop_target": "bird",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1400671-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1976542-ladder-000",
+      "original_sample_id": "coco-train-535483-1976542-ladder-000",
+      "query": "dog",
+      "crop_target": "cell phone",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-1976542-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-7793-ladder-000",
+      "original_sample_id": "coco-train-535483-7793-ladder-000",
+      "query": "bicycle",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-7793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-125020-ladder-000",
+      "original_sample_id": "coco-train-535483-125020-ladder-000",
+      "query": "bicycle",
+      "crop_target": "bicycle",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-125020-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-187285-ladder-000",
+      "original_sample_id": "coco-train-535483-187285-ladder-000",
+      "query": "bicycle",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-187285-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1400671-ladder-000",
+      "original_sample_id": "coco-train-535483-1400671-ladder-000",
+      "query": "bicycle",
+      "crop_target": "bird",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1400671-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1976542-ladder-000",
+      "original_sample_id": "coco-train-535483-1976542-ladder-000",
+      "query": "bicycle",
+      "crop_target": "cell phone",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1976542-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-7793-ladder-000",
+      "original_sample_id": "coco-train-535483-7793-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-7793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-125020-ladder-000",
+      "original_sample_id": "coco-train-535483-125020-ladder-000",
+      "query": "person",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-125020-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-187285-ladder-000",
+      "original_sample_id": "coco-train-535483-187285-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-187285-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1400671-ladder-000",
+      "original_sample_id": "coco-train-535483-1400671-ladder-000",
+      "query": "person",
+      "crop_target": "bird",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1400671-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1976542-ladder-000",
+      "original_sample_id": "coco-train-535483-1976542-ladder-000",
+      "query": "person",
+      "crop_target": "cell phone",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1976542-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-7793-ladder-000",
+      "original_sample_id": "coco-train-535483-7793-ladder-000",
+      "query": "bird",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-7793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-125020-ladder-000",
+      "original_sample_id": "coco-train-535483-125020-ladder-000",
+      "query": "bird",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-125020-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-187285-ladder-000",
+      "original_sample_id": "coco-train-535483-187285-ladder-000",
+      "query": "bird",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-187285-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1400671-ladder-000",
+      "original_sample_id": "coco-train-535483-1400671-ladder-000",
+      "query": "bird",
+      "crop_target": "bird",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-1400671-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1976542-ladder-000",
+      "original_sample_id": "coco-train-535483-1976542-ladder-000",
+      "query": "bird",
+      "crop_target": "cell phone",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-1976542-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-7793-ladder-000",
+      "original_sample_id": "coco-train-535483-7793-ladder-000",
+      "query": "cell phone",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-7793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-125020-ladder-000",
+      "original_sample_id": "coco-train-535483-125020-ladder-000",
+      "query": "cell phone",
+      "crop_target": "bicycle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-125020-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-187285-ladder-000",
+      "original_sample_id": "coco-train-535483-187285-ladder-000",
+      "query": "cell phone",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-187285-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1400671-ladder-000",
+      "original_sample_id": "coco-train-535483-1400671-ladder-000",
+      "query": "cell phone",
+      "crop_target": "bird",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-535483-1400671-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-535483-cropout-coco-train-535483-1976542-ladder-000",
+      "original_sample_id": "coco-train-535483-1976542-ladder-000",
+      "query": "cell phone",
+      "crop_target": "cell phone",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-535483-1976542-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-555669-cropout-coco-train-555669-7880-ladder-000",
+      "original_sample_id": "coco-train-555669-7880-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-555669-7880-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-9040-ladder-000",
+      "original_sample_id": "coco-train-559950-9040-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-559950-9040-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-210753-ladder-000",
+      "original_sample_id": "coco-train-559950-210753-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-210753-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-1389202-ladder-000",
+      "original_sample_id": "coco-train-559950-1389202-ladder-000",
+      "query": "dog",
+      "crop_target": "stop sign",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-1389202-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-9040-ladder-000",
+      "original_sample_id": "coco-train-559950-9040-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-559950-9040-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-210753-ladder-000",
+      "original_sample_id": "coco-train-559950-210753-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-559950-210753-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-1389202-ladder-000",
+      "original_sample_id": "coco-train-559950-1389202-ladder-000",
+      "query": "person",
+      "crop_target": "stop sign",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-1389202-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-9040-ladder-000",
+      "original_sample_id": "coco-train-559950-9040-ladder-000",
+      "query": "stop sign",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-9040-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-210753-ladder-000",
+      "original_sample_id": "coco-train-559950-210753-ladder-000",
+      "query": "stop sign",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-210753-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-559950-cropout-coco-train-559950-1389202-ladder-000",
+      "original_sample_id": "coco-train-559950-1389202-ladder-000",
+      "query": "stop sign",
+      "crop_target": "stop sign",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-559950-1389202-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-537955-cropout-coco-train-537955-9120-ladder-000",
+      "original_sample_id": "coco-train-537955-9120-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-537955-9120-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-10071-ladder-000",
+      "original_sample_id": "coco-train-511463-10071-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511463-10071-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-451047-ladder-000",
+      "original_sample_id": "coco-train-511463-451047-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511463-451047-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-2072779-ladder-000",
+      "original_sample_id": "coco-train-511463-2072779-ladder-000",
+      "query": "dog",
+      "crop_target": "backpack",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511463-2072779-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-10071-ladder-000",
+      "original_sample_id": "coco-train-511463-10071-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511463-10071-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-451047-ladder-000",
+      "original_sample_id": "coco-train-511463-451047-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511463-451047-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-2072779-ladder-000",
+      "original_sample_id": "coco-train-511463-2072779-ladder-000",
+      "query": "person",
+      "crop_target": "backpack",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511463-2072779-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-10071-ladder-000",
+      "original_sample_id": "coco-train-511463-10071-ladder-000",
+      "query": "backpack",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511463-10071-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-451047-ladder-000",
+      "original_sample_id": "coco-train-511463-451047-ladder-000",
+      "query": "backpack",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511463-451047-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511463-cropout-coco-train-511463-2072779-ladder-000",
+      "original_sample_id": "coco-train-511463-2072779-ladder-000",
+      "query": "backpack",
+      "crop_target": "backpack",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511463-2072779-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-540449-cropout-coco-train-540449-10600-ladder-000",
+      "original_sample_id": "coco-train-540449-10600-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-540449-10600-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-540449-cropout-coco-train-540449-242478-ladder-000",
+      "original_sample_id": "coco-train-540449-242478-ladder-000",
+      "query": "dog",
+      "crop_target": "car",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-540449-242478-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-540449-cropout-coco-train-540449-10600-ladder-000",
+      "original_sample_id": "coco-train-540449-10600-ladder-000",
+      "query": "car",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-540449-10600-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-540449-cropout-coco-train-540449-242478-ladder-000",
+      "original_sample_id": "coco-train-540449-242478-ladder-000",
+      "query": "car",
+      "crop_target": "car",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-540449-242478-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-10750-ladder-000",
+      "original_sample_id": "coco-train-504900-10750-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-504900-10750-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-111633-ladder-000",
+      "original_sample_id": "coco-train-504900-111633-ladder-000",
+      "query": "dog",
+      "crop_target": "couch",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-504900-111633-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-204767-ladder-000",
+      "original_sample_id": "coco-train-504900-204767-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-204767-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-10750-ladder-000",
+      "original_sample_id": "coco-train-504900-10750-ladder-000",
+      "query": "couch",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-10750-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-111633-ladder-000",
+      "original_sample_id": "coco-train-504900-111633-ladder-000",
+      "query": "couch",
+      "crop_target": "couch",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-504900-111633-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-204767-ladder-000",
+      "original_sample_id": "coco-train-504900-204767-ladder-000",
+      "query": "couch",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-204767-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-10750-ladder-000",
+      "original_sample_id": "coco-train-504900-10750-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-10750-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-111633-ladder-000",
+      "original_sample_id": "coco-train-504900-111633-ladder-000",
+      "query": "person",
+      "crop_target": "couch",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-111633-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-504900-cropout-coco-train-504900-204767-ladder-000",
+      "original_sample_id": "coco-train-504900-204767-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-504900-204767-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-534829-cropout-coco-train-534829-11554-ladder-000",
+      "original_sample_id": "coco-train-534829-11554-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-534829-11554-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-546642-cropout-coco-train-546642-11571-ladder-000",
+      "original_sample_id": "coco-train-546642-11571-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-546642-11571-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-546642-cropout-coco-train-546642-2151207-ladder-000",
+      "original_sample_id": "coco-train-546642-2151207-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-546642-2151207-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-546642-cropout-coco-train-546642-11571-ladder-000",
+      "original_sample_id": "coco-train-546642-11571-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-546642-11571-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-546642-cropout-coco-train-546642-2151207-ladder-000",
+      "original_sample_id": "coco-train-546642-2151207-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-546642-2151207-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-11640-ladder-000",
+      "original_sample_id": "coco-train-553436-11640-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-553436-11640-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-1123172-ladder-000",
+      "original_sample_id": "coco-train-553436-1123172-ladder-000",
+      "query": "dog",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-553436-1123172-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-2227869-ladder-000",
+      "original_sample_id": "coco-train-553436-2227869-ladder-000",
+      "query": "dog",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-553436-2227869-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-11640-ladder-000",
+      "original_sample_id": "coco-train-553436-11640-ladder-000",
+      "query": "oven",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-11640-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-1123172-ladder-000",
+      "original_sample_id": "coco-train-553436-1123172-ladder-000",
+      "query": "oven",
+      "crop_target": "oven",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-1123172-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-2227869-ladder-000",
+      "original_sample_id": "coco-train-553436-2227869-ladder-000",
+      "query": "oven",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-2227869-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-11640-ladder-000",
+      "original_sample_id": "coco-train-553436-11640-ladder-000",
+      "query": "microwave",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-11640-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-1123172-ladder-000",
+      "original_sample_id": "coco-train-553436-1123172-ladder-000",
+      "query": "microwave",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-1123172-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-553436-cropout-coco-train-553436-2227869-ladder-000",
+      "original_sample_id": "coco-train-553436-2227869-ladder-000",
+      "query": "microwave",
+      "crop_target": "microwave",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-553436-2227869-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "dog",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "dog",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "dog",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "dog",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "person",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "person",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "person",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "person",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "refrigerator",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "oven",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "oven",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "oven",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "oven",
+      "crop_target": "oven",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "oven",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "oven",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "sink",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "sink",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "sink",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "sink",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "sink",
+      "crop_target": "sink",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "sink",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-11660-ladder-000",
+      "original_sample_id": "coco-train-558671-11660-ladder-000",
+      "query": "bowl",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-11660-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-191406-ladder-000",
+      "original_sample_id": "coco-train-558671-191406-ladder-000",
+      "query": "bowl",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-191406-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-331764-ladder-000",
+      "original_sample_id": "coco-train-558671-331764-ladder-000",
+      "query": "bowl",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-331764-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1123785-ladder-000",
+      "original_sample_id": "coco-train-558671-1123785-ladder-000",
+      "query": "bowl",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-1123785-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-1981839-ladder-000",
+      "original_sample_id": "coco-train-558671-1981839-ladder-000",
+      "query": "bowl",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-558671-1981839-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-558671-cropout-coco-train-558671-2109216-ladder-000",
+      "original_sample_id": "coco-train-558671-2109216-ladder-000",
+      "query": "bowl",
+      "crop_target": "bowl",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-558671-2109216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-12030-ladder-000",
+      "original_sample_id": "coco-train-521869-12030-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-521869-12030-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-345270-ladder-000",
+      "original_sample_id": "coco-train-521869-345270-ladder-000",
+      "query": "dog",
+      "crop_target": "car",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-521869-345270-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-1797793-ladder-000",
+      "original_sample_id": "coco-train-521869-1797793-ladder-000",
+      "query": "dog",
+      "crop_target": "truck",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-521869-1797793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-12030-ladder-000",
+      "original_sample_id": "coco-train-521869-12030-ladder-000",
+      "query": "car",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-521869-12030-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-345270-ladder-000",
+      "original_sample_id": "coco-train-521869-345270-ladder-000",
+      "query": "car",
+      "crop_target": "car",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-521869-345270-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-1797793-ladder-000",
+      "original_sample_id": "coco-train-521869-1797793-ladder-000",
+      "query": "car",
+      "crop_target": "truck",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-521869-1797793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-12030-ladder-000",
+      "original_sample_id": "coco-train-521869-12030-ladder-000",
+      "query": "truck",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-521869-12030-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-345270-ladder-000",
+      "original_sample_id": "coco-train-521869-345270-ladder-000",
+      "query": "truck",
+      "crop_target": "car",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-521869-345270-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-521869-cropout-coco-train-521869-1797793-ladder-000",
+      "original_sample_id": "coco-train-521869-1797793-ladder-000",
+      "query": "truck",
+      "crop_target": "truck",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-521869-1797793-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-12731-ladder-000",
+      "original_sample_id": "coco-train-532426-12731-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-12731-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-133662-ladder-000",
+      "original_sample_id": "coco-train-532426-133662-ladder-000",
+      "query": "dog",
+      "crop_target": "car",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-133662-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-148210-ladder-000",
+      "original_sample_id": "coco-train-532426-148210-ladder-000",
+      "query": "dog",
+      "crop_target": "motorcycle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-148210-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-12731-ladder-000",
+      "original_sample_id": "coco-train-532426-12731-ladder-000",
+      "query": "car",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-12731-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-133662-ladder-000",
+      "original_sample_id": "coco-train-532426-133662-ladder-000",
+      "query": "car",
+      "crop_target": "car",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-133662-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-148210-ladder-000",
+      "original_sample_id": "coco-train-532426-148210-ladder-000",
+      "query": "car",
+      "crop_target": "motorcycle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-148210-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-12731-ladder-000",
+      "original_sample_id": "coco-train-532426-12731-ladder-000",
+      "query": "motorcycle",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-532426-12731-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-133662-ladder-000",
+      "original_sample_id": "coco-train-532426-133662-ladder-000",
+      "query": "motorcycle",
+      "crop_target": "car",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-532426-133662-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-532426-cropout-coco-train-532426-148210-ladder-000",
+      "original_sample_id": "coco-train-532426-148210-ladder-000",
+      "query": "motorcycle",
+      "crop_target": "motorcycle",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-532426-148210-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-14522-ladder-000",
+      "original_sample_id": "coco-train-560373-14522-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560373-14522-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1185055-ladder-000",
+      "original_sample_id": "coco-train-560373-1185055-ladder-000",
+      "query": "dog",
+      "crop_target": "suitcase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560373-1185055-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1938637-ladder-000",
+      "original_sample_id": "coco-train-560373-1938637-ladder-000",
+      "query": "dog",
+      "crop_target": "chair",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560373-1938637-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-14522-ladder-000",
+      "original_sample_id": "coco-train-560373-14522-ladder-000",
+      "query": "suitcase",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560373-14522-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1185055-ladder-000",
+      "original_sample_id": "coco-train-560373-1185055-ladder-000",
+      "query": "suitcase",
+      "crop_target": "suitcase",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560373-1185055-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1938637-ladder-000",
+      "original_sample_id": "coco-train-560373-1938637-ladder-000",
+      "query": "suitcase",
+      "crop_target": "chair",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-560373-1938637-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-14522-ladder-000",
+      "original_sample_id": "coco-train-560373-14522-ladder-000",
+      "query": "chair",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560373-14522-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1185055-ladder-000",
+      "original_sample_id": "coco-train-560373-1185055-ladder-000",
+      "query": "chair",
+      "crop_target": "suitcase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560373-1185055-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-560373-cropout-coco-train-560373-1938637-ladder-000",
+      "original_sample_id": "coco-train-560373-1938637-ladder-000",
+      "query": "chair",
+      "crop_target": "chair",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-560373-1938637-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-14658-ladder-000",
+      "original_sample_id": "coco-train-544122-14658-ladder-000",
+      "query": "dog",
+      "crop_target": "dog",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-544122-14658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-1724399-ladder-000",
+      "original_sample_id": "coco-train-544122-1724399-ladder-000",
+      "query": "dog",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-544122-1724399-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-14658-ladder-000",
+      "original_sample_id": "coco-train-544122-14658-ladder-000",
+      "query": "bed",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-544122-14658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-1724399-ladder-000",
+      "original_sample_id": "coco-train-544122-1724399-ladder-000",
+      "query": "bed",
+      "crop_target": "person",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-544122-1724399-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-14658-ladder-000",
+      "original_sample_id": "coco-train-544122-14658-ladder-000",
+      "query": "person",
+      "crop_target": "dog",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-544122-14658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-544122-cropout-coco-train-544122-1724399-ladder-000",
+      "original_sample_id": "coco-train-544122-1724399-ladder-000",
+      "query": "person",
+      "crop_target": "person",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-544122-1724399-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-552454-cropout-coco-train-552454-1096605-ladder-000",
+      "original_sample_id": "coco-train-552454-1096605-ladder-000",
+      "query": "toilet",
+      "crop_target": "toilet",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-552454-1096605-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-552454-cropout-coco-train-552454-2094440-ladder-000",
+      "original_sample_id": "coco-train-552454-2094440-ladder-000",
+      "query": "toilet",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-552454-2094440-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-552454-cropout-coco-train-552454-1096605-ladder-000",
+      "original_sample_id": "coco-train-552454-1096605-ladder-000",
+      "query": "bottle",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-552454-1096605-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-552454-cropout-coco-train-552454-2094440-ladder-000",
+      "original_sample_id": "coco-train-552454-2094440-ladder-000",
+      "query": "bottle",
+      "crop_target": "bottle",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-552454-2094440-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-580027-cropout-coco-train-580027-19902-ladder-000",
+      "original_sample_id": "coco-train-580027-19902-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-580027-19902-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-580027-cropout-coco-train-580027-79213-ladder-000",
+      "original_sample_id": "coco-train-580027-79213-ladder-000",
+      "query": "potted plant",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-580027-79213-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-580027-cropout-coco-train-580027-19902-ladder-000",
+      "original_sample_id": "coco-train-580027-19902-ladder-000",
+      "query": "bottle",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-580027-19902-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-580027-cropout-coco-train-580027-79213-ladder-000",
+      "original_sample_id": "coco-train-580027-79213-ladder-000",
+      "query": "bottle",
+      "crop_target": "bottle",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-580027-79213-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "bottle",
+      "crop_target": "bottle",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "bottle",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "bottle",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "bottle",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "bottle",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "bottle",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "bottle",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "bed",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "bed",
+      "crop_target": "bed",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "bed",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "bed",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "bed",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "bed",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "bed",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "refrigerator",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "microwave",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "microwave",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "microwave",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "microwave",
+      "crop_target": "microwave",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "microwave",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "microwave",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "microwave",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "toaster",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "toaster",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "toaster",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "toaster",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "toaster",
+      "crop_target": "toaster",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "toaster",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "toaster",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "bowl",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "bowl",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "bowl",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "bowl",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "bowl",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "bowl",
+      "crop_target": "bowl",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "bowl",
+      "crop_target": "dining table",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-85358-ladder-000",
+      "original_sample_id": "coco-train-530384-85358-ladder-000",
+      "query": "dining table",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-85358-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-318058-ladder-000",
+      "original_sample_id": "coco-train-530384-318058-ladder-000",
+      "query": "dining table",
+      "crop_target": "bed",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-318058-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-332391-ladder-000",
+      "original_sample_id": "coco-train-530384-332391-ladder-000",
+      "query": "dining table",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-332391-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1118709-ladder-000",
+      "original_sample_id": "coco-train-530384-1118709-ladder-000",
+      "query": "dining table",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1118709-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1128496-ladder-000",
+      "original_sample_id": "coco-train-530384-1128496-ladder-000",
+      "query": "dining table",
+      "crop_target": "toaster",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-530384-1128496-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1898136-ladder-000",
+      "original_sample_id": "coco-train-530384-1898136-ladder-000",
+      "query": "dining table",
+      "crop_target": "bowl",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1898136-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-530384-cropout-coco-train-530384-1962415-ladder-000",
+      "original_sample_id": "coco-train-530384-1962415-ladder-000",
+      "query": "dining table",
+      "crop_target": "dining table",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-530384-1962415-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-20371-ladder-000",
+      "original_sample_id": "coco-train-499281-20371-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-499281-20371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1120026-ladder-000",
+      "original_sample_id": "coco-train-499281-1120026-ladder-000",
+      "query": "potted plant",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-499281-1120026-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1121170-ladder-000",
+      "original_sample_id": "coco-train-499281-1121170-ladder-000",
+      "query": "potted plant",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-499281-1121170-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-20371-ladder-000",
+      "original_sample_id": "coco-train-499281-20371-ladder-000",
+      "query": "microwave",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-499281-20371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1120026-ladder-000",
+      "original_sample_id": "coco-train-499281-1120026-ladder-000",
+      "query": "microwave",
+      "crop_target": "microwave",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-499281-1120026-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1121170-ladder-000",
+      "original_sample_id": "coco-train-499281-1121170-ladder-000",
+      "query": "microwave",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-499281-1121170-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-20371-ladder-000",
+      "original_sample_id": "coco-train-499281-20371-ladder-000",
+      "query": "oven",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-499281-20371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1120026-ladder-000",
+      "original_sample_id": "coco-train-499281-1120026-ladder-000",
+      "query": "oven",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-499281-1120026-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-499281-cropout-coco-train-499281-1121170-ladder-000",
+      "original_sample_id": "coco-train-499281-1121170-ladder-000",
+      "query": "oven",
+      "crop_target": "oven",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-499281-1121170-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-20524-ladder-000",
+      "original_sample_id": "coco-train-567787-20524-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-567787-20524-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1094178-ladder-000",
+      "original_sample_id": "coco-train-567787-1094178-ladder-000",
+      "query": "potted plant",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-1094178-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1132087-ladder-000",
+      "original_sample_id": "coco-train-567787-1132087-ladder-000",
+      "query": "potted plant",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-1132087-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-20524-ladder-000",
+      "original_sample_id": "coco-train-567787-20524-ladder-000",
+      "query": "toilet",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-20524-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1094178-ladder-000",
+      "original_sample_id": "coco-train-567787-1094178-ladder-000",
+      "query": "toilet",
+      "crop_target": "toilet",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-567787-1094178-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1132087-ladder-000",
+      "original_sample_id": "coco-train-567787-1132087-ladder-000",
+      "query": "toilet",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-1132087-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-20524-ladder-000",
+      "original_sample_id": "coco-train-567787-20524-ladder-000",
+      "query": "sink",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-20524-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1094178-ladder-000",
+      "original_sample_id": "coco-train-567787-1094178-ladder-000",
+      "query": "sink",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-567787-1094178-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-567787-cropout-coco-train-567787-1132087-ladder-000",
+      "original_sample_id": "coco-train-567787-1132087-ladder-000",
+      "query": "sink",
+      "crop_target": "sink",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-567787-1132087-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1096801-ladder-000",
+      "original_sample_id": "coco-train-523978-1096801-ladder-000",
+      "query": "toilet",
+      "crop_target": "toilet",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-1096801-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1133371-ladder-000",
+      "original_sample_id": "coco-train-523978-1133371-ladder-000",
+      "query": "toilet",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-1133371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2142197-ladder-000",
+      "original_sample_id": "coco-train-523978-2142197-ladder-000",
+      "query": "toilet",
+      "crop_target": "book",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-2142197-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2146148-ladder-000",
+      "original_sample_id": "coco-train-523978-2146148-ladder-000",
+      "query": "toilet",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-2146148-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1096801-ladder-000",
+      "original_sample_id": "coco-train-523978-1096801-ladder-000",
+      "query": "sink",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-1096801-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1133371-ladder-000",
+      "original_sample_id": "coco-train-523978-1133371-ladder-000",
+      "query": "sink",
+      "crop_target": "sink",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-1133371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2142197-ladder-000",
+      "original_sample_id": "coco-train-523978-2142197-ladder-000",
+      "query": "sink",
+      "crop_target": "book",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-2142197-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2146148-ladder-000",
+      "original_sample_id": "coco-train-523978-2146148-ladder-000",
+      "query": "sink",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-2146148-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1096801-ladder-000",
+      "original_sample_id": "coco-train-523978-1096801-ladder-000",
+      "query": "book",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-1096801-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1133371-ladder-000",
+      "original_sample_id": "coco-train-523978-1133371-ladder-000",
+      "query": "book",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-1133371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2142197-ladder-000",
+      "original_sample_id": "coco-train-523978-2142197-ladder-000",
+      "query": "book",
+      "crop_target": "book",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-2142197-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2146148-ladder-000",
+      "original_sample_id": "coco-train-523978-2146148-ladder-000",
+      "query": "book",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-2146148-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1096801-ladder-000",
+      "original_sample_id": "coco-train-523978-1096801-ladder-000",
+      "query": "vase",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-1096801-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-1133371-ladder-000",
+      "original_sample_id": "coco-train-523978-1133371-ladder-000",
+      "query": "vase",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-1133371-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2142197-ladder-000",
+      "original_sample_id": "coco-train-523978-2142197-ladder-000",
+      "query": "vase",
+      "crop_target": "book",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-523978-2142197-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-523978-cropout-coco-train-523978-2146148-ladder-000",
+      "original_sample_id": "coco-train-523978-2146148-ladder-000",
+      "query": "vase",
+      "crop_target": "vase",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-523978-2146148-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-515904-cropout-coco-train-515904-1093201-ladder-000",
+      "original_sample_id": "coco-train-515904-1093201-ladder-000",
+      "query": "toilet",
+      "crop_target": "toilet",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-515904-1093201-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-515904-cropout-coco-train-515904-1134192-ladder-000",
+      "original_sample_id": "coco-train-515904-1134192-ladder-000",
+      "query": "toilet",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-515904-1134192-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-515904-cropout-coco-train-515904-1093201-ladder-000",
+      "original_sample_id": "coco-train-515904-1093201-ladder-000",
+      "query": "sink",
+      "crop_target": "toilet",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-515904-1093201-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-515904-cropout-coco-train-515904-1134192-ladder-000",
+      "original_sample_id": "coco-train-515904-1134192-ladder-000",
+      "query": "sink",
+      "crop_target": "sink",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-515904-1134192-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "potted plant",
+      "crop_target": "tv",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "potted plant",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "potted plant",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "potted plant",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "potted plant",
+      "crop_target": "knife",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "tv",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "tv",
+      "crop_target": "tv",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "tv",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "tv",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "tv",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "tv",
+      "crop_target": "knife",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "tv",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "refrigerator",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "refrigerator",
+      "crop_target": "knife",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "microwave",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "microwave",
+      "crop_target": "tv",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "microwave",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "microwave",
+      "crop_target": "microwave",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "microwave",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "microwave",
+      "crop_target": "knife",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "vase",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "vase",
+      "crop_target": "tv",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "vase",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "vase",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "vase",
+      "crop_target": "vase",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "vase",
+      "crop_target": "knife",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-21698-ladder-000",
+      "original_sample_id": "coco-train-511430-21698-ladder-000",
+      "query": "knife",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-21698-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-32549-ladder-000",
+      "original_sample_id": "coco-train-511430-32549-ladder-000",
+      "query": "knife",
+      "crop_target": "tv",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-511430-32549-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-330944-ladder-000",
+      "original_sample_id": "coco-train-511430-330944-ladder-000",
+      "query": "knife",
+      "crop_target": "refrigerator",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-330944-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1120596-ladder-000",
+      "original_sample_id": "coco-train-511430-1120596-ladder-000",
+      "query": "knife",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1120596-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-1670038-ladder-000",
+      "original_sample_id": "coco-train-511430-1670038-ladder-000",
+      "query": "knife",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-1670038-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-511430-cropout-coco-train-511430-2103996-ladder-000",
+      "original_sample_id": "coco-train-511430-2103996-ladder-000",
+      "query": "knife",
+      "crop_target": "knife",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-511430-2103996-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-22057-ladder-000",
+      "original_sample_id": "coco-train-541550-22057-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-541550-22057-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1119614-ladder-000",
+      "original_sample_id": "coco-train-541550-1119614-ladder-000",
+      "query": "potted plant",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-541550-1119614-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1124658-ladder-000",
+      "original_sample_id": "coco-train-541550-1124658-ladder-000",
+      "query": "potted plant",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-541550-1124658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1134568-ladder-000",
+      "original_sample_id": "coco-train-541550-1134568-ladder-000",
+      "query": "potted plant",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1134568-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-22057-ladder-000",
+      "original_sample_id": "coco-train-541550-22057-ladder-000",
+      "query": "microwave",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-22057-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1119614-ladder-000",
+      "original_sample_id": "coco-train-541550-1119614-ladder-000",
+      "query": "microwave",
+      "crop_target": "microwave",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1119614-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1124658-ladder-000",
+      "original_sample_id": "coco-train-541550-1124658-ladder-000",
+      "query": "microwave",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1124658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1134568-ladder-000",
+      "original_sample_id": "coco-train-541550-1134568-ladder-000",
+      "query": "microwave",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1134568-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-22057-ladder-000",
+      "original_sample_id": "coco-train-541550-22057-ladder-000",
+      "query": "oven",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-22057-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1119614-ladder-000",
+      "original_sample_id": "coco-train-541550-1119614-ladder-000",
+      "query": "oven",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1119614-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1124658-ladder-000",
+      "original_sample_id": "coco-train-541550-1124658-ladder-000",
+      "query": "oven",
+      "crop_target": "oven",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1124658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1134568-ladder-000",
+      "original_sample_id": "coco-train-541550-1134568-ladder-000",
+      "query": "oven",
+      "crop_target": "sink",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1134568-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-22057-ladder-000",
+      "original_sample_id": "coco-train-541550-22057-ladder-000",
+      "query": "sink",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-22057-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1119614-ladder-000",
+      "original_sample_id": "coco-train-541550-1119614-ladder-000",
+      "query": "sink",
+      "crop_target": "microwave",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-541550-1119614-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1124658-ladder-000",
+      "original_sample_id": "coco-train-541550-1124658-ladder-000",
+      "query": "sink",
+      "crop_target": "oven",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-541550-1124658-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-541550-cropout-coco-train-541550-1134568-ladder-000",
+      "original_sample_id": "coco-train-541550-1134568-ladder-000",
+      "query": "sink",
+      "crop_target": "sink",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-541550-1134568-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-22216-ladder-000",
+      "original_sample_id": "coco-train-512982-22216-ladder-000",
+      "query": "potted plant",
+      "crop_target": "potted plant",
+      "same_label": true,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-512982-22216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-288076-ladder-000",
+      "original_sample_id": "coco-train-512982-288076-ladder-000",
+      "query": "potted plant",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-288076-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-1156599-ladder-000",
+      "original_sample_id": "coco-train-512982-1156599-ladder-000",
+      "query": "potted plant",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-1156599-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-22216-ladder-000",
+      "original_sample_id": "coco-train-512982-22216-ladder-000",
+      "query": "bottle",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-22216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-288076-ladder-000",
+      "original_sample_id": "coco-train-512982-288076-ladder-000",
+      "query": "bottle",
+      "crop_target": "bottle",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-288076-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-1156599-ladder-000",
+      "original_sample_id": "coco-train-512982-1156599-ladder-000",
+      "query": "bottle",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-1156599-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-22216-ladder-000",
+      "original_sample_id": "coco-train-512982-22216-ladder-000",
+      "query": "sink",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-22216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-288076-ladder-000",
+      "original_sample_id": "coco-train-512982-288076-ladder-000",
+      "query": "sink",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-288076-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-1156599-ladder-000",
+      "original_sample_id": "coco-train-512982-1156599-ladder-000",
+      "query": "sink",
+      "crop_target": "vase",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-1156599-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-22216-ladder-000",
+      "original_sample_id": "coco-train-512982-22216-ladder-000",
+      "query": "vase",
+      "crop_target": "potted plant",
+      "same_label": false,
+      "answered": false,
+      "image": "data/derived/coco/train/coco-train-512982-22216-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-288076-ladder-000",
+      "original_sample_id": "coco-train-512982-288076-ladder-000",
+      "query": "vase",
+      "crop_target": "bottle",
+      "same_label": false,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-288076-region-ladder-000.jpg"
+    },
+    {
+      "sample_id": "L2-512982-cropout-coco-train-512982-1156599-ladder-000",
+      "original_sample_id": "coco-train-512982-1156599-ladder-000",
+      "query": "vase",
+      "crop_target": "vase",
+      "same_label": true,
+      "answered": true,
+      "image": "data/derived/coco/train/coco-train-512982-1156599-region-ladder-000.jpg"
+    }
+  ]
+}

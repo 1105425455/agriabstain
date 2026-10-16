@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "gpt_l3_predictions": "42749d8b492790823c9200677097df3284fa11be0052ed875dfda96c4951b80e",
+    "regate_l3_head_probabilities": "df34135391870e04d8b717d0a998dd532232aaf778ba6468befbab345438dc43",
+    "regate_l3_existing_analysis": "7d4da49d24262ac2974902923df9cfca78b59c62f5c0ccb927ee202a7e278b33",
+    "plantdoc_capability_gate_audit": "764e5d6724ae01503d8223a8cdc2d6bc231d7910820a7f2ff36cfea3218e6bd3",
+    "plantdoc_answerable_calibration": "1a8e6b6381b6604b08adcdcc6da956537eff2fde0113480ae6c42ba1f3b3df41",
+    "plantdoc_answerable_base_predictions": "3fbf2fbd4faeb099f02bb22c9d85087fac6f658e33fda4e543a9ad7264f5174d",
+    "raw_test_split": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4",
+    "sft_native_test_comprehensive_predictions": "65983d84f36d8177fdd28bbea7ebf26bad8978c17c2746193957b580dcc0b795",
+    "sft_native_dev_predictions": "3df5f300bc34d1414516772aa4f097120fddad51f6502f9087aa74fbc5f88e34",
+    "groundingme_run_config": "7869d78a8b1709b6f0ed2792e9141d0613fb96639718d4e6806a751ddb7b17de",
+    "openref_run_config": "ce4db9331cc7030b3d90708de33a1f801c72ec69da1b49557ce2dc393e6e33af"
+  }
+}

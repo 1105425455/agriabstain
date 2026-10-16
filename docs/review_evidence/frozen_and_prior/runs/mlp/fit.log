@@ -1,0 +1,10 @@
+[frozen-mlp] train=(7072, 4096) dev=(2408, 4096) test=(2646, 4096) pool=last_token seed=42
+[frozen-mlp] epoch 50 train_loss=0.2606 dev_loss=0.3649 dev_mcc=0.7589
+[frozen-mlp]   new best dev_loss=0.3649
+[frozen-mlp] epoch 100 train_loss=0.1752 dev_loss=0.3811 dev_mcc=0.7801
+[frozen-mlp] epoch 150 train_loss=0.0591 dev_loss=0.4743 dev_mcc=0.7899
+[frozen-mlp] epoch 200 train_loss=0.0795 dev_loss=0.4605 dev_mcc=0.7886
+[frozen-mlp] epoch 250 train_loss=0.0278 dev_loss=0.5695 dev_mcc=0.7960
+[frozen-mlp] epoch 300 train_loss=0.0421 dev_loss=0.5658 dev_mcc=0.7944
+[frozen-mlp] early stop at epoch 300
+[frozen-mlp] done best_epoch=50 best_dev_loss=0.3649 test_auroc=0.9671 test_mcc_3class=0.7691

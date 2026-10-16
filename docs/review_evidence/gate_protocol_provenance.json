@@ -1,0 +1,46 @@
+{
+  "Grouped": {
+    "source": "new_reason/outputs/logs/fusion_3reason_v3_hl04/calib_train_checkpoint-444.log",
+    "sha256": "eec1876e3bca605437695a882b5c718ac9a638184e2d88dedccdfe053bf96cc5",
+    "recorded_setup_and_support": [
+      "[calibrate_head r0] train: (7072, 4096), pos=1500 neg=2703",
+      "[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34",
+      "[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类",
+      "      answer(0)     0.8750    0.8235    0.8485        34",
+      "wrong_object(1)     0.8824    0.9091    0.8955        33",
+      "   no_target(2)     0.9118    0.9394    0.9254        33",
+      "[calibrate_head r0]   answer(0) acc: 0.8235 (34 样本)",
+      "[calibrate_head r0]   wrong_object(1) acc: 0.9091 (33 样本)",
+      "[calibrate_head r0]   no_target(2) acc: 0.9394 (33 样本)"
+    ]
+  },
+  "Independent": {
+    "source": "aaai_code/experiments/grouping_ablation/artifacts/logs/calibrate_train.log",
+    "sha256": "a0c2671e70918944849f003724a9260d8c56c71aa522be5ff94ae55e4f6decd4",
+    "recorded_setup_and_support": [
+      "[calibrate_head r0] train: (7072, 4096), pos=1500 neg=2703",
+      "[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34",
+      "[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类",
+      "      answer(0)     0.4179    0.8235    0.5545        34",
+      "wrong_object(1)     0.5000    0.0909    0.1538        33",
+      "   no_target(2)     0.8519    0.6970    0.7667        33",
+      "[calibrate_head r0]   answer(0) acc: 0.8235 (34 样本)",
+      "[calibrate_head r0]   wrong_object(1) acc: 0.0909 (33 样本)",
+      "[calibrate_head r0]   no_target(2) acc: 0.6970 (33 样本)"
+    ]
+  },
+  "current_code_recipe": {
+    "source": "aaai_code/training/sft_final/calibrate_head.py",
+    "sha256": "1b60c5eaefd0b3bf0107b187110350a9f944b2922134b0639543bf49d568185b",
+    "excerpts": [
+      "217:     _rng = random.Random(42)",
+      "448:     mu = X_train.mean(axis=0)",
+      "449:     sd = X_train.std(axis=0) + 1e-6",
+      "471:     opt = torch.optim.Adam(mlp.parameters(), lr=1e-3, weight_decay=1e-3)",
+      "472:     lossf = nn.CrossEntropyLoss()",
+      "477:     patience_limit = 5",
+      "478:     eval_every = 50",
+      "488:         if (epoch + 1) % eval_every == 0:"
+    ]
+  }
+}

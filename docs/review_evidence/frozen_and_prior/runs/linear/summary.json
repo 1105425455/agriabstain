@@ -1,0 +1,110 @@
+{
+  "adapter": null,
+  "all": [
+    {
+      "C": 0.01,
+      "dev_argmax_accuracy": 0.8662790697674418,
+      "dev_auroc": 0.9624824781183431,
+      "dev_loss": 0.3300359056168585,
+      "dev_mcc_3class": 0.783296500589454,
+      "iterations": 480,
+      "pool": "last_token",
+      "test_argmax_accuracy": 0.8688586545729403,
+      "test_auroc": 0.9684756408652317,
+      "test_mcc_3class": 0.7822952797634409,
+      "timestamp": "2026-10-15T17:11:20.311398+00:00"
+    },
+    {
+      "C": 0.1,
+      "dev_argmax_accuracy": 0.8696013289036545,
+      "dev_auroc": 0.9636414057239986,
+      "dev_loss": 0.39608550095106554,
+      "dev_mcc_3class": 0.783431329028482,
+      "iterations": 644,
+      "pool": "last_token",
+      "test_argmax_accuracy": 0.8480725623582767,
+      "test_auroc": 0.9645672327888072,
+      "test_mcc_3class": 0.7558065435323251,
+      "timestamp": "2026-10-15T17:11:36.790529+00:00"
+    },
+    {
+      "C": 1.0,
+      "dev_argmax_accuracy": 0.8583887043189369,
+      "dev_auroc": 0.9596451749980685,
+      "dev_loss": 0.6427422176103875,
+      "dev_mcc_3class": 0.7652832693658721,
+      "iterations": 592,
+      "pool": "last_token",
+      "test_argmax_accuracy": 0.8008314436885865,
+      "test_auroc": 0.9541143407896459,
+      "test_mcc_3class": 0.6985228959041269,
+      "timestamp": "2026-10-15T17:11:53.165544+00:00"
+    },
+    {
+      "C": 10.0,
+      "dev_argmax_accuracy": 0.8567275747508306,
+      "dev_auroc": 0.9587525248065695,
+      "dev_loss": 1.2413921574234406,
+      "dev_mcc_3class": 0.7626281418688955,
+      "iterations": 516,
+      "pool": "last_token",
+      "test_argmax_accuracy": 0.7747543461829176,
+      "test_auroc": 0.9523223919617397,
+      "test_mcc_3class": 0.6722354468969406,
+      "timestamp": "2026-10-15T17:12:07.663272+00:00"
+    }
+  ],
+  "backbone": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "best": {
+    "C": 0.01,
+    "dev_argmax_accuracy": 0.8662790697674418,
+    "dev_auroc": 0.9624824781183431,
+    "dev_loss": 0.3300359056168585,
+    "dev_mcc_3class": 0.783296500589454,
+    "iterations": 480,
+    "pool": "last_token",
+    "test_argmax_accuracy": 0.8688586545729403,
+    "test_auroc": 0.9684756408652317,
+    "test_mcc_3class": 0.7822952797634409,
+    "timestamp": "2026-10-15T17:11:20.311398+00:00"
+  },
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "classifier": "multinomial LogisticRegression",
+  "frozen_repr_manifest_train": {
+    "adapter": null,
+    "artifact_repair": {
+      "singleton_batch_axis_squeezed": true,
+      "source_task": 590633
+    },
+    "base": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+    "batch_size": 1,
+    "data": "/user/huangyongbin/newrepo/agriabstain/aaai_code/benchmark/annotations/sft/sft_train.json",
+    "derived_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/benchmarks/transformed_images",
+    "fingerprint": "66ce073cce4f",
+    "is_adapter_diagnostic": false,
+    "layer": 27,
+    "max_pixels": 262144,
+    "n_merged": 7072,
+    "n_mine": 1768,
+    "n_selected": 7072,
+    "n_total": 7072,
+    "rank": 0,
+    "split_name": "train",
+    "visual_token_count_stats": {
+      "max": 400,
+      "mean": 170.81660067873304,
+      "median": 169,
+      "min": 64
+    },
+    "world": 4
+  },
+  "layer": 27,
+  "pool": "last_token",
+  "run_seed": 42,
+  "selection": "min dev_loss on FULL frozen dev (2408) - cached dev has no identity-matched paper 100-record stratified subset"
+}

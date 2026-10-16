@@ -1,0 +1,54 @@
+{
+  "architecture": "4096-512-256-3, GELU, dropout 0.1",
+  "best_dev_loss": 0.5324673056602478,
+  "best_epoch": 50,
+  "calibration_dir": "/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/grouped/calibration",
+  "dev_accuracy": 0.9,
+  "dev_mcc": 0.8501350135013501,
+  "dev_rows": 100,
+  "gate": "mlp_ours",
+  "history": [
+    {
+      "dev_loss": 0.5324673056602478,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 50,
+      "train_loss": 0.05733897536993027
+    },
+    {
+      "dev_loss": 0.689974308013916,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 100,
+      "train_loss": 0.01956503838300705
+    },
+    {
+      "dev_loss": 0.7778139710426331,
+      "dev_mcc": 0.8353841912838459,
+      "epoch": 150,
+      "train_loss": 0.006728316657245159
+    },
+    {
+      "dev_loss": 0.633028507232666,
+      "dev_mcc": 0.8203781882070749,
+      "epoch": 200,
+      "train_loss": 0.030262039974331856
+    },
+    {
+      "dev_loss": 0.6911844611167908,
+      "dev_mcc": 0.8509458153482986,
+      "epoch": 250,
+      "train_loss": 0.008189576677978039
+    },
+    {
+      "dev_loss": 0.706448495388031,
+      "dev_mcc": 0.8509458153482986,
+      "epoch": 300,
+      "train_loss": 0.004009120166301727
+    }
+  ],
+  "optimiser": "Adam lr=1e-3 weight_decay=1e-3, full batch",
+  "run_seed": 7,
+  "selection": "lowest dev loss, patience 5 evaluated every 50 epochs",
+  "train_accuracy": 0.9792138009049773,
+  "train_mcc": 0.9677318338903774,
+  "train_rows": 7072
+}

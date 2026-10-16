@@ -1,0 +1,6 @@
+[frozen-linear] base=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct adapter=None layer=27 pool=last_token
+[frozen-linear] C=0.01 dev_loss=0.3300 test_auroc=0.9685 test_mcc_3class=0.7823
+[frozen-linear] C=0.1 dev_loss=0.3961 test_auroc=0.9646 test_mcc_3class=0.7558
+[frozen-linear] C=1 dev_loss=0.6427 test_auroc=0.9541 test_mcc_3class=0.6985
+[frozen-linear] C=10 dev_loss=1.2414 test_auroc=0.9523 test_mcc_3class=0.6722
+[frozen-linear] selected C=0.01 dev_loss=0.3300 test_auroc=0.9685

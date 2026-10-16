@@ -1,0 +1,26 @@
+[
+  {
+    "maximum_retained_bbox_ratio": 0.0,
+    "n": 136,
+    "answered": 20,
+    "FCA": 0.14705882352941177
+  },
+  {
+    "maximum_retained_bbox_ratio": 0.001,
+    "n": 174,
+    "answered": 25,
+    "FCA": 0.14367816091954022
+  },
+  {
+    "maximum_retained_bbox_ratio": 0.01,
+    "n": 210,
+    "answered": 34,
+    "FCA": 0.1619047619047619
+  },
+  {
+    "maximum_retained_bbox_ratio": 0.05,
+    "n": 216,
+    "answered": 36,
+    "FCA": 0.16666666666666666
+  }
+]

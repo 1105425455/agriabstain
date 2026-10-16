@@ -1,0 +1,89 @@
+{
+  "n_logs_scanned": 155,
+  "logs_with_timing_patterns": 117,
+  "timing_evidence_sample": {
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/matched_retention_dev_20260725/logs/pipeline.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.12s/it]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/calib_extract_checkpoint-118.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 42.86it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/calib_extract_checkpoint-162.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/calib_extract_checkpoint-177.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/calib_extract_checkpoint-59.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/calib_extract_checkpoint-81.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/dump_ood_plantvillage.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 41.38it/s]",
+      "[dump-ood] 50/240 ok=50 5.22 it/s",
+      "[dump-ood] 100/240 ok=100 5.86 it/s",
+      "[dump-ood] 150/240 ok=150 6.04 it/s"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/dump_ood_refcocog.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.70s/it]",
+      "Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.39s/it]",
+      "Loading checkpoint shards:  75%|███████▌  | 3/4 [00:13<00:04,  4.91s/it]",
+      "Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.82s/it]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/dump_zref.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+    ],
+    "/user/huangyongbin/newrepo/agriabstain-paper-repo/new_reason/outputs/logs/eval_paired_closed12_v1_checkpoint-50.log": [
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.90s/it]"
+    ]
+  },
+  "recorded_gpu_counts": {
+    "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/openref_external/runs/openref_single_500_v1_20260721/sft/run_config.json": {
+      "nproc": 2,
+      "allocated_gpus": 4,
+      "parallelism": "2 data-parallel ranks, each using 2-way HF model sharding"
+    },
+    "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/groundingme_external/runs/eval_v1_20260720/base/run_config.json": {
+      "nproc": 4,
+      "allocated_gpus": null,
+      "parallelism": null
+    }
+  },
+  "conclusion": "Existing logs contain only HF progress bars (it/s) over runs using differing GPU counts / sharding and no per-decision latency, no generation-token counts, and no same-hardware/same-batch controlled comparison. They therefore cannot quantify a generation-skipping (decode-skip) benefit. No GPU timing run was performed; the absence is reported only."
+}

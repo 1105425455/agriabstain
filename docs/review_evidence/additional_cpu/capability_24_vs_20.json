@@ -1,0 +1,149 @@
+{
+  "audit_name": "PlantDoc pre-split capability-gate audit",
+  "model": "Qwen3-VL-8B-Instruct (raw base, no task adapter)",
+  "selection_threshold": {
+    "correct_rate": 0.4,
+    "iou": 0.5
+  },
+  "population": "Base calibration pool (768 PlantDoc base records, pre source-image split)",
+  "scope_note": "Recomputed from the Base calibration pool and frozen-Qwen3-VL base predictions. This is the Base-pool capability re-audit, not an independent test and not three-system (Base/SFT/ReGate) full-24 results.",
+  "all_24_observed": {
+    "n": 768,
+    "correct": 542,
+    "micro_rate": 0.7057291666666666,
+    "macro_rate": 0.6729295873431083
+  },
+  "retained_20": {
+    "n": 726,
+    "correct": 531,
+    "micro_rate": 0.731404958677686,
+    "macro_rate": 0.7620906682104229
+  },
+  "excluded_4": {
+    "n": 42,
+    "correct": 11,
+    "micro_rate": 0.2619047619047619,
+    "macro_rate": 0.22712418300653595
+  },
+  "excluded_labels": {
+    "bell_pepper_leaf_spot": {
+      "n": 17,
+      "correct": 6
+    },
+    "blueberry_leaf": {
+      "n": 9,
+      "correct": 3
+    },
+    "tomato_leaf": {
+      "n": 9,
+      "correct": 2
+    },
+    "tomato_leaf_mosaic_virus": {
+      "n": 7,
+      "correct": 0
+    }
+  },
+  "per_label": {
+    "apple_leaf": {
+      "n": 38,
+      "correct": 35
+    },
+    "apple_rust_leaf": {
+      "n": 42,
+      "correct": 33
+    },
+    "apple_scab_leaf": {
+      "n": 43,
+      "correct": 40
+    },
+    "bell_pepper_leaf": {
+      "n": 10,
+      "correct": 5
+    },
+    "bell_pepper_leaf_spot": {
+      "n": 17,
+      "correct": 6
+    },
+    "blueberry_leaf": {
+      "n": 9,
+      "correct": 3
+    },
+    "cherry_leaf": {
+      "n": 4,
+      "correct": 4
+    },
+    "corn_gray_leaf_spot": {
+      "n": 52,
+      "correct": 31
+    },
+    "corn_leaf_blight": {
+      "n": 97,
+      "correct": 66
+    },
+    "corn_rust_leaf": {
+      "n": 75,
+      "correct": 65
+    },
+    "grape_leaf": {
+      "n": 18,
+      "correct": 18
+    },
+    "peach_leaf": {
+      "n": 9,
+      "correct": 8
+    },
+    "potato_leaf_late_blight": {
+      "n": 37,
+      "correct": 18
+    },
+    "raspberry_leaf": {
+      "n": 12,
+      "correct": 9
+    },
+    "soybean_leaf": {
+      "n": 8,
+      "correct": 6
+    },
+    "squash_powdery_mildew_leaf": {
+      "n": 64,
+      "correct": 53
+    },
+    "strawberry_leaf": {
+      "n": 4,
+      "correct": 4
+    },
+    "tomato_early_blight_leaf": {
+      "n": 42,
+      "correct": 31
+    },
+    "tomato_leaf": {
+      "n": 9,
+      "correct": 2
+    },
+    "tomato_leaf_bacterial_spot": {
+      "n": 45,
+      "correct": 28
+    },
+    "tomato_leaf_late_blight": {
+      "n": 53,
+      "correct": 23
+    },
+    "tomato_leaf_mosaic_virus": {
+      "n": 7,
+      "correct": 0
+    },
+    "tomato_mold_leaf": {
+      "n": 34,
+      "correct": 21
+    },
+    "tomato_septoria_leaf_spot": {
+      "n": 39,
+      "correct": 33
+    }
+  },
+  "checked_against_published_audit": "computed_by=review_additional_cpu.py at=2026-10-15T17:27:42.533622+00:00",
+  "cross_check": {
+    "all_labels_match_published": true,
+    "differences": []
+  }
+}

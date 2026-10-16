@@ -1,0 +1,72 @@
+{
+  "architecture": "4096-512-256-3, GELU, dropout 0.1",
+  "best_dev_loss": 0.438411146402359,
+  "best_epoch": 200,
+  "calibration_dir": "/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/grouped/calibration",
+  "dev_accuracy": 0.9,
+  "dev_mcc": 0.8509458153482986,
+  "dev_rows": 100,
+  "gate": "mlp_ours",
+  "history": [
+    {
+      "dev_loss": 0.5423194766044617,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 50,
+      "train_loss": 0.05398714542388916
+    },
+    {
+      "dev_loss": 0.6768190264701843,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 100,
+      "train_loss": 0.020098568871617317
+    },
+    {
+      "dev_loss": 0.7549854516983032,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 150,
+      "train_loss": 0.004923176020383835
+    },
+    {
+      "dev_loss": 0.438411146402359,
+      "dev_mcc": 0.8509458153482986,
+      "epoch": 200,
+      "train_loss": 0.06821394711732864
+    },
+    {
+      "dev_loss": 0.6470300555229187,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 250,
+      "train_loss": 0.015153778716921806
+    },
+    {
+      "dev_loss": 0.7073587775230408,
+      "dev_mcc": 0.8654163638293261,
+      "epoch": 300,
+      "train_loss": 0.0055890860967338085
+    },
+    {
+      "dev_loss": 0.7152130603790283,
+      "dev_mcc": 0.8501350135013501,
+      "epoch": 350,
+      "train_loss": 0.003644969779998064
+    },
+    {
+      "dev_loss": 0.719287633895874,
+      "dev_mcc": 0.8353841912838459,
+      "epoch": 400,
+      "train_loss": 0.0027060287538915873
+    },
+    {
+      "dev_loss": 0.7106091380119324,
+      "dev_mcc": 0.8654163638293261,
+      "epoch": 450,
+      "train_loss": 0.0024978099390864372
+    }
+  ],
+  "optimiser": "Adam lr=1e-3 weight_decay=1e-3, full batch",
+  "run_seed": 42,
+  "selection": "lowest dev loss, patience 5 evaluated every 50 epochs",
+  "train_accuracy": 0.9724264705882353,
+  "train_mcc": 0.957432558490206,
+  "train_rows": 7072
+}

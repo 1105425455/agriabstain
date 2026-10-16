@@ -1,0 +1,13 @@
+{
+  "scope": "当前本地正文与技术补充，引用只以未注释的 LaTeX 内容为准；不等同于独立核验投稿系统中的 PDF",
+  "files": {
+    "main.tex": {
+      "path": "paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_/main.tex",
+      "sha256": "058066acdab72a1895e3c07f0e614597e4d9558fa670b18d9c046a424616c76c"
+    },
+    "technical_supplement.tex": {
+      "path": "paper/Learning_to_Locate_or_Abstain__A_Discriminative_Head_Architecture_for_Reason_Attributed_Selective_Visual_Grounding__1_/technical_supplement.tex",
+      "sha256": "4c943d37d6d9929d2b1e5e6e6bb4746a368786beca033aa64043def68f64b5bb"
+    }
+  }
+}

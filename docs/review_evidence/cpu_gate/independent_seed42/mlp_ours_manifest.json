@@ -1,0 +1,84 @@
+{
+  "architecture": "4096-512-256-3, GELU, dropout 0.1",
+  "best_dev_loss": 3.023980140686035,
+  "best_epoch": 300,
+  "calibration_dir": "/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/independent/calibration",
+  "dev_accuracy": 0.58,
+  "dev_mcc": 0.4144133188030512,
+  "dev_rows": 100,
+  "gate": "mlp_ours",
+  "history": [
+    {
+      "dev_loss": 3.085054397583008,
+      "dev_mcc": 0.3614438645223544,
+      "epoch": 50,
+      "train_loss": 0.0439474955201149
+    },
+    {
+      "dev_loss": 4.585639476776123,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 100,
+      "train_loss": 0.013892860151827335
+    },
+    {
+      "dev_loss": 4.774881362915039,
+      "dev_mcc": 0.3710741785318518,
+      "epoch": 150,
+      "train_loss": 0.01945233717560768
+    },
+    {
+      "dev_loss": 5.040175914764404,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 200,
+      "train_loss": 0.005133905913680792
+    },
+    {
+      "dev_loss": 4.389171123504639,
+      "dev_mcc": 0.36791546301704203,
+      "epoch": 250,
+      "train_loss": 0.005869315005838871
+    },
+    {
+      "dev_loss": 3.023980140686035,
+      "dev_mcc": 0.4144133188030512,
+      "epoch": 300,
+      "train_loss": 0.09165355563163757
+    },
+    {
+      "dev_loss": 3.2805473804473877,
+      "dev_mcc": 0.3614438645223544,
+      "epoch": 350,
+      "train_loss": 0.0435430146753788
+    },
+    {
+      "dev_loss": 3.972414016723633,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 400,
+      "train_loss": 0.023365898057818413
+    },
+    {
+      "dev_loss": 4.3071112632751465,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 450,
+      "train_loss": 0.010842494666576385
+    },
+    {
+      "dev_loss": 4.591163158416748,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 500,
+      "train_loss": 0.007046028971672058
+    },
+    {
+      "dev_loss": 4.4969682693481445,
+      "dev_mcc": 0.3480643125588818,
+      "epoch": 550,
+      "train_loss": 0.005476661492139101
+    }
+  ],
+  "optimiser": "Adam lr=1e-3 weight_decay=1e-3, full batch",
+  "run_seed": 42,
+  "selection": "lowest dev loss, patience 5 evaluated every 50 epochs",
+  "train_accuracy": 0.9749717194570136,
+  "train_mcc": 0.9612129696038705,
+  "train_rows": 7072
+}

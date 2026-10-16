@@ -1,0 +1,558 @@
+{
+  "wrong_object_multiplicities": {
+    "2": 527,
+    "1": 446
+  },
+  "sft_path": "aaai_code/benchmark/annotations/sft/sft_train.json",
+  "sft_sha256": "8d20b843b022746f88d2d0a8f79e2d3063ceae03741ed12012a682bb190c23e4",
+  "n": 7072,
+  "unique_records": 6138,
+  "state_counts": {
+    "0": 2703,
+    "1": 1500,
+    "2": 2869
+  },
+  "unique_state_counts": {
+    "0": 2422,
+    "1": 973,
+    "2": 2743
+  },
+  "domain_by_state": {
+    "coco": {
+      "0": 1100,
+      "2": 888
+    },
+    "plantdoc": {
+      "1": 1500,
+      "0": 1603,
+      "2": 1981
+    }
+  },
+  "query_category_by_state": {
+    "apple": {
+      "0": 3,
+      "2": 3
+    },
+    "apple leaf": {
+      "0": 51,
+      "2": 57
+    },
+    "apple rust leaf": {
+      "0": 121,
+      "2": 97,
+      "1": 51
+    },
+    "apple scab leaf": {
+      "2": 102,
+      "0": 125,
+      "1": 50
+    },
+    "backpack": {
+      "2": 14,
+      "0": 25
+    },
+    "banana": {
+      "2": 3,
+      "0": 3
+    },
+    "baseball bat": {
+      "2": 3
+    },
+    "baseball glove": {
+      "2": 1
+    },
+    "bed": {
+      "2": 3
+    },
+    "bell pepper leaf": {
+      "2": 118,
+      "0": 17
+    },
+    "bench": {
+      "2": 9,
+      "0": 7
+    },
+    "bicycle": {
+      "0": 24,
+      "2": 19
+    },
+    "bird": {
+      "2": 3
+    },
+    "boat": {
+      "2": 2
+    },
+    "book": {
+      "0": 7,
+      "2": 10
+    },
+    "bottle": {
+      "2": 24,
+      "0": 34
+    },
+    "bowl": {
+      "0": 17,
+      "2": 16
+    },
+    "broccoli": {
+      "2": 2
+    },
+    "bus": {
+      "0": 3,
+      "2": 7
+    },
+    "cake": {
+      "2": 3
+    },
+    "car": {
+      "0": 42,
+      "2": 27
+    },
+    "carrot": {
+      "2": 3
+    },
+    "cat": {
+      "0": 6,
+      "2": 5
+    },
+    "cell phone": {
+      "0": 5,
+      "2": 7
+    },
+    "chair": {
+      "0": 14,
+      "2": 15
+    },
+    "cherry leaf": {
+      "2": 121,
+      "0": 7
+    },
+    "clock": {
+      "2": 9,
+      "0": 16
+    },
+    "corn gray leaf spot": {
+      "0": 106,
+      "1": 197,
+      "2": 77
+    },
+    "corn leaf blight": {
+      "0": 210,
+      "1": 130,
+      "2": 96
+    },
+    "corn rust leaf": {
+      "0": 152,
+      "2": 72,
+      "1": 162
+    },
+    "couch": {
+      "0": 4,
+      "2": 2
+    },
+    "cow": {
+      "2": 4
+    },
+    "cup": {
+      "2": 19,
+      "0": 25
+    },
+    "dining table": {
+      "0": 43,
+      "2": 27
+    },
+    "dog": {
+      "2": 127,
+      "0": 203
+    },
+    "donut": {
+      "2": 4
+    },
+    "elephant": {
+      "2": 3
+    },
+    "fire hydrant": {
+      "2": 2
+    },
+    "fork": {
+      "2": 8
+    },
+    "frisbee": {
+      "2": 4,
+      "0": 3
+    },
+    "giraffe": {
+      "2": 4
+    },
+    "grape leaf": {
+      "2": 131,
+      "0": 24
+    },
+    "hair drier": {
+      "2": 4
+    },
+    "handbag": {
+      "0": 18,
+      "2": 13
+    },
+    "horse": {
+      "2": 3
+    },
+    "hot dog": {
+      "2": 1
+    },
+    "keyboard": {
+      "2": 8
+    },
+    "kite": {
+      "2": 5
+    },
+    "knife": {
+      "2": 3,
+      "0": 3
+    },
+    "laptop": {
+      "2": 6,
+      "0": 5
+    },
+    "microwave": {
+      "2": 23,
+      "0": 36
+    },
+    "motorcycle": {
+      "0": 27,
+      "2": 20
+    },
+    "mouse": {
+      "2": 1
+    },
+    "orange": {
+      "0": 7,
+      "2": 5
+    },
+    "oven": {
+      "0": 75,
+      "2": 41
+    },
+    "parking meter": {
+      "2": 3
+    },
+    "peach leaf": {
+      "2": 122,
+      "0": 18
+    },
+    "person": {
+      "0": 93,
+      "2": 60
+    },
+    "pizza": {
+      "2": 2
+    },
+    "potato leaf late blight": {
+      "0": 82,
+      "2": 131
+    },
+    "potted plant": {
+      "2": 53,
+      "0": 96
+    },
+    "raspberry leaf": {
+      "2": 124,
+      "0": 26
+    },
+    "refrigerator": {
+      "0": 45,
+      "2": 30
+    },
+    "remote": {
+      "2": 4
+    },
+    "sandwich": {
+      "2": 12,
+      "0": 4
+    },
+    "scissors": {
+      "2": 6,
+      "0": 1
+    },
+    "sheep": {
+      "2": 1
+    },
+    "sink": {
+      "0": 65,
+      "2": 39
+    },
+    "skateboard": {
+      "2": 2
+    },
+    "skis": {
+      "2": 2
+    },
+    "snowboard": {
+      "2": 4
+    },
+    "soybean leaf": {
+      "2": 122,
+      "0": 10
+    },
+    "spoon": {
+      "2": 5,
+      "0": 2
+    },
+    "sports ball": {
+      "0": 1,
+      "2": 6
+    },
+    "squash powdery mildew leaf": {
+      "0": 124,
+      "2": 159
+    },
+    "stop sign": {
+      "2": 4,
+      "0": 1
+    },
+    "strawberry leaf": {
+      "2": 118,
+      "0": 6
+    },
+    "suitcase": {
+      "2": 2,
+      "0": 7
+    },
+    "surfboard": {
+      "2": 8,
+      "0": 6
+    },
+    "teddy bear": {
+      "2": 9,
+      "0": 2
+    },
+    "tennis racket": {
+      "2": 6
+    },
+    "tie": {
+      "2": 5,
+      "0": 2
+    },
+    "toaster": {
+      "2": 4,
+      "0": 5
+    },
+    "toilet": {
+      "0": 36,
+      "2": 25
+    },
+    "tomato early blight leaf": {
+      "0": 133,
+      "1": 168,
+      "2": 70
+    },
+    "tomato leaf bacterial spot": {
+      "2": 74,
+      "1": 165,
+      "0": 148
+    },
+    "tomato leaf late blight": {
+      "1": 178,
+      "0": 104,
+      "2": 59
+    },
+    "tomato leaf yellow virus": {
+      "2": 28
+    },
+    "tomato mold leaf": {
+      "0": 73,
+      "1": 204,
+      "2": 52
+    },
+    "tomato septoria leaf spot": {
+      "1": 195,
+      "0": 66,
+      "2": 51
+    },
+    "toothbrush": {
+      "2": 5,
+      "0": 7
+    },
+    "traffic light": {
+      "0": 6,
+      "2": 7
+    },
+    "train": {
+      "2": 4,
+      "0": 5
+    },
+    "truck": {
+      "2": 13,
+      "0": 16
+    },
+    "tv": {
+      "2": 7,
+      "0": 5
+    },
+    "umbrella": {
+      "0": 8,
+      "2": 9
+    },
+    "vase": {
+      "0": 21,
+      "2": 13
+    },
+    "wine glass": {
+      "0": 11,
+      "2": 11
+    },
+    "zebra": {
+      "2": 2
+    }
+  },
+  "gpt": {
+    "L1_discrim": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 410,
+        "completed_records": 410,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 410
+      },
+      "n": 410,
+      "invalid": 3,
+      "invalid_rate": 0.007317073170731708,
+      "invalid_by_gt": {
+        "answer": 1,
+        "abstain": 2
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L1_discrim/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L1_discrim/analysis/predictions.jsonl",
+      "predictions_sha256": "5b0e5d7c60d2e713a3c005bee1f7f0ba978f50ed4ddd6f92a3a611a492e97460"
+    },
+    "L2_evidence": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 790,
+        "completed_records": 790,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 790
+      },
+      "n": 790,
+      "invalid": 1,
+      "invalid_rate": 0.0012658227848101266,
+      "invalid_by_gt": {
+        "abstain": 1
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L2_evidence/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L2_evidence/analysis/predictions.jsonl",
+      "predictions_sha256": "699c2bfb925177be342f77b6e4c20143bc121f2681442e8f3b33c3dfd126d244"
+    },
+    "L3_dose": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 750,
+        "completed_records": 750,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 750
+      },
+      "n": 750,
+      "invalid": 2,
+      "invalid_rate": 0.0026666666666666666,
+      "invalid_by_gt": {
+        "answer": 1,
+        "null": 1
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L3_dose/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/L3_dose/analysis/predictions.jsonl",
+      "predictions_sha256": "42749d8b492790823c9200677097df3284fa11be0052ed875dfda96c4951b80e"
+    },
+    "ood_refcocog": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 362,
+        "completed_records": 362,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 362
+      },
+      "n": 362,
+      "invalid": 1,
+      "invalid_rate": 0.0027624309392265192,
+      "invalid_by_gt": {
+        "abstain": 1
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/ood_refcocog/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/ood_refcocog/analysis/predictions.jsonl",
+      "predictions_sha256": "15b5712ecb7f522d95837116aec7c8e8b2753dbf5a9a12d920cdf32894be00f8"
+    },
+    "plantwild_real_closed12_v1": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 408,
+        "completed_records": 408,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 408
+      },
+      "n": 408,
+      "invalid": 9,
+      "invalid_rate": 0.022058823529411766,
+      "invalid_by_gt": {
+        "abstain": 9
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/plantwild_real_closed12_v1/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/plantwild_real_closed12_v1/analysis/predictions.jsonl",
+      "predictions_sha256": "d50cc396f8d2278dd34a18e261f7a5955e58de696cc223cfe0796549c68e05ba"
+    },
+    "test_full": {
+      "config": {
+        "model_requested": "gpt-5.6-sol",
+        "temperature": 0,
+        "image_detail": "original",
+        "stream": false,
+        "requested_records": 2646,
+        "completed_records": 2646,
+        "missing_records": 0,
+        "prompt_policy": "Exact ReGate decision system override and per-record user text; no JSON mode or repair call."
+      },
+      "response_models": {
+        "gpt-5.6-sol": 2646
+      },
+      "n": 2646,
+      "invalid": 20,
+      "invalid_rate": 0.007558578987150416,
+      "invalid_by_gt": {
+        "answer": 1,
+        "abstain": 19
+      },
+      "config_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/test_full/api_outputs.run_config.json",
+      "predictions_path": "aaai_code/experiments/gpt56_sol_full/outputs/decision_prompt_v1/test_full/analysis/predictions.jsonl",
+      "predictions_sha256": "8900e28b3c60092236ed4d3d1a10d8ee81ff5cd25438d678a492f0f0c4418bda"
+    }
+  }
+}

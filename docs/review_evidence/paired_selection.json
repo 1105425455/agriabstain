@@ -1,0 +1,92 @@
+{
+  "comprehensive": {
+    "both": {
+      "n": 1210,
+      "supported": 1120,
+      "regate_correct_supported": 1051,
+      "native_correct_supported": 1051,
+      "invalid_candidate": 0
+    },
+    "native_only": {
+      "n": 41,
+      "supported": 6,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 5,
+      "invalid_candidate": 0
+    },
+    "regate_only": {
+      "n": 256,
+      "supported": 171,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 256
+    },
+    "neither": {
+      "n": 1139,
+      "supported": 26,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 1139
+    }
+  },
+  "refcocog": {
+    "both": {
+      "n": 171,
+      "supported": 163,
+      "regate_correct_supported": 128,
+      "native_correct_supported": 128,
+      "invalid_candidate": 0
+    },
+    "native_only": {
+      "n": 0,
+      "supported": 0,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 0
+    },
+    "regate_only": {
+      "n": 25,
+      "supported": 18,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 25
+    },
+    "neither": {
+      "n": 166,
+      "supported": 0,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 166
+    }
+  },
+  "plantwild": {
+    "both": {
+      "n": 146,
+      "supported": 108,
+      "regate_correct_supported": 108,
+      "native_correct_supported": 108,
+      "invalid_candidate": 0
+    },
+    "native_only": {
+      "n": 5,
+      "supported": 2,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 2,
+      "invalid_candidate": 0
+    },
+    "regate_only": {
+      "n": 48,
+      "supported": 15,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 48
+    },
+    "neither": {
+      "n": 209,
+      "supported": 19,
+      "regate_correct_supported": 0,
+      "native_correct_supported": 0,
+      "invalid_candidate": 209
+    }
+  }
+}

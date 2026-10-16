@@ -1,0 +1,66 @@
+{
+  "architecture": "4096-512-256-3, GELU, dropout 0.1",
+  "best_dev_loss": 0.36490505933761597,
+  "best_epoch": 50,
+  "dev_probe": {
+    "argmax_accuracy": 0.8509136212624585,
+    "auroc": 0.9540505899493383,
+    "mcc_3class": 0.7589363003219907
+  },
+  "dev_rows": 2408,
+  "gate": "frozen_base_mlp",
+  "history": [
+    {
+      "dev_loss": 0.36490505933761597,
+      "dev_mcc_3class": 0.7589363003219907,
+      "epoch": 50,
+      "train_loss": 0.2605951428413391
+    },
+    {
+      "dev_loss": 0.38109540939331055,
+      "dev_mcc_3class": 0.7800546224302727,
+      "epoch": 100,
+      "train_loss": 0.17521245777606964
+    },
+    {
+      "dev_loss": 0.4742915630340576,
+      "dev_mcc_3class": 0.7899008624691358,
+      "epoch": 150,
+      "train_loss": 0.05909695476293564
+    },
+    {
+      "dev_loss": 0.46050575375556946,
+      "dev_mcc_3class": 0.7886347948957355,
+      "epoch": 200,
+      "train_loss": 0.07952682673931122
+    },
+    {
+      "dev_loss": 0.5695188641548157,
+      "dev_mcc_3class": 0.7959961109990804,
+      "epoch": 250,
+      "train_loss": 0.027837030589580536
+    },
+    {
+      "dev_loss": 0.5657815337181091,
+      "dev_mcc_3class": 0.7943769496024686,
+      "epoch": 300,
+      "train_loss": 0.04213174432516098
+    }
+  ],
+  "optimiser": "Adam lr=1e-3 weight_decay=1e-3, full batch",
+  "pool": "last_token",
+  "repr_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/repr",
+  "run_seed": 42,
+  "selection": "lowest dev loss on FULL frozen dev (2408), patience 5, eval every 50",
+  "test_probe": {
+    "argmax_accuracy": 0.8684807256235828,
+    "auroc": 0.9671336074532274,
+    "mcc_3class": 0.7691293095049537
+  },
+  "train_probe": {
+    "argmax_accuracy": 0.8976244343891403,
+    "auroc": 0.9714609294099187,
+    "mcc_3class": 0.8414866828726694
+  },
+  "train_rows": 7072
+}

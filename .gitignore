@@ -11,6 +11,7 @@
 *.pth
 *.ckpt
 *.npz
+*.npy
 *.safetensors
 *.bin
 *.onnx

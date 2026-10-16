@@ -1,0 +1,88 @@
+{
+  "n_cropout_records": 395,
+  "group": {
+    "all_n": 395,
+    "all_answered": 188,
+    "all_fca": 0.4759493670886076,
+    "same_label_n": 148,
+    "same_label_answered": 26,
+    "same_label_fca": 0.17567567567567569,
+    "cross_label_n": 247,
+    "cross_label_answered": 162,
+    "cross_label_fca": 0.6558704453441295
+  },
+  "status_distribution": {
+    "no_annotated_query_remaining": 136,
+    "annotated_query_partially_remaining": 155,
+    "annotated_query_fully_remaining": 104
+  },
+  "status_by_label": {
+    "same": {
+      "no_annotated_query_remaining": 73,
+      "annotated_query_partially_remaining": 75
+    },
+    "cross": {
+      "no_annotated_query_remaining": 63,
+      "annotated_query_partially_remaining": 80,
+      "annotated_query_fully_remaining": 104
+    }
+  },
+  "missing_info_count": 0,
+  "geometry_certified_no_annotated_query": {
+    "n": 136,
+    "dedup_n": 136,
+    "answered": 20,
+    "FCA": 0.14705882352941177
+  },
+  "clean_same_instance": {
+    "n": 148,
+    "certifiable": 148,
+    "no_annotated_query": 73,
+    "answered": 26,
+    "FCA": 0.17567567567567569,
+    "no_annotated_answered": 12,
+    "no_annotated_FCA": 0.1643835616438356
+  },
+  "l3_endpoint": {
+    "n_cropout_records_with_instance": 395,
+    "n_unique_instances": 148,
+    "n_unique_instances_overlap": 148,
+    "n_same_image_query_target_records": 148,
+    "n_decision_diff_same_query": 0,
+    "n_l3_answered_same_query": 26,
+    "n_l2_answered_same_query": 26
+  },
+  "matched_pairs_clean": {
+    "n": 148,
+    "keep_accuracy": 0.8108108108108109,
+    "crop_abstain_accuracy": 0.8243243243243243,
+    "both_correct": 104
+  },
+  "provenance": {
+    "l2_evidence": {
+      "path": "aaai_code/benchmark/annotations/eval/test_L2_evidence.jsonl",
+      "sha256": "10ffdeeadeccadee390b4a82b7ff9b8dd7f4da9328553e43643c823d09b7b453"
+    },
+    "split_test": {
+      "path": "aaai_code/benchmark/annotations/splits/test.jsonl",
+      "sha256": "59240265e91033127ba3c493cca41af069aff3256a649c503620b3ce68f379c4"
+    },
+    "l2_predictions": {
+      "path": "new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/eval_faithful_v1/L2_evidence/predictions.jsonl",
+      "sha256": "dd70de973ff37c29fdc3f3e91755c4064fa49c87c3b0be11de72b42839b32e07"
+    },
+    "l3_predictions": {
+      "path": "new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/eval_faithful_v1/L3_dose/predictions.jsonl",
+      "sha256": "5848e36b7f1f137c546926c0eb59ad0796f46586592522d040753e3d4f9f5745"
+    },
+    "coco_instances_selected": {
+      "path": "aaai_code/benchmark/data/source/coco/annotations/instances_selected.json",
+      "sha256": "289e363d97805425ec3d042733d8d7d4b41a6a7d9d6f69f3bcf48226cffb4d7c"
+    },
+    "plantdoc_class_config": {
+      "path": "aaai_code/benchmark/annotations/raw/plantdoc_full.raw.config.snapshot.yaml",
+      "sha256": "9e0fcda4fb43c043c2a6a6809316f7a6ad2bfc8336bb5ac0c51ca8ecb877bf42"
+    },
+    "source_image_count": 89
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "architecture": "4096-512-256-3, GELU, dropout 0.1",
+  "best_dev_loss": 0.47837623953819275,
+  "best_epoch": 50,
+  "dev_probe": {
+    "argmax_accuracy": 0.83,
+    "auroc": 0.890819964349376,
+    "mcc_3class": 0.7494048853006255
+  },
+  "dev_rows": 100,
+  "gate": "frozen_base_mlp",
+  "history": [
+    {
+      "dev_loss": 0.47837623953819275,
+      "dev_mcc_3class": 0.7494048853006255,
+      "epoch": 50,
+      "train_loss": 0.2618985176086426
+    },
+    {
+      "dev_loss": 0.6601093411445618,
+      "dev_mcc_3class": 0.7795438310195327,
+      "epoch": 100,
+      "train_loss": 0.14747489988803864
+    },
+    {
+      "dev_loss": 0.937683641910553,
+      "dev_mcc_3class": 0.6488757388680891,
+      "epoch": 150,
+      "train_loss": 0.431961327791214
+    },
+    {
+      "dev_loss": 0.7955386638641357,
+      "dev_mcc_3class": 0.7608469340642297,
+      "epoch": 200,
+      "train_loss": 0.04543955996632576
+    },
+    {
+      "dev_loss": 0.9968809485435486,
+      "dev_mcc_3class": 0.7458722449225077,
+      "epoch": 250,
+      "train_loss": 0.04047656059265137
+    },
+    {
+      "dev_loss": 0.8995437026023865,
+      "dev_mcc_3class": 0.7905162420843004,
+      "epoch": 300,
+      "train_loss": 0.025733742862939835
+    }
+  ],
+  "optimiser": "Adam lr=1e-3 weight_decay=1e-3, full batch",
+  "pool": "last_token",
+  "repr_root": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/repr",
+  "run_seed": 42,
+  "selection": "lowest dev loss on exact matched paper dev100, patience 5, eval every 50",
+  "dev_indices_source": "docs/review_evidence/frozen_and_prior/exact_dev100.json",
+  "test_probe": {
+    "argmax_accuracy": 0.8703703703703703,
+    "auroc": 0.9672478716858375,
+    "mcc_3class": 0.7734202046751644
+  },
+  "train_probe": {
+    "argmax_accuracy": 0.8953619909502263,
+    "auroc": 0.9715720696221242,
+    "mcc_3class": 0.8389372655844436
+  },
+  "train_rows": 7072
+}
