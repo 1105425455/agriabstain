@@ -1,0 +1,3 @@
+[check] calib_train=(7072, 4096) calib_dev=(100, 4096)
+[check] max|dmu|=0.000000 max|dsd|=0.000001
+[check] OK: features are provenance-consistent with the released head

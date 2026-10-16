@@ -1,0 +1,19 @@
+{
+  "analysis": "The selected regularization lies on the search-grid boundary; a wider grid would be needed before interpreting regularization sensitivity.",
+  "best_C": 0.01,
+  "best_dev_loss": 0.4510648250579834,
+  "best_dev_mcc": 0.835408861616104,
+  "best_model": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/linear_gate/linear_gate_best.npz",
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "classifier": "multinomial LogisticRegression",
+  "dev_records": 100,
+  "final_model": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/linear_gate/linear_gate_final.npz",
+  "loss_curve": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/linear_gate/loss_curves.png",
+  "run_seed": 42,
+  "train_records": 7072
+}

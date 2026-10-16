@@ -1,0 +1,13 @@
+{
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/checkpoints/checkpoint-444",
+  "best_step": 444,
+  "dev_losses": {
+    "111": 0.310774,
+    "222": 0.284268,
+    "333": 0.280341,
+    "444": 0.280059,
+    "555": 0.288169,
+    "666": 0.288009
+  },
+  "extra_checkpoint_task_ids": {}
+}

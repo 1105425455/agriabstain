@@ -1,0 +1,36 @@
+=== AgriAbstain eval [L1_discrim] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-42/checkpoints/checkpoint-333
+n=410
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.4707  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.7951
+HOR_FCA (高危子集↓)  = 0.0000  (n=0)
+MTS_micro           = 0.4707
+MTS_macro           = 0.4707
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.1317
+U_Abs (拒对↑)       = 0.2049
+AAC (答对↑)         = 0.7610
+MCC                 = 0.0978
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6874
+E2E_mIoU_c           = 0.7917
+A_Ground (depr.)     = 0.6874
+A_Ground_c (depr.)   = 0.7917
+U_Reason↑            = 0.1805
+U_Reason_c           = 0.8810
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 156, 'FP': 22, 'FN': 27, 'TN': 42, 'AU': 163, 'INVALID': 0}
+
+--- MTS per relation ---
+  L1_mismatch      0.1805  (37/205)
+  L1_real          0.7610  (156/205)

@@ -1,5 +1,7 @@
 # AgriAbstain / ReGate 论文研究仓库
 
+**最新资产策略：Git LFS只保存论文实际使用的最终checkpoint/head及不可下载数据；中间epoch、optimizer/RNG、表征缓存不上传。新agent先读 [资产恢复说明](docs/ASSET_RECOVERY.md)，clone后执行 `git lfs pull`。公开基座与COCO原图按说明获取。最终范围以 `docs/FINAL_ASSETS.json` 为准；下文旧本机链接说明仅作历史背景。论文继续不上传。**
+
 对应当前论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**（AAAI 2027 submission）。本仓库保留开发代码、配置和作者侧实验结果。按用户要求，论文文件、论文配图和交付包不纳入当前 Git 版本。
 
 **新 agent 接手先读 [AGENTS.md](AGENTS.md) 和 [交接说明](docs/HANDOFF.md)**：包含当前 Git 状态、论文到实验的路径映射、可直接执行的 CPU 验证命令和外部资产边界。

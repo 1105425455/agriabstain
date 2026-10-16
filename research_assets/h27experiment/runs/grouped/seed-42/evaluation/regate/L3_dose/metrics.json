@@ -1,0 +1,85 @@
+{
+  "tag": "L3_dose",
+  "data": "/user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/checkpoints/checkpoint-444",
+  "n_samples": 750,
+  "n_ambiguous_skipped": 419,
+  "gate": {
+    "format_valid_rate": 0.4413,
+    "decision_accuracy": 0.368,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 135,
+      "FP": 39,
+      "FN": 9,
+      "TN": 137,
+      "AU": 11,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 331,
+      "answerable": 183,
+      "unanswerable": 148,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 174,
+      "FP": 11,
+      "FN": 9,
+      "TN": 137
+    },
+    "headline": {
+      "FCA": 0.07432432432432433,
+      "HOR_FCA": 0.07432432432432433,
+      "HOR_count": {
+        "high_occlusion_au": 11,
+        "high_occlusion_unanswerable": 148
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.04918032786885246,
+      "Supported_Retention": 0.9508196721311475,
+      "U_Abs": 0.9256756756756757,
+      "AAC": 0.7377049180327869,
+      "MCC": 0.8776952051075144
+    },
+    "semantic": {
+      "Strict_3": 0.8338368580060423
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.6720140939698536,
+      "E2E_mIoU_c": 0.7067734436579495,
+      "A_Ground": 0.6720140939698536,
+      "A_Ground_c": 0.7067734436579495,
+      "U_Reason": 0.9256756756756757,
+      "U_Reason_c": 1.0
+    },
+    "comparison": {
+      "UAC": 0.9256756756756757,
+      "AR": 0.44108761329305135
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.8217522658610272,
+    "MTS_macro": 0.8217522658610272,
+    "per_relation": {
+      "L3_ladder": 0.8217522658610272
+    },
+    "per_relation_counts": {
+      "L3_ladder": {
+        "pass": 272,
+        "total": 331
+      }
+    }
+  },
+  "within_image": null
+}

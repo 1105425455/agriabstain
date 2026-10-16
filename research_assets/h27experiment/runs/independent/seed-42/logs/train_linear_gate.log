@@ -1,0 +1,14 @@
+[gpu-start] gpu=0 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=1 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=2 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=3 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=4 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=5 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=6 memory=411238400/25262096384 bytes (1.6%)
+[gpu-start] gpu=7 memory=411238400/25262096384 bytes (1.6%)
+linear-gate C grid:   0%|          | 0/4 [00:00<?, ?candidate/s]                                                                C=0.01 dev_loss=3.637664 dev_mcc=0.3544
+linear-gate C grid:   0%|          | 0/4 [00:45<?, ?candidate/s]linear-gate C grid:  25%|██▌       | 1/4 [00:45<02:17, 45.94s/candidate]                                                                        C=0.1 dev_loss=4.896397 dev_mcc=0.3544
+linear-gate C grid:  25%|██▌       | 1/4 [01:17<02:17, 45.94s/candidate]linear-gate C grid:  50%|█████     | 2/4 [01:17<01:15, 37.68s/candidate]                                                                        C=1 dev_loss=6.736431 dev_mcc=0.3544
+linear-gate C grid:  50%|█████     | 2/4 [01:42<01:15, 37.68s/candidate]linear-gate C grid:  75%|███████▌  | 3/4 [01:42<00:31, 31.52s/candidate]                                                                        C=10 dev_loss=7.246887 dev_mcc=0.3544
+linear-gate C grid:  75%|███████▌  | 3/4 [02:00<00:31, 31.52s/candidate]linear-gate C grid: 100%|██████████| 4/4 [02:00<00:00, 26.34s/candidate]linear-gate C grid: 100%|██████████| 4/4 [02:00<00:00, 30.11s/candidate]
+[linear-gate] best_C=0.01 dev_loss=3.637664 dev_mcc=0.3544

@@ -1,0 +1,85 @@
+{
+  "tag": "L3_dose",
+  "data": "/user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-21/checkpoints/checkpoint-222",
+  "n_samples": 750,
+  "n_ambiguous_skipped": 419,
+  "gate": {
+    "format_valid_rate": 0.4413,
+    "decision_accuracy": 0.2387,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 150,
+      "FP": 33,
+      "FN": 0,
+      "TN": 24,
+      "AU": 124,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 331,
+      "answerable": 183,
+      "unanswerable": 148,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 183,
+      "FP": 124,
+      "FN": 0,
+      "TN": 24
+    },
+    "headline": {
+      "FCA": 0.8378378378378378,
+      "HOR_FCA": 0.8378378378378378,
+      "HOR_count": {
+        "high_occlusion_au": 124,
+        "high_occlusion_unanswerable": 148
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.0,
+      "Supported_Retention": 1.0,
+      "U_Abs": 0.16216216216216217,
+      "AAC": 0.819672131147541,
+      "MCC": 0.31090744391696806
+    },
+    "semantic": {
+      "Strict_3": 0.540785498489426
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.7482062354134114,
+      "E2E_mIoU_c": 0.7482062354134114,
+      "A_Ground": 0.7482062354134114,
+      "A_Ground_c": 0.7482062354134114,
+      "U_Reason": 0.1554054054054054,
+      "U_Reason_c": 0.9583333333333334
+    },
+    "comparison": {
+      "UAC": 0.16216216216216217,
+      "AR": 0.07250755287009064
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.5226586102719033,
+    "MTS_macro": 0.5226586102719033,
+    "per_relation": {
+      "L3_ladder": 0.5226586102719033
+    },
+    "per_relation_counts": {
+      "L3_ladder": {
+        "pass": 173,
+        "total": 331
+      }
+    }
+  },
+  "within_image": null
+}

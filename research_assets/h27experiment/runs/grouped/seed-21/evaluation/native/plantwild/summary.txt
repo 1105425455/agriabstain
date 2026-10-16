@@ -1,0 +1,37 @@
+=== AgriAbstain eval [plantwild] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+n=408
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.4583  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.2424
+HOR_FCA (高危子集↓)  = 0.0139  (n=144)
+MTS_micro           = 0.4583
+MTS_macro           = 0.4597
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.2500
+U_Abs (拒对↑)       = 0.7576
+AAC (答对↑)         = 0.7500
+MCC                 = 0.4912
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.0000
+E2E_mIoU_c           = 0.0000
+A_Ground (depr.)     = 0.0000
+A_Ground_c (depr.)   = 0.0000
+U_Reason↑            = 0.2992
+U_Reason_c           = 0.3950
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 108, 'FP': 0, 'FN': 36, 'TN': 200, 'AU': 64, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.1458  (21/144)
+  OOD_answer       0.7500  (108/144)
+  OOD_confusion    0.4833  (58/120)

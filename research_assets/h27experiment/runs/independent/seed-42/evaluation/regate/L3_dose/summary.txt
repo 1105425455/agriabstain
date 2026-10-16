@@ -1,0 +1,35 @@
+=== AgriAbstain eval [L3_dose] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-42/checkpoints/checkpoint-333
+n=750
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 0.4413  (>= 0.95 ?)
+decision_accuracy = 0.2187  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.8784
+HOR_FCA (高危子集↓)  = 0.8784  (n=148)
+MTS_micro           = 0.4834
+MTS_macro           = 0.4834
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0000
+U_Abs (拒对↑)       = 0.1216
+AAC (答对↑)         = 0.7814
+MCC                 = 0.2667
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7170
+E2E_mIoU_c           = 0.7170
+A_Ground (depr.)     = 0.7170
+A_Ground_c (depr.)   = 0.7170
+U_Reason↑            = 0.1149
+U_Reason_c           = 0.9444
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 143, 'FP': 40, 'FN': 0, 'TN': 18, 'AU': 130, 'INVALID': 0}
+
+--- MTS per relation ---
+  L3_ladder        0.4834  (160/331)

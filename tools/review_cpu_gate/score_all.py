@@ -14,7 +14,7 @@ from safetensors import safe_open
 from sklearn.metrics import matthews_corrcoef, roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = Path("/user/huangyongbin/newrepo/agriabstain")
+SOURCE = ROOT
 sys.path.insert(0, str(ROOT / "aaai_code"))
 from experiments.selective_grounding.analyze_selective_grounding import (  # noqa: E402
     _candidate_prediction,  # noqa: E402
@@ -79,7 +79,7 @@ def main() -> None:
     torch.set_num_threads(4)
     rows, norms, provenance = [], {}, {}
     for arm, checkpoint in CKPTS.items():
-        run = SOURCE / "papermodel_lineargate/runs" / arm
+        run = ROOT / "research_assets/papermodel_lineargate/runs" / arm
         prediction_path = run / "evaluation/regate/comprehensive/predictions.jsonl"
         records = [json.loads(x) for x in prediction_path.read_text().splitlines()]
         assert len(records) == 2646 and len({r["sample_id"] for r in records}) == 2646

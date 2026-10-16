@@ -1,0 +1,104 @@
+{
+  "tag": "L1_discrim",
+  "data": "/user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222",
+  "n_samples": 410,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.5049,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 176,
+      "FP": 8,
+      "FN": 21,
+      "TN": 32,
+      "AU": 173,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 410,
+      "answerable": 205,
+      "unanswerable": 205,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 184,
+      "FP": 173,
+      "FN": 21,
+      "TN": 32
+    },
+    "headline": {
+      "FCA": 0.8439024390243902,
+      "HOR_FCA": 0.0,
+      "HOR_count": {
+        "high_occlusion_au": 0,
+        "high_occlusion_unanswerable": 0
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.1024390243902439,
+      "Supported_Retention": 0.8975609756097561,
+      "U_Abs": 0.15609756097560976,
+      "AAC": 0.8585365853658536,
+      "MCC": 0.07996881163630287
+    },
+    "semantic": {
+      "Strict_3": 0.5048780487804878
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.7740063528000305,
+      "E2E_mIoU_c": 0.8623440343695993,
+      "A_Ground": 0.7740063528000305,
+      "A_Ground_c": 0.8623440343695993,
+      "U_Reason": 0.15121951219512195,
+      "U_Reason_c": 0.96875
+    },
+    "comparison": {
+      "UAC": 0.15609756097560976,
+      "AR": 0.12926829268292683
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.5048780487804878,
+    "MTS_macro": 0.5048780487804878,
+    "per_relation": {
+      "L1_mismatch": 0.15121951219512195,
+      "L1_real": 0.8585365853658536
+    },
+    "per_relation_counts": {
+      "L1_mismatch": {
+        "pass": 31,
+        "total": 205
+      },
+      "L1_real": {
+        "pass": 176,
+        "total": 205
+      }
+    }
+  },
+  "within_image": {
+    "n_paired_images": 75,
+    "n_samples": 410,
+    "MCC": 0.07996881163630287,
+    "AAC": 0.8585365853658536,
+    "FCA": 0.8439024390243902,
+    "confusion_matrix": {
+      "TP": 176,
+      "FP": 8,
+      "FN": 21,
+      "TN": 32,
+      "AU": 173,
+      "INVALID": 0
+    }
+  }
+}

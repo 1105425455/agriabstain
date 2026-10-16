@@ -1,0 +1,602 @@
+W0727 22:57:43.827000 4381 site-packages/torch/distributed/run.py:774] 
+W0727 22:57:43.827000 4381 site-packages/torch/distributed/run.py:774] *****************************************
+W0727 22:57:43.827000 4381 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0727 22:57:43.827000 4381 site-packages/torch/distributed/run.py:774] *****************************************
+[Gloo] Rank 0 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 1 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 2 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 3 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 4 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank 5 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank [Gloo] Rank 76 is connected to  is connected to 77 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 77
+
+[eval r7] device=cuda:7 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r7] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r3] device=cuda:3 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r2] device=cuda:2 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r4] device=cuda:4 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r4] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r6] device=cuda:6 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r6] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r0] device=cuda:0 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r0] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r5] device=cuda:5 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r5] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+[eval r1] device=cuda:1 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] [dual-head] 使用 Qwen3VLWithTriHead 模型类
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.60s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.66s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.61s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.64s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.59s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.66s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.41it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.42it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.45it/s]Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.62s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.62s/it]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[eval r6] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r4] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r0] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r7] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r2] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r1] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r5] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r3] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+[eval r6] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r6] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r6] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r6] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r6] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r6] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r6] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r6] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r6] model loaded on cuda:6, running 6 probe(s) [dual-head mode]
+[eval r6] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r6] [hf probe#0] total=2646 mine=330 done=0 todo=330 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank6of8.jsonl
+[eval r0] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r0] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r0] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r0] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r0] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r0] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r0] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r0] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r0] model loaded on cuda:0, running 6 probe(s) [dual-head mode]
+[eval r0] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r0] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank0of8.jsonl
+[eval r4] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r4] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r4] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r1] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r3] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r4] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r2] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r1] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r1] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r5] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r3] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r3] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r7] [dual-head] 从 adapter 加载 discrim_head: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/adapter_model.safetensors
+[eval r4] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r4] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r1] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r2] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r2] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r3] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r5] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r5] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r7] [WARN] discrim_head 缺失 keys: ['original_module.mu', 'original_module.sd', 'original_module.classifier.0.weight', 'original_module.classifier.0.bias', 'original_module.classifier.3.weight']
+[eval r7] [WARN] discrim_head 多余 keys: ['classifier.0.bias', 'classifier.0.weight', 'classifier.3.bias', 'classifier.3.weight', 'classifier.6.bias']
+[eval r4] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r1] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r1] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r3] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r3] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r2] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r5] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r4] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r4] model loaded on cuda:4, running 6 probe(s) [dual-head mode]
+[eval r4] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r7] [dual-head] discrim_head 已加载，classifier[0].weight 范数=28.8750
+[eval r5] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250][eval r2] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+
+[eval r5] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt[eval r2] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+
+[eval r7] [dual-head] mu/sd 已加载: sd_range=[0.303,5.250]
+[eval r7] [dual-head] 用校准头覆盖端到端头: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222/discrim_head_calibrated.pt
+[eval r3] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r1] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r5] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344][eval r2] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+
+[eval r7] [dual-head] 校准头已加载, classifier[0].weight 范数=12.2500, sd_range=[0.512,7.344]
+[eval r3] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r3] model loaded on cuda:3, running 6 probe(s) [dual-head mode]
+[eval r3] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r1] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r1] model loaded on cuda:1, running 6 probe(s) [dual-head mode]
+[eval r1] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r4] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank4of8.jsonl
+[eval r5] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r5] model loaded on cuda:5, running 6 probe(s) [dual-head mode]
+[eval r5] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r2] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r2] model loaded on cuda:2, running 6 probe(s) [dual-head mode]
+[eval r2] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r7] dual-head 原生模型：一次 forward 拿双路输出（端到端）
+[eval r7] model loaded on cuda:7, running 6 probe(s) [dual-head mode]
+[eval r7] === probe 1/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive (tag=comprehensive) ===
+[eval r5] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank5of8.jsonl
+[eval r3] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank3of8.jsonl
+[eval r2] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank2of8.jsonl
+[eval r7] [hf probe#0] total=2646 mine=330 done=0 todo=330 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank7of8.jsonl
+[eval r1] [hf probe#0] total=2646 mine=331 done=0 todo=331 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank1of8.jsonl
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[eval r6] probe#0 50/330 (0.42 it/s)
+[eval r5] probe#0 50/331 (0.42 it/s)
+[eval r3] probe#0 50/331 (0.41 it/s)
+[eval r0] probe#0 50/331 (0.40 it/s)
+[eval r4] probe#0 50/331 (0.41 it/s)
+[eval r7] probe#0 50/330 (0.39 it/s)
+[eval r2] probe#0 50/331 (0.39 it/s)
+[eval r1] probe#0 50/331 (0.39 it/s)
+[eval r5] probe#0 100/331 (0.42 it/s)
+[eval r0] probe#0 100/331 (0.41 it/s)
+[eval r6] probe#0 100/330 (0.41 it/s)
+[eval r4] probe#0 100/331 (0.41 it/s)
+[eval r2] probe#0 100/331 (0.39 it/s)
+[eval r7] probe#0 100/330 (0.39 it/s)
+[eval r3] probe#0 100/331 (0.39 it/s)
+[eval r1] probe#0 100/331 (0.39 it/s)
+[eval r6] probe#0 150/330 (0.42 it/s)
+[eval r5] probe#0 150/331 (0.41 it/s)
+[eval r4] probe#0 150/331 (0.41 it/s)
+[eval r0] probe#0 150/331 (0.41 it/s)
+[eval r2] probe#0 150/331 (0.40 it/s)
+[eval r3] probe#0 150/331 (0.39 it/s)
+[eval r1] probe#0 150/331 (0.39 it/s)
+[eval r7] probe#0 150/330 (0.39 it/s)
+[eval r6] probe#0 200/330 (0.42 it/s)
+[eval r5] probe#0 200/331 (0.42 it/s)
+[eval r4] probe#0 200/331 (0.41 it/s)
+[eval r0] probe#0 200/331 (0.41 it/s)
+[eval r1] probe#0 200/331 (0.40 it/s)
+[eval r2] probe#0 200/331 (0.40 it/s)
+[eval r7] probe#0 200/330 (0.40 it/s)
+[eval r3] probe#0 200/331 (0.40 it/s)
+[eval r6] probe#0 250/330 (0.46 it/s)
+[eval r5] probe#0 250/331 (0.46 it/s)
+[eval r0] probe#0 250/331 (0.45 it/s)
+[eval r1] probe#0 250/331 (0.45 it/s)
+[eval r4] probe#0 250/331 (0.45 it/s)
+[eval r2] probe#0 250/331 (0.44 it/s)
+[eval r7] probe#0 250/330 (0.44 it/s)
+[eval r3] probe#0 250/331 (0.44 it/s)
+[eval r6] probe#0 300/330 (0.49 it/s)
+[eval r5] probe#0 300/331 (0.49 it/s)
+[eval r0] probe#0 300/331 (0.48 it/s)
+[eval r1] probe#0 300/331 (0.48 it/s)
+[eval r4] probe#0 300/331 (0.47 it/s)
+[eval r2] probe#0 300/331 (0.47 it/s)
+[eval r7] probe#0 300/330 (0.47 it/s)
+[eval r3] probe#0 300/331 (0.47 it/s)
+[eval r6] probe#0 shard done in 649.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank6of8.jsonl
+[eval r6] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r6] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r5] probe#0 shard done in 652.6s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank5of8.jsonl
+[eval r5] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r5] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r0] probe#0 shard done in 667.7s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank0of8.jsonl
+[eval r0] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r0] [hf probe#1] total=410 mine=52 done=0 todo=52 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r1] probe#0 shard done in 672.0s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank1of8.jsonl
+[eval r1] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r1] [hf probe#1] total=410 mine=52 done=0 todo=52 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r4] probe#0 shard done in 673.5s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank4of8.jsonl
+[eval r4] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r4] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r7] probe#0 shard done in 679.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank7of8.jsonl
+[eval r7] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r7] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r2] probe#0 shard done in 680.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank2of8.jsonl
+[eval r2] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r2] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r3] probe#0 shard done in 686.5s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/shards/preds.rank3of8.jsonl
+[eval r3] === probe 2/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim (tag=L1_discrim) ===
+[eval r3] [hf probe#1] total=410 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r5] probe#1 50/51 (0.41 it/s)
+[eval r5] probe#1 shard done in 123.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank5of8.jsonl
+[eval r5] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r5] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r6] probe#1 50/51 (0.38 it/s)
+[eval r6] probe#1 shard done in 135.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank6of8.jsonl
+[eval r6] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r6] [hf probe#2] total=790 mine=98 done=0 todo=98 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r0] probe#1 50/52 (0.38 it/s)
+[eval r0] probe#1 shard done in 138.5s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank0of8.jsonl
+[eval r0] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r0] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r1] probe#1 50/52 (0.37 it/s)
+[eval r4] probe#1 50/51 (0.37 it/s)
+[eval r7] probe#1 50/51 (0.38 it/s)
+[eval r4] probe#1 shard done in 137.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank4of8.jsonl
+[eval r4] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r4] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r1] probe#1 shard done in 140.0s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank1of8.jsonl
+[eval r1] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r1] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r7] probe#1 shard done in 133.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank7of8.jsonl
+[eval r7] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r7] [hf probe#2] total=790 mine=98 done=0 todo=98 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r2] probe#1 50/51 (0.37 it/s)
+[eval r2] probe#1 shard done in 137.0s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank2of8.jsonl
+[eval r2] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r2] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r3] probe#1 50/51 (0.36 it/s)
+[eval r3] probe#1 shard done in 140.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/shards/preds.rank3of8.jsonl
+[eval r3] === probe 3/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence (tag=L2_evidence) ===
+[eval r3] [hf probe#2] total=790 mine=99 done=0 todo=99 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r5] probe#2 50/99 (0.62 it/s)
+[eval r1] probe#2 50/99 (0.57 it/s)
+[eval r7] probe#2 50/98 (0.55 it/s)
+[eval r6] probe#2 50/98 (0.40 it/s)
+[eval r3] probe#2 50/99 (0.59 it/s)
+[eval r0] probe#2 50/99 (0.41 it/s)
+[eval r4] probe#2 50/99 (0.42 it/s)
+[eval r2] probe#2 50/99 (0.41 it/s)
+[eval r5] probe#2 shard done in 167.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank5of8.jsonl
+[eval r5] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r5] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank5of8.jsonl
+[eval r1] probe#2 shard done in 177.3s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank1of8.jsonl
+[eval r1] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r1] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank1of8.jsonl
+[eval r7] probe#2 shard done in 178.7s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank7of8.jsonl
+[eval r7] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r7] [hf probe#3] total=750 mine=93 done=0 todo=93 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank7of8.jsonl
+[eval r3] probe#2 shard done in 173.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank3of8.jsonl
+[eval r3] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r3] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank3of8.jsonl
+[eval r6] probe#2 shard done in 238.7s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank6of8.jsonl
+[eval r6] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r6] [hf probe#3] total=750 mine=93 done=0 todo=93 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank6of8.jsonl
+[eval r0] probe#2 shard done in 238.3s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank0of8.jsonl
+[eval r0] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r0] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank0of8.jsonl
+[eval r4] probe#2 shard done in 235.9s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank4of8.jsonl
+[eval r4] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r4] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank4of8.jsonl
+[eval r5] probe#3 50/94 (0.46 it/s)
+[eval r2] probe#2 shard done in 237.9s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/shards/preds.rank2of8.jsonl
+[eval r2] === probe 4/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose (tag=L3_dose) ===
+[eval r2] [hf probe#3] total=750 mine=94 done=0 todo=94 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank2of8.jsonl
+[eval r7] probe#3 50/93 (0.42 it/s)
+[eval r1] probe#3 50/94 (0.41 it/s)
+[eval r3] probe#3 50/94 (0.42 it/s)
+[eval r5] probe#3 shard done in 191.3s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank5of8.jsonl
+[eval r5] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r5] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank5of8.jsonl
+[eval r6] probe#3 50/93 (0.43 it/s)
+[eval r4] probe#3 50/94 (0.43 it/s)
+[eval r0] probe#3 50/94 (0.42 it/s)
+[eval r2] probe#3 50/94 (0.41 it/s)
+[eval r1] probe#3 shard done in 200.3s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank1of8.jsonl
+[eval r1] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r1] [hf probe#4] total=362 mine=46 done=0 todo=46 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank1of8.jsonl
+[eval r7] probe#3 shard done in 207.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank7of8.jsonl
+[eval r7] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r7] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank7of8.jsonl
+[eval r3] probe#3 shard done in 211.9s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank3of8.jsonl
+[eval r3] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r3] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank3of8.jsonl
+[eval r6] probe#3 shard done in 197.9s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank6of8.jsonl
+[eval r6] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r6] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank6of8.jsonl
+[eval r5] probe#4 shard done in 100.5s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank5of8.jsonl
+[eval r5] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r5] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank5of8.jsonl
+[eval r0] probe#3 shard done in 193.8s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank0of8.jsonl
+[eval r0] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r0] [hf probe#4] total=362 mine=46 done=0 todo=46 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank0of8.jsonl
+[eval r4] probe#3 shard done in 202.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank4of8.jsonl
+[eval r4] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r4] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank4of8.jsonl
+[eval r2] probe#3 shard done in 201.8s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/shards/preds.rank2of8.jsonl
+[eval r2] === probe 5/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog (tag=refcocog) ===
+[eval r2] [hf probe#4] total=362 mine=45 done=0 todo=45 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank2of8.jsonl
+[eval r1] probe#4 shard done in 90.6s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank1of8.jsonl
+[eval r1] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r1] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank1of8.jsonl
+[eval r7] probe#4 shard done in 93.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank7of8.jsonl
+[eval r7] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r7] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank7of8.jsonl
+[eval r3] probe#4 shard done in 92.6s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank3of8.jsonl
+[eval r3] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r3] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank3of8.jsonl
+[eval r6] probe#4 shard done in 90.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank6of8.jsonl
+[eval r6] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r6] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank6of8.jsonl
+[eval r0] probe#4 shard done in 86.0s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank0of8.jsonl
+[eval r0] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r0] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank0of8.jsonl
+[eval r5] probe#5 50/51 (0.47 it/s)
+[eval r5] probe#5 shard done in 107.3s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank5of8.jsonl
+[eval r4] probe#4 shard done in 98.0s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank4of8.jsonl
+[eval r4] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r4] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank4of8.jsonl
+[eval r2] probe#4 shard done in 97.4s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/shards/preds.rank2of8.jsonl
+[eval r2] === probe 6/6: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild (tag=plantwild) ===
+[eval r2] [hf probe#5] total=408 mine=51 done=0 todo=51 -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank2of8.jsonl
+[eval r1] probe#5 50/51 (0.47 it/s)
+[eval r1] probe#5 shard done in 108.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank1of8.jsonl
+[eval r7] probe#5 50/51 (0.47 it/s)
+[eval r7] probe#5 shard done in 107.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank7of8.jsonl
+[eval r3] probe#5 50/51 (0.46 it/s)
+[eval r3] probe#5 shard done in 110.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank3of8.jsonl
+[eval r6] probe#5 50/51 (0.41 it/s)
+[eval r6] probe#5 shard done in 123.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank6of8.jsonl
+[eval r0] probe#5 50/51 (0.41 it/s)
+[eval r0] probe#5 shard done in 124.1s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank0of8.jsonl
+[eval r4] probe#5 50/51 (0.43 it/s)
+[eval r2] probe#5 50/51 (0.45 it/s)
+[eval r4] probe#5 shard done in 119.8s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank4of8.jsonl
+[eval r2] probe#5 shard done in 113.2s -> /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/shards/preds.rank2of8.jsonl
+[eval r0] === merge probe 1/6: comprehensive ===
+=== AgriAbstain eval [comprehensive] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/comprehensive.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=2646
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.6686  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.4958
+HOR_FCA (高危子集↓)  = 0.4445  (n=1118)
+MTS_micro           = 0.6275
+MTS_macro           = 0.5380
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0416
+U_Abs (拒对↑)       = 0.5042
+AAC (答对↑)         = 0.7770
+MCC                 = 0.5193
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6978
+E2E_mIoU_c           = 0.7281
+A_Ground (depr.)     = 0.6978
+A_Ground_c (depr.)   = 0.7281
+U_Reason↑            = 0.4996
+U_Reason_c           = 0.9910
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 1028, 'FP': 240, 'FN': 55, 'TN': 667, 'AU': 656, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.7839  (185/236)
+  T2               0.7479  (89/119)
+  T2_occluded      0.1250  (10/80)
+  T3               0.7692  (100/130)
+  T3_occluded      0.0875  (7/80)
+  T4_control       0.7750  (124/160)
+  T5               0.8594  (550/640)
+  T6               0.2195  (45/205)
+  T7_include       0.7857  (88/112)
+  T7_ladder        0.6004  (305/508)
+  base_occluded    0.1647  (28/170)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/comprehensive/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 2/6: L1_discrim ===
+=== AgriAbstain eval [L1_discrim] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L1_discrim.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=410
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.5049  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.8439
+HOR_FCA (高危子集↓)  = 0.0000  (n=0)
+MTS_micro           = 0.5049
+MTS_macro           = 0.5049
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.1024
+U_Abs (拒对↑)       = 0.1561
+AAC (答对↑)         = 0.8585
+MCC                 = 0.0800
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7740
+E2E_mIoU_c           = 0.8623
+A_Ground (depr.)     = 0.7740
+A_Ground_c (depr.)   = 0.8623
+U_Reason↑            = 0.1512
+U_Reason_c           = 0.9688
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 176, 'FP': 8, 'FN': 21, 'TN': 32, 'AU': 173, 'INVALID': 0}
+
+--- MTS per relation ---
+  L1_mismatch      0.1512  (31/205)
+  L1_real          0.8585  (176/205)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L1_discrim/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 3/6: L2_evidence ===
+=== AgriAbstain eval [L2_evidence] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=790
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.4557  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.8962
+HOR_FCA (高危子集↓)  = 0.8962  (n=395)
+MTS_micro           = 0.3899
+MTS_macro           = 0.3899
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0456
+U_Abs (拒对↑)       = 0.1038
+AAC (答对↑)         = 0.6785
+MCC                 = 0.1107
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6080
+E2E_mIoU_c           = 0.6370
+A_Ground (depr.)     = 0.6080
+A_Ground_c (depr.)   = 0.6370
+U_Reason↑            = 0.1013
+U_Reason_c           = 0.9756
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 268, 'FP': 109, 'FN': 18, 'TN': 41, 'AU': 354, 'INVALID': 0}
+
+--- MTS per relation ---
+  L2_cropout       0.1013  (40/395)
+  L2_keep          0.6785  (268/395)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L2_evidence/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 4/6: L3_dose ===
+=== AgriAbstain eval [L3_dose] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=750
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 0.4413  (>= 0.95 ?)
+decision_accuracy = 0.2360  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.8446
+HOR_FCA (高危子集↓)  = 0.8446  (n=148)
+MTS_micro           = 0.5257
+MTS_macro           = 0.5257
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0000
+U_Abs (拒对↑)       = 0.1554
+AAC (答对↑)         = 0.8306
+MCC                 = 0.3039
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7494
+E2E_mIoU_c           = 0.7494
+A_Ground (depr.)     = 0.7494
+A_Ground_c (depr.)   = 0.7494
+U_Reason↑            = 0.1486
+U_Reason_c           = 0.9565
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 152, 'FP': 31, 'FN': 0, 'TN': 23, 'AU': 125, 'INVALID': 0}
+
+--- MTS per relation ---
+  L3_ladder        0.5257  (174/331)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/L3_dose/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 5/6: refcocog ===
+=== AgriAbstain eval [refcocog] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=362
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8177  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0608
+HOR_FCA (高危子集↓)  = 0.0608  (n=181)
+MTS_micro           = 0.8122
+MTS_macro           = 0.8122
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0000
+U_Abs (拒对↑)       = 0.9392
+AAC (答对↑)         = 0.6851
+MCC                 = 0.9410
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6312
+E2E_mIoU_c           = 0.8282
+A_Ground (depr.)     = 0.6312
+A_Ground_c (depr.)   = 0.8282
+U_Reason↑            = 0.9392
+U_Reason_c           = 1.0000
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 124, 'FP': 57, 'FN': 0, 'TN': 170, 'AU': 11, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.9392  (170/181)
+  OOD_answer       0.6851  (124/181)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/refcocog/metrics.json , predictions.jsonl , summary.txt
+[eval r0] === merge probe 6/6: plantwild ===
+=== AgriAbstain eval [plantwild] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/plantwild.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=408
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.5931  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.3409
+HOR_FCA (高危子集↓)  = 0.1597  (n=144)
+MTS_micro           = 0.5931
+MTS_macro           = 0.5773
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.3472
+U_Abs (拒对↑)       = 0.6591
+AAC (答对↑)         = 0.5903
+MCC                 = 0.2995
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.0000
+E2E_mIoU_c           = 0.0000
+A_Ground (depr.)     = 0.0000
+A_Ground_c (depr.)   = 0.0000
+U_Reason↑            = 0.5947
+U_Reason_c           = 0.9023
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 85, 'FP': 9, 'FN': 50, 'TN': 174, 'AU': 90, 'INVALID': 0}
+
+--- MTS per relation ---
+  OOD_absent       0.8333  (120/144)
+  OOD_answer       0.5903  (85/144)
+  OOD_confusion    0.3083  (37/120)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/evaluation/regate/plantwild/metrics.json , predictions.jsonl , summary.txt

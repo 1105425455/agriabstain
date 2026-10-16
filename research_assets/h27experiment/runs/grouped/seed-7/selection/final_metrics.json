@@ -1,0 +1,13 @@
+{
+  "analysis": "Validation loss reached its minimum before the final epoch; extending training is not supported and would risk overfitting.",
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/checkpoints/checkpoint-333",
+  "best_epoch": 3,
+  "best_step": 333,
+  "best_val_loss": 0.277556,
+  "extra_checkpoint_task_ids": {},
+  "final_train_loss": 0.39238102801211244,
+  "loss_curve": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/selection/loss_curves.png",
+  "metrics_jsonl": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/selection/metrics.jsonl",
+  "selection_policy": "minimum teacher-forced LM loss on the fixed 100-record dev subset",
+  "train_runtime_seconds": 2272.7239
+}

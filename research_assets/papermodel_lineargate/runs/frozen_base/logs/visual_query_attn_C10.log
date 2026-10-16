@@ -1,0 +1,19 @@
+[frozen] base=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct adapter=None layer=27
+[frozen] train: n=7072 labels=[2703, 1500, 2869]
+[frozen] dev: n=2408 labels=[1204, 205, 999]
+[frozen] test: n=2646 labels=[1323, 205, 1118]
+pooling variants:   0%|          | 0/1 [00:00<?, ?pool/s]
+visual_query_attn C grid:   0%|          | 0/1 [00:00<?, ?candidate/s][A/user/huangyongbin/miniconda3/envs/agrisam3/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=2000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+[frozen] visual_query_attn C=10 dev_loss=4.7717 test_auroc=0.5804 iters=2000
+
+visual_query_attn C grid: 100%|██████████| 1/1 [06:08<00:00, 368.66s/candidate][A
+                                                                               [Apooling variants: 100%|██████████| 1/1 [06:10<00:00, 370.55s/pool]pooling variants: 100%|██████████| 1/1 [06:10<00:00, 370.55s/pool]
+[frozen] shard visual_query_attn_C10 done

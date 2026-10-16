@@ -13,7 +13,7 @@ sft = json.loads(
     (ROOT / "aaai_code/benchmark/annotations/sft/sft_dev.json").read_text()
 )
 cache = np.load(
-    "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/repr/dev/dev.npz",
+    ROOT / "new_reason/outputs/evidence_judge_full_4090_b1_v2_20260719/repr/dev/dev.npz",
     allow_pickle=True,
 )
 lookup = defaultdict(list)

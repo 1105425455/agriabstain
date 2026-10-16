@@ -1,0 +1,13 @@
+{
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/checkpoints/checkpoint-333",
+  "best_step": 333,
+  "dev_losses": {
+    "111": 0.308333,
+    "222": 0.290091,
+    "333": 0.277556,
+    "444": 0.287858,
+    "555": 0.286234,
+    "666": 0.288639
+  },
+  "extra_checkpoint_task_ids": {}
+}

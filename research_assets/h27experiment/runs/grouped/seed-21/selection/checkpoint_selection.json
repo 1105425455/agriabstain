@@ -1,0 +1,13 @@
+{
+  "best_checkpoint": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222",
+  "best_step": 222,
+  "dev_losses": {
+    "111": 0.305545,
+    "222": 0.296342,
+    "333": 0.299934,
+    "444": 0.298243,
+    "555": 0.296931,
+    "666": 0.299271
+  },
+  "extra_checkpoint_task_ids": {}
+}

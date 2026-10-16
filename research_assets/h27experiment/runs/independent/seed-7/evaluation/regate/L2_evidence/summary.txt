@@ -1,0 +1,36 @@
+=== AgriAbstain eval [L2_evidence] ===
+data: /user/huangyongbin/newrepo/agriabstain/h27experiment/data/L2_evidence.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222
+n=790
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.4557  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.8962
+HOR_FCA (高危子集↓)  = 0.8962  (n=395)
+MTS_micro           = 0.3899
+MTS_macro           = 0.3899
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.0456
+U_Abs (拒对↑)       = 0.1038
+AAC (答对↑)         = 0.6785
+MCC                 = 0.1107
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6080
+E2E_mIoU_c           = 0.6370
+A_Ground (depr.)     = 0.6080
+A_Ground_c (depr.)   = 0.6370
+U_Reason↑            = 0.1013
+U_Reason_c           = 0.9756
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 268, 'FP': 109, 'FN': 18, 'TN': 41, 'AU': 354, 'INVALID': 0}
+
+--- MTS per relation ---
+  L2_cropout       0.1013  (40/395)
+  L2_keep          0.6785  (268/395)

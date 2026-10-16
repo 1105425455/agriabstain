@@ -47,7 +47,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTRA_CPU = ROOT / "docs/review_evidence/additional_cpu"
-SOURCE_ROOT = Path("/user/huangyongbin/newrepo/agriabstain")
+SOURCE_ROOT = ROOT / "research_assets/source_support"
 
 # The grouping rule lives in the package under aaai_code/.
 sys.path.insert(0, str(ROOT / "aaai_code"))
@@ -706,9 +706,9 @@ def task4_sft_native_confidence_and_baselines() -> dict[str, Any]:
     generation_lines = [ln.strip() for ln in script_text.splitlines() if "do_sample=False" in ln]
 
     # Baseline protocol check: groundingme_external / openref_external.
-    groundingme_readme = _read_head(ROOT / "aaai_code/experiments/groundingme_external/README.md", 60)
-    groundingme_prep = _read_head(ROOT / "aaai_code/experiments/groundingme_external/prepare_groundingme.py", 20)
-    openref_prep = _read_head(ROOT / "aaai_code/experiments/openref_external/prepare_openref.py", 25)
+    groundingme_readme = _read_head(SOURCE_ROOT / "aaai_code/experiments/groundingme_external/README.md", 60)
+    groundingme_prep = _read_head(SOURCE_ROOT / "aaai_code/experiments/groundingme_external/prepare_groundingme.py", 20)
+    openref_prep = _read_head(SOURCE_ROOT / "aaai_code/experiments/openref_external/prepare_openref.py", 25)
     groundingme_run_cfg = _read_json(
         SOURCE_ROOT
         / "aaai_code/experiments/groundingme_external/runs/eval_v1_20260720/base/run_config.json"

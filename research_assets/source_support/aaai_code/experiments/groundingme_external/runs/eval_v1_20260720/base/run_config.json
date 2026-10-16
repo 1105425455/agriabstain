@@ -1,0 +1,19 @@
+{
+  "stage": "base",
+  "created_at": "2026-07-20T17:17:10.847576+00:00",
+  "hostname": "pytorchjob-hyb-597010-master-0",
+  "data": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/groundingme_external/artifacts/evaluation_1205.jsonl",
+  "data_sha256": "aefa78b78bbd9142f23cae33955c007d51e43a47936ba3988cecfe3cc19c5777",
+  "records": 1205,
+  "base_model": "/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct",
+  "adapter": null,
+  "calibrated_head": null,
+  "nproc": 4,
+  "backend": "hf",
+  "max_new_tokens": 384,
+  "max_pixels": 262144,
+  "pytorch_cuda_alloc_conf": "expandable_segments:True",
+  "system_override": null,
+  "prompt_source": "per-record messages in evaluation_1205.jsonl",
+  "decoding": "greedy"
+}

@@ -1,0 +1,163 @@
+W0728 16:31:10.475000 497 site-packages/torch/distributed/run.py:793] 
+W0728 16:31:10.475000 497 site-packages/torch/distributed/run.py:793] *****************************************
+W0728 16:31:10.475000 497 site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0728 16:31:10.475000 497 site-packages/torch/distributed/run.py:793] *****************************************
+[eval r0] device=cuda:0 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r7] device=cuda:7 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r4] device=cuda:4 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r2] device=cuda:2 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r6] device=cuda:6 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r3] device=cuda:3 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r1] device=cuda:1 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+[eval r5] device=cuda:5 loading base: /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 39.31it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 39.22it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 39.46it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 39.37it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 43.06it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 38.49it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 38.42it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 37.73it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 37.63it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 30.46it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 30.40it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 31.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 31.05it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 41.21it/s]
+[eval r0] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r2] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r4] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r1] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r6] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r7] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r0] model loaded on cuda:0, running 1 probe(s) 
+[eval r0] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r0] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank0of8.jsonl
+[eval r2] model loaded on cuda:2, running 1 probe(s) 
+[eval r2] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r2] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank2of8.jsonl
+[eval r5] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r3] loading LoRA adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+[eval r4] model loaded on cuda:4, running 1 probe(s) 
+[eval r4] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r4] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank4of8.jsonl
+[eval r1] model loaded on cuda:1, running 1 probe(s) 
+[eval r1] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r1] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank1of8.jsonl
+[eval r7] model loaded on cuda:7, running 1 probe(s) 
+[eval r7] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r6] model loaded on cuda:6, running 1 probe(s) 
+[eval r6] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r7] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank7of8.jsonl
+[eval r6] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank6of8.jsonl
+[eval r5] model loaded on cuda:5, running 1 probe(s) 
+[eval r5] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r5] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank5of8.jsonl
+[eval r3] model loaded on cuda:3, running 1 probe(s) 
+[eval r3] === probe 1/1: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native (tag=comprehensive_dev) ===
+[eval r3] [hf probe#0] total=2408 mine=301 done=0 todo=301 -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank3of8.jsonl
+[eval r1] probe#0 50/301 (0.52 it/s)
+[eval r0] probe#0 50/301 (0.51 it/s)
+[eval r5] probe#0 50/301 (0.51 it/s)
+[eval r2] probe#0 50/301 (0.49 it/s)
+[eval r7] probe#0 50/301 (0.49 it/s)
+[eval r3] probe#0 50/301 (0.47 it/s)
+[eval r6] probe#0 50/301 (0.47 it/s)
+[eval r4] probe#0 50/301 (0.46 it/s)
+[eval r1] probe#0 100/301 (0.53 it/s)
+[eval r2] probe#0 100/301 (0.50 it/s)
+[eval r0] probe#0 100/301 (0.50 it/s)
+[eval r5] probe#0 100/301 (0.51 it/s)
+[eval r7] probe#0 100/301 (0.50 it/s)
+[eval r6] probe#0 100/301 (0.48 it/s)
+[eval r3] probe#0 100/301 (0.48 it/s)
+[eval r4] probe#0 100/301 (0.47 it/s)
+[eval r1] probe#0 150/301 (0.53 it/s)
+[eval r7] probe#0 150/301 (0.50 it/s)
+[eval r0] probe#0 150/301 (0.50 it/s)
+[eval r5] probe#0 150/301 (0.49 it/s)
+[eval r2] probe#0 150/301 (0.49 it/s)
+[eval r6] probe#0 150/301 (0.48 it/s)
+[eval r4] probe#0 150/301 (0.48 it/s)
+[eval r3] probe#0 150/301 (0.48 it/s)
+[eval r1] probe#0 200/301 (0.56 it/s)
+[eval r0] probe#0 200/301 (0.53 it/s)
+[eval r7] probe#0 200/301 (0.53 it/s)
+[eval r5] probe#0 200/301 (0.53 it/s)
+[eval r6] probe#0 200/301 (0.52 it/s)
+[eval r4] probe#0 200/301 (0.52 it/s)
+[eval r2] probe#0 200/301 (0.52 it/s)
+[eval r3] probe#0 200/301 (0.51 it/s)
+[eval r1] probe#0 250/301 (0.61 it/s)
+[eval r0] probe#0 250/301 (0.59 it/s)
+[eval r7] probe#0 250/301 (0.58 it/s)
+[eval r5] probe#0 250/301 (0.58 it/s)
+[eval r6] probe#0 250/301 (0.57 it/s)
+[eval r2] probe#0 250/301 (0.57 it/s)
+[eval r4] probe#0 250/301 (0.57 it/s)
+[eval r3] probe#0 250/301 (0.56 it/s)
+[eval r1] probe#0 300/301 (0.64 it/s)
+[eval r1] probe#0 shard done in 466.7s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank1of8.jsonl
+[eval r0] probe#0 300/301 (0.63 it/s)
+[eval r0] probe#0 shard done in 478.8s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank0of8.jsonl
+[eval r5] probe#0 300/301 (0.62 it/s)
+[eval r7] probe#0 300/301 (0.62 it/s)
+[eval r5] probe#0 shard done in 483.2s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank5of8.jsonl
+[eval r7] probe#0 shard done in 484.7s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank7of8.jsonl
+[eval r6] probe#0 300/301 (0.61 it/s)
+[eval r2] probe#0 300/301 (0.61 it/s)
+[eval r6] probe#0 shard done in 490.1s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank6of8.jsonl
+[eval r2] probe#0 shard done in 491.9s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank2of8.jsonl
+[eval r4] probe#0 300/301 (0.61 it/s)
+[eval r4] probe#0 shard done in 495.5s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank4of8.jsonl
+[eval r3] probe#0 300/301 (0.60 it/s)
+[eval r3] probe#0 shard done in 499.9s -> /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/shards/preds.rank3of8.jsonl
+[eval r0] === merge probe 1/1: comprehensive_dev ===
+=== AgriAbstain eval [comprehensive_dev] ===
+data: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-21/checkpoints/checkpoint-222
+n=2408
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.7454  (>= 0.8 ?)
+GATE PASSED = False
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.1238
+HOR_FCA (高危子集↓)  = 0.0110  (n=999)
+MTS_micro           = 0.7091
+MTS_macro           = 0.7771
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.1728
+U_Abs (拒对↑)       = 0.8762
+AAC (答对↑)         = 0.7691
+MCC                 = 0.7043
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.6996
+E2E_mIoU_c           = 0.8457
+A_Ground (depr.)     = 0.6996
+A_Ground_c (depr.)   = 0.8457
+U_Reason↑            = 0.6636
+U_Reason_c           = 0.7573
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 926, 'FP': 70, 'FN': 208, 'TN': 1055, 'AU': 149, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.8111  (176/217)
+  T2               0.8087  (93/115)
+  T2_occluded      0.9855  (68/69)
+  T3               0.8019  (85/106)
+  T3_occluded      0.9855  (68/69)
+  T4_control       0.7025  (85/121)
+  T5               0.5623  (334/594)
+  T6               0.3268  (67/205)
+  T7_include       0.7925  (84/106)
+  T7_ladder        0.7857  (374/476)
+  base_occluded    0.9860  (141/143)
+[eval] written: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/runs/seed-21/dev_native/metrics.json , predictions.jsonl , summary.txt

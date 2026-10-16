@@ -1,0 +1,90 @@
+{
+  "tag": "refcocog",
+  "data": "/user/huangyongbin/newrepo/agriabstain/h27experiment/data/refcocog.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-21/checkpoints/checkpoint-222",
+  "n_samples": 362,
+  "n_ambiguous_skipped": 0,
+  "gate": {
+    "format_valid_rate": 1.0,
+    "decision_accuracy": 0.7956,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 113,
+      "FP": 59,
+      "FN": 9,
+      "TN": 175,
+      "AU": 6,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 362,
+      "answerable": 181,
+      "unanswerable": 181,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 172,
+      "FP": 6,
+      "FN": 9,
+      "TN": 175
+    },
+    "headline": {
+      "FCA": 0.03314917127071823,
+      "HOR_FCA": 0.03314917127071823,
+      "HOR_count": {
+        "high_occlusion_au": 6,
+        "high_occlusion_unanswerable": 181
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.049723756906077346,
+      "Supported_Retention": 0.9502762430939227,
+      "U_Abs": 0.9668508287292817,
+      "AAC": 0.6243093922651933,
+      "MCC": 0.9172530729327605
+    },
+    "semantic": {
+      "Strict_3": 0.7955801104972375
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.5691568832229336,
+      "E2E_mIoU_c": 0.8931908335965335,
+      "A_Ground": 0.5691568832229336,
+      "A_Ground_c": 0.8931908335965335,
+      "U_Reason": 0.9613259668508287,
+      "U_Reason_c": 0.9942857142857143
+    },
+    "comparison": {
+      "UAC": 0.9668508287292817,
+      "AR": 0.5082872928176796
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.7928176795580111,
+    "MTS_macro": 0.7928176795580111,
+    "per_relation": {
+      "OOD_absent": 0.9613259668508287,
+      "OOD_answer": 0.6243093922651933
+    },
+    "per_relation_counts": {
+      "OOD_absent": {
+        "pass": 174,
+        "total": 181
+      },
+      "OOD_answer": {
+        "pass": 113,
+        "total": 181
+      }
+    }
+  },
+  "within_image": null
+}

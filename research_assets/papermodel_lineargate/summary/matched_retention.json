@@ -1,0 +1,26 @@
+{
+  "grouped": {
+    "auroc_linear": 0.9819331108608726,
+    "auroc_mlp": 0.983381410009204,
+    "linear_matched_fca": 0.13529856386999245,
+    "linear_matched_retention": 0.9758125472411187,
+    "linear_matched_threshold": 0.018607864156365395,
+    "mlp_argmax_fca": 0.13151927437641722,
+    "mlp_argmax_retention": 0.9758125472411187,
+    "n_scored": 2646,
+    "n_supported": 1323,
+    "n_unsupported": 1323
+  },
+  "independent": {
+    "auroc_linear": 0.8841332115276613,
+    "auroc_mlp": 0.8898207137058234,
+    "linear_matched_fca": 0.46107331821617537,
+    "linear_matched_retention": 0.9538926681783825,
+    "linear_matched_threshold": 0.5368943214416504,
+    "mlp_argmax_fca": 0.48450491307634164,
+    "mlp_argmax_retention": 0.9538926681783825,
+    "n_scored": 2646,
+    "n_supported": 1323,
+    "n_unsupported": 1323
+  }
+}

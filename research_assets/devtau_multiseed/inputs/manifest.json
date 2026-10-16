@@ -1,0 +1,10 @@
+{
+  "dev_resolved.jsonl": {
+    "sha256": "f4d5e3ab4de2a9bf3d6e9671d024b584c473a8d41bd60c5969125af8d64d05c3",
+    "n": 2408
+  },
+  "select_and_apply_threshold.py": {
+    "sha256": "cee079d52e06b2ee1cd010a80d84565253455a30963ea50ed5beaaaf5588980e"
+  },
+  "source": "new_reason/outputs/matched_retention_dev_20260725 (paper canonical dev-selection pipeline), copied verbatim"
+}

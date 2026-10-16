@@ -1,0 +1,194 @@
+{
+  "protocol": "Development-selected operating point, identical to the paper: choose the highest empirical p_answer threshold whose dev supported-query retention is at least the SFT-native dev retention on the same 2,408-record canonical development split, freeze it, then apply to that run's own 2,646-record comprehensive test predictions.",
+  "condition": "grouped",
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "dev_records": 2408,
+  "test_records": 2646,
+  "paper_reference": "new_reason/outputs/matched_retention_dev_20260725/analysis/result.json",
+  "per_seed": {
+    "7": {
+      "selected_threshold": 0.7984246015548706,
+      "dev_target_retention": 0.8106312292358804,
+      "dev_selected_retention": 0.8106312292358804,
+      "test_native_retention": 0.7936507936507936,
+      "test_native_fca": 0.07482993197278912,
+      "test_regate_retention": 0.8563869992441421,
+      "test_regate_fca": 0.03250188964474679,
+      "test_regate_strict3": 0.8480725623582767,
+      "absolute_fca_reduction": 0.042328042328042326,
+      "relative_fca_reduction": 0.5656565656565656
+    },
+    "21": {
+      "selected_threshold": 0.6500887870788574,
+      "dev_target_retention": 0.8272425249169435,
+      "dev_selected_retention": 0.8272425249169435,
+      "test_native_retention": 0.8012093726379441,
+      "test_native_fca": 0.11035525321239607,
+      "test_regate_retention": 0.8631897203325775,
+      "test_regate_fca": 0.050642479213907785,
+      "test_regate_strict3": 0.828042328042328,
+      "absolute_fca_reduction": 0.05971277399848829,
+      "relative_fca_reduction": 0.541095890410959
+    },
+    "42": {
+      "selected_threshold": 0.7399818301200867,
+      "dev_target_retention": 0.856312292358804,
+      "dev_selected_retention": 0.856312292358804,
+      "test_native_retention": 0.8246409674981103,
+      "test_native_fca": 0.08087679516250945,
+      "test_regate_retention": 0.8835978835978836,
+      "test_regate_fca": 0.03476946334089191,
+      "test_regate_strict3": 0.8639455782312925,
+      "absolute_fca_reduction": 0.04610733182161754,
+      "relative_fca_reduction": 0.5700934579439253
+    }
+  },
+  "aggregate": {
+    "selected_threshold": {
+      "mean": 0.7294984062512716,
+      "std": 0.074721516955128,
+      "min": 0.6500887870788574,
+      "max": 0.7984246015548706
+    },
+    "dev_target_retention": {
+      "mean": 0.8313953488372093,
+      "std": 0.023121945028363906,
+      "min": 0.8106312292358804,
+      "max": 0.856312292358804
+    },
+    "dev_selected_retention": {
+      "mean": 0.8313953488372093,
+      "std": 0.023121945028363906,
+      "min": 0.8106312292358804,
+      "max": 0.856312292358804
+    },
+    "test_native_retention": {
+      "mean": 0.8065003779289494,
+      "std": 0.01615839631627509,
+      "min": 0.7936507936507936,
+      "max": 0.8246409674981103
+    },
+    "test_native_fca": {
+      "mean": 0.08868732678256487,
+      "std": 0.01900698333337596,
+      "min": 0.07482993197278912,
+      "max": 0.11035525321239607
+    },
+    "test_regate_retention": {
+      "mean": 0.8677248677248678,
+      "std": 0.014160993193647177,
+      "min": 0.8563869992441421,
+      "max": 0.8835978835978836
+    },
+    "test_regate_fca": {
+      "mean": 0.039304610733182165,
+      "std": 0.009884124588527603,
+      "min": 0.03250188964474679,
+      "max": 0.050642479213907785
+    },
+    "test_regate_strict3": {
+      "mean": 0.8466868228772991,
+      "std": 0.017991693888144582,
+      "min": 0.828042328042328,
+      "max": 0.8639455782312925
+    },
+    "absolute_fca_reduction": {
+      "mean": 0.04938271604938271,
+      "std": 0.009143485669752613,
+      "min": 0.042328042328042326,
+      "max": 0.05971277399848829
+    },
+    "relative_fca_reduction": {
+      "mean": 0.5589486380038166,
+      "std": 0.01561928137761536,
+      "min": 0.541095890410959,
+      "max": 0.5700934579439253
+    }
+  },
+  "paper_comparison": {
+    "selected_threshold": {
+      "paper": 0.9888232350349426,
+      "multiseed_mean": 0.7294984062512716,
+      "multiseed_std": 0.074721516955128,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.259324828783671
+    },
+    "dev_target_retention": {
+      "paper": 0.8604651162790697,
+      "multiseed_mean": 0.8313953488372093,
+      "multiseed_std": 0.023121945028363906,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.029069767441860406
+    },
+    "dev_selected_retention": {
+      "paper": 0.8604651162790697,
+      "multiseed_mean": 0.8313953488372093,
+      "multiseed_std": 0.023121945028363906,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.029069767441860406
+    },
+    "test_native_retention": {
+      "paper": 0.8510959939531368,
+      "multiseed_mean": 0.8065003779289494,
+      "multiseed_std": 0.01615839631627509,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.04459561602418749
+    },
+    "test_native_fca": {
+      "paper": 0.0944822373393802,
+      "multiseed_mean": 0.08868732678256487,
+      "multiseed_std": 0.01900698333337596,
+      "paper_within_seed_range": true,
+      "paper_within_one_std": true,
+      "paper_minus_mean": 0.00579491055681533
+    },
+    "test_regate_retention": {
+      "paper": 0.889644746787604,
+      "multiseed_mean": 0.8677248677248678,
+      "multiseed_std": 0.014160993193647177,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.02191987906273618
+    },
+    "test_regate_fca": {
+      "paper": 0.045351473922902494,
+      "multiseed_mean": 0.039304610733182165,
+      "multiseed_std": 0.009884124588527603,
+      "paper_within_seed_range": true,
+      "paper_within_one_std": true,
+      "paper_minus_mean": 0.006046863189720329
+    },
+    "test_regate_strict3": {
+      "paper": 0.8745275888133031,
+      "multiseed_mean": 0.8466868228772991,
+      "multiseed_std": 0.017991693888144582,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": 0.02784076593600393
+    },
+    "absolute_fca_reduction": {
+      "paper": 0.04913076341647771,
+      "multiseed_mean": 0.04938271604938271,
+      "multiseed_std": 0.009143485669752613,
+      "paper_within_seed_range": true,
+      "paper_within_one_std": true,
+      "paper_minus_mean": -0.0002519526329050059
+    },
+    "relative_fca_reduction": {
+      "paper": 0.52,
+      "multiseed_mean": 0.5589486380038166,
+      "multiseed_std": 0.01561928137761536,
+      "paper_within_seed_range": false,
+      "paper_within_one_std": false,
+      "paper_minus_mean": -0.03894863800381654
+    }
+  }
+}

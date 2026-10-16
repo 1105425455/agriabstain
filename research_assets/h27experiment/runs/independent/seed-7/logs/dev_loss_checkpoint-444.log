@@ -1,0 +1,17 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.78s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.10it/s]
+Some weights of Qwen3VLWithTriHead were not initialized from the model checkpoint at /user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct and are newly initialized: ['discrim_head.classifier.0.bias', 'discrim_head.classifier.0.weight', 'discrim_head.classifier.3.bias', 'discrim_head.classifier.3.weight', 'discrim_head.classifier.6.bias', 'discrim_head.classifier.6.weight', 'discrim_head.mu', 'discrim_head.sd']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+[dual-head] head_logits shape=torch.Size([1, 3]) 已产出（三分类）
+[dev_loss] 10/100 rate=0.51 samples/s avg=0.332913
+[dev_loss] 20/100 rate=0.39 samples/s avg=0.222682
+[dev_loss] 30/100 rate=0.39 samples/s avg=0.240083
+[dev_loss] 40/100 rate=0.38 samples/s avg=0.287968
+[dev_loss] 50/100 rate=0.38 samples/s avg=0.279805
+[dev_loss] 60/100 rate=0.37 samples/s avg=0.316372
+[dev_loss] 70/100 rate=0.37 samples/s avg=0.301179
+[dev_loss] 80/100 rate=0.37 samples/s avg=0.306786
+[dev_loss] 90/100 rate=0.38 samples/s avg=0.306280
+[dev_loss] 100/100 rate=0.39 samples/s avg=0.301335
+DEV_LOSS=0.301335

@@ -1,0 +1,3 @@
+[check] calib_train=(7072, 4096) calib_dev=(100, 4096)
+[check] max|dmu|=4.060974 max|dsd|=1.455294
+[check][FATAL] feature statistics do not match the released head (max|dmu|=4.0610, max|dsd|=1.4553); these features come from a different checkpoint

@@ -1,0 +1,25 @@
+2026-07-28T19:53:16+08:00
+arm=independent
+stage=all
+run_seed=42
+adapter=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/models/independent
+adapter_sha256=9338bbf3dacd331a92d5571f868b73972e802159471f5f0d306a30e1cfea2ce0
+head_sha256=64d60b190c1ed04dd03384086fb6bc9a1abbbc55d4aeacc89fe4fbb749aa28e0
+train_data=/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+train_data_sha256=76709bd2012e0bd0e48f0f01eb05b50466000e49b028ccbc3d48113e301e8555
+dev_raw_sha256=0f3f8b748a3cc0a6a0e5d304181d8dd31da3e5786fd8a99fcb8c5240623bf501
+test_data_sha256=81172cc47e6ea1b463f58a9bb6f51804a25de33d38d7f314290d30fab4d413d7
+nproc=8
+python=3.11.15
+torch=2.5.1
+transformers=4.57.6
+sklearn=1.8.0
+cuda=12.4
+0, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+1, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+2, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+3, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+4, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+5, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+6, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+7, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %

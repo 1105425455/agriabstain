@@ -1,0 +1,22 @@
+2026-07-27T21:45:14+08:00
+condition=independent
+run_seed=7
+dev_subset_sampling_seed=42
+train_data=/user/huangyongbin/newrepo/agriabstain/h27experiment/data/sft_train_independent.json
+train_data_sha256=76709bd2012e0bd0e48f0f01eb05b50466000e49b028ccbc3d48113e301e8555
+base_model=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct
+discrim_musd=/user/huangyongbin/newrepo/agriabstain/h27experiment/data/discrim_musd.pt
+nproc=8
+python=3.11.15
+torch=2.8.0+cu128
+transformers=4.57.0
+sklearn=1.9.0
+cuda=12.8
+0, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+1, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+2, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+3, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+4, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+5, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+6, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %
+7, NVIDIA GeForce RTX 4090, 24564 MiB, 0 MiB, 0 %

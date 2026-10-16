@@ -1,0 +1,10 @@
+[fit] train=(7072, 4096) dev=(100, 4096)
+[fit] epoch 50/1000 train_loss=0.0451 dev_loss=3.0584 dev_mcc=0.3614
+[fit]   new best dev_loss=3.0584
+[fit] epoch 100/1000 train_loss=0.0140 dev_loss=4.4663 dev_mcc=0.3453
+[fit] epoch 150/1000 train_loss=0.0445 dev_loss=4.4301 dev_mcc=0.3763
+[fit] epoch 200/1000 train_loss=0.0041 dev_loss=4.7497 dev_mcc=0.3481
+[fit] epoch 250/1000 train_loss=0.0099 dev_loss=4.2915 dev_mcc=0.3453
+[fit] epoch 300/1000 train_loss=0.0040 dev_loss=4.5421 dev_mcc=0.3453
+[fit] early stop at epoch 300
+[fit] done best_epoch=50 best_dev_loss=3.0584 train_mcc=0.9828 dev_mcc=0.3614

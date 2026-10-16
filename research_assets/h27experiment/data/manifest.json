@@ -1,0 +1,132 @@
+{
+  "files": {
+    "L1_discrim.jsonl": {
+      "bytes": 644239,
+      "sha256": "09719c5f61a83977515c49e69c0ca613e5768c7ff3acbe008ba5b4bfedba8507",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L1_discrim.jsonl"
+    },
+    "L2_evidence.jsonl": {
+      "bytes": 1133800,
+      "sha256": "0cd9cd2dae2786ba83bdf3e101ff644173fffe24d93ade9e18edd4c97a409f4d",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L2_evidence.jsonl"
+    },
+    "L3_dose.jsonl": {
+      "bytes": 1148083,
+      "sha256": "7bd48e11827ecbd9445de2fd0fa9cefbeeef495ba1d66b9f1cb204d175e57f48",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/test_L3_dose.jsonl"
+    },
+    "comprehensive.jsonl": {
+      "bytes": 3206989,
+      "sha256": "81172cc47e6ea1b463f58a9bb6f51804a25de33d38d7f314290d30fab4d413d7",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_test.jsonl"
+    },
+    "dev.jsonl": {
+      "bytes": 2061624,
+      "sha256": "0f3f8b748a3cc0a6a0e5d304181d8dd31da3e5786fd8a99fcb8c5240623bf501",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/splits/dev.jsonl"
+    },
+    "discrim_musd.pt": {
+      "bytes": 34765,
+      "sha256": "a9949fb046d03490367f063050d2a3e00a73482bf364193a4c914dba4d906432",
+      "source": "/user/huangyongbin/newrepo/agriabstain/final_story/outputs/discrim_musd.pt"
+    },
+    "plantwild.jsonl": {
+      "bytes": 631322,
+      "sha256": "3c80d1ff171a6f4ec76d141d1c7197512961726a1fce32ba9aad766f469d52ca",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/plantwild_real_closed12_v1/plantwild_real_closed12_paired_408.jsonl"
+    },
+    "refcocog.jsonl": {
+      "bytes": 546041,
+      "sha256": "c2eddf6298534632bd5de9e770ba6291fbf2f773697e8e81b96a4c8a63cdd342",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/eval_probes/ood_refcocog.jsonl"
+    },
+    "sft_dev.json": {
+      "bytes": 2512413,
+      "sha256": "9376d9c9ccaab5966201293ed72b5d5ece50366624e67027a9aa18307c7caabc",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_dev.json"
+    },
+    "sft_train_grouped.json": {
+      "bytes": 7375046,
+      "sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+      "source": "/user/huangyongbin/newrepo/agriabstain/new_reason/outputs/sft_3reason/sft_train.json"
+    },
+    "sft_train_independent.json": {
+      "bytes": 11358776,
+      "sha256": "76709bd2012e0bd0e48f0f01eb05b50466000e49b028ccbc3d48113e301e8555",
+      "source": "/user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json"
+    }
+  },
+  "media_audit": {
+    "L1_discrim.jsonl": {
+      "missing": 0,
+      "references": 410,
+      "unique_files": 75
+    },
+    "L2_evidence.jsonl": {
+      "missing": 0,
+      "references": 790,
+      "unique_files": 237
+    },
+    "L3_dose.jsonl": {
+      "missing": 0,
+      "references": 750,
+      "unique_files": 750
+    },
+    "comprehensive.jsonl": {
+      "missing": 0,
+      "references": 2646,
+      "unique_files": 1504
+    },
+    "plantwild.jsonl": {
+      "missing": 0,
+      "references": 408,
+      "unique_files": 144
+    },
+    "refcocog.jsonl": {
+      "missing": 0,
+      "references": 362,
+      "unique_files": 181
+    },
+    "sft_train_grouped.json": {
+      "missing": 0,
+      "references": 7072,
+      "unique_files": 3252
+    },
+    "sft_train_independent.json": {
+      "missing": 0,
+      "references": 7072,
+      "unique_files": 4013
+    }
+  },
+  "protocol": "fixed-data full-pipeline seeds 7/21/42",
+  "schema_version": 1,
+  "seeds": {
+    "dev_subset_sampling": 42,
+    "full_pipeline": [
+      7,
+      21,
+      42
+    ]
+  },
+  "training_data_audit": {
+    "grouped": {
+      "rows": 7072,
+      "sha256": "f6a0f922be69a5f5a585c89937ced60101a413c33bac7c6f98c6ff7967472663",
+      "state_counts": {
+        "0": 2703,
+        "1": 1500,
+        "2": 2869
+      }
+    },
+    "independent": {
+      "rows": 7072,
+      "sha256": "76709bd2012e0bd0e48f0f01eb05b50466000e49b028ccbc3d48113e301e8555",
+      "state_counts": {
+        "0": 2703,
+        "1": 1500,
+        "2": 2869
+      }
+    },
+    "independent_assignment_is_fixed_across_run_seeds": true
+  }
+}

@@ -1,0 +1,35 @@
+[MONITOR] independent (632981) status=Running
+[MONITOR] independent: [smoke] OK rows=16 head_hidden dim=4096
+[monitor] independent: [extract] arm=independent reuses provenance-verified released shards; skipping
+[MONITOR] independent: [check] calib_train=(7072, 4096) calib_dev=(100, 4096)
+[MONITOR] independent: [check] max|dmu|=0.000000 max|dsd|=0.000001
+[MONITOR] independent: [check] OK: features are provenance-consistent with the released head
+[MONITOR] independent: [linear-gate] best_C=0.01 dev_loss=2.673326 dev_mcc=0.3453
+[MONITOR] grouped (633055) status=Running
+[monitor] grouped: [guard] arm=grouped adapter=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/models/grouped train=sft_train.json ok
+[MONITOR] independent (632981) status=Failed
+[MONITOR] independent: [mlp-score] dataset=comprehensive n=2646 FCA=0.4860 retention=0.9554 MCC=0.5231 Strict-3=0.6633
+[MONITOR] independent: [linear-reroute] dataset=comprehensive n=2646 FCA=0.4686 retention=0.9592 MCC=0.5427 Strict-3=0.6750
+[MONITOR] grouped: [complete] arm=grouped stage=eval run_root=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/grouped
+[MONITOR] grouped: [linear-gate] best_C=0.01 dev_loss=0.408153 dev_mcc=0.8505
+[MONITOR] grouped: [complete] arm=grouped stage=linear run_root=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/grouped
+[MONITOR] grouped: [mlp-score] dataset=comprehensive n=2646 FCA=0.1323 retention=0.9758 MCC=0.8485 Strict-3=0.8560
+[MONITOR] grouped: [linear-reroute] dataset=comprehensive n=2646 FCA=0.0529 retention=0.8957 MCC=0.8439 Strict-3=0.8715
+[MONITOR] grouped: [complete] arm=grouped stage=score run_root=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/grouped
+[MONITOR] grouped (633055) status=Succeeded
+[MONITOR] both jobs reached a terminal state
+metric                      grouped-MLP  grouped-LIN    indep-MLP    indep-LIN
+------------------------------------------------------------------------------
+FCA                              0.1323       0.0529       0.4860       0.4686
+supported_query_retention        0.9758       0.8957       0.9554       0.9592
+MCC                              0.8485       0.8439       0.5231       0.5427
+strict_3_accuracy                0.8560       0.8715       0.6633       0.6750
+MTS_macro                           n/a          n/a          n/a          n/a
+
+[sanity] grouped: status=ok max_abs_deviation=0.0
+[sanity] independent: status=ok max_abs_deviation=0.0
+[construction-effect grouped-minus-independent] mlp: {'FCA': -0.3537, 'supported_query_retention': 0.0204, 'MCC': 0.3254, 'strict_3_accuracy': 0.1927}
+[construction-effect grouped-minus-independent] linear: {'FCA': -0.4157, 'supported_query_retention': -0.0635, 'MCC': 0.3012, 'strict_3_accuracy': 0.1965}
+[summarize] wrote /user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/summary/gate_comparison.json
+
+[MONITOR] done

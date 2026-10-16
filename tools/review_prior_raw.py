@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path("/user/huangyongbin/newrepo/agriabstain")
+SOURCE = ROOT / "research_assets"
 sys.path.insert(0, str(ROOT / "aaai_code"))
 from experiments.base_native_regate.rescore_metrics import build_result  # noqa: E402
 

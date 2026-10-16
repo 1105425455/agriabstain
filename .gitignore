@@ -1,4 +1,4 @@
-# 本地大型资产；路径与来源见 docs/EXTERNAL_ASSETS.json。
+# 公共下载和论文留在本地；研究权重/缓存由.gitattributes通过LFS管理。
 /paper/
 /figure/
 /submission_snapshot/
@@ -6,7 +6,9 @@
 /data
 /final_story/outputs
 /new_reason/outputs/benchmarks
-/aaai_code/benchmark/data/
+/aaai_code/benchmark/data/source/
+/aaai_code/benchmark/data/ood/
+/aaai_code/benchmark/data/derived/
 *.pt
 *.pth
 *.ckpt
@@ -14,6 +16,8 @@
 *.npy
 *.safetensors
 *.bin
+/research_assets/
+# 只有FINAL_ASSETS清单中的最终权重通过git add -f纳入LFS。
 *.onnx
 *.h5
 *.hdf5

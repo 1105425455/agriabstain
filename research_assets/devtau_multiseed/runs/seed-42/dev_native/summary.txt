@@ -1,0 +1,45 @@
+=== AgriAbstain eval [comprehensive_dev] ===
+data: /user/huangyongbin/newrepo/agriabstain/devtau_multiseed/inputs/dev_resolved.jsonl
+adapter: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-42/checkpoints/checkpoint-444
+n=2408
+
+--- GATE (RL 前置门) ---
+format_valid_rate = 1.0000  (>= 0.95 ?)
+decision_accuracy = 0.8243  (>= 0.8 ?)
+GATE PASSED = True
+
+--- Headline ---
+FCA (该拒强答↓)      = 0.0772
+HOR_FCA (高危子集↓)  = 0.0150  (n=999)
+MTS_micro           = 0.7951
+MTS_macro           = 0.8200
+
+--- Safeguard ---
+A_FU (误拒↓)        = 0.1437
+U_Abs (拒对↑)       = 0.9228
+AAC (答对↑)         = 0.7965
+MCC                 = 0.7808
+
+--- Grounding / Reason ---
+E2E_mIoU (IoU↑)     = 0.7270
+E2E_mIoU_c           = 0.8490
+A_Ground (depr.)     = 0.7270
+A_Ground_c (depr.)   = 0.8490
+U_Reason↑            = 0.7924
+U_Reason_c           = 0.8587
+
+invalid_rate        = 0.0000
+confusion_matrix    = {'TP': 959, 'FP': 72, 'FN': 173, 'TN': 1111, 'AU': 93, 'INVALID': 0}
+
+--- MTS per relation ---
+  T1               0.8065  (175/217)
+  T2               0.8261  (95/115)
+  T2_occluded      0.9130  (63/69)
+  T3               0.8302  (88/106)
+  T3_occluded      0.9130  (63/69)
+  T4_control       0.7603  (92/121)
+  T5               0.7508  (446/594)
+  T6               0.6049  (124/205)
+  T7_include       0.8208  (87/106)
+  T7_ladder        0.8298  (395/476)
+  base_occluded    0.9650  (138/143)

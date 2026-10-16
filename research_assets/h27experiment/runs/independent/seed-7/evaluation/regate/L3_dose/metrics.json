@@ -1,0 +1,85 @@
+{
+  "tag": "L3_dose",
+  "data": "/user/huangyongbin/newrepo/agriabstain/h27experiment/data/L3_dose.jsonl",
+  "adapter": "/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/independent/seed-7/checkpoints/checkpoint-222",
+  "n_samples": 750,
+  "n_ambiguous_skipped": 419,
+  "gate": {
+    "format_valid_rate": 0.4413,
+    "decision_accuracy": 0.236,
+    "format_valid_min": 0.95,
+    "decision_acc_min": 0.8,
+    "passed": false
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "TP": 152,
+      "FP": 31,
+      "FN": 0,
+      "TN": 23,
+      "AU": 125,
+      "INVALID": 0
+    },
+    "counts": {
+      "total": 331,
+      "answerable": 183,
+      "unanswerable": 148,
+      "invalid": 0,
+      "invalid_answerable": 0,
+      "invalid_unanswerable": 0
+    },
+    "selection_confusion_matrix": {
+      "TP": 183,
+      "FP": 125,
+      "FN": 0,
+      "TN": 23
+    },
+    "headline": {
+      "FCA": 0.8445945945945946,
+      "HOR_FCA": 0.8445945945945946,
+      "HOR_count": {
+        "high_occlusion_au": 125,
+        "high_occlusion_unanswerable": 148
+      }
+    },
+    "safeguard": {
+      "A_FU": 0.0,
+      "Supported_Retention": 1.0,
+      "U_Abs": 0.1554054054054054,
+      "AAC": 0.8306010928961749,
+      "MCC": 0.303866796203583
+    },
+    "semantic": {
+      "Strict_3": 0.5347432024169184
+    },
+    "grounding_reason": {
+      "E2E_mIoU": 0.7493614765767518,
+      "E2E_mIoU_c": 0.7493614765767518,
+      "A_Ground": 0.7493614765767518,
+      "A_Ground_c": 0.7493614765767518,
+      "U_Reason": 0.14864864864864866,
+      "U_Reason_c": 0.9565217391304348
+    },
+    "comparison": {
+      "UAC": 0.1554054054054054,
+      "AR": 0.06948640483383686
+    },
+    "invalid_rate": 0.0,
+    "iou_threshold": 0.5,
+    "denominator_policy": "fixed_gt_universe_invalid_is_incorrect"
+  },
+  "mts": {
+    "MTS_micro": 0.525679758308157,
+    "MTS_macro": 0.525679758308157,
+    "per_relation": {
+      "L3_ladder": 0.525679758308157
+    },
+    "per_relation_counts": {
+      "L3_ladder": {
+        "pass": 174,
+        "total": 331
+      }
+    }
+  },
+  "within_image": null
+}

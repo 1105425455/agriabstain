@@ -1,0 +1,38 @@
+[MONITOR] independent (632981) status=Running
+[MONITOR] independent: [smoke] OK rows=16 head_hidden dim=4096
+[monitor] independent: [extract] arm=independent reuses provenance-verified released shards; skipping
+[MONITOR] independent: [check] calib_train=(7072, 4096) calib_dev=(100, 4096)
+[MONITOR] independent: [check] max|dmu|=0.000000 max|dsd|=0.000001
+[MONITOR] independent: [check] OK: features are provenance-consistent with the released head
+[MONITOR] independent: [linear-gate] best_C=0.01 dev_loss=2.673326 dev_mcc=0.3453
+[MONITOR] pipeline-check(independent ckpt222 re-extract) (633027) status=Running
+[monitor] pipeline-check(independent ckpt222 re-extract): [guard] arm=independent adapter=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/models/independent train=sft_train_independent_negatives.json ok
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r3] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r7] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r3] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r3] rank3: sft_train=884, dev=13
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r1] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r7] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r7] rank7: sft_train=884, dev=12
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r1] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r1] rank1: sft_train=884, dev=13
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r5] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r0] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r6] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r4] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r5] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r5] rank5: sft_train=884, dev=12
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r0] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r0] rank0: sft_train=884, dev=13
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r4] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r4] rank4: sft_train=884, dev=12
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r6] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r6] rank6: sft_train=884, dev=12
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r2] 加载 sft_train: /user/huangyongbin/newrepo/agriabstain/aaai_code/experiments/grouping_ablation/artifacts/data/sft_train_independent_negatives.json
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r2] dev 三层分层采样 100 条 (answer=34 / wrong_object=33 / no_target=33)
+[monitor] pipeline-check(independent ckpt222 re-extract): [calibrate_head r2] rank2: sft_train=884, dev=13
+[MONITOR] pipeline-check(independent ckpt222 re-extract) (633027) status=Succeeded
+[MONITOR] pipeline-check(independent ckpt222 re-extract): [check] calib_train=(7072, 4096) calib_dev=(100, 4096)
+[MONITOR] pipeline-check(independent ckpt222 re-extract): [check] max|dmu|=0.000000 max|dsd|=0.000001
+[MONITOR] pipeline-check(independent ckpt222 re-extract): [check] OK: features are provenance-consistent with the released head
+[MONITOR] pipeline-check(independent ckpt222 re-extract): [complete] arm=independent stage=extract run_root=/user/huangyongbin/newrepo/agriabstain/papermodel_lineargate/runs/_pipeline_check_independent

@@ -1,0 +1,1 @@
+Using a threshold selected exclusively on the development set (tau=0.798424602) and frozen before test evaluation, ReGate achieves test supported retention 0.8564 versus 0.7937 for SFT native, while reducing test FCA from 0.0748 to 0.0325 (56.6% relative reduction).

@@ -1,0 +1,43 @@
+[h27-calibrate] local_rank=0; CUDA_VISIBLE_DEVICES=0
+[h27-calibrate] run_seed=7; dev_subset_sampling_seed=42; delegate=/user/huangyongbin/newrepo/agriabstain/aaai_code/training/sft_final/calibrate_head.py
+[calibrate_head r0] world_size.json: n_shards=8, total_train=7072, total_dev=100, adapter=/user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/checkpoints/checkpoint-333
+[calibrate_head r0] 合并 shard
+[calibrate_head r0] train: (7072, 4096), pos=1500 neg=2703
+[calibrate_head r0] dev:   (100, 4096),  pos=33 neg=34
+[calibrate_head r0] mu: (4096,), sd: (4096,)
+[calibrate_head r0] 训练 MLP(4096→512→256→3) 三分类
+[calibrate_head r0]   epoch 50/1000, train_loss=0.0923, dev_loss=0.3593, dev_MCC=0.8351, per_class_acc={'answer': '85.29%', 'wrong_object': '84.85%', 'no_target': '96.97%'}
+[calibrate_head r0]     → 新最佳 dev loss: 0.3593 (epoch 50)
+[calibrate_head r0]   epoch 100/1000, train_loss=0.0513, dev_loss=0.5233, dev_MCC=0.8511, per_class_acc={'answer': '91.18%', 'wrong_object': '84.85%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 1/5
+[calibrate_head r0]   epoch 150/1000, train_loss=0.0124, dev_loss=0.5968, dev_MCC=0.8201, per_class_acc={'answer': '82.35%', 'wrong_object': '87.88%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 2/5
+[calibrate_head r0]   epoch 200/1000, train_loss=0.0063, dev_loss=0.6237, dev_MCC=0.8354, per_class_acc={'answer': '82.35%', 'wrong_object': '90.91%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 3/5
+[calibrate_head r0]   epoch 250/1000, train_loss=0.0054, dev_loss=0.6081, dev_MCC=0.8201, per_class_acc={'answer': '82.35%', 'wrong_object': '87.88%', 'no_target': '93.94%'}
+[calibrate_head r0]     → patience 4/5
+[calibrate_head r0]   epoch 300/1000, train_loss=0.1588, dev_loss=0.6479, dev_MCC=0.8387, per_class_acc={'answer': '76.47%', 'wrong_object': '93.94%', 'no_target': '96.97%'}
+[calibrate_head r0]     → patience 5/5
+[calibrate_head r0]   早停于 epoch 300，最佳 dev loss: 0.3593
+[calibrate_head r0] 已恢复最佳权重（最佳 dev loss: 0.3593）
+[calibrate_head r0] train MCC (multi-class): 0.9489
+[calibrate_head r0] dev   MCC (multi-class): 0.8351
+[calibrate_head r0] 
+=== dev classification_report ===
+                 precision    recall  f1-score   support
+
+      answer(0)     0.8529    0.8529    0.8529        34
+wrong_object(1)     0.8750    0.8485    0.8615        33
+   no_target(2)     0.9412    0.9697    0.9552        33
+
+       accuracy                         0.8900       100
+      macro avg     0.8897    0.8904    0.8899       100
+   weighted avg     0.8893    0.8900    0.8895       100
+
+[calibrate_head r0]   answer(0) acc: 0.8529 (34 样本)
+[calibrate_head r0]   wrong_object(1) acc: 0.8485 (33 样本)
+[calibrate_head r0]   no_target(2) acc: 0.9697 (33 样本)
+[calibrate_head r0] 写 discrim_head_calibrated.pt
+[calibrate_head r0] 已保存: /user/huangyongbin/newrepo/agriabstain/h27experiment/runs/grouped/seed-7/checkpoints/checkpoint-333/discrim_head_calibrated.pt
+[calibrate_head r0] head_state keys: ['classifier.0.weight', 'classifier.0.bias', 'classifier.3.weight', 'classifier.3.bias', 'classifier.6.weight', 'classifier.6.bias']
+[calibrate_head r0] mu: (4096,), sd: (4096,)

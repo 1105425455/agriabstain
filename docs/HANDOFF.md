@@ -1,5 +1,9 @@
 # 后续工作交接
 
+## 模型恢复更新
+
+用户最终要求仅保留论文使用的最终checkpoint/head及不可下载数据，通过Git LFS管理；中间epoch、optimizer/RNG和表征缓存不上传。先读 `ASSET_RECOVERY.md`、`FINAL_ASSETS.json`，拉取LFS后运行 `tools/restore_assets.py`。公共数据可下载部分单独获取。旧本机链接清单只作来源追溯。论文不上传。
+
 ## 最新范围修正
 
 用户明确要求 Git 仓库不包含论文文件和交付包。`paper/`、论文配图 `figure/`、`submission_snapshot/` 已从当前 Git 版本移除，保留在本机忽略目录；对应快照验证脚本也移除。下文这些目录的路径与核验结果仅作历史记录。标准代码测试以根 README 为准，排除依赖本地论文的 12 项一致性测试。初始两个 commit 已推送，旧 Git 历史仍包含被移除文件；当前未重写历史。

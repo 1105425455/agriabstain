@@ -28,9 +28,7 @@ import numpy as np  # noqa: E402
 from sklearn.metrics import matthews_corrcoef, roc_auc_score  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-AAAI_ROOT = REPO_ROOT.parent / "agriabstain" / "aaai_code"
-if os.path.islink(AAAI_ROOT) or not AAAI_ROOT.exists():
-    AAAI_ROOT = REPO_ROOT / ".." / "agriabstain" / "aaai_code"
+AAAI_ROOT = REPO_ROOT / "aaai_code"
 AAAI_ROOT = AAAI_ROOT.resolve()
 if str(AAAI_ROOT) not in sys.path:
     sys.path.insert(0, str(AAAI_ROOT))
@@ -41,16 +39,14 @@ from experiments.base_native_regate.analyze_native_regate import (  # noqa: E402
 from reason_abstain.eval.metrics import metamorphic_test_satisfaction  # noqa: E402
 
 REPR_ROOT = (
-    REPO_ROOT.parent
-    / "agriabstain"
+    REPO_ROOT
     / "new_reason"
     / "outputs"
     / "evidence_judge_full_4090_b1_v2_20260719"
     / "repr"
 )
 BASE_NATIVE_PREDS = (
-    REPO_ROOT.parent
-    / "agriabstain"
+    REPO_ROOT
     / "new_reason"
     / "outputs"
     / "base_native_regate_20260720"

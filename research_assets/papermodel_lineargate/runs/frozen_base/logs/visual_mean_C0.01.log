@@ -1,0 +1,10 @@
+[frozen] base=/user/huangyongbin/models/modelscope/Qwen/Qwen3-VL-8B-Instruct adapter=None layer=27
+[frozen] train: n=7072 labels=[2703, 1500, 2869]
+[frozen] dev: n=2408 labels=[1204, 205, 999]
+[frozen] test: n=2646 labels=[1323, 205, 1118]
+pooling variants:   0%|          | 0/1 [00:00<?, ?pool/s]
+visual_mean C grid:   0%|          | 0/1 [00:00<?, ?candidate/s][A[frozen] visual_mean C=0.01 dev_loss=0.8233 test_auroc=0.7624 iters=453
+
+visual_mean C grid: 100%|██████████| 1/1 [04:00<00:00, 240.63s/candidate][A
+                                                                         [Apooling variants: 100%|██████████| 1/1 [04:03<00:00, 243.71s/pool]pooling variants: 100%|██████████| 1/1 [04:03<00:00, 243.71s/pool]
+[frozen] shard visual_mean_C0.01 done
