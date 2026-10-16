@@ -6,6 +6,8 @@
 
 正式清单为 `docs/FINAL_ASSETS.json`。`EXTERNAL_ASSETS.json`、COPY_MANIFEST以及曾生成的REMOTE_ASSETS属于来源/工作区历史清单，不表示每个历史文件都在Git当前版本内。
 
+选定checkpoint保留`trainer_state.json`、adapter配置和tokenizer信息，用于选点与运行配置追溯；不包含optimizer/RNG或中间权重。
+
 保留的权重包括：
 
 - Grouped主方法 checkpoint-444：LoRA adapter和Stage-2 calibrated head；Stage-1 head与归一化buffer包含于adapter safetensors。

@@ -1,54 +1,65 @@
-# AgriAbstain / ReGate 论文研究仓库
+# AgriAbstain / ReGate 研究仓库
 
-**最新资产策略：Git LFS只保存论文实际使用的最终checkpoint/head及不可下载数据；中间epoch、optimizer/RNG、表征缓存不上传。新agent先读 [资产恢复说明](docs/ASSET_RECOVERY.md)，clone后执行 `git lfs pull`。公开基座与COCO原图按说明获取。最终范围以 `docs/FINAL_ASSETS.json` 为准；下文旧本机链接说明仅作历史背景。论文继续不上传。**
+对应论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**。仓库包含正式代码、配置、标注、预测、审稿分析，以及论文使用的最终模型和不可公开恢复的数据。论文TeX/PDF、配图及交付包不在当前版本中。
 
-对应当前论文 **ReGate: Mitigating Hallucinations in Visual Grounding via Metamorphic Counterfactual Supervision**（AAAI 2027 submission）。本仓库保留开发代码、配置和作者侧实验结果。按用户要求，论文文件、论文配图和交付包不纳入当前 Git 版本。
+**新agent先读 [AGENTS.md](AGENTS.md)、[交接说明](docs/HANDOFF.md) 和 [资产恢复说明](docs/ASSET_RECOVERY.md)。**
 
-**新 agent 接手先读 [AGENTS.md](AGENTS.md) 和 [交接说明](docs/HANDOFF.md)**：包含当前 Git 状态、论文到实验的路径映射、可直接执行的 CPU 验证命令和外部资产边界。
+## 下载与恢复
 
-## 内容与入口
+需要Git LFS。最终资产共2,777个文件、约4.51 GB；当前清单检查识别1,537个LFS路径（路径数与去重后的上传对象数不同）。
 
-| 路径 | 内容 |
+```bash
+git lfs install
+git clone git@github.com:1105425455/agriabstain.git
+cd agriabstain
+git lfs pull
+python tools/verify_remote_assets.py --hash
+python tools/restore_assets.py --execute
+```
+
+Qwen3-VL-8B-Instruct基座和COCO原图单独下载，入口、路径及校验方式见资产恢复说明。PlantDoc/PlantWild精确图片、加工标签与派生图已包含。恢复脚本会解压派生图并创建兼容目录关联。
+
+## 保存范围
+
+| 内容 | 位置 |
 |---|---|
-| `aaai_code/` | 当前论文的 benchmark 构造、两阶段训练、推理、评测、机制实验及现有测试 |
-| `new_reason/outputs/` | 与论文相关的作者侧配置、日志、逐样本预测与分析结果；大型权重及特征为本地链接 |
-| `new_reason/baselines/prompt_cot/` | 当前 prompt-interface 对照的现有代码与结果 |
-| `docs/COPY_MANIFEST.json` | 每份复制文件的原路径、字节数和 SHA-256 |
-| `docs/EXTERNAL_ASSETS.json` | 数据、模型、特征等外部资产的位置及本地链接 |
-| `docs/history/` | 原有研究记录，选点和指标以当前论文与正式结果为准 |
+| 正式构造、训练、校准、推理、评测代码 | `aaai_code/` |
+| Benchmark标注及图片校验清单 | `aaai_code/benchmark/annotations/`、`IMAGE_MANIFEST.json` |
+| 主方法最终LoRA与calibrated head | `new_reason/outputs/sft_runs/fusion_3reason/fusion_3reason_v3_hl04/checkpoint-444/` |
+| Independent最终checkpoint | `aaai_code/experiments/grouping_ablation/artifacts/checkpoints/independent_negative_seed42/checkpoint-222/` |
+| Margin+KL选定checkpoint | `new_reason/outputs/sft_runs/paired_retrain/{v1/checkpoint-50,v2/checkpoint-60}/` |
+| 三次重训选定checkpoint与已有结果 | `research_assets/h27experiment/` |
+| 精确图片、加工标注、派生图归档 | `research_assets/` |
+| 审稿回应及可复算证据 | `review.md`、`docs/review_evidence/`、`tools/review_*.py` |
+| 最终远端资产白名单 | `docs/FINAL_ASSETS.json` |
 
-训练和评测从 `aaai_code/` 执行，具体参数沿用 [开发版说明](aaai_code/README.md)：
+中间epoch权重、optimizer/RNG状态和表征缓存不随Git提供。可从最终adapter开展新的训练或评测；CPU head重新拟合需要先重建缓存。既有预测与最终head可以直接读取。历史清单 `COPY_MANIFEST.json`、`EXTERNAL_ASSETS.json` 描述来源工作区，不能当成当前上传清单。
+
+## 代码入口
+
+从 `aaai_code/` 执行，参数详见 [开发说明](aaai_code/README.md)：
 
 - Stage 1：`training/sft_final/run_train.sh`。
 - Stage 2：`training/sft_final/calibrate_head.py`。
-- 推理与评测：`evaluation/eval_qwen3vl_3reason.py`、`evaluation/run_sft_final.sh`。
-- 主表与曲线：`experiments/base_native_regate/`。
-- 分组消融：`experiments/grouping_ablation/`。
-- 表征与证据分析：`experiments/evidence_judge/`、`experiments/layer_selection/`。
-- margin+KL：`training/margin_kl/`。
+- 评测：`evaluation/eval_qwen3vl_3reason.py`、`evaluation/run_sft_final.sh`。
+- 主表与阈值：`experiments/base_native_regate/`。
+- 构造消融：`experiments/grouping_ablation/`。
+- 表征/证据分析：`experiments/{evidence_judge,layer_selection}/`。
 
-## 数据与模型
+通过`BASE_MODEL`、`ADAPTER`、`OUTPUT_ROOT`等参数指定模型和输出目录。旧日志和部分历史入口保留原绝对路径，运行前检查；不要默认另一台机器有原作者目录。
 
-当前服务器通过 Git 忽略的本地符号链接使用原研究工作区的数据、派生图片、checkpoint 和特征；Git clone 不会下载这些资产。完整位置见 `docs/EXTERNAL_ASSETS.json`，图片清单见 `aaai_code/benchmark/IMAGE_MANIFEST.json`。基座为 `Qwen3-VL-8B-Instruct`，正式 endpoint 为 `fusion_3reason_v3_hl04/checkpoint-444` 与其中的 `discrim_head_calibrated.pt`。
+## 验证
 
-迁移机器时需要按资产清单恢复大文件，并通过现有脚本的环境变量指定模型和产物目录。原始研究代码与 JSON 中保留了作者真实路径，以便追溯；部分历史入口仍依赖原工作区位置。
-
-## 版本边界
-
-本次整理直接复制现有实现，不重新实现算法、不改变论文数值、不混入早期 SFT/RL 方案或后续多 seed、linear-gate 实验。`asrabstain/` 属于独立项目。
-
-论文、配图与交付快照仅保留在本机忽略目录，fresh clone 不含这些材料。COPY_MANIFEST 保留整理来源的历史清单，其中这些目录的条目不表示当前 Git 版本包含文件。
-
-## 检查
-
-提交前完整 CPU 测试在记录的 `agrivllm` Python 3.11 环境下为 **296 passed、2 skipped，零失败**。已适配当前论文格式及现有发布布局，保留产物数值断言；详情及原始日志见 [核验记录](docs/VERIFICATION.md)。
+作者环境为Python 3.11，依赖见`aaai_code/requirements.txt`及`aaai_code/environment/`。本机可使用`/user/huangyongbin/miniconda3/envs/agrivllm/bin/python`；其他机器使用自己配置的环境。
 
 ```bash
 cd aaai_code
 PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
-  /user/huangyongbin/miniconda3/envs/agrivllm/bin/python \
-  -m pytest -q -p no:cacheprovider reason_abstain experiments scripts/test_build_anonymous_release.py \
+  python -m pytest -q -p no:cacheprovider \
+  reason_abstain experiments scripts/test_build_anonymous_release.py \
   --ignore=experiments/base_native_regate/test_paper_metric_consistency.py
 ```
 
-上述代码测试排除需要本地论文 TeX 的一致性测试。原 296 passed、2 skipped 包含该文件的 12 项检查；本机具备论文时仍可单独运行。历史核验记录见 `docs/VERIFICATION.md`。
+已有完整测试基线为296 passed、2 skipped，包含12项需要本地论文的测试。上面的代码仓库命令排除这12项。CPU审稿实验与结果核验见 [CPU完成清单](docs/review_evidence/CPU_COMPLETION.md)；资产上传及取回核验见 [传输记录](docs/ASSET_TRANSFER_STATUS.md)。
+
+首次接手请以`git status`、`git log`和`git remote -v`确认实际版本。论文仍在作者本地/Overleaf管理，不要重新加入Git。

@@ -11,8 +11,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def link(destination: Path, source: Path, execute: bool) -> None:
     if not source.exists():
-        print(f"MISSING source: {source}")
-        return
+        raise FileNotFoundError(f"缺少资产，请先git lfs pull: {source}")
+    if source.is_file():
+        with source.open("rb") as stream:
+            if stream.read(80).startswith(
+                b"version https://git-lfs.github.com/spec/v1"
+            ):
+                raise ValueError(f"仅有LFS指针，请先git lfs pull: {source}")
     if destination.exists():
         print(f"KEEP {destination.relative_to(ROOT)}")
         return
@@ -37,7 +42,10 @@ def main() -> None:
     args = parser.parse_args()
     archive = ROOT / "research_assets/datasets/derived_images.tar.gz"
     derived = ROOT / "aaai_code/benchmark/data/derived"
-    if archive.exists() and not derived.exists():
+    marker = derived / ".regate-extracted-complete"
+    if not archive.exists():
+        raise FileNotFoundError(f"缺少派生图归档: {archive}")
+    if not marker.exists() and not derived.is_symlink():
         print(f"EXTRACT {archive.relative_to(ROOT)}")
         if args.execute:
             target = derived.parent.resolve()
@@ -49,9 +57,11 @@ def main() -> None:
                         not resolved.is_relative_to(target)
                         or entry.issym()
                         or entry.islnk()
+                        or not (entry.isfile() or entry.isdir())
                     ):
                         raise ValueError(f"不安全归档条目: {entry.name}")
                 bundle.extractall(target)
+            marker.write_text("derived_images.tar.gz extracted successfully\n")
     pairs = {
         ROOT / "new_reason/outputs/benchmarks/transformed_images": ROOT
         / "aaai_code/benchmark/data/derived",
@@ -62,7 +72,7 @@ def main() -> None:
         pairs[ROOT / name] = ROOT / "research_assets" / name
     if args.public_data_root:
         public = args.public_data_root.resolve()
-        for name in ("source", "ood"):
+        for name in ("source/coco/images", "ood/refcocog/images"):
             pairs[ROOT / "aaai_code/benchmark/data" / name] = public / name
     for destination, source in pairs.items():
         link(destination, source, args.execute)
