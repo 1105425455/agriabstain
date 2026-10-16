@@ -12,4 +12,4 @@
 - 使用独立空LFS缓存从远端下载同head，大小8,955,227 bytes，SHA-256与原文件完全一致。
 - 原论文checkpoint-444 adapter与calibrated head两个对象共约118 MB已上传成功。
 
-整体上传状态以随后Git提交及LFS推送结果为准；通道验证不等同于整份白名单已经完整上传。
+最终上传已完成：Git LFS返回 `1532/1532 objects, 4.5 GB, done`，资产提交为`981882a`，已推送到GitHub main。最终清单2,777项全部纳入Git（小型标注/配置为普通Git，大文件为LFS）；本地验证无缺失、无仅pointer文件、无论文跟踪路径。远端取回已对实际head进行空缓存SHA-256验证；未对整4.5GB重新完整下载。
